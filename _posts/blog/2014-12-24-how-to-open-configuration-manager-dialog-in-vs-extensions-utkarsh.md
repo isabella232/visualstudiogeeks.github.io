@@ -24,12 +24,12 @@ var configManager = GetService(typeof (SVsConfigurationManagerDlg)) as IVsConfig
 
 Once you get the instance of `IVsConfigurationManagerDlg` interface, you will call `ShowConfigurationManagerDlg` method to show configuration manager dialog as below.
 
-~~~cs
+{% highlight csharp %}
 if (configManager != null)
 {
     configManager.ShowConfigurationManagerDlg();
 }
-~~~
+{% endhighlight %}
 
 ### Showing Configuration Manager window only when project is loaded ###
 
@@ -44,7 +44,7 @@ In this post we will use option 2.
 
 For this, we need to get services of another interface [IVsSolution](http://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.aspx). With this interface, we can request to get project count property, which returns us the number of projects currently loaded in to the environment.
 
-~~~cs
+{% highlight csharp %}
 var solutionService = GetService(typeof(SVsSolution)) as IVsSolution;
 object projectCount = null;
 if (solutionService != null)
@@ -59,7 +59,7 @@ else
 {
 	//open the configuration manager
 }
-~~~
+{% endhighlight %}
 
 With this, we show the configuration manager only when the environment has at least one project.
 
