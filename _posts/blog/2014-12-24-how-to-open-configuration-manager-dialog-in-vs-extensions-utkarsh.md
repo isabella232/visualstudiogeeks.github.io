@@ -18,13 +18,13 @@ Visual Studio provides [IVsConfigurationManagerDlg](http://msdn.microsoft.com/en
 
 So to use this method, you need to first get the service instance using `GetService(...)` method from `Package` class as below.
 
-{% highlight csharp %}
+{% highlight csharp linenos %}
 var configManager = GetService(typeof (SVsConfigurationManagerDlg)) as IVsConfigurationManagerDlg;
 {% endhighlight %}
 
 Once you get the instance of `IVsConfigurationManagerDlg` interface, you will call `ShowConfigurationManagerDlg` method to show configuration manager dialog as below.
 
-{% highlight csharp %}
+{% highlight csharp linenos %}
 if (configManager != null)
 {
     configManager.ShowConfigurationManagerDlg();
@@ -44,7 +44,7 @@ In this post we will use option 2.
 
 For this, we need to get services of another interface [IVsSolution](http://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.aspx). With this interface, we can request to get project count property, which returns us the number of projects currently loaded in to the environment.
 
-{% highlight csharp %}
+{% highlight csharp linenos %}
 var solutionService = GetService(typeof(SVsSolution)) as IVsSolution;
 object projectCount = null;
 if (solutionService != null)
