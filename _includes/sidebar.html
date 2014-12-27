@@ -45,4 +45,16 @@
             <a class="btn btn-theme" href="{{ '/category/#'  | prepend: site.baseurl  }}{{ category | first }}" role="button">{{ category | first | capitalize }} ({{ category | last | size }})</a>	         
         {% endunless %}{% endfor %}
     </p>
+	<h4>Archive</h4>
+    <div class="hline"></div>
+    <p>
+{% for post in site.posts %}
+  {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
+  {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+    {% if month != nmonth %}
+      {% if forloop.index != 1 %}</ul>{% endif %}
+      <a href="/archive">{{ post.date | date: '%B %Y' }}</a><ul>
+    {% endif %}
+{% endfor %}
+	</p>
 </div>
