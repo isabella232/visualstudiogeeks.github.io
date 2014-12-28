@@ -7,7 +7,7 @@ categories:
 - blog                #important: leave this here
 - TagAdmin
 img:        #place image (850x450) with this name in /assets/img/blog/
-thumb: thumb-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
+thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
 Manage Work Item tags from right with in Visual Studio using the TagAdmin extension. Watch this 2 minute video to get a headstart...
 <!--more-->
