@@ -8,7 +8,7 @@ categories:
 - "visual studio extensibility"
 - 
 img:        #place image (850x450) with this name in /assets/img/blog/
-thumb: thumb.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
+thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
 Imagine you are developing a Visual Studio extension which requires you to prompt users to modify their project build configurations. The ideal way to do that is to open default configuration manager window of Visual Studio and let users configure. In this post we will see how to open Configuration Manager window of Visual Studio via Visual Studio SDK. 
 <!--more-->
