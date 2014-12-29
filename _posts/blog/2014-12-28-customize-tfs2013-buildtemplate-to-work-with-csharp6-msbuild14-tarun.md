@@ -14,7 +14,7 @@ thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /asset
 Struggling to compile your .NET 2015 Preview (.NET 4.6) solutions using TFS 2013 build? That's because TFS 2013 uses MSBuild 12.0 as the default version. Your Microsoft .NET 2015 Preview (.NET 4.6 / C# 6 beta) solutions with fail compilation if you use TFS 2013 Build agents. Let's see how this can be fixed...  
 <!--more-->
 
-If you like this post, don't forget to subscribe to new blog post alerts http://feeds.feedburner.com/visualstudiogeeks/otas...
+If you like this post, don't forget to subscribe to new blog post alerts http://feeds.feedburner.com/visualstudiogeeks/otas 
 
 ### How to customize build template to point to MSBuild 14.0? ###
 
