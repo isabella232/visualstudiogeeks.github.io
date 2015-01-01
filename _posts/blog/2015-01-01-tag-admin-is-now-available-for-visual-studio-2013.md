@@ -22,7 +22,7 @@ It’s a pretty nice tool for helping you manage work item tags for either your 
 Adding tag management features to VS would be fairly far down the backlog for MS, but luckily a community project has just shipped its first release of a plugin for VS that allows management of tags if you are working with TFS or VSO - *David Starr - Senior Program Manager in the ALM Tools team at Microsoft* - [link](http://elegantcode.com/2014/12/24/manage-work-item-tags-in-visual-studio/)
 
 >
-Cool extension to manage work item tags - *El Bruno* - [link](http://elbruno.com/2014/12/23/vs2015-tag-admin-cool-extension-to-manage-workitems-tags/)
+Cool extension to manage work item tags - *El Bruno - Microsoft MVP* - [link](http://elbruno.com/2014/12/23/vs2015-tag-admin-cool-extension-to-manage-workitems-tags/)
 
 We are very happy and feel motivated to receive such immense positive feedback. At the same time, there was a good amount of demand to support this extension for VS 2013. Although it was in our backlog along with other features we have for this extension, we had to pick it up quickly due to numerous emails we received. 
 
