@@ -21,6 +21,7 @@ While there are more than 100 million social and technical community members, on
 
 ### I had a very busy 2014, below is a short list of few things I worked on... ###
 
+-
 - > 5000 support points on MSDN/stackoverflow forums, answering over 300 questions
 - 30+ blogposts, 100 registered users, 20,000 clicks/month, 15,500 unique users/month
 - > 100 minutes of ALM video tutorials on youTube both in Hindi & English
