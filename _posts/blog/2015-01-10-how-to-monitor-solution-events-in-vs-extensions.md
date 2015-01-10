@@ -62,11 +62,11 @@ public MyControlViewModel()
 }
 {% endhighlight %}
 
-In the code above [AdviseSolutionEvents](http://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.advisesolutionevents.aspx) registers view-model class as listener. The `cookie` stores the pointer to the solution event object, which is stored again in `Common` class. `cookie` is required for us to unadvise (unregister) the events later on.
+In the code above [AdviseSolutionEvents](http://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.advisesolutionevents.aspx) registers view-model class as listener. The `cookie` stores the pointer to the solution event object. We will store this instance `Common` class so that it can be accessed from Package class later. `cookie` is required for us to unadvise (unregister) the events later on.
 
 ### Implement IVsSolutionEvents methods ###
 
-This interface provides many methods related to solution events. For keeping the blog post short, I am showing you only one method below.
+This interface provides [many methods](http://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolutionevents_methods.aspx) related to solution events. For keeping the blog post short, example method implementation below.
 
 {% highlight csharp %}
 public int OnAfterOpenProject(IVsHierarchy pHierarchy, int fAdded)
@@ -79,7 +79,7 @@ public int OnAfterOpenProject(IVsHierarchy pHierarchy, int fAdded)
 Above code snippet, adds a message to the collection which is bound to the listview.
 
 ### Unregister from solution events notification ###
-Finally, when package is unloaded or Visual Studio closed, we need to Unadvise from event notification. In the example, we will use the cookie stored in the singleton class and unadvise as below. I am doing this in Package class by overriding `Dispose` method.
+Finally, when package is unloaded or Visual Studio closed, we need to Unadvise from event notification. In the example, we will use the cookie stored in the `Common` class before and unadvise as below. I am doing this in Package class by overriding `Dispose` method.
 
 {% highlight csharp %}
 protected override void Dispose(bool disposing)
