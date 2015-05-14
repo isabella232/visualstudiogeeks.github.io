@@ -15,9 +15,6 @@ Occasionally when Visual Studio Online (VSO) is down or having some issues, we h
 
 The extension quitely sits in the Visual Studio status bar displaying an icon - based on whether Visual Studio Online is running smooth or has some issues or completely down. 
 
-VS gallery Link: https://visualstudiogallery.msdn.microsoft.com/e87c82b9-dced-4fe2-9a40-f90139c56882
-Source Code: https://github.com/onlyutkarsh/VSOStatusInspector/
-
 Here is a quick **walkthrough of its features**
 
 Once you install the extension you will see a small icon in your Visual Studio status bar based on the status of the VSO.
@@ -38,4 +35,12 @@ Finally, if you ever want to change the poll time, you can do that easily too. G
 
 ![Alt text](/assets/img/blog/utkarsh/vso_status_inspector_options.png "VSO Options")
 
-That's it. Simple and small extension. Hope it helps you to keep and eye on VSO status and helps you to quick glance of its status when it down. 
+So if you like it download/contribute.
+
+[**Download**](https://visualstudiogallery.msdn.microsoft.com/e87c82b9-dced-4fe2-9a40-f90139c56882)
+
+[**Source Code**](https://github.com/onlyutkarsh/VSOStatusInspector/)
+
+That's it. Simple and small extension. Hope it helps you to keep and eye on VSO status and helps you to quick glance of its status when it down.
+
+ <a href="http://ctt.ec/5d5d7"><img src="http://clicktotweet.com/img/tweet-graphic-4.png" alt="Tweet: Inspect #VisualStudioOnline status inside #VisualStudio - http://ctt.ec/5d5d7+ developed by @onlyutkarsh @arora_tarun #vs2013 #vs2015"></a>
