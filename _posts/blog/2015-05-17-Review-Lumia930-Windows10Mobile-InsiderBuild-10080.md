@@ -34,7 +34,9 @@ Heading over to the windows central blog it was a relieve to see I wasn't the on
 ###  User Experience <a id="userExperienceId"></a>
 ---
 This build didn't feel like Windows 10 Mobile is any where close to prime time. The overall experience was poor... 
-##### General Feedback
+
+#### General Feedback
+---
 1.  Battery Killer - A full charge running in battery saver mode with average usage does not last for more than 3 hours. 
 2. Furnace - The phone heats up very quickly.
 3. Crashes - Almost all apps crashed after 5 - 10 minutes of usage.
@@ -45,9 +47,10 @@ This build didn't feel like Windows 10 Mobile is any where close to prime time. 
 	* Unable to take screenshots by using volume down and lock button
 	* Unable to access photos from whatsapp 
 	* Cortana doesn't search with voice commands, fails with a cryptic error code
-	* ...
+	* A lot more...
 
-##### App Specific Feedback
+#### App Specific Feedback
+---
 1. Outlook Mail 
 	* Common inbox for multiple email accounts, full support for rich text! While I like the idea of a common inbox, having my work email, personal email and LinkedIn squashed into one app didn't feel so nice. When you press + to create a new email, you don't have the option to change the "from" mailbox. I guess you will end up sending a lot of work emails from your personal accounts.  
 	* While I like automatic pull of my work email, I prefer manually refreshing my personal email. I wasn't able to change the sync settings of individual accounts. 
