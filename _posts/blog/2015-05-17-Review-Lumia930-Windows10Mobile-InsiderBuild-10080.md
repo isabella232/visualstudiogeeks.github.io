@@ -9,7 +9,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: windows-10-preview-lumia-930.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
-I have been running the Windows 8.1 Update 1 on my Lumia 930, while I miss a few key apps but that aside the build is stable and offers a great usability experience. Having enrolled in the Windows mobile Insider program, I got the notification to upgrade to the Windows 10 Mobile Insider Build... <!--more--> 10080.   
+I have been running the Windows 8.1 Update 1 on my Lumia 930, while I miss a few key apps but that aside the build is stable and offers a great usability experience. Having enrolled in the Windows mobile Insider program, I got the notification to upgrade to the Windows <!--more--> 10 Mobile Insider Build 10080.   
 
 ## I have split the post into 2 parts
 ---
