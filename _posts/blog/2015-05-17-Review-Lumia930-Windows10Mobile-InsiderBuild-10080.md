@@ -36,11 +36,11 @@ Heading over to the windows central blog it was a relieve to see I wasn't the on
 This build didn't feel like Windows 10 Mobile is any where close to prime time. The overall experience was poor... 
 
 #### General Feedback
-1.  Battery Killer - A full charge running in battery saver mode with average usage does not last for more than 3 hours. 
-2. Furnace - The phone heats up very quickly.
-3. Crashes - Almost all apps crashed after 5 - 10 minutes of usage.
-4. Unstable and Slow - The home screen usually hangs up on "Resuming". The app's pinned to the home screen don't load up or a few pins go missing or the layout is distorted.
-5. Basic functionality broken
+1.  **Battery Killer** - A full charge running in battery saver mode with average usage does not last for more than 3 hours. 
+2. **Furnace** - The phone heats up very quickly.
+3. **Crashes** - Almost all apps crashed after 5 - 10 minutes of usage.
+4. **Unstable and Slow** - The home screen usually hangs up on "Resuming". The app's pinned to the home screen don't load up or a few pins go missing or the layout is distorted.
+5. **Basic functionality broken**
 	* The people hub doesn't work 
 	* Unable to pin tiles
 	* Unable to take screenshots by using volume down and lock button
@@ -49,7 +49,7 @@ This build didn't feel like Windows 10 Mobile is any where close to prime time. 
 	* A lot more...
 
 #### App Specific Feedback
-1. Outlook Mail 
+1. **Outlook Mail** 
 	* Common inbox for multiple email accounts, full support for rich text! While I like the idea of a common inbox, having my work email, personal email and LinkedIn squashed into one app didn't feel so nice. When you press + to create a new email, you don't have the option to change the "from" mailbox. I guess you will end up sending a lot of work emails from your personal accounts.  
 	* While I like automatic pull of my work email, I prefer manually refreshing my personal email. I wasn't able to change the sync settings of individual accounts. 
 	* Windows phone have always allowed pinning individual folders to the home screen. Unfortunately pinning individual folders to the home screen isn't possible any more. I was however able to ping individual folders with in the Outlook Mail app for quick access. 
@@ -57,16 +57,16 @@ This build didn't feel like Windows 10 Mobile is any where close to prime time. 
 	* Quick navigation - While the emails are grouped by conversation, when reading an email from the conversation, there is no left swipe or right swipe option available to move to the next email. You have to navigate back and select the next email. Not very helpful when you are trying to glance through a grouped conversation.
 	* Rich Text Support - I was hoping to be able to add a table or other objects as I am able to in a word app. But this was a let down... 
 	 
-2. Notification center
+2. **Notification center**
 	* Indivdual Notifications - Finally it is possible to control notifications at a granular level of each notification rather than being limited to just at the app level. 
 	* What can Notify - It is possible to control which apps can notify via settings. 
 	* Notifications not in sync - So i get notified on for a new facebook message, I acknowledge the notification in the notification center, later I go to the facebook app, I still see the notification in the facebook app. So the notifications don't seem to be staying in sync. Needs improvement. 
 	
-3. New Photos Preview App
+3. **New Photos Preview App**
 	* Aggregated view - I liked the over all aggregated view of photos. It is possible to flip from the aggregated view to individual albums. When fliping from the aggregated view to albums, I was always greated with a black screen, so this functionality didn't work for me. No way to roll the aggregated view up further to month or year. 
 	* Favourite functionality gone - Can't see any way of marking indivdual photos as favourites. Earlier it was possible to tag individual photos as favourite and access them quickly and easily through the automatically created albums. 
 	
-4. Universal Office apps: Now that the Store Beta is included in this build, it is possible to download the Word, Excel, PowerPoint and OneNote Preview apps. 
+4. **Universal Office apps** Now that the Store Beta is included in this build, it is possible to download the Word, Excel, PowerPoint and OneNote Preview apps. 
 	* I must say using word, excel, power point and oneNote has been the highlight of this build. The experience is nothing short of amazing!  
 	* This specific document I was editing, has been created using a custom template. It was amazing to see the custom styles available to me while editing the document on my mobile. Very impressive. 
 
