@@ -31,7 +31,7 @@ You are on your way to a lot of pain if you are upgrading from 8.1 update 1 to W
 
 Heading over to the windows central blog it was a relieve to see I wasn't the only one, most of the Lumia 930, Lumia 1530 and Lumia Icon users had run into the same issue. Reading through the list of comments, a lot of people had suggested restarting the phone three times to fix the issue. However, that didn't work for me... I downloaded the [Windows Phone recover Tool](http://go.microsoft.com/fwlink/?LinkID=525569) took a backup, the windows phone recovery tool downloads 1.7 GB worth of firmware. The install went smooth and the phone was back up and running on 8.1 update 1 build in no time. You can read more on how to rollback to Windows 8.1 Update 1 [here](http://www.windowscentral.com/roll-back-windows-phone-81-windows-10-preview "Windows Mobile 10 Rollback steps"). I was immediately notified that I could upgrade to the Windows 8.1 Update 2 build. After a few installs and restarts I was on Windows Phone 8.1 Update 2. The day had been adventurous so far, so I decided to take the plunge I opted to upgrade to Windows Mobile 10 Build 10080 again. This time around, the upgrade went well and I got back the home screen in less than 10 minutes. As noted in the blog post on the windows 10 insider blog, most of the apps showed as unavailable but I was able to uninstall and reinstall them fairly quickly. 
 
-###  User Experience <a id="userExperience"></a>
+###  User Experience <a id="userExperienceId"></a>
 ---
 This build didn't feel like Windows 10 Mobile is any where close to prime time. The overall experience was poor... 
 ##### General Feedback
