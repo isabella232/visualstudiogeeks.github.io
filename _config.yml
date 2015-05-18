@@ -5,7 +5,7 @@ title: Visual Studio Geeks
 description: "24x7 Visual Studio Geeks"
 analytics: UA-57919718-1 #Google analytics code in the format XX-nnnnnnnn-n
 #baseurl: "" #important: start with /
-url: "http://www.visualstudiogeeks.com"
+url: "http://www.visualstudiogeeks.com/blog/"
 
 # Build settings
 markdown: kramdown
