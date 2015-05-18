@@ -15,7 +15,7 @@ layout: null
   {% for post in site.posts limit:10 %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="http://rsms.me{{ post.url }}"/>
+    <link href="http://visualstudiogeeks.com{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>http://visualstudiogeeks.com{{ post.id }}</id>
     <content type="html">{{ post.content | xml_escape }}</content>
