@@ -7,6 +7,9 @@ analytics: UA-57919718-1 #Google analytics code in the format XX-nnnnnnnn-n
 #baseurl: "" #important: start with /
 url: "http://www.visualstudiogeeks.com/blog/"
 
+gems:
+  - jekyll-sitemap
+
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title
