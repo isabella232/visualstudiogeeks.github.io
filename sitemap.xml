@@ -25,8 +25,8 @@ layout: null
   <url>
     <loc>http://www.visualstudiogeeks.com/blog/{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
    </url>
    {% endfor %}
 </urlset>
