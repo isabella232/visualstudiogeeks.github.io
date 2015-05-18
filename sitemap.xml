@@ -23,7 +23,7 @@ layout: null
   </url>
   {% for post in site.posts %}
   <url>
-    <loc>http://www.visualstudiogeeks.com/{{ post.url }}</loc>
+    <loc>http://www.visualstudiogeeks.com{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
