@@ -1,43 +1,28 @@
 ---
 layout: default
 ---
+<div class="content{% if page.photo_url %} photo-post{% endif %}">
+    <div class="post single">
+        {% unless page.photo_url %}
+        <h1>{{ page.title }}</h1>
+        <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+            {{ page.date | date: "%b %d, %Y" }}
+        </info>
+        {% endunless %}
+        <div class="body">{{ content }}</div>
+        <!-- <div class="breaker"></div> -->
+        <div class="breaker"></div>        
+    </div>  
+<div class="share-page">
+    Subscribe & Share &rarr; <a href="http://feeds.feedburner.com/visualstudiogeeks/otas" onclick=”pageTracker._trackPageview(‘/goal-feed/belowposts’);” target="_blank">RSS</a>
+    <a onclick=”pageTracker._trackPageview(‘/goal-tweet/belowposts’);” href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+</div>
+    <div class="comments container">
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</div>
 
-{% include wrap.html %}
-
-<div class="container mtb">
-    <div class="row">
-        <! -- SINGLE POST -->
-        <div class="col-lg-8">
-            <! -- Blog Post  -->
-			 {% if page.img %} 
-            <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>
-			{% endif %}			
-            <a href="{{ page.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ page.title }}</h3></a>
-            <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
-              
-            {{ content }}
-
-            <div class="spacing"></div>
-            <h6>SHARE:</h6>
-			<table>
-  
-  <tbody>
-    <tr>
-      
-      <td><a onclick=”pageTracker._trackPageview(‘/goal-tweet/belowposts’);” href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></td>
-      <td> <div class="fb-share-button" data-href="{{ page.url }}" data-layout="button_count"></div></td>
-       &nbsp; &nbsp;
-      <td>&nbsp; &nbsp;&nbsp; &nbsp;<a onclick=”pageTracker._trackPageview(‘/goal-feed/belowposts’);” href="http://feeds.feedburner.com/visualstudiogeeks/otas" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/>&nbsp;Subscribe to feed</a></td>
-      <td>&nbsp; &nbsp;&nbsp; &nbsp;<p><a href="http://feeds.feedburner.com/visualstudiogeeks/otas"><img src="http://feeds.feedburner.com/~fc/visualstudiogeeks/otas?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a></p></td>
-    </tr>
-	</tbody>
-	</table>
-
-			{% include disqus.html %}
-        </div><! --/col-lg-8 -->
-        
-        {% include sidebar.html %}
-
-    </div><! --/row -->
-</div><! --/container -->

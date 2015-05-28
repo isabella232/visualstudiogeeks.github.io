@@ -1,4 +1,4 @@
-.highlight code,.highlight pre{color:#fdce93;background-color:#3f3f3f}
+.highlight code,.highlight pre{color:#fdce93;background-color:#3f3f3f;font-family:consolas;font-size:10px;padding-left: 2px;padding-right: 2px;}
 .highlight .hll { background-color: #49483e }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
