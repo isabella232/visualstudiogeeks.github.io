@@ -2,10 +2,12 @@ title: Visual Studio Geeks
 description: "24x7 Visual Studio Geeks"
 analytics: UA-57919718-1 #Google analytics code in the format XX-nnnnnnnn-n
 
-url: http://127.0.0.1:3000
-port: 3000
+url: http://www.visualstudiogeeks.com
 highlighter: pygments
 
+gems:
+  - jekyll-sitemap
+  
 permalink: /:categories/:title
 markdown: kramdown
 
