@@ -7,6 +7,7 @@ highlighter: pygments
 
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
   
 permalink: /:categories/:title
 markdown: kramdown
