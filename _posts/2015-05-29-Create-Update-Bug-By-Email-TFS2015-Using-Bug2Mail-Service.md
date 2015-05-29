@@ -26,9 +26,11 @@ While there are lots of collaboration tools out there, email still remains one o
 {% endhighlight %}
     Search for FieldName="Microsoft.VSTS.Common.Severity" add the below code in the next line    
 {% highlight html %}
-    <Control FieldName="Custom.ConversationId" Type="FieldControl" Label="ConversationId" LabelPosition="Left" />
+    <Control FieldName="Custom.ConversationId" Type="FieldControl" 
+                      Label="ConversationId" LabelPosition="Left" />
 {% endhighlight %}
-    Once this has been completed, upload the process template into tfs using the process template manager and create a new team project using the new process template. Call the team project - Fabrikam.
+    
+  Once this has been completed, upload the process template into tfs using the process template manager and create a new team project using the new process template. Call the team project - Fabrikam.
     
 
 - The Mail2Bug tool requires that an exchange or office 365 account. For this blogpost we’ll be using an exchange account mail2bug@fabrikam.com. Ensure you have the password available for this service account.  
@@ -59,7 +61,8 @@ The set up and configuration is divided into two sections...
 
   {% highlight html %}
   <?xml version="1.0"?>
-  <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Instances>
       <InstanceConfig Name="Fabrikam">
         <TfsServerConfig>
@@ -72,55 +75,63 @@ The set up and configuration is divided into two sections...
           <NamesListFieldName>Assigned To</NamesListFieldName>
         </TfsServerConfig>
         <WorkItemSettings>
-          <!-- The conversation index field should be a textual field with a capacity of 200 or more. Ideally 
-               you'll create a dedicated field for this rather than overloading an existing one, to avoid
-               other people/tools overwriting it with unrelated data. Also, by making it dedicated, you can
-               also make the decision to make it invisible (since no one should be editing it manually)-->
+          <!-- The conversation index field should be a textual field with a capacity
+               of 200 or more. Ideally you'll create a dedicated field for this rather 
+               than overloading an existing one, to avoid other people/tools overwriting 
+               it with unrelated data. Also, by making it dedicated, you can also make 
+               the decision to make it invisible (since no one should be editing it manually)-->
           <ConversationIndexFieldName>ConverstionID</ConversationIndexFieldName>
           <DefaultFieldValues>
-            <!-- The important part is to include a default value for every mandatory field, otherwise work
-                 item creation will fail. The only automatically defined default is the 'Title' field, that gets
-                 the email subject as a value. -->
+            <!-- The important part is to include a default value for every mandatory 
+                 field, otherwise work item creation will fail. The only automatically 
+                 defined default is the 'Title' field, that gets the email 
+                 subject as a value. -->
             <DefaultValueDefinition Field="Assigned To" Value="Unassigned" />
             <DefaultValueDefinition Field="Severity" Value="1" />
             <DefaultValueDefinition Field="Area Path" Value="Fabrikam" />
             <DefaultValueDefinition Field="Iteration Path" Value="Fabrikam" />
             <DefaultValueDefinition Field="Description" Value="##MessageBody" />
           </DefaultFieldValues>
-          <!-- 'true' means we should attached the email message that triggered the creation of the work item -->
+          <!-- 'true' means we should attached the email message that triggered the 
+                creation of the work item -->
           <AttachOriginalMessage>true</AttachOriginalMessage>
         </WorkItemSettings>
         <EmailSettings>
-          <!-- EWSByRecipients is the most straight-forward way to set up the mailbox. Basically, it will process
-               any email in the Inbox that has any of the recipients in the To or Cc fields.
-               Recipients can be specified as email addresses, or as display names
-               When specifying more than one recipient, use ; as separator -->
+          <!-- EWSByRecipients is the most straight-forward way to set up the mailbox. 
+               Basically, it will process any email in the Inbox that has any of the 
+               recipients in the To or Cc fields. Recipients can be specified as 
+               email addresses, or as display names. When specifying more than one
+               recipient, use ; as separator -->
           <ServiceType>EWSByRecipients</ServiceType>
           <Recipients></Recipients>
   
           <!-- The email address whose inbox that we want to monitor -->
           <EWSMailboxAddress>mail2bug@fabrikam.com</EWSMailboxAddress>
   
-          <!-- A username with permissions to log in to the email account. This is generally either in the form of
-               email address form (usually the same as the email address in EWSMailboxAddress), or in DOMAIN\username
-               form. I've seen cases where the same server would take one or the other (or both), depending on the
-               server set up, as well as the client set up, so if one doesn't work, try the other -->
-          <EWSUsername>mail2bug@fabrikam.com</EWSUsername>
+          <!-- A username with permissions to log in to the email account. This is 
+               generally either in the form of email address form (usually the same as
+               the email address in EWSMailboxAddress), or in DOMAIN\username
+               form. I've seen cases where the same server would take one or 
+               the other (or both), depending on the server set up, as well as the
+               client set up, so if one doesn't work, try the other -->
+          <EWSUsername>mail2bug@fabrikam.com</EWSUsername>  
   
-          <!-- Pointer to a file that stores the password for the login account. The file is expected to be encrypted
-               with DPAPI - use the DpapiTool.exe from the Tools subfolder to create one. Note that the tool needs to be
-               run under the same credentials that mail2bug will run with, otherwise it won't be able to decrypt the
-               contents. -->
+          <!-- Pointer to a file that stores the password for the login account. The 
+               file is expected to be encrypted with DPAPI - use the DpapiTool.exe from 
+               the Tools subfolder to create one. Note that the tool needs to be
+               run under the same credentials that mail2bug will run with, otherwise 
+               it won't be able to decrypt the contents. -->
           <EWSPasswordFile>.\Resources\mail2bug.bin</EWSPasswordFile>
           <SendAckEmails>true</SendAckEmails>
           <AckEmailsRecipientsAll>true</AckEmailsRecipientsAll>
   
-          <!-- A pointer to a file containing the ack email template for sending back responses when a new work item is
-               created-->
+          <!-- A pointer to a file containing the ack email template for sending back 
+               responses when a new work item is created-->
           <ReplyTemplate>.\Resources\ReplyTemplateExample.htm</ReplyTemplate>
   
-          <!-- Ideally, you'll never need to change these regexes and you'll use the defaults below, but they do give you 
-               the flexibility to define your own format for specifying overrides, or detecting that an email is an "append
+          <!-- Ideally, you'll never need to change these regexes and you'll use the 
+               defaults below, but they do give you the flexibility to define your own 
+               format for specifying overrides, or detecting that an email is an "append
                only" email. Don't forget to escape any angle brackets. -->
           <AppendOnlyEmailTitleRegex>.*(bug|work item)\s*#*\s*(?&lt;id&gt;\d+)</AppendOnlyEmailTitleRegex>
           <AppendOnlyEmailBodyRegex>!!!(bug|work item)\s*#*\s*(?&lt;id&gt;\d+)</AppendOnlyEmailBodyRegex>
@@ -144,7 +155,8 @@ Be sure to include the project name in the Query.wiq, you can optionally add cre
       <TeamProject>Fabrikam</TeamProject>
       <Wiql>SELECT [System.Id], [System.WorkItemType], [System.Title], [System.AssignedTo], 
             [System.State], [System.Tags] FROM WorkItems WHERE [System.TeamProject] = 'Fabrikam'  
-            AND  [System.WorkItemType] = 'Bug'  AND  [System.State] &lt;&gt; ''  AND  [System.CreatedBy] = 'mail2bug' 
+            AND  [System.WorkItemType] = 'Bug'  AND  [System.State] &lt;&gt; ''  
+            AND  [System.CreatedBy] = 'mail2bug' 
             ORDER BY [System.Id] </Wiql>
   </WorkItemQuery>
 {% endhighlight %}
@@ -155,7 +167,8 @@ The configuration has setting to enable disable sending acknowledgment emails, t
 <html>
   <body>
     Auto Acknowledgement
-    <p>The email has been successfully processed by Bug2Mail service, the information has been updated on [TFSCollectionUri] in [BUGID]</p>
+    <p>The email has been successfully processed by Bug2Mail service, 
+       the information has been updated on [TFSCollectionUri] in [BUGID]</p>
   </body>
 </html>
 {% endhighlight %}
