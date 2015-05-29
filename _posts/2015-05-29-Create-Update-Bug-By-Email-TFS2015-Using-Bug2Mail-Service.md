@@ -133,9 +133,15 @@ The set up and configuration is divided into two sections...
                defaults below, but they do give you the flexibility to define your own 
                format for specifying overrides, or detecting that an email is an "append
                only" email. Don't forget to escape any angle brackets. -->
-          <AppendOnlyEmailTitleRegex>.*(bug|work item)\s*#*\s*(?&lt;id&gt;\d+)</AppendOnlyEmailTitleRegex>
-          <AppendOnlyEmailBodyRegex>!!!(bug|work item)\s*#*\s*(?&lt;id&gt;\d+)</AppendOnlyEmailBodyRegex>
-          <ExplicitOverridesRegex>###\s*(?&lt;fieldName&gt;[^:]*):\s*(?&lt;value&gt;.*)</ExplicitOverridesRegex>
+          <AppendOnlyEmailTitleRegex>
+            .*(bug|work item)\s*#*\s*(?&lt;id&gt;\d+)            
+          </AppendOnlyEmailTitleRegex>
+          <AppendOnlyEmailBodyRegex>
+            !!!(bug|work item)\s*#*\s*(?&lt;id&gt;\d+)            
+          </AppendOnlyEmailBodyRegex>
+          <ExplicitOverridesRegex>
+            ###\s*(?&lt;fieldName&gt;[^:]*):\s*(?&lt;value&gt;.*)
+          </ExplicitOverridesRegex>
         </EmailSettings>
       </InstanceConfig>
     </Instances>
