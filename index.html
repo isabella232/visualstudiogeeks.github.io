@@ -12,14 +12,16 @@ redirect_from: "/blog/"
         <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
       {% else %}
         <!-- <div class="title">{{ post.title }}</div> -->
-        <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
-          {{ post.date | date: "%b %Y" }}
-        </info>
+		<info>By {{ post.author }}</info>
+        
         {% if post.description %}
         <span class="body">{{ post.description | strip_html }}</span>
         {% else %}
         <span class="body">{{ post.excerpt | strip_html }}</span>
         {% endif %}
+		<info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+          {{ post.date | date: "%d %b %Y" }}
+        </info>
       {% endif %}<!-- post.photo_url -->
       </div>
     </a>{% endfor %}

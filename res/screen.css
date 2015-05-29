@@ -3,16 +3,17 @@
 }
 
 @font-face {
-    font-family: 'olijo';
+    font-family: 'JennaSue';
     font-style: normal;
     font-weight: 500;
-    src: url("../res/olijo-bold.ttf")
+    src: url("../res/JennaSue.ttf")
         format('truetype');
 }
 
 #blog-title {
-    font-family: 'olijo';  
-    font-size: 40px;
+    font-family: 'JennaSue';  
+    font-size: 65px;
+
     color:#009B57
 }
 #blog-title a{    
