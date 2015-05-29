@@ -19,13 +19,13 @@ While there are lots of collaboration tools out there, email still remains one o
     
     Next... In the process template folder, navigate to .\WorkItem Tracking\TypeDefinitions and open Bug.xml in notepad. Search for the tag /fields add the below code before the closing tag
  
-{% highlight js %}
+{% highlight html %}
     <FIELD name="ConversationId" refname="Custom.ConversationId" type="String">
             <HELPTEXT>This field is used by Mail2Bug</HELPTEXT> 
     </FIELD>
 {% endhighlight %}
     Search for FieldName="Microsoft.VSTS.Common.Severity" add the below code in the next line    
-{% highlight js %}
+{% highlight html %}
     <Control FieldName="Custom.ConversationId" Type="FieldControl" Label="ConversationId" LabelPosition="Left" />
 {% endhighlight %}
     Once this has been completed, upload the process template into tfs using the process template manager and create a new team project using the new process template. Call the team project - Fabrikam.
@@ -57,7 +57,7 @@ The set up and configuration is divided into two sections...
 
   The completed config file for our project looks like following... 
 
-  {% highlight js %}
+  {% highlight html %}
   <?xml version="1.0"?>
   <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Instances>
@@ -137,7 +137,7 @@ The set up and configuration is divided into two sections...
 
 Be sure to include the project name in the Query.wiq, you can optionally add createdby as the username to avoid validating bugs that may not have been created by the mail2bug service
 
-{% highlight js %}
+{% highlight html %}
 <?xml version="1.0" encoding="utf-8"?>
   <WorkItemQuery Version="1">
       <TeamFoundationServer>http://tfs2015:8080/tfs/defaultcollection</TeamFoundationServer>
@@ -151,7 +151,7 @@ Be sure to include the project name in the Query.wiq, you can optionally add cre
 
 The configuration has setting to enable disable sending acknowledgment emails, this is a great way of knowing whether the email thread has been successfully configured by the Mail2Bug service. The email response can also be templated using HTML, I've used the following format for the response email. Of course, you can get more creative and instead of just having [BUGID] you can prefix this with the collection name to form the bug url. 
 
-{% highlight js %}
+{% highlight html %}
 <html>
   <body>
     Auto Acknowledgement
