@@ -41,20 +41,23 @@ While there are lots of collaboration tools out there, email still remains one o
 
 - Ensure that the user used to run the mail2bug service has permissions to the fabrikam team project to view collection level information. This can be done by adding the user to the build administrator group in the fabrikam team project. 
 
-##Setup and Configuration
+## Setup and Configuration ##
 ---
 The set up and configuration is divided into two sections...
-### Generating the binaries
+
+**Generating the binaries**
+
 - Navigate to the [Mail2Bug github page](https://github.com/Microsoft/mail2bug "Mail2Bug GitHub Page") and clone the repo
 - Open the solution file (Mail2Bug.sln) in Visual Studio
 - Make sure that NuGet is allowed to download packages automatically
 - This setting is under Tools->Options->PackageManager->General->Allow NuGet to download missing packages during build
 - Build the solution
 - All the required binaries can will be in the output folders
-- For Mail2Bug itself, all binaries are under <projectRoot>\Mail2Bug\Bin\(Debug|Release)\...
-- For the DpapiTool, binaries are under <projectRoot>\Tools\DpapiTool\Bin\(Debug|Release)\...
+- For Mail2Bug itself, all binaries are under &lt;projectRoot&gt;\Mail2Bug\Bin\(Debug&#124;Release)&#92;...
+- For the DpapiTool, binaries are under  &lt;projectRoot&gt;\Tools\DpapiTool\Bin\(Debug&#124;Release)&#92;...
 
-### Setting up and configuring the service
+**Setting up and configuring the service**
+
 - To set up and configure the service follow the [instructions here](https://github.com/Microsoft/mail2bug/wiki/Basic-Setup "Mail2Bug Configuration details")
 
   The completed config file for our project looks like following... 
