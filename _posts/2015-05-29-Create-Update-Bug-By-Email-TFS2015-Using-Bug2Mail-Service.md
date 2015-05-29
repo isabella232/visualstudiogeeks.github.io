@@ -19,15 +19,15 @@ While there are lots of collaboration tools out there, email still remains one o
     
     Next... In the process template folder, navigate to .\WorkItem Tracking\TypeDefinitions and open Bug.xml in notepad. Search for the tag /fields add the below code before the closing tag
  
-  ```html
+{% highlight js %}
     <FIELD name="ConversationId" refname="Custom.ConversationId" type="String">
-            <HELPTEXT>This field is used by Mail2Bug</HELPTEXT>
+            <HELPTEXT>This field is used by Mail2Bug</HELPTEXT> 
     </FIELD>
-    ```
+{% endhighlight %}
     Search for FieldName="Microsoft.VSTS.Common.Severity" add the below code in the next line    
-    ```html
+{% highlight js %}
     <Control FieldName="Custom.ConversationId" Type="FieldControl" Label="ConversationId" LabelPosition="Left" />
-    ```
+{% endhighlight %}
     Once this has been completed, upload the process template into tfs using the process template manager and create a new team project using the new process template. Call the team project - Fabrikam.
     
 
@@ -57,7 +57,7 @@ The set up and configuration is divided into two sections...
 
   The completed config file for our project looks like following... 
 
-  ```html
+  {% highlight js %}
   <?xml version="1.0"?>
   <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Instances>
@@ -129,7 +129,7 @@ The set up and configuration is divided into two sections...
       </InstanceConfig>
     </Instances>
   </Config>
-  ``` 
+  {% endhighlight %} 
 
 #### A few things to keep in mind...  
 - **CacheQueryFile** - If a work item is not captured by the query, new messages on the thread that created the item would create a new item instead of appending to the existing one. The standard set up is to provide a query that pulls all the items created by the mail2bug service account (regardless of state). To create the query file, just create the query in a visual studio and save it locally to a file. Place the file where the other configuration files are and put the path to that file in the CacheQueryFile setting in the config.
@@ -137,7 +137,7 @@ The set up and configuration is divided into two sections...
 
 Be sure to include the project name in the Query.wiq, you can optionally add createdby as the username to avoid validating bugs that may not have been created by the mail2bug service
 
-```html
+{% highlight js %}
 <?xml version="1.0" encoding="utf-8"?>
   <WorkItemQuery Version="1">
       <TeamFoundationServer>http://tfs2015:8080/tfs/defaultcollection</TeamFoundationServer>
@@ -147,18 +147,18 @@ Be sure to include the project name in the Query.wiq, you can optionally add cre
             AND  [System.WorkItemType] = 'Bug'  AND  [System.State] &lt;&gt; ''  AND  [System.CreatedBy] = 'mail2bug' 
             ORDER BY [System.Id] </Wiql>
   </WorkItemQuery>
-```
+{% endhighlight %}
 
 The configuration has setting to enable disable sending acknowledgment emails, this is a great way of knowing whether the email thread has been successfully configured by the Mail2Bug service. The email response can also be templated using HTML, I've used the following format for the response email. Of course, you can get more creative and instead of just having [BUGID] you can prefix this with the collection name to form the bug url. 
 
-```html
+{% highlight js %}
 <html>
   <body>
     Auto Acknowledgement
     <p>The email has been successfully processed by Bug2Mail service, the information has been updated on [TFSCollectionUri] in [BUGID]</p>
   </body>
 </html>
-```
+{% endhighlight %}
 
 > If you plan to use Mail2Bug for multiple projects, you would need a config instance per project, but only one instance of the service (i.e. running executable) to handle all those instances. The config instances can be inside a single config file - as different 'InstanceConfig' nodes - or spread across multiple config files. The single-file config is easier to manage if there's only one or a handful of people managing the config, but if different teams manage their own configs it's advisable to separate instances based on owners. The reason is that if anyone makes changes that result in a badly formatted XML, the whole config file is not loaded, but other files are not affected. Some more details can be found in the annotated config, in the comment for the "Instances" and "ConfigInstance" nodes: github.com/.../FullyAnnotatedConfigReference.xml
 
