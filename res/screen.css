@@ -277,6 +277,7 @@ a.post-excerpt:hover {
 
 a.post-excerpt div.title {
     font-weight: bold;
+	color: dodgerblue;
 }
 
 a.post-excerpt info {
