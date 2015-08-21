@@ -42,11 +42,7 @@ Although SonarQube had a C# plugin before, with the new set of components it bec
 
 In addition, SonarSource (the company behind SonarQube) have produced a set of .Net rules, written using the new Roslyn-based code analysis framework, and published them in two forms: a nuget package and a VSIX. This makes it possible to run the same set of rules in SonarQube AND directly in Visual Studio.
 
-> Here is the official link to the announcement announcing the integration with MSBuild http://www.sonarqube.org/announcing-sonarqube-integration-with-msbuild-and-team-build/ 
-
-<hr />
-## END OF PART 1
-<hr/>
+> Here is the official link to the announcement announcing the integration with MSBuild <a> http://www.sonarqube.org/announcing-sonarqube-integration-with-msbuild-and-team-build/</a> 
 
 ## PART 2
 <hr/>
