@@ -102,7 +102,7 @@ If you haven't already read through the content presented at the //Build/ confer
 ## Summary
 At the risk of upsetting those of you who came looking here for a silver bullet to magically detect and destroy Technical Debt, you’re going to be disappointed.
 
->It took work, inattention to detail, possibly poor craftsmanship, to build up the bad debt... It will take work, paying attention, and having professional craftsmen to pay off the debt.
+> It took work, inattention to detail, possibly poor craftsmanship, to build up the Technical Debt... It will take work, paying attention, and having professional craftsmen to pay off the Technical Debt. Good Luck!
 
 Cheers,
 
