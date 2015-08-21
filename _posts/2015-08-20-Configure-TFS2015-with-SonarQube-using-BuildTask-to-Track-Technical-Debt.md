@@ -12,16 +12,15 @@ thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /asset
 ---
 What the heck is TechnicalDebt...? Why should I track it...? How do I track it in TFS...? How can I integrate SonarQube with TFS? Is there a build task I can use to instrument my code for Technical Debt as part of the build process? This blog post will hopefully answer some of these questions, or may be raise more questions...  <!--more-->
 
-##The blog post is really divided into 2 parts,
+##The blog post is divided into 2 parts,
 1. Why, How, Does it, Can I?
-2. How do I integrate SonarQube with TFS 2015...? 
+2. Integrate SonarQube with TFS 2015...? 
 
-<hr/>
 #PART 1
 <hr/>
 
-## What is TechnicalDebt?
-Anyone who has written code professionally would know that at times you will find yourself using unrecommended techniques (ummm... hacks!) to get stuff done because of the timelines you have been asked to deliver in... No code reviews... Poor DevOps practices... Lack of unit testing... Too many tactical implementations... Not addressing undelying issues causing large number of bugs...  are major contributors to Technical Debt. Technical Debt doesn't hit you overnight, it's a slow and gradual process... Unlike Financial debt, technical debt is very hard to recognize. Technical Debt will slow your ability to deliver value. Are you seeing any of these signs? Are you that poor soul who has just taken over a legacy code base that has been poorly constructed & re-constructed overtime (time to ask for a payraise bob :)  
+## What is Technical Debt?
+Anyone who has written code professionally would know that at times you will find yourself using unrecommended techniques (ummm... hacks!) to get stuff done because of the timelines you have been asked to deliver in... No code reviews... Poor DevOps practices... Lack of unit testing... Too many tactical implementations... Not addressing undelying issues causing large number of bugs...  are major contributors to Technical Debt. Technical Debt doesn't hit you overnight, it's a slow and gradual process... Unlike Financial debt, technical debt is very hard to recognize. Technical Debt will slow your ability to deliver value. Are you seeing any of these signs? Are you that poor soul who has just taken over a legacy code base that has been poorly constructed & re-constructed overtime (time to ask for a payraise bob :))
  
  ## Why should you track TechnicalDebt?
  There is no right answer here... A high performing team may not need to track technical debt, developer would just fix issues as they find 'em. Other teams may find it useful to log issues as and when they find 'em. What ever side of the fence you stand, please spend less time trying to manage technical debt and more time trying to fix it.
