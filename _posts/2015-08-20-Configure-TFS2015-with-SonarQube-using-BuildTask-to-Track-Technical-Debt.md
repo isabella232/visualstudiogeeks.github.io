@@ -86,7 +86,7 @@ Once the analysis has been completed, I can see the results in the sonarQube por
 <img src="/assets/img/blog/tarun/TechDebt01_SonarQubeTFS2015InAction.png" alt="SonarQube TFS2015 Analysis Results" style="width:100%;height:100%"><sub><center><b>Image 2 - SonarQube TFS 2015: Fabrikam Fiber Code Analysis</b></center></sub>
 	
 * The detailed analysis shows lines of code by class and function - drill down, the level of duplication, complexity in the code, issues categorized by severity and an overall complexity rating... 
-<img src="/assets/img/blog/tarun/TechDebt01_SonarQubeTFS2015InAction.png" alt="SonarQube TFS2015 Analysis Results 2" style="width:100%;height:100%"><sub><center><b>Image 3 - SonarQube TFS 2015: Fabrikam Fiber Code Detailed Analysis</b></center></sub>
+<img src="/assets/img/blog/tarun/TechDebt01_SonarQubeTFS2015InAction02.png" alt="SonarQube TFS2015 Analysis Results 2" style="width:100%;height:100%"><sub><center><b>Image 3 - SonarQube TFS 2015: Fabrikam Fiber Code Detailed Analysis</b></center></sub>
 
 <br />	
 <hr />
