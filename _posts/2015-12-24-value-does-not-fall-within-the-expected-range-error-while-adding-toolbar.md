@@ -11,9 +11,8 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
-Hello, this is going to be a small post. 
-
-In one of my Visual Studio extension, I was trying to add a toolbar to the toolwindow. Everything compiled just fine and all seemed perfect. However, as soon as I tried to open the toolwindow (with toolbar) I was getting "*Value does not fall within the expected range*" error.
+Hello, this is going to be a small post. In one of my Visual Studio extension, I was trying to add a toolbar to the toolwindow. Everything compiled just fine and all seemed perfect. However, as soon as I tried to open the toolwindow (with toolbar) I was getting "*Value does not fall within the expected range*" error.
+<!--more-->
 
  ![Alt text](/assets/img/blog/utkarsh/value_does_not_fall_error.png)
 
