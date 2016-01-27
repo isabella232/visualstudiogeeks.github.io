@@ -35,7 +35,7 @@ finally
 }
 {% endhighlight %}
 
-Now, as a dialog window, you would want to hide maximize and minimize buttons for the dialog. There are two options to hide maximize/minimize buttons.
+Now, as a dialog window, you may want to hide maximize and minimize buttons for the dialog. There are two options to hide maximize/minimize buttons.
 
  - By changing the window style
  - By using the VS SDK.
@@ -82,7 +82,7 @@ xamlDialog.ShowModal();
 
 ### Display Help button on the dialog ###
 
-Another **great** feature of this dialog is that it provides support for the help button. That means you can create this dialog and also display a help button to show help. Enabling that is easy too.
+Another **great** feature of this dialog based on SDK is that it provides support for the help button. That means you can create this dialog and also display a help button to show help. Enabling that is easy too.
 
 ![Alt text](/assets/img/blog/utkarsh/xaml_dialog_platformui_helpbutton.png)
 
