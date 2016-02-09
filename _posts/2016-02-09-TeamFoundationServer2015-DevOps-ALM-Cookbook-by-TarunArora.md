@@ -84,13 +84,17 @@ I would like to take a moment to thank a few people who helped me in completing 
 
 [Tarun Arora](https://www.linkedin.com/in/tarunaroraonline "Tarun Arora") is obsessed with high-quality working software, continuous delivery, and Agile practices. He has experience managing technical programs, implementing digital strategy, and delivering quality @ scale. Tarun has worked on various industry-leading programs for fortune 500 companies in the financial and energy sector. 
 
+
 Tarun is one of the many geeks working for Avanade in the United Kingdom. [Avanade](http://www.avanade.com/en-gb/home "Avanade") helps clients and their customers realize results in a digital world through business technology solutions, cloud, and managed services that combine insight, innovation, and expertise in Microsoft technologies. For the past _5 years_, Tarun has been a _Microsoft Most Valuable Professional_ in _Visual Studio and Development Technologies_. His core strengths are enterprise architecture, .NET, WPF, SQL, and PowerShell. He was awarded the _MVP of the year award by Microsoft in 2014_ for going over and above in supporting the product teams and the community with his contributions. He is also an ALM Ranger and has contributed to key guidance and tooling projects focused on Azure, Team Foundation Server, Visual Studio Team Services, and Visual Studio Extensibility. Tarun is an active open source community contributor, speaker, and blogger. Follow him on twitter at [@arora_tarun](https://twitter.com/arora_tarun "@arora_tarun") and his blog at [Visual Studio Geeks - Blog](http://www.visualstudiogeeks.com "Visual Studio Geeks Blog") for the latest and greatest in technology trends and solutions on DevOps and ALM. 
 
+
 Tarun loves photography and travel. He is a very active traveler and has travelled to more than 21 countries in the last few months. Parts of this book have been written on his journeys across three continents. While some chapters were written on the beaches of Mauritius, others were written in transit, airport lounges, and taxis. Follow his adventures on his travel blog [#OutOfOffice Traveller - Blog](https://outofofficetraveller.wordpress.com "OutOfOfficeTraveller Blog").
+
 
 Please drop me a comment if you have any questions, need more information or have any feedback... 
 
 ---
+
 Namaste! 
 
 Tarun
