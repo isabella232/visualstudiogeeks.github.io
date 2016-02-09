@@ -6,9 +6,7 @@ author: Tarun Arora
 categories:
 - blog                #important: leave this here
 - book
- "TeamFoundationServer"
-  DevOps
-  ALM
+- TeamFoundationServer
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
