@@ -24,8 +24,10 @@ I have been working with Team Foundation Server for over a decade, helping custo
 
 This book is a recipe-based guide that uses a problem-solution format to call out inefficiencies in the software development lifecycle and then guides you, step-by-step, on how you can use Team Foundation Server to your advantage in those areas. This book is aimed at software professionals including Developers, Testers, Architects, Configuration Analysts, and Release Managers who want to understand the capabilities of TFS to deliver better quality software faster. 
 
-#### Team Foundation Server 2015 Cookbook. The book has 340 pages divided into 8 chapters...
+#### Team Foundation Server 2015 Cookbook 
 ---
+
+The book has 340 pages divided into 8 chapters...
 
 1. **Chapter 1: Team Project Setup** - This chapter covers how to set up a Team Project, which is a logical container isolating all tools and artifacts associated with a software application together in a single namespace. Features such as Welcome pages, Dashboards, Team Rooms, and many more enable better collaboration within Teams, whereas the ability to rename Team Projects and scripting Team Project creation empowers you to better administer a Team Project. In this chapter, we'll learn the different features of a Team Project and how to set up these features to leverage them to their full potential.
 
@@ -61,3 +63,26 @@ alt="Team Foundation Server 2015 Cookbook" height="160" width="160" border="0" /
 <a href="http://www.amazon.com/gp/product/B0148S9GUE/tararo-20">
 <img src="http://ecx.images-amazon.com/images/I/51H4uFlvjAL._SX403_BO1,204,203,200_.jpg"
 alt="Team Foundation Server 2015 Cookbook" height="160" width="160" border="0" /></a>
+
+
+### Note of Thanks
+----
+I would like to take a moment to thank a few people who helped me in completing this project... 
+
+I am grateful to [Packpub Publishing](https://www.packtpub.com/networking-and-servers/microsoft-team-foundation-server-2015-cookbook "PacktPub") for publishing this book.
+
+This book is dedicated to my mother Mrs. Raj Rani Arora and my father Mr. Inder Jit Arora without whom I wouldn’t be what I am today. This book would never have been complete without the support of my lovely wife Anuradha Arora. I would also like to thank my family and friends for their encouragement throughout the process. 
+
+The Microsoft Product Team in special Brian Harry, Buck Hodges, Aaron Bjork, Chris Patterson, Gopi Chigakkagari, Ravi Shanker, Karen Ng, Charles Sterling and Will Smyth have been extremely helpful in guiding the direction of this book.  
+
+I would also like to thank ALM Champs and ALM Rangers for their technical inputs and review on the book, specially Josh Garverick, Utkarsh Shigihalli and Willy Peter Schaub. 
+
+### About the Author
+----
+[Tarun Arora](https://www.linkedin.com/in/tarunaroraonline "Tarun Arora") is obsessed with high-quality working software, continuous delivery, and Agile practices. He has experience managing technical programs, implementing digital strategy, and delivering quality @ scale. Tarun has worked on various industry-leading programs for fortune 500 companies in the financial and energy sector. 
+
+Tarun is one of the many geeks working for Avanade in the United Kingdom. [Avanade](http://www.avanade.com/en-gb/home "Avanade") helps clients and their customers realize results in a digital world through business technology solutions, cloud, and managed services that combine insight, innovation, and expertise in Microsoft technologies. For the past _5 years_, Tarun has been a _Microsoft Most Valuable Professional_ in _Visual Studio and Development Technologies_. His core strengths are enterprise architecture, .NET, WPF, SQL, and PowerShell. He was awarded the _MVP of the year award by Microsoft in 2014_ for going over and above in supporting the product teams and the community with his contributions. He is also an ALM Ranger and has contributed to key guidance and tooling projects focused on Azure, Team Foundation Server, Visual Studio Team Services, and Visual Studio Extensibility. Tarun is an active open source community contributor, speaker, and blogger. Follow him on twitter at [@arora_tarun](https://twitter.com/arora_tarun "@arora_tarun") and his blog at [Visual Studio Geeks - Blog](http://www.visualstudiogeeks.com "Visual Studio Geeks Blog") for the latest and greatest in technology trends and solutions on DevOps and ALM. 
+
+Tarun loves photography and travel. He is a very active traveler and has travelled to more than 21 countries in the last few months. Parts of this book have been written on his journeys across three continents. While some chapters were written on the beaches of Mauritius, others were written in transit, airport lounges, and taxis. Follow his adventures on his travel blog [#OutOfOffice Traveller - Blog](https://outofofficetraveller.wordpress.com "OutOfOfficeTraveller Blog").
+
+Please drop me a comment if you have any questions, need more information or have any feedback... 
