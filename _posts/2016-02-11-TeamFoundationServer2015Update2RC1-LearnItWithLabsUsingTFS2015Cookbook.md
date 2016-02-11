@@ -49,7 +49,7 @@ If you are a Visual Studio Team Services user, you would have seen most of the f
 
 + [TFS 2015 Update 2 RC1 web installer](http://go.microsoft.com/fwlink/?LinkId=626619 "TFS 2015 Update 2 RC1 web installer")
 + [TFS 2015 Update 2 RC1 ISO](http://go.microsoft.com/fwlink/?LinkId=626620 "TFS 2015 Update 2 RC1 ISO")
-+ [KB article](http://go.microsoft.com/fwlink/?LinkId=690704 "KB article")
++ [KB article](https://msdn.microsoft.com/en-us/library/2a90cb85-8296-417a-a4a8-1379998c4588 "KB article")
 
 ### Hands on Labs?
 ---
