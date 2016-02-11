@@ -14,7 +14,10 @@ thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /asset
 
 > Team Foundation Server 2015 Update 2 RC 1 is now available!
 
-If you are a Visual Studio Team Services user, you would have seen most of the features for a few weeks at the very least. The big ticket item in this update is the *availability of the new release management solution making its debut to on premise customers.* Other updates are scattered across the product with bulk of investment in enriching the feature set in the Team Web Portal for dashboards hub, code hub and build hub. The full list of features in the release candidate are listed below...
+If you are a Visual Studio Team Services user, you would have seen most of the features for a few weeks at the very least. The big ticket item in this update is the *availability of the new release management solution making its debut to on premise customers.* Other updates are scattered across the product with bulk of investment in enriching the feature set in the Team Web Portal for dashboards hub, code hub and build hub. 
+
+### The full list of features in the release candidate are listed below...
+---
  
 + [Team project creation and deletion experience improvements](https://www.visualstudio.com/news/tfs2015-update2-vs#teamproj "Team project creation and deletion experience improvements")
 + [New version of web-based Release Management](https://www.visualstudio.com/news/tfs2015-update2-vs#newrmtfs "New version of web-based Release Management")
