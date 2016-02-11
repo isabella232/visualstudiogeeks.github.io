@@ -42,19 +42,20 @@ If you are a Visual Studio Team Services user, you would have seen most of the f
 ### Can I install this in production?
 ---
 
-> This release of TFS is a “go-live” release candidate.  _We will support customers choosing to install it in a production environment._  
+> This release of TFS is a “go-live” release candidate.  _Microsoft will support customers choosing to install it in a production environment._  
 
 ### Where can I download it from?
 ---
 
-+ [TFS 2015 Update 2 RC1 web installer](http://go.microsoft.com/fwlink/?LinkId=626619%20 "TFS 2015 Update 2 RC1 web installer")
++ [TFS 2015 Update 2 RC1 web installer](http://go.microsoft.com/fwlink/?LinkId=626619 "TFS 2015 Update 2 RC1 web installer")
 + [TFS 2015 Update 2 RC1 ISO](http://go.microsoft.com/fwlink/?LinkId=626620 "TFS 2015 Update 2 RC1 ISO")
-+ [KB article](http://go.microsoft.com/fwlink/?LinkId=690704%20 "KB article")
++ [KB article](http://go.microsoft.com/fwlink/?LinkId=690704 "KB article")
 
 ### Hands on Labs?
 ---
 
 The [Team Foundation Server 2015 Cookbook](http://www.visualstudiogeeks.com/blog/book/teamfoundationserver/TeamFoundationServer2015-DevOps-ALM-Cookbook-by-TarunArora "Team Foundation Server 2015 Cookbook") just shipped and covers most of the features being released with Update 2. Learn more about these features using the 80 plus hands on labs covering walkthrough on implementing the user cases these new features best address...
+
 
 + Get a few free chapters here - [Team Foundation Server 2015 Cookbook - Free Chapters]( https://www.packtpub.com/networking-and-servers/microsoft-team-foundation-server-2015-cookbook "Team Foundation Server 2015 Cookbook Free Chapters")
 
@@ -72,7 +73,10 @@ alt="Team Foundation Server 2015 Cookbook" height="160" width="160" border="0" /
 
 Hope you enjoy the new features... 
 
-Questions Comments and Feedback... ? Leave a comment... 
+
+Questions Comments and Feedback... ? Leave a comment...
+
+ 
 
 Cheers, 
 
