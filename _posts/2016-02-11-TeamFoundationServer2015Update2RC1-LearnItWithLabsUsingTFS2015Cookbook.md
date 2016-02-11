@@ -9,7 +9,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
-*Announcement* "Team Foundation Server 2015 Update 2 RC 1 now available for download... This blogpost explains where you can download the update from and the list of features installed with the update..."  
+*Announcement* "Team Foundation Server 2015 Update 2 RC 1 now available for download..." This blogpost explains where you can download the update from and the list of features installed with the update...  
 <!--more-->
 
 > Team Foundation Server 2015 Update 2 RC 1 is now available!
