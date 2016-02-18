@@ -16,13 +16,13 @@ Continuous delivery is a software engineering approach in which teams produce so
 ---
 
 Software delivery has gone through a revolution in the last decade. The introduction of Agile practices and lean frameworks, such as Scrum, Kanban, XP, and RUP, among others, have demonstrated that iterative feedback-driven development helps to cope with changes in the marketplace, business, and user requirements. Lean processes also help minimize waste and maximize value delivery to end users. Better DevOps practices encouraging Continuous Integration, continuous deployment, continuous delivery, and continuous feedback along with better tooling are enabling organizations to break the silos between teams. 
-
+[SPACE]
 > Continuous Delivery isn't just for Unicorns! If you are working in professional software development you can and should strive for continuous delivery...   
 
 The foundation to Continuous Delivery is a well established and automated release process. 
 
 > Manual Software Deployment != Continuous Delivery 
-
+[SPACE]
 ### Why Microsoft Visual Studio Team Foundation Server 2015?
 ---
 
@@ -34,7 +34,7 @@ The Visual Studio family of tools and services now enables heterogeneous softwar
 ---
 
 On June 3rd, 2013 Microsoft acquired the InRelease product from InCycle Software. The InRelease product was re-branded as Microsoft Release Management and integrated into Team Foundation Server 2013. Microsoft Release Manager gave Microsoft a position in the growing release management market. While Release Manager shipped along with Team Foundation Server, it required separate installation and setup. Though various improvements were made to improve the integration between the two products, they still felt disjointed at several places. The WPF-based desktop client was clunky and limiting. Release Manager did not support non .NET applications and could not be used on non-Windows platforms. It was clear that Release Manager was only a stop-gap solution and would need to be replaced by a proper solution.
-|
+[SPACE][SPACE]
 
 The old release manager solution is being replaced by an all new web-based release management solution. The new web-based Release Management solution has debut in TFS 2015 Update 2. It is very well integrated into the product. No separate installation or configuration is required to start using the new Release Management solution. The security infrastructure of Release Manager is different from the previous version in that it does not manage its own groups and permissions. New permissions are introduced in TFS for Release Management, such as "Create release definitions", "Create releases", and "Manage approvers". Default values for these permissions are set for specific groups at the Team Project level. These permissions can then be overridden for the groups or individual users, for a specific release definition or for a specific environment within a release definition.
 
@@ -45,16 +45,16 @@ Both Team Build and Release Management share the same agent—pool and queue inf
 > With so much common between Build and Release Management, so much so that Build also has access to deployment tasks, you may ask how are the build and release management different? 
 
 While the line between Build and Release Management is blur because both share so much in common. **The key difference is that Deployment is just one of the activities performed in Release Management.** As illustrated in the image below, the new Release Management solution allows creating release pipelines. A release pipeline can consist of one or more environments. Each environment can have one or more physical or virtual deployment targets. Environments provide pre-release and post-release approval workflow as well as tasks for testing and deployment.
-
+[SPACE]
 <img src="/assets/img/blog/tarun/ContinuousDeliveryWithTFS2015-TFSReleasePipeline.png" alt="TFS Release Pipeline" style="width:100%;height:100%"><sub><center><b>Image 3 - Release Pipeline</b></center></sub>
-
+[SPACE]
 ### Learn how to take advantage of Release Management in TFS 2015
 ---
 
 Itching to get started with the all new web-based Release Management solution in TFS 2015....?
-
-+ The Team Foundation Server 2015 Cookbook includes over 80 hands-on DevOps and ALM focused labs for Scrum Teams to enable software teams to champion the implementation of modern application lifecycle and DevOps tooling using Team Foundation Server 2015. Among other things the chapter on release management includes hands on labs for...
-
+[SPACE]
+The Team Foundation Server 2015 Cookbook includes over 80 hands-on DevOps and ALM focused labs for Scrum Teams to enable software teams to champion the implementation of modern application lifecycle and DevOps tooling using Team Foundation Server 2015. Among other things the chapter on release management includes hands on labs for...
+[SPACE][SPACE]
 * Creating a release definition in Team Web Portal
 * Mapping Artifacts to a release definition
 * Configuring a release definition for Continuous Deployment
@@ -72,24 +72,24 @@ To order a copy of the Team Foundation Server 2015 Cookbook...
 #### Order here - UK 
 ---
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tararo-21&marketplace=amazon&region=GB&placement=1784391050&asins=1784391050&linkId=&show_border=true&link_opens_in_new_window=true"></iframe>
-
+[SPACE]
 
 #### Order here - USA 
 ---
 
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=ss_til&ad_type=product_link&tracking_id=tararo-20&marketplace=amazon&region=US&placement=B0148S9GUE&asins=B0148S9GUE&linkId=WFCNWAEUMMGD3Q4T&show_border=true&link_opens_in_new_window=true"></iframe>
 
-
+[SPACE]
 Team Foundation Server 2015 Cookbook "Over 80 hands-on DevOps and ALM-focused recipes for Scrum Teams to enable the Continuous Delivery of high-quality Software... Faster!"
-
+[SPACE]
 ##### About This Book
 * Release high quality, reliable software quickly through building, testing, and deployment automation
 * Improve the predictability, reliability, and availability of TFS in your organization by scheduling administration and maintenance activities
 * Extend, customize, and integrate tools with TFS, enabling your teams to manage their application lifecycles effectively
-
+[SPACE]
 ##### Who This Book Is For
 This book is aimed at software professionals including Developers, Testers, Architects, Configuration Analysts, and Release Managers who want to understand the capabilities of TFS to deliver better quality software faster. A working setup of TFS 2015 and some familiarity with the concepts of software life cycle management is assumed.
-
+[SPACE]
 ### What You Will Learn
 * Creating a Team Project with Dashboards, Assigning License, Adding users, and Auditing Access
 * Setting up a Git repository in an existing TFVC-based Team Project
