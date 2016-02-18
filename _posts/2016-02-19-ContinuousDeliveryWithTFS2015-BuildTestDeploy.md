@@ -72,14 +72,19 @@ To order a copy of the Team Foundation Server 2015 Cookbook...
 
 #### Order here - UK 
 ---
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tararo-21&marketplace=amazon&region=GB&placement=1784391050&asins=1784391050&linkId=&show_border=true&link_opens_in_new_window=true">
-</iframe>
+<!--<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tararo-21&marketplace=amazon&region=GB&placement=1784391050&asins=1784391050&linkId=&show_border=true&link_opens_in_new_window=true"></iframe>-->
+<a href="http://www.amazon.co.uk/Microsoft-Team-Foundation-Server-Cookbook/dp/1784391050/tararo-21">
+<img src="http://ecx.images-amazon.com/images/I/51H4uFlvjAL._SX403_BO1,204,203,200_.jpg"
+alt="Team Foundation Server 2015 Cookbook" height="160" width="160" border="0" /></a>
+
 
 #### Order here - USA 
 ---
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=ss_til&ad_type=product_link&tracking_id=tararo-20&marketplace=amazon&region=US&placement=B0148S9GUE&asins=B0148S9GUE&linkId=WFCNWAEUMMGD3Q4T&show_border=true&link_opens_in_new_window=true">
-</iframe>
+<!--<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=ss_til&ad_type=product_link&tracking_id=tararo-20&marketplace=amazon&region=US&placement=B0148S9GUE&asins=B0148S9GUE&linkId=WFCNWAEUMMGD3Q4T&show_border=true&link_opens_in_new_window=true"></iframe>-->
+<a href="http://www.amazon.com/gp/product/B0148S9GUE/tararo-20">
+<img src="http://ecx.images-amazon.com/images/I/51H4uFlvjAL._SX403_BO1,204,203,200_.jpg"
+alt="Team Foundation Server 2015 Cookbook" height="160" width="160" border="0" /></a>
 
 Team Foundation Server 2015 Cookbook "Over 80 hands-on DevOps and ALM-focused recipes for Scrum Teams to enable the Continuous Delivery of high-quality Software... Faster!"
 
