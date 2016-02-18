@@ -3,7 +3,7 @@ description: "24x7 Visual Studio Geeks"
 analytics: UA-57919718-1 #Google analytics code in the format XX-nnnnnnnn-n
 
 url: http://www.visualstudiogeeks.com
-highlighter: pygments
+highlighter: rouge
 
 gems:
   - jekyll-sitemap
