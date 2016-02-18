@@ -9,6 +9,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 [Quartz.NET](http://www.quartz-scheduler.net/) is a full-featured, open source enterprise job scheduling system written in .NET platform that can be used from smallest apps to large scale enterprise systems. I want to schedule the execution of a task but only when something happens. Let’s call that something a trigger, so... if the trigger is met => execute the task. 
 <!--more-->
 

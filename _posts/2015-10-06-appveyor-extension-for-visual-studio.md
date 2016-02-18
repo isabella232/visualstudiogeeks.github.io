@@ -12,6 +12,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 [AppVeyor](http://www.appveyor.com/) is a well known cloud build server, which integrates with many source controls like VSO (Visual Studio Online), GitHub, BitBucket etc. Like many others do, we love Appveyor. However, most of the time we spend our time in Visual Studio and interacting with Appveyor was not possible from within Visual Studio. So we decided to build an extension!
 <!--more-->
 

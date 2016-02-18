@@ -10,6 +10,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 Announcement - Book on implementing ALM and DevOps using Team Foundation Server 2015  
 <!--more-->
 

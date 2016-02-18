@@ -9,6 +9,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: #windows-10-preview-lumia-930.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 While there are lots of collaboration tools out there, email still remains one of the most preferred modes to communicate with in distributed teams. While development teams are closest to using team foundation server, you may find that support or operations team may not be familiar with the functions of team foundation server especially if these teams have other tools they use to manage their work. In this blogpost we’ll learn about an open source tool called Mail2Bug. Mail2Bug is a service that allows you to create a bug from an e-mail thread simply by adding a specific recipient to the mail thread. It also keeps the bug up-to-date with information from the mail thread by adding any <!--more--> subsequent replies on the thread as comments to the bug. Bug2Mail is a tool that's been long used by Microsoft internally, you can read the announcement on it being open sourced on Brian's [blog here](http://blogs.msdn.com/b/bharry/archive/2015/03/30/ever-want-to-create-bugs-from-email.aspx "Bug2Mail open source announcement"). 
 
 ##Pre-requisites

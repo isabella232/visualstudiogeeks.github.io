@@ -11,6 +11,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 Have you noticed, In Visual Studio, when we close the solution, all the build/other messages from the output window are cleared automatically?  How is it done? Well, in this post we will see just that. For example, we can monitor events such as `OnAfterLoadProject`, `OnAfterOpenSolution` etc and also take actions when they are triggered.
 <!--more-->
 To show what we will achieve at the end of this blog, please look at the demo below.

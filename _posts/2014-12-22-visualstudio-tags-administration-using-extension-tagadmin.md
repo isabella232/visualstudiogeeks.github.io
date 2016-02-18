@@ -9,6 +9,7 @@ categories:
 img:   #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 Manage Work Item tags from right with in Visual Studio using the TagAdmin extension. Watch this 2 minute video to get a headstart...
 <!--more-->
 Tagging as a feature has been a hit in the Team Foundation Server / Visual Studio Online family of tools.

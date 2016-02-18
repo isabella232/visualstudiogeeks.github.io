@@ -10,6 +10,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 Recently I wrote a Visual Studio extension called [VSO Status Inspector](https://visualstudiogallery.msdn.microsoft.com/e87c82b9-dced-4fe2-9a40-f90139c56882) to monitor the status of [Visual Studio Online (VSO)](https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs). If you haven’t yet I would encourage you to [**download**](https://visualstudiogallery.msdn.microsoft.com/e87c82b9-dced-4fe2-9a40-f90139c56882) it from the Visual Studio extension gallery. It supports both Visual Studio 2013 and 2015. 
 
 <!--more-->

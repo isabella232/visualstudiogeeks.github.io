@@ -11,6 +11,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 My current client is still on TFS 2010 and is getting ready to upgrade to TFS 2015. One of the important task during the upgrade is to analyze your build dependencies. We have a lot of MSBuild (we have .proj extension) files which are triggered via our build definitions which have dependencies on other files. It becomes really hard to debug or understand the dependencies manually. I hence decided to write a small utility to visualize these dependencies.
 <!--more-->
 Take a look at the following screenshot of the tool.

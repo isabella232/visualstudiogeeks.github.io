@@ -10,6 +10,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 Occasionally when Visual Studio Online (VSO) is down or having some issues, we head over to the [status overview](https://www.visualstudio.com/en-us/support/support-overview-vs.aspx) page to monitor its status. How nice would it be to monitor the status while you code in Visual Studio? I thought it would be useful, and I just developed a tiny extension to monitor the status of VSO from Visual Studio itself. 
 <!--more-->
 

@@ -12,6 +12,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 [AngularJS](https://angularjs.org/) is a popular web framework to build interactive web pages. It is compatible with many available modern browsers like Chrome, Firefox and Internet Explorer (IE). However, AngularJS and older version IE (v6 to v9) does not work very well and you need to perform few additional actions for supporting IE. AngularJS already has a separate page and provides guidance to support IE browser [here](https://docs.angularjs.org/guide/ie).
 
 However, there are other issues as well which are not particulary related to AngularJS and some are related to how IE browser (<= version 9) works. I will try to cover few of such issues in this blog post.

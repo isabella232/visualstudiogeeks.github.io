@@ -10,6 +10,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 What the heck is TechnicalDebt...? Why should I track it...? How do I track it in TFS...? How can I integrate SonarQube with TFS? Is there a build task I can use to instrument my code for Technical Debt as part of the build process? This blog post will hopefully answer some of these questions, or may be raise more questions...  <!--more-->
 
 ##The blog post is divided into 2 parts,

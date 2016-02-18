@@ -9,6 +9,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: BlendDevAndOps.png    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 DevOps is all about **“building better quality software, faster and more reliably.”** Now, why would only start-ups be good candidates for that? Isn’t that what every CIO wants? Last year’s key finding was... **high-performing organizations are deploying code 30 times more often with 50% fewer failures**. This year’s findings reaffirmed those numbers but also taught us that...
 <!--more-->
 **High IT performance correlates with strong business performance, helping to boost productivity, profitability, and market share**.
