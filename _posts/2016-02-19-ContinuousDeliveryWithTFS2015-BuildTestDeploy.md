@@ -9,9 +9,7 @@ categories:
 img:        #place image (850x450) with this name in /assets/img/blog/
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
 ---
-
-Continuous delivery is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time... What emotions does the word "release" trigger in you? Relief? Elation? A fist-pumping sense of accomplishment? If your teams are still 'testing and deploying' **manually**, releases probably don't excite you... In this blog post we'll learn how Team Foundation 2015 enables you to release high quality, reliable software quickly through release automation...
- 
+Continuous delivery is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time... What emotions does the word "release" trigger in you? Relief? Elation? A fist-pumping sense of accomplishment? If your teams are still 'testing and deploying' **manually**, releases probably don't excite you... In this blog post we'll learn how Team Foundation 2015 enables you to release high quality, reliable software quickly through release automation... 
 <!--more-->
 
 ### Making a case for Continuous Delivery...  
@@ -107,6 +105,8 @@ This book is aimed at software professionals including Developers, Testers, Arch
 * Triggering Selenium Web Tests on a Selenium Test Grid using TFBuild
 * Using Visual Studio Team Services Cloud load testing capability with new Build framework
 * Extending and customizing the capabilities of Team Foundation Server using API and Process Editor
+
+---
 
 Hope you enjoy reading the book... 
 
