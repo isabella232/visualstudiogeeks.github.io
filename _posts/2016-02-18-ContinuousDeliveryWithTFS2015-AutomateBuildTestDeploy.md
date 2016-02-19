@@ -26,6 +26,7 @@ The foundation to Continuous Delivery is a well established and automated releas
 > Manual Software Deployment != Continuous Delivery 
 
 <br/>
+
 ### Why Microsoft Visual Studio Team Foundation Server 2015?
 ---
 
