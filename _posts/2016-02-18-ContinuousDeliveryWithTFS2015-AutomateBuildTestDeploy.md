@@ -56,9 +56,11 @@ While the line between Build and Release Management is blur because both share s
 ---
 
 Itching to get started with the all new web-based Release Management solution in TFS 2015....?
-<br/>
+
 The Team Foundation Server 2015 Cookbook includes over 80 hands-on DevOps and ALM focused labs for Scrum Teams to enable software teams to champion the implementation of modern application lifecycle and DevOps tooling using Team Foundation Server 2015. Among other things the chapter on release management includes hands on labs for...
+
 <br/>
+
 * Creating a release definition in Team Web Portal
 * Mapping Artifacts to a release definition
 * Configuring a release definition for Continuous Deployment
