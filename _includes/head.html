@@ -18,6 +18,11 @@
 
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}">
+    {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}" />
+    {% else %}
+     <meta name="keywords" content="TFS, ALM, DevOps, VSTS, VisualStudio" />
+    {% endif %}
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
     <meta name="og:description" content="{{ page.description }}">
