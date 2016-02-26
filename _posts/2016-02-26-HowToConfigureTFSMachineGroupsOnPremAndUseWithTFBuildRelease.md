@@ -85,27 +85,35 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 + Allow the traffic between agent and Machine Group to be unencrypted:
 
 ``` console   
+
     winrm set winrm/config/service '@{AllowUnencrypted="true"}'
+
 ```
 
 + Disable basic authentication:
 
 ``` console
+
     winrm set winrm/config/service/auth '@{Basic="false"}'
+
 ```
 
 + Setup a  rewall exception to allow inbound traffic on port 5985; this is the default port used by WinRM when using HTTP:
 
 ``` console
+
         netshadvfirewall firewall set rule name="Windows Remote Management
         (HTTP-In)" profile=public
         protocol=tcplocalport=5985 remoteip=localsubnet new remoteip=any
+
 ```
     
 + Disable digest for client authentication:
 
 ``` console
+
    winrm set winrm/config/client/auth '@{Digest="false"}'
+
 ```
 
 + Set service authentication to use Kerberos:
@@ -191,15 +199,15 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 
 ## How to configure MachineGroup in TFS (VSTS)
 ---
-1. Navigating to the test hub in the Fabrikam Team Web Portal, on the Machines page, click on the + icon to create a new Machine Group:
++ Navigating to the test hub in the Fabrikam Team Web Portal, on the Machines page, click on the + icon to create a new Machine Group:
 
-<img src="/assets/img/blog/tarun/TFSMachineGroup-Configure01.png" alt="TFSMachineGroup Configuring in TFS VSTS" style="width:100%;height:100%"><sub><center><b>Image 7 - TFS MachineGroup Configuring in TFS (VSTS)</b></center></sub>
+<img src="/assets/img/blog/tarun/TFSMachineGroup-Configure01.png" alt="TFSMachineGroup Configuring in TFS VSTS" style="width:50%;height:100%"><sub><center><b>Image 7 - TFS MachineGroup Configuring in TFS (VSTS)</b></center></sub>
 
-2. Enter the details as illustrated in the following screenshot:
++ Enter the details as illustrated in the following screenshot:
 
 <img src="/assets/img/blog/tarun/TFSMachineGroup-ConfigureMachineGroup02.png" alt="TFSMachineGroup Configuring" style="width:100%;height:100%"><sub><center><b>Image 8 - TFS MachineGroup Configuring in TFS (VSTS)</b></center></sub>
 
-3. The WinRM protocol in Fabrikam.lab will use HTTP since the remote machine has a trust relationship with Fabrikam.lab.Add and the details for all the machines. Now, click on Done to complete the setup:
++ The WinRM protocol in Fabrikam.lab will use HTTP since the remote machine has a trust relationship with Fabrikam.lab.Add and the details for all the machines. Now, click on Done to complete the setup:
 
 <img src="/assets/img/blog/tarun/TFSMachineGroup-Configure03.png" alt="TFSMachineGroup Configuring" style="width:100%;height:100%"><sub><center><b>Image 9 - TFS MachineGroup Configuring in TFS (VSTS)</b></center></sub>
 
@@ -209,13 +217,13 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 ---
 The Fabrikam-QA Machine Group setup uses a common administrator credentials for all machines in the Machine Group. It is alternatively possible to specify different credentials for the individual machines added in the Machine Group:
 
-1. To enter credentials per machine, check the option Use custom credentials for each machine along with global credentials.
++ To enter credentials per machine, check the option Use custom credentials for each machine along with global credentials.
 
 <img src="/assets/img/blog/tarun/TFSMachineGroup-Result01.png" alt="TFSMachineGroup Results" style="width:100%;height:100%"><sub><center><b>Image 9 - TFS MachineGroup Results in TFS (VSTS)</b></center></sub>
 
-2. The password  field is masked in the user interface. In addition to this, the value of this  field is not printed in any of the log  files either.
-3. The tags provide a great way to query for machines with in the Machine Group. For example, when using the test agent deployment task in build de nition, you can specify a Machine Group and use Tags to  lter the execution of the action on machines that include the Tag.
-4. Machine Groups, at the moment, support limited scenarios mainly domain joined on premise machine and standalone machines in Azure. Refer to http://bit.ly/1NFqYma for a full list of supported scenarios.
++ The password  field is masked in the user interface. In addition to this, the value of this  field is not printed in any of the log  files either.
++ The tags provide a great way to query for machines with in the Machine Group. For example, when using the test agent deployment task in build de nition, you can specify a Machine Group and use Tags to  lter the execution of the action on machines that include the Tag.
++ Machine Groups, at the moment, support limited scenarios mainly domain joined on premise machine and standalone machines in Azure. Refer to http://bit.ly/1NFqYma for a full list of supported scenarios.
 
 <br/>
 
