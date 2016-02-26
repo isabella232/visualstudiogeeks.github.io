@@ -66,7 +66,7 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 
 > The next few commands will prepare WinRM for Kerberos authentication.
 
-4. Increase the maximum memory allocation per session:
++ Increase the maximum memory allocation per session:
 
 ``` console
 
@@ -74,7 +74,7 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 
 ```
 
-5. Next, increase the session timeout period:
++ Next, increase the session timeout period:
 
 ``` console   
 
@@ -82,19 +82,19 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 
 ```
 
-6. Allow the traffic between agent and Machine Group to be unencrypted:
++ Allow the traffic between agent and Machine Group to be unencrypted:
 
 ``` console   
     winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 ```
 
-7. Disable basic authentication:
++ Disable basic authentication:
 
 ``` console
     winrm set winrm/config/service/auth '@{Basic="false"}'
 ```
 
-8. Setup a  rewall exception to allow inbound traffic on port 5985; this is the default port used by WinRM when using HTTP:
++ Setup a  rewall exception to allow inbound traffic on port 5985; this is the default port used by WinRM when using HTTP:
 
 ``` console
         netshadvfirewall firewall set rule name="Windows Remote Management
@@ -102,13 +102,13 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
         protocol=tcplocalport=5985 remoteip=localsubnet new remoteip=any
 ```
     
-9. Disable digest for client authentication:
++ Disable digest for client authentication:
 
 ``` console
    winrm set winrm/config/client/auth '@{Digest="false"}'
 ```
 
-10. Set service authentication to use Kerberos:
++ Set service authentication to use Kerberos:
 
 ``` console
 
@@ -116,7 +116,7 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 
 ``` 
 
-11. Trust all connections between agent and Machine Group:
++ Trust all connections between agent and Machine Group:
 
 ``` console
 
@@ -125,8 +125,8 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 
 ```
 
-12. Restart the win-rm service: Restart-Service winrm–Force
-13. To ensure Kerberos authentication is enabled on WinRM, run the following command:
++ Restart the win-rm service: Restart-Service winrm–Force
++ To ensure Kerberos authentication is enabled on WinRM, run the following command:
 
 ``` console
 
@@ -138,21 +138,21 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 
 <img src="/assets/img/blog/tarun/TFSMachineGroup-KerberosAuthentication.png" alt="TFSMachineGroup Kerberos Authentication" style="width:100%;height:100%"><sub><center><b>Image 3 - TFS MachineGroup Kerberos Authentication</b></center></sub>
 
-14. Now, let's validate whether WinRM has correctly been set up on QA-Web1. Fabrikam.lab. Log into another VM in the lab, in this case QA-Web2.Fabrikam. lab. Launch PowerShell as an administrator by right-clicking on the Windows PowerShell shortcut and selecting Run as administrator. Execute the following command:
++ Now, let's validate whether WinRM has correctly been set up on QA-Web1. Fabrikam.lab. Log into another VM in the lab, in this case QA-Web2.Fabrikam. lab. Launch PowerShell as an administrator by right-clicking on the Windows PowerShell shortcut and selecting Run as administrator. Execute the following command:
        
 ``` console
 
-Test-Wsman –computerName QA-Web1.Fabrikam.lab
+    Test-Wsman –computerName QA-Web1.Fabrikam.lab
 
 ```
 
 <img src="/assets/img/blog/tarun/TFSMachineGroup-TestWsman.png" alt="TFSMachineGroup Test Wsman" style="width:100%;height:100%"><sub><center><b>Image 4 - TFS MachineGroup Test Wsman</b></center></sub>
 
-15. Execute the following command to check the port WinRM is listing on:
++ Execute the following command to check the port WinRM is listing on:
 
 ``` console
 
-winrm e winrm/config/listener
+    winrm e winrm/config/listener
 
 ```
 
@@ -162,30 +162,30 @@ winrm e winrm/config/listener
 
 ``` console
 
-Set-Item WSMan:\localhost\listener\*\Port 8888
+    Set-Item WSMan:\localhost\listener\*\Port 8888
 
 ```
 
-16. Most importantly, validate that you are able to invoke the PSSession on QA-Web1. Fabrikam.lab by manually running the following command from QA-Web2. Fabrikam.lab. Once you execute the  rst statement, you'll receive a prompt to enter your credentials. Enter your domain account that has admin permissions:
++ Most importantly, validate that you are able to invoke the PSSession on QA-Web1. Fabrikam.lab by manually running the following command from QA-Web2. Fabrikam.lab. Once you execute the  rst statement, you'll receive a prompt to enter your credentials. Enter your domain account that has admin permissions:
 
 ``` console
 
-$cred = get-credential
+    $cred = get-credential
 
 ```
 
-17. Executing the next command will use your domain account to connect to the destination server; DNS will be used to resolve the destination name:
++ Executing the next command will use your domain account to connect to the destination server; DNS will be used to resolve the destination name:
 
 ``` console
 
-Enter-Pssession -ComputerNameQA-Web1.Fabrikam.lab–Credential $cred
+    Enter-Pssession -ComputerNameQA-Web1.Fabrikam.lab–Credential $cred
 
 ```
  
 <img src="/assets/img/blog/tarun/TFSMachineGroup-TestDestinationConnectivity.png" alt="TFSMachineGroup Test Connectivity" style="width:100%;height:100%"><sub><center><b>Image 6 - TFS MachineGroup Test Connectivity</b></center></sub>
 
 
-18. Follow steps 1 to 5 to configure WinRM on other machines in the lab. Follow step 6 to validate WinRM connectivity before moving forward.
++ Follow steps 1 to 5 to configure WinRM on other machines in the lab. Follow step 6 to validate WinRM connectivity before moving forward.
 
 <br/>
 
