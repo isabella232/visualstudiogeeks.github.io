@@ -11,7 +11,7 @@ thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /asset
 keywords: "TFS2015, Labs, ContinuousDelivery, Testing, MachineGroups, VSTS, TFBuild"
 ---
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
-Machine Groups is a new concept in TFS2015, you will see the option to add a machine group when configuring a build or release definition... Wondering what it is? In this recipe, you'll learn what's machine group and how to configure and set up a Machine Group. This blog post applies to both TFS and VSTS.
+Machine Groups is a new concept in TFS2015, you will see the option to add a machine group when configuring a build or release definition... Wondering what it is? In this blogpost, you'll learn what's machine group and how to configure and set up a MachineGroup. This blog post applies to both TFS and VSTS.
 <!--more-->
 
 ## What is a Machine Group?
@@ -22,7 +22,9 @@ Simply put, Machine Group is a logical grouping of machines. The Machine Group h
 
 ## Scenario
 ---
-The Fabrikam Team has a lab environment in the Fabrikam.lab domain. Fabrikam.lab comprises of servers that serve different roles. The FabrikamTFVC Team wants the ability to directly reference these machines from the build definition and release definition to deploy test agents on all the machines and trigger a distributed test run. Fabrikam.Lab is managed by the Fabrikam Environments Team who cannot share environment credentials with the Fabrikam Team. In this blogpost, we'll walk through the process followed by the Fabrikam Environments Team to set up and configure the Machine Group Fabrikam-QA for the Fabrikam Team.
+The Fabrikam Team has a lab environment in the Fabrikam.lab domain. Fabrikam.lab comprises of servers that serve different roles. The Fabrikam Team wants the ability to directly reference these machines from the build definition and release definition to deploy test agents on all the machines and trigger a distributed test run. Fabrikam.Lab is managed by the Fabrikam Environments Team who cannot share environment credentials with the Fabrikam Team. 
+
+> In this blogpost, we'll walk through the process followed by the Fabrikam Environments Team to set up and configure the Machine Group Fabrikam-QA for the Fabrikam Team.
 
 <img src="/assets/img/blog/tarun/TFSMachineGroup-FabrikamLabEnvironment.png" alt="TFSMachineGroup Fabrikam Lab Environment" style="width:100%;height:100%"><sub><center><b>Image 1 - TFS MachineGroup Fabrikam Lab Environment</b></center></sub>
 
@@ -35,6 +37,8 @@ The Machine Group will be accessed by a remote host; the remote host will be pla
 ----
 The build agent uses Windows PowerShell remoting that requires the Windows Remote Management (WinRM) protocol to connect to the machines in the Machine Groups. WinRM needs to be enabled on a machine as a prerequisite before it can be added into the Machine Group. In this case, Kerberos will be used as the mode of authentication since the agent and Machine Group are in the same corp network.
 
+<br/>
+
 | Target Machine state | Target Machine trust with automation agent | Machine Identity | Auth Account | Auth Mode | Auth Account permission on target machine | Conn Type|
 | ------------- | ------------- |----|---|---|---|---|
 | Domain- joined machine in the corp network | Trusted  | DNS name | Domain account | Kerberos | Machine admin | WinRM HTTP | 
@@ -44,8 +48,11 @@ The build agent uses Windows PowerShell remoting that requires the Windows Remot
 ## Preparing machines for Machine Group Setup
 ---
 In the next few steps, we'll walk through how to configure WinRM on a machine, and you'll learn how to test connectivity through WinRM:
+
 1. PowerShell 2.0 and Windows Management Framework 4.0 (http://bit.ly/1kNlxuW) are required to be installed on both the agent and machines in the Machine Group.
+
 2. Log into the QA-Web1.Farbikam.lab machine, start Windows PowerShell as an administrator by right-clicking on the Windows PowerShell shortcut and selecting Run as Administrator.
+
 3. By default, the WinRM service is configured for manual startup and stopped. Executing the winrmquickconfig -q command performs a series of actions:
     * Starts the WinRM service.
     * Sets the startup type on the WinRM service to Automatic.
@@ -58,60 +65,44 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
     * Restarts the WinRM service to make the preceding changes effective.
 
 The next few commands will prepare WinRM for Kerberos authentication.
-4. Increase the maximum memory allocation per session:
 
-``` powershell
+4. Increase the maximum memory allocation per session:
+``` console
 winrm set winrm/config/winrs '@{MaxMemoryPerShellMB="300"}'
 ```
-   
 5. Next, increase the session timeout period:
-
 ``` powershell   
 winrm set winrm/config '@{MaxTimeoutms="1800000"}'
 ```
-
 6. Allow the traf c between agent and Machine Group to be unencrypted:
-
 ``` powershell   
 winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 ```
-
 7. Disable basic authentication:
-
 ``` powershell
 winrm set winrm/config/service/auth '@{Basic="false"}'
 ```
-
 8. Setup a  rewall exception to allow inbound traf c on port 5985; this is the default port used by WinRM when using HTTP:
-
 ``` powershell
    netshadvfirewall firewall set rule name="Windows Remote Management
    (HTTP-In)" profile=public
    protocol=tcplocalport=5985 remoteip=localsubnet new remoteip=any
 ```
-
 9. Disable digest for client authentication:
-
 ``` powershell
    winrm set winrm/config/client/auth '@{Digest="false"}'
 ```
-
 10. Set service authentication to use Kerberos:
-
 ``` powershell
    winrm set winrm/config/service/auth '@{Kerberos="true"}'
 ``` 
-
 11. Trust all connections between agent and Machine Group:
-
 ``` powershell
    winrm set winrm/config/client '@{TrustedHosts="*"}'
    Set-Item WSMan:\localhost\Client\TrustedHosts *
 ```
-
 12. Restart the win-rm service: Restart-Service winrm–Force
 13. To ensure Kerberos authentication is enabled on WinRM, run the following command:
-
 ``` powershell
 winrm get winrm/config/service/auth
 ```
