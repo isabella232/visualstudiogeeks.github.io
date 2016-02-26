@@ -67,50 +67,71 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 > The next few commands will prepare WinRM for Kerberos authentication.
 
 4. Increase the maximum memory allocation per session:
-    ``` console
+
+``` console
 
     winrm set winrm/config/winrs '@{MaxMemoryPerShellMB="300"}'
 
-    ```
+```
+
 5. Next, increase the session timeout period:
-    ``` console   
+
+``` console   
 
     winrm set winrm/config '@{MaxTimeoutms="1800000"}'
 
-    ```
+```
+
 6. Allow the traffic between agent and Machine Group to be unencrypted:
-    ``` console   
+
+``` console   
     winrm set winrm/config/service '@{AllowUnencrypted="true"}'
-    ```
+```
+
 7. Disable basic authentication:
-    ``` console
+
+``` console
     winrm set winrm/config/service/auth '@{Basic="false"}'
-    ```
+```
+
 8. Setup a  rewall exception to allow inbound traffic on port 5985; this is the default port used by WinRM when using HTTP:
 
-    ``` console
+``` console
         netshadvfirewall firewall set rule name="Windows Remote Management
         (HTTP-In)" profile=public
         protocol=tcplocalport=5985 remoteip=localsubnet new remoteip=any
-    ```
+```
     
 9. Disable digest for client authentication:
+
 ``` console
    winrm set winrm/config/client/auth '@{Digest="false"}'
 ```
+
 10. Set service authentication to use Kerberos:
+
 ``` console
+
    winrm set winrm/config/service/auth '@{Kerberos="true"}'
+
 ``` 
+
 11. Trust all connections between agent and Machine Group:
+
 ``` console
+
    winrm set winrm/config/client '@{TrustedHosts="*"}'
    Set-Item WSMan:\localhost\Client\TrustedHosts *
+
 ```
+
 12. Restart the win-rm service: Restart-Service winrm–Force
 13. To ensure Kerberos authentication is enabled on WinRM, run the following command:
+
 ``` console
-winrm get winrm/config/service/auth
+
+    winrm get winrm/config/service/auth
+
 ```
 
 <br/>
@@ -119,7 +140,7 @@ winrm get winrm/config/service/auth
 
 14. Now, let's validate whether WinRM has correctly been set up on QA-Web1. Fabrikam.lab. Log into another VM in the lab, in this case QA-Web2.Fabrikam. lab. Launch PowerShell as an administrator by right-clicking on the Windows PowerShell shortcut and selecting Run as administrator. Execute the following command:
        
-``` powershell
+``` console
 
 Test-Wsman –computerName QA-Web1.Fabrikam.lab
 
@@ -129,7 +150,7 @@ Test-Wsman –computerName QA-Web1.Fabrikam.lab
 
 15. Execute the following command to check the port WinRM is listing on:
 
-``` powershell
+``` console
 
 winrm e winrm/config/listener
 
@@ -138,20 +159,27 @@ winrm e winrm/config/listener
 <img src="/assets/img/blog/tarun/TFSMachineGroup-TestListener.png" alt="TFSMachineGroup Test Listener" style="width:100%;height:100%"><sub><center><b>Image 5 - TFS MachineGroup Test Listener</b></center></sub>
 
 > Execute the following command should you want to change the port WinRM is currently configured to listen on: 
-``` powershell
+
+``` console
+
 Set-Item WSMan:\localhost\listener\*\Port 8888
+
 ```
 
 16. Most importantly, validate that you are able to invoke the PSSession on QA-Web1. Fabrikam.lab by manually running the following command from QA-Web2. Fabrikam.lab. Once you execute the  rst statement, you'll receive a prompt to enter your credentials. Enter your domain account that has admin permissions:
 
-``` powershell
+``` console
+
 $cred = get-credential
+
 ```
 
 17. Executing the next command will use your domain account to connect to the destination server; DNS will be used to resolve the destination name:
 
-``` powershell
+``` console
+
 Enter-Pssession -ComputerNameQA-Web1.Fabrikam.lab–Credential $cred
+
 ```
  
 <img src="/assets/img/blog/tarun/TFSMachineGroup-TestDestinationConnectivity.png" alt="TFSMachineGroup Test Connectivity" style="width:100%;height:100%"><sub><center><b>Image 6 - TFS MachineGroup Test Connectivity</b></center></sub>
