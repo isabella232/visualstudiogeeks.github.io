@@ -133,7 +133,12 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 
 ```
 
-+ Restart the win-rm service: Restart-Service winrm–Force
++ Restart the win-rm service: 
+
+``` console 
+    Restart-Service winrm–Force
+```
+
 + To ensure Kerberos authentication is enabled on WinRM, run the following command:
 
 ``` console
@@ -146,6 +151,8 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 
 <img src="/assets/img/blog/tarun/TFSMachineGroup-KerberosAuthentication.png" alt="TFSMachineGroup Kerberos Authentication" style="width:100%;height:100%"><sub><center><b>Image 3 - TFS MachineGroup Kerberos Authentication</b></center></sub>
 
+<br/>
+
 + Now, let's validate whether WinRM has correctly been set up on QA-Web1. Fabrikam.lab. Log into another VM in the lab, in this case QA-Web2.Fabrikam. lab. Launch PowerShell as an administrator by right-clicking on the Windows PowerShell shortcut and selecting Run as administrator. Execute the following command:
        
 ``` console
@@ -156,6 +163,8 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 
 <img src="/assets/img/blog/tarun/TFSMachineGroup-TestWsman.png" alt="TFSMachineGroup Test Wsman" style="width:100%;height:100%"><sub><center><b>Image 4 - TFS MachineGroup Test Wsman</b></center></sub>
 
+<br/>
+
 + Execute the following command to check the port WinRM is listing on:
 
 ``` console
@@ -165,6 +174,7 @@ In the next few steps, we'll walk through how to configure WinRM on a machine, a
 ```
 
 <img src="/assets/img/blog/tarun/TFSMachineGroup-TestListener.png" alt="TFSMachineGroup Test Listener" style="width:100%;height:100%"><sub><center><b>Image 5 - TFS MachineGroup Test Listener</b></center></sub>
+
 
 > Execute the following command should you want to change the port WinRM is currently configured to listen on: 
 
