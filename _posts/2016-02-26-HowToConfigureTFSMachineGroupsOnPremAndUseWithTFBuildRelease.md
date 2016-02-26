@@ -191,7 +191,7 @@ Enter-Pssession -ComputerNameQA-Web1.Fabrikam.lab–Credential $cred
 
 ## How to configure MachineGroup in TFS (VSTS)
 ---
-1. Navigating to the test hub in the FabrikamTFVC Team Web Portal, on the Machines page, click on the + icon to create a new Machine Group:
+1. Navigating to the test hub in the Fabrikam Team Web Portal, on the Machines page, click on the + icon to create a new Machine Group:
 
 <img src="/assets/img/blog/tarun/TFSMachineGroup-Configure01.png" alt="TFSMachineGroup Configuring in TFS VSTS" style="width:100%;height:100%"><sub><center><b>Image 7 - TFS MachineGroup Configuring in TFS (VSTS)</b></center></sub>
 
@@ -208,6 +208,7 @@ Enter-Pssession -ComputerNameQA-Web1.Fabrikam.lab–Credential $cred
 ## How it works
 ---
 The Fabrikam-QA Machine Group setup uses a common administrator credentials for all machines in the Machine Group. It is alternatively possible to specify different credentials for the individual machines added in the Machine Group:
+
 1. To enter credentials per machine, check the option Use custom credentials for each machine along with global credentials.
 
 <img src="/assets/img/blog/tarun/TFSMachineGroup-Result01.png" alt="TFSMachineGroup Results" style="width:100%;height:100%"><sub><center><b>Image 9 - TFS MachineGroup Results in TFS (VSTS)</b></center></sub>
