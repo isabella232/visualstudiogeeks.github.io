@@ -19,6 +19,8 @@ Ever wanted to see all the details of your build definition including its steps,
 
 ## Get Started
 
+**Get it from Marketplace: ** : [http://bit.ly/exportaspdf](http://bit.ly/exportaspdf)
+
 > **Note:** The extension only supports new (non XAML) build defintions.
 
 Once you install the extension, go to `Builds` hub and right click on any build definition. You will see a new menu item `Export as PDF`. Click on it and you will be able to select what to include in the report. Seclect the sections you want to be included in the PDF and click `Export as PDF`. The extension will scans your build definition, gets the details and generates the PDF which can be saved to your drive.
