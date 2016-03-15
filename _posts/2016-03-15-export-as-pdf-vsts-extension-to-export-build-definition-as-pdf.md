@@ -19,7 +19,7 @@ Ever wanted to see all the details of your build definition including its steps,
 
 ## Get Started
 
-**Get it from Marketplace: ** : [http://bit.ly/exportaspdf](http://bit.ly/exportaspdf)
+**Get it from Marketplace**: [http://bit.ly/exportaspdf](http://bit.ly/exportaspdf)
 
 > **Note:** The extension only supports new (non XAML) build defintions.
 
