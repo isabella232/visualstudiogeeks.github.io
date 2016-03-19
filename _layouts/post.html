@@ -1,29 +1,20 @@
 ---
 layout: default
 ---
-<div class="content{% if page.photo_url %} photo-post{% endif %}">
-    <div class="post single">
-        {% unless page.photo_url %}
-        <h1>{{ page.title }}</h1>
-		
-        <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
-           By {{ page.author }} - {{ page.date | date: "%d %b, %Y" }}
-        </info>
-        {% endunless %}
-        <div class="body">{{ content }}</div>
-        <!-- <div class="breaker"></div> -->
-        <div class="breaker"></div>        
-    </div>  
-<div class="share-page">
-    Subscribe & Share &rarr; <a href="http://feeds.feedburner.com/visualstudiogeeks/otas" onclick=”pageTracker._trackPageview(‘/goal-feed/belowposts’);” target="_blank">RSS</a>
-    <a onclick=”pageTracker._trackPageview(‘/goal-tweet/belowposts’);” href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
-    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
-</div>
-    <div class="comments container">
-        <div id="disqus_thread"></div>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
-</div>
+<div class="post">
 
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}<br/>
+    </p>
+    
+    
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+  
+  {% include comment.html %}
+
+</div>

@@ -6,19 +6,19 @@ author: Tarun Arora
 categories:
 - blog                #important: leave this here
 - "Windows10Mobile"
-img:        #place image (850x450) with this name in /assets/img/blog/
-thumb: windows-10-preview-lumia-930.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
+img:        #place image (850x450) with this name in /images/screenshots
+thumb: windows-10-preview-lumia-930.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
+
 I have been running the Windows 8.1 Update 1 on my Lumia 930, while I miss a few key apps but that aside the build is stable and offers a great usability experience. Having enrolled in the Windows mobile Insider program, I got the notification to upgrade to the Windows <!--more--> 10 Mobile Insider Build 10080.   
 
 ## I have split the post into 2 parts
----
+
 * [Upgrade experience](#upgradeExperienceId)
 * [User experience](#userExperienceId)
 
-### Feedback on the Upgrade Experience from Windows 8.1 Update 1 to Windows 10 10080 <a id="upgradeExperienceId"></a>
----
+## Feedback on the Upgrade Experience from Windows 8.1 Update 1 to Windows 10 10080 <a id="upgradeExperienceId"></a>
+
 1. The upgrade was very rocky! Trial, Error & Retry... 
 2. The battery totally drained out during the upgrade. 
 3. There was no guidance available either on the insider app or blog... 
@@ -32,11 +32,10 @@ You are on your way to a lot of pain if you are upgrading from 8.1 update 1 to W
 
 Heading over to the windows central blog it was a relieve to see I wasn't the only one, most of the Lumia 930, Lumia 1530 and Lumia Icon users had run into the same issue. Reading through the list of comments, a lot of people had suggested restarting the phone three times to fix the issue. However, that didn't work for me... I downloaded the [Windows Phone recover Tool](http://go.microsoft.com/fwlink/?LinkID=525569) took a backup, the windows phone recovery tool downloads 1.7 GB worth of firmware. The install went smooth and the phone was back up and running on 8.1 update 1 build in no time. You can read more on how to rollback to Windows 8.1 Update 1 [here](http://www.windowscentral.com/roll-back-windows-phone-81-windows-10-preview "Windows Mobile 10 Rollback steps"). I was immediately notified that I could upgrade to the Windows 8.1 Update 2 build. After a few installs and restarts I was on Windows Phone 8.1 Update 2. The day had been adventurous so far, so I decided to take the plunge I opted to upgrade to Windows Mobile 10 Build 10080 again. This time around, the upgrade went well and I got back the home screen in less than 10 minutes. As noted in the blog post on the windows 10 insider blog, most of the apps showed as unavailable but I was able to uninstall and reinstall them fairly quickly. 
 
-###  User Experience <a id="userExperienceId"></a>
----
+##  User Experience <a id="userExperienceId"></a>
 This build didn't feel like Windows 10 Mobile is any where close to prime time. The overall experience was poor... 
 
-#### General Feedback
+### General Feedback
 1.  **Battery Killer** - A full charge running in battery saver mode with average usage does not last for more than 3 hours. 
 2. **Furnace** - The phone heats up very quickly.
 3. **Crashes** - Almost all apps crashed after 5 - 10 minutes of usage.
@@ -49,7 +48,7 @@ This build didn't feel like Windows 10 Mobile is any where close to prime time. 
 	* Cortana doesn't search with voice commands, fails with a cryptic error code
 	* A lot more...
 
-#### App Specific Feedback
+### App Specific Feedback
 1. **Outlook Mail** 
 	* Common inbox for multiple email accounts, full support for rich text! While I like the idea of a common inbox, having my work email, personal email and LinkedIn squashed into one app didn't feel so nice. When you press + to create a new email, you don't have the option to change the "from" mailbox. I guess you will end up sending a lot of work emails from your personal accounts.  
 	* While I like automatic pull of my work email, I prefer manually refreshing my personal email. I wasn't able to change the sync settings of individual accounts. 
@@ -71,8 +70,7 @@ This build didn't feel like Windows 10 Mobile is any where close to prime time. 
 	* I must say using word, excel, power point and oneNote has been the highlight of this build. The experience is nothing short of amazing!  
 	* This specific document I was editing, has been created using a custom template. It was amazing to see the custom styles available to me while editing the document on my mobile. Very impressive. 
 
-### Summary
----
+## Summary
 I had fun checking out the Windows Mobile 10 build 10080 preview. Generally pleased to see the improvements in the platform, Microsoft has nailed the design and common workflows people go through and tried to simplify this immensely. In certain areas it still feels Microsoft is playing catch up for example the browser - Project spartan, I am sure at some point Spartan will become very good, but till then I wish the platform was open enough and I could use my favourite browser Crome! Unfortunately the experiences in the windows 10 mobile preview build are very half baked at this time. The app's are unstable and unfinished... If I stay on the preview for any longer, I would spike my electiricity bill considering the battery drains out after an hour of intense usage. I will bail out by rolling back to Windows 8.1 Update 2, I look forward to a more stable and usable Windows 10 build.... :satisfied:
 
 Cheers, Tarun! 

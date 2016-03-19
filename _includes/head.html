@@ -1,39 +1,26 @@
 <head>
     <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title}}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    {% if page.title != "Archive (sidebar)" %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} « {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" /> 
+    {% else %}
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}Geeky ramblings on DevOps, ALM, TFS, VisualStudio, VSTS, VSCode, Test Automation, .NET, WPF and PowerShell{% endif %}">
+    {% endif %} 
+    {% if page.keywords %} 
+    <meta name="keywords" content="{{ page.keywords }}" /> 
+    {% else %}
+    <meta name="keywords" content="TFS, ALM, DevOps, VSTS, VisualStudio, ALM, geeks, visual studio, visual studio team services, vsts, application lifecycle management, extensions, extensibility, mvp, rangers"/> 
     {% endif %}
-    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen, projection" href="{{site.url}}/res/screen.css" type="text/css">
-    <link rel="stylesheet" media="screen, projection" href="{{site.url}}/res/site.css" type="text/css">
-	<link rel="stylesheet" media="print" href="{{site.url}}/res/print.css" type="text/css">
-	
-	<link href="{{ "/assets/css/syntax.css" | prepend: site.baseurl }}" rel="stylesheet">
-	
-
+    <link rel="stylesheet" href="{{ " /css/main.css " | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!--<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml
+    " | prepend: site.baseurl | prepend: site.url }}" />-->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="http://feeds.feedburner.com/visualstudiogeeks/otas" />
+    
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="{{site.owner.twitter}}">
-
-    {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}">
-    {% if page.keywords %}
-    <meta name="keywords" content="{{ page.keywords }}" />
-    {% else %}
-     <meta name="keywords" content="TFS, ALM, DevOps, VSTS, VisualStudio" />
-    {% endif %}
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-    <meta name="og:description" content="{{ page.description }}">
-    {% else if content %}
-    <meta name="description" content="{{ content | strip_html | truncatewords: 25 }}">
-    <meta name="og:description" content="{{ content | strip_html | truncatewords: 25 }}">
-    {% endif %}
-    {% else %}
-    <meta name="description" content="{{site.description}}">
-    {% endif %}
-
     <meta property="og:url" content="{{site.url}}/{{ page.url | remove_first:'index.html' }}">
     <meta property="og:site_name" content="{{site.title}}">
     <meta property="og:type" content="article">
@@ -41,6 +28,5 @@
     {% if page.date %}
     <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
     {% endif %}
-    <!-- Add custom CSS here -->
-    <link href="{{site.url}}/assets/css/font-awesome.min.css" rel="stylesheet">        
+    
 </head>

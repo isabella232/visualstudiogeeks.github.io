@@ -1,22 +1,36 @@
+# Site settings
 title: Visual Studio Geeks
-description: "Geeky ramblings on DevOps, ALM, TFS, VisualStudio, VSTS, VSCode, Test Automation, .NET, WPF and PowerShell"
-analytics: UA-57919718-1 #Google analytics code in the format XX-nnnnnnnn-n
+url: "http://www.visualstudiogeeks.com"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
+#timezone: Asia/Chongqing
+#description: >
+#  Geeky ramblings on DevOps, ALM, TFS, VisualStudio, VSTS, VSCode, Test Automation, .NET, WPF and PowerShell
 
-url: http://www.visualstudiogeeks.com
-highlighter: rouge
-
-gems:
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  
-permalink: /:categories/:title
-markdown: kramdown
+# Your information
+#see _data\authors.yml
 
 google_analytics: UA-57919718-1
 
-owner:
-  name: Utkarsh Shigihalli & Tarun Arora
-  disqus_shortname: visualstudiogeeks
+# Comment Service (Disqus or 多说)
+#  choose one and un-comment the line to active it
+disqus_shortname: visualstudiogeeks   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
 
-  
- 
+permalink: /:categories/:title
+markdown: kramdown
+gems:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
+ - jekyll-redirect-from
+
+# Build settings
+paginate: 5
+paginate_path: "page:num"
+
+highlighter: rouge
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

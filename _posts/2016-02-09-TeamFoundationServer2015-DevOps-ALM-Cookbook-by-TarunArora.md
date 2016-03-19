@@ -7,10 +7,9 @@ categories:
 - blog                #important: leave this here
 - book
 - TeamFoundationServer
-img:        #place image (850x450) with this name in /assets/img/blog/
-thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
+img:        #place image (850x450) with this name in /images/screenshots
+thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 Announcement - Book on implementing ALM and DevOps using Team Foundation Server 2015  
 <!--more-->
 
@@ -22,8 +21,7 @@ I have been working with Team Foundation Server for over a decade, helping custo
 
 This book is a recipe-based guide that uses a problem-solution format to call out inefficiencies in the software development lifecycle and then guides you, step-by-step, on how you can use Team Foundation Server to your advantage in those areas. This book is aimed at software professionals including Developers, Testers, Architects, Configuration Analysts, and Release Managers who want to understand the capabilities of TFS to deliver better quality software faster. 
 
-#### Team Foundation Server 2015 Cookbook 
----
+## Team Foundation Server 2015 Cookbook 
 
 The book has 340 pages divided into 8 chapters...
 
@@ -46,8 +44,7 @@ build system to integrate non-Microsoft testing frameworks, such as Selenium and
 
 8. **Chapter 8: Extending and Customizing Team Foundation Server** - It is not uncommon for organizations to have different tools to manage different parts of the life cycle, for example, Jira for Agile project management, TeamCity for builds, Jenkins for release management, and ServiceNow for service management. In this chapter, we'll learn about the TFS object model and TFS REST APIs to programmatically access and integrate with systems. In this chapter, we'll also cover how to customize Team Projects by leveraging Process Template customization 
 
-### Call for Action...  
----
+## Call for Action...  
 
 +Get a few free chapters here - [Team Foundation Server 2015 Cookbook - Free Chapters]( https://www.packtpub.com/networking-and-servers/microsoft-team-foundation-server-2015-cookbook "Team Foundation Server 2015 Cookbook Free Chapters")
 
@@ -64,8 +61,7 @@ alt="Team Foundation Server 2015 Cookbook" height="160" width="160" border="0" /
 alt="Team Foundation Server 2015 Cookbook" height="160" width="160" border="0" /></a>
 
 
-### Note of Thanks
-----
+## Note of Thanks
 
 I would like to take a moment to thank a few people who helped me in completing this project... 
 
@@ -77,8 +73,7 @@ I would like to take a moment to thank a few people who helped me in completing 
 
 + I would also like to thank ALM Champs and ALM Rangers for their technical inputs and review on the book, specially Josh Garverick, Utkarsh Shigihalli and Willy Peter Schaub. 
 
-### About the Author
-----
+## About the Author
 
 [Tarun Arora](https://www.linkedin.com/in/tarunaroraonline "Tarun Arora") is obsessed with high-quality working software, continuous delivery, and Agile practices. He has experience managing technical programs, implementing digital strategy, and delivering quality @ scale. Tarun has worked on various industry-leading programs for fortune 500 companies in the financial and energy sector. 
 

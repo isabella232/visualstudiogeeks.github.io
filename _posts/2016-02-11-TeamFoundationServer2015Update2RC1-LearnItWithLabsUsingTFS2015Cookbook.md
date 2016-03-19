@@ -6,10 +6,9 @@ author: Tarun Arora
 categories:
 - blog                #important: leave this here
 - TeamFoundationServer
-img:        #place image (850x450) with this name in /assets/img/blog/
-thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
+img:        #place image (850x450) with this name in /images/screenshots
+thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
 *Announcement* "Team Foundation Server (TFS) 2015 Update 2 RC 1 now available for download..." This blogpost explains where you can download the update from and the list of features installed with the update...  
 <!--more-->
 
@@ -17,8 +16,7 @@ thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /asset
 
 If you are a Visual Studio Team Services user, you would have seen most of the features for a few weeks at the very least. The big ticket item in this update is the *availability of the new release management solution making its debut to on premise customers.* Other updates are scattered across the product with bulk of investment in enriching the feature set in the Team Web Portal for dashboards hub, code hub and build hub. 
 
-### The full list of features in the release candidate are listed below...
----
+## The full list of features in the release candidate are listed below...
  
 + [Team project creation and deletion experience improvements](https://www.visualstudio.com/news/tfs2015-update2-vs#teamproj "Team project creation and deletion experience improvements")
 + [New version of web-based Release Management](https://www.visualstudio.com/news/tfs2015-update2-vs#newrmtfs "New version of web-based Release Management")
@@ -40,20 +38,17 @@ If you are a Visual Studio Team Services user, you would have seen most of the f
 + [Build-related features and improvements](https://www.visualstudio.com/news/tfs2015-update2-vs#builditems "Build-related features and improvements")
 + [Testing: new features and improvements](https://www.visualstudio.com/news/tfs2015-update2-vs#testing "Testing: new features and improvements")   
 
-### Can I install this in production?
----
+## Can I install this in production?
 
 > This release of TFS is a “go-live” release candidate.  _Microsoft will support customers choosing to install it in a production environment._  
 
-### Where can I download it from?
----
+## Where can I download it from?
 
 + [TFS 2015 Update 2 RC1 web installer](http://go.microsoft.com/fwlink/?LinkId=626619 "TFS 2015 Update 2 RC1 web installer")
 + [TFS 2015 Update 2 RC1 ISO](http://go.microsoft.com/fwlink/?LinkId=626620 "TFS 2015 Update 2 RC1 ISO")
 + [KB article](https://msdn.microsoft.com/en-us/library/2a90cb85-8296-417a-a4a8-1379998c4588 "KB article")
 
-### Hands on Labs?
----
+## Hands on Labs?
 
 The [Team Foundation Server 2015 Cookbook](http://www.visualstudiogeeks.com/blog/book/teamfoundationserver/TeamFoundationServer2015-DevOps-ALM-Cookbook-by-TarunArora "Team Foundation Server 2015 Cookbook") just shipped and covers most of the features being released with Update 2. Learn more about these features using the 80 plus hands on labs covering walkthrough on implementing the user cases these new features best address...
 
@@ -77,8 +72,6 @@ Hope you enjoy the new features...
 
 Questions Comments and Feedback... ? Leave a comment...
 
- 
 
 Cheers, 
-
 Tarun

@@ -7,21 +7,20 @@ categories:
 - blog                #important: leave this here
 - "extensibility"
 - "visual studio"
-- 
-img:        #place image (850x450) with this name in /assets/img/blog/
-thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
+img:        #place image (850x450) with this name in /images/screenshots
+thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
+
 Hello, this is going to be a small post. In one of my Visual Studio extension, I was trying to add a toolbar to the toolwindow. Everything compiled just fine and all seemed perfect. However, as soon as I tried to open the toolwindow (with toolbar) I was getting "*Value does not fall within the expected range*" error.
 <!--more-->
 
- ![Alt text](/assets/img/blog/utkarsh/value_does_not_fall_error.png)
+ ![Alt text](/images/screenshots/utkarsh/value_does_not_fall_error.png)
 
 Obviously, error did not give me much details on what caused the error. *Break on CLR exceptions* setting lead me to this line. 
 
-{% highlight csharp%}
+```csharp
 ToolWindowPane window = this.package.FindToolWindow(typeof(MyToolWindow), 0, true);
-{% endhighlight %}
+```
 
 
 So, Assuming an issue with my declarions of toolwindow, I verified GUID's used, other declarations made in my VSCT file. All looked correct but still the same error.

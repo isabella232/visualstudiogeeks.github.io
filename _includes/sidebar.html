@@ -1,0 +1,40 @@
+<div class="col-box">
+    <div class="col-box-title">We are</div>
+    <ul class="social">
+        {% for member in site.data.authors %}
+        <div class="col-box-title name">{{ member.name }}<br/>
+            {% if member.twitter %}
+                <li><a href="https://www.twitter.com/{{ member.twitter }}" title="Twitter" target="_blank"><img src="/images/social/twitter-20x20.png"></img></a></li>
+            {% endif %}
+            {% if member.linkedin %}
+                <li><a href="https://uk.linkedin.com/in/{{ member.linkedin }}" title="Linkedin" target="_blank"><img src="/images/social/linkedin-20x20.png"></img></a></li>
+            {% endif %}
+            <li><a href="http://feeds.feedburner.com/visualstudiogeeks/otas"><img src="/images/social/rss-20x20.png"></img></a></li>
+             {% if member.github %}
+                <li><a href="https://www.github.com/{{ member.github }}" title="GitHub" target="_blank"><img src="/images/social/github-20x20.png"></img></a></li>
+            {% endif %}
+             {% if member.wordpress %}
+                <li><a href="https://{{ member.linkedin }}.wordpress.com" title="Wordpress" target="_blank"><img src="/images/social/wordpress-20x20.png"></img></a></li>
+            {% endif %}
+
+        </div>
+        {% endfor %}
+    </ul>
+</div>
+<div class="col-box">
+    
+    <div class="col-box-title">Subscribe via Email</div>
+            <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=visualstudiogeeks/otas', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Enter your email address:</p><p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="visualstudiogeeks/otas" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /><p>Delivered by <a href="https://feedburner.google.com" target="_blank">FeedBurner</a></p></form>
+</div>
+<div class="col-box">
+    <div class="col-box-title">Recent Posts</div>
+    <ul class="post-list">
+        {% for post in site.posts limit:8 %}
+        <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="col-box post-toc hide">
+    <div class="col-box-title">TOC</div>
+</div>
+

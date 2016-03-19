@@ -8,11 +8,10 @@ categories:
 - angularjs
 - mvc
 - IE
-- 
-img:        #place image (850x450) with this name in /assets/img/blog/
-thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
+img:        #place image (850x450) with this name in /images/screenshots
+thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
+
 [AngularJS](https://angularjs.org/) is a popular web framework to build interactive web pages. It is compatible with many available modern browsers like Chrome, Firefox and Internet Explorer (IE). However, AngularJS and older version IE (v6 to v9) does not work very well and you need to perform few additional actions for supporting IE. AngularJS already has a separate page and provides guidance to support IE browser [here](https://docs.angularjs.org/guide/ie).
 
 However, there are other issues as well which are not particulary related to AngularJS and some are related to how IE browser (<= version 9) works. I will try to cover few of such issues in this blog post.
@@ -27,7 +26,8 @@ Internet Explorer by default caches AJAX requests from the server. Hence, the fi
 **SOLUTION 1 - Randomize the URL :**
 
 If you are getting the list of users by making a request to `/api/getusers` next request to the same url is served from the cached results and not from the server. To avoid this, you can randomize this url, so that IE thinks as a unique requst. Simplest way to do this is by sending a random parameter with timestap appended. This way every request is unique and IE will query the server each time.
-{% highlight js%}
+
+```js
 //pass the timestamp as rnd query parameter 
 $http.get('/api/getusers?rnd='+ new Date().getTime() }).
   success(function(data, status, headers, config) {
@@ -38,12 +38,13 @@ $http.get('/api/getusers?rnd='+ new Date().getTime() }).
     // called asynchronously if an error occurs
     // or server returns response with an error status.
   });
-{% endhighlight %}
+```
 
 **SOLUTION 2 - Change HTTP requests to POST instead of GET:**
 
 You can convert all your GET requests to POST. By default, http POST requests are never cached by browser and hence every request goes to the server. Read more on [GET vs POST](http://www.w3schools.com/tags/ref_httpmethods.asp)
-{% highlight js%}
+
+```js
 $http.post('/api/getusers').
   success(function(data, status, headers, config) {
     // this callback will be called asynchronously
@@ -53,44 +54,45 @@ $http.post('/api/getusers').
     // called asynchronously if an error occurs
     // or server returns response with an error status.
   });
-{% endhighlight %}
+```
 
 **SOLUTION 3 - Disable Caching in your application:**
 
 If you are working on ASP.NET MVC application, you can disable the caching for your application. This can be done in Global.asax.cs file as below.
 
-{% highlight csharp %}
+```csharp
 protected void Application_PreSendRequestHeaders(object sender, EventArgs e)
 {
     Response.Cache.SetCacheability(HttpCacheability.NoCache);
 }
-{% endhighlight %}
+```
 
 Alternatively, If you dont want to disable caching globally for your application, you can disable for individual actions as in below code
 
-{% highlight csharp %}
+```csharp
 [OutputCache(NoStore = true, Duration = 0, VaryByParam = "None")]
 public ActionResult GetUsers()
 {
     // return your response
 }
-{% endhighlight %}
+```
 
 **SOLUTION 4 - Disable Caching in AngularJS:**
 
 I got this solution from Stackoverflow and this is the **best option** in my view. You can disable caching for all your requests in AngularJS application by importing [$httpProivder](https://docs.angularjs.org/api/ng/provider/$httpProvider) and configure not to have cache. 
-{% highlight js %}
+
+```js
 myModule.config(['$httpProvider', function($httpProvider) {
-    //initialize get if not there
-    if (!$httpProvider.defaults.headers.get) {
-        $httpProvider.defaults.headers.get = {};    
-    }    
-    //disable IE ajax request caching
-    $httpProvider.defaults.headers.get['If-Modified-Since'] = 'Mon, 26 Jul 1997 05:00:00 GMT';
-    $httpProvider.defaults.headers.get['Cache-Control'] = 'no-cache';
-    $httpProvider.defaults.headers.get['Pragma'] = 'no-cache';
+//initialize get if not there
+if (!$httpProvider.defaults.headers.get) {
+	$httpProvider.defaults.headers.get = {};    
+}    
+//disable IE ajax request caching
+$httpProvider.defaults.headers.get['If-Modified-Since'] = 'Mon, 26 Jul 1997 05:00:00 GMT';
+$httpProvider.defaults.headers.get['Cache-Control'] = 'no-cache';
+$httpProvider.defaults.headers.get['Pragma'] = 'no-cache';
 }]);
-{% endhighlight %}
+```
 
 ### 2. AngularJS does not execute or executes only when IE developer tools are enabled ###
 
@@ -103,7 +105,7 @@ Because you have `console.log` or `console.time` in your code. Surprised? but it
 Although you can remove console messages from JS files, it is not an ideal approach as rest of the browsers handle them gracefully. So to disable these messages, you can place following javascript function (found in [GitHub](https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js)) in your html page or in my case _Layout page (in MVC).
 The following code block disables all the `console.*` messages if console object is not initliazed. This ensures IE not to error out and hence Angular JS is executed properly.
 
-{% highlight js %}
+```js
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
@@ -126,22 +128,23 @@ The following code block disables all the `console.*` messages if console object
         }
     }
 }());
-{% endhighlight %}
+```
 
-###3. AngularJS expressions are briefly displayed while page is loading###
+## 3. AngularJS expressions are briefly displayed while page is loading###
 
 **CAUSE**
+
 AngularJS expressions are evaluated when DOM is completely loaded and upon evaluation of the expression the value is replaced. However, sometimes you see that there is a flicker effect where the expressions are displayed for few seconds and then replaced with actual value. This becomes bit annoying after some time.
 
 **SOLUTION 1: Replace expressions with ng-bind**
 Angular expressions like `{{model.userName}}` can be replaced with ng-bind attribute. 
 
-{% highlight html %}
+```html
 <!--Instead of this-->
 <span>{% raw %}{{model.userName}}{% endraw %}</span>
 <!--use ng-bind-->
 <span ng-bind="model.userName"></span>
-{% endhighlight %}
+```
 
 This ensures there are no expressions on the markup and hence are not visible still AngularJS is compiled.
 
@@ -155,10 +158,10 @@ To use this, you can decorate `body` tag in your HTML with `ng-cloak` attribute.
 
 For better working (and to support older browsers) you may also want to add the below CSS class to your CSS file.
 
-{% highlight css %}
+```cs
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
-{% endhighlight %}
+```
 
 The ng-cloak attribute is automatically deleted by AngularJS once the expressions are evaluated, hence making the elements visible.

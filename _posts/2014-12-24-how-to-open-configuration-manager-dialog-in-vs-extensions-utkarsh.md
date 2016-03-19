@@ -6,31 +6,31 @@ author: Utkarsh Shigihalli
 categories:
 - blog                #important: leave this here
 - "visual studio extensibility"
-- 
-img:        #place image (850x450) with this name in /assets/img/blog/
-thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
+ 
+img:        #place image (850x450) with this name in /images/screenshots
+thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
+
 Imagine you are developing a Visual Studio extension which requires you to prompt users to modify their project build configurations. The ideal way to do that is to open default configuration manager window of Visual Studio and let users configure. In this post we will see how to open Configuration Manager window of Visual Studio via Visual Studio SDK. 
 <!--more-->
-![Alt text](/assets/img/blog/utkarsh/vs_config_manager.png "Optional title")
+![Alt text](/images/screenshots/utkarsh/vs_config_manager.png "Optional title")
 
 Visual Studio provides [IVsConfigurationManagerDlg](http://msdn.microsoft.com/en-us/library/vstudio/microsoft.visualstudio.shell.interop.ivsconfigurationmanagerdlg.aspx) interface which has a single method called `ShowConfigurationManagerDlg`. The method has no parameters and it is as easy as calling a `MessageBox.Show()` in windows forms. 
 
 So to use this method, you need to first get the service instance using `GetService(...)` method from `Package` class as below.
 
-{% highlight csharp %}
+```csharp
 var configManager = GetService(typeof (SVsConfigurationManagerDlg)) as IVsConfigurationManagerDlg;
-{% endhighlight %}
+```
 
 Once you get the instance of `IVsConfigurationManagerDlg` interface, you will call `ShowConfigurationManagerDlg` method to show configuration manager dialog as below.
 
-{% highlight csharp %}
+```csharp
 if (configManager != null)
 {
     configManager.ShowConfigurationManagerDlg();
 }
-{% endhighlight %}
+```
 
 ### Showing Configuration Manager window only when project is loaded ###
 
@@ -45,7 +45,7 @@ In this post we will use option 2.
 
 For this, we need to get services of another interface [IVsSolution](http://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.aspx). With this interface, we can request to get project count property, which returns us the number of projects currently loaded in to the environment.
 
-{% highlight csharp %}
+```csharp
 var solutionService = GetService(typeof(SVsSolution)) as IVsSolution;
 object projectCount = null;
 if (solutionService != null)
@@ -60,7 +60,7 @@ else
 {
 	//open the configuration manager
 }
-{% endhighlight %}
+```
 
 With this, we show the configuration manager only when the environment has at least one project.
 

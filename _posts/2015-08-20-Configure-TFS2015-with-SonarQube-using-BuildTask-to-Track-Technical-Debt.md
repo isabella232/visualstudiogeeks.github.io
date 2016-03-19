@@ -7,18 +7,17 @@ categories:
 - blog                #important: leave this here
 - "SonarQube"
 - "DevOps"
-img:        #place image (850x450) with this name in /assets/img/blog/
-thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
+img:        #place image (850x450) with this name in /images/screenshots
+thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c6503fb913a4a1"></script>
+
 What the heck is TechnicalDebt...? Why should I track it...? How do I track it in TFS...? How can I integrate SonarQube with TFS? Is there a build task I can use to instrument my code for Technical Debt as part of the build process? This blog post will hopefully answer some of these questions, or may be raise more questions...  <!--more-->
 
-##The blog post is divided into 2 parts,
+The blog post is divided into 2 parts,
 1. Why, How, Does it, Can I?
 2. Integrate SonarQube with TFS 2015...? 
 
-#PART 1
-<hr/>
+# PART 1
 
 ## What is Technical Debt?
 Anyone who has written code professionally would know that at times you will find yourself using unrecommended techniques (ummm... hacks!) to get stuff done because of the timelines you have been asked to deliver in... No code reviews... Poor DevOps practices... Lack of unit testing... Too many tactical implementations... Not addressing undelying issues causing large number of bugs...  are major contributors to Technical Debt. Technical Debt doesn't hit you overnight, it's a slow and gradual process... Unlike Financial debt, technical debt is very hard to recognize. Technical Debt will slow your ability to deliver value. Are you seeing any of these signs? Are you that poor soul who has just taken over a legacy code base that has been poorly constructed & re-constructed overtime (time to ask for a payraise bob :)
@@ -45,8 +44,7 @@ In addition, SonarSource (the company behind SonarQube) have produced a set of .
 
 > Here is the official link to the announcement announcing the integration with MSBuild <a> http://www.sonarqube.org/announcing-sonarqube-integration-with-msbuild-and-team-build/</a> 
 
-## PART 2
-<hr/>
+# PART 2
 
 ## How can I integrate SonarQube with TFS 2015?
 The ALM Rangers have created an installation & set up guidance for configuring SonarQube to work with SQL Sever. The guidance is more like a living document, that can be previewed in the gitRepository [here](https://github.com/SonarSource/sonar-.net-documentation/blob/master/doc/installation-and-configuration.md). I won't duplicate the documentation here but call out a few things I tripped over...
@@ -75,7 +73,7 @@ You may need to update the environment variables on the machine to the java.exe 
 ## Build Tasks configuration for SonarQube
 To hook up the analysis to be run as part of the build process you need to invoke the MSBuild runner for SonarQube. This is what the build looks like after you have configured it using the steps specified in the [guide](https://github.com/SonarSource/sonar-.net-documentation/blob/master/doc/analyze-from-tfs.md)... In addition to following the guide, I've swapped the cmd runner with the powershell runner and used the [Dynamic Version Script](http://www.colinsalmcorner.com/post/build-vnext-and-sonarqube-runner-dynamic-version-script) provided by in ALM MVP Colin on his blog Colin's ALM Corner... 
 
-<img src="/assets/img/blog/tarun/TechDebt01_BuildTasks01.png" alt="SonarQube Build Task" style="width:100%;height:100%"><sub><center><b>Image 1 - SonarQube: Build Task</b></center></sub>
+<img src="/images/screenshots/tarun/TechDebt01_BuildTasks01.png" alt="SonarQube Build Task" style="width:100%;"><sub><center><b>Image 1 - SonarQube: Build Task</b></center></sub>
 	
 If you run into any issues during the configuration, feel free to leave a comment in the blog, I will try my best to help...
 
@@ -84,21 +82,17 @@ Once the analysis has been completed, I can see the results in the sonarQube por
 
 * The code base already has about 1 hour 12 minutes of technical debt 
 
-<img src="/assets/img/blog/tarun/TechDebt01_SonarQubeTFS2015InAction.png" alt="SonarQube TFS2015 Analysis Results" style="width:100%;height:100%"><sub><center><b>Image 2 - SonarQube TFS 2015: Fabrikam Fiber Code Analysis</b></center></sub>
+<img src="/images/screenshots/tarun/TechDebt01_SonarQubeTFS2015InAction.png" alt="SonarQube TFS2015 Analysis Results" style="width:100%;"><sub><center><b>Image 2 - SonarQube TFS 2015: Fabrikam Fiber Code Analysis</b></center></sub>
 	
 * The detailed analysis shows lines of code by class and function - drill down, the level of duplication, complexity in the code, issues categorized by severity and an overall complexity rating... 
-<img src="/assets/img/blog/tarun/TechDebt01_SonarQubeTFS2015InAction02.png" alt="SonarQube TFS2015 Analysis Results 2" style="width:100%;height:100%"><sub><center><b>Image 3 - SonarQube TFS 2015: Fabrikam Fiber Code Detailed Analysis</b></center></sub>
+<img src="/images/screenshots/tarun/TechDebt01_SonarQubeTFS2015InAction02.png" alt="SonarQube TFS2015 Analysis Results 2" style="width:100%;"><sub><center><b>Image 3 - SonarQube TFS 2015: Fabrikam Fiber Code Detailed Analysis</b></center></sub>
 
 <br />	
-<hr />
 
 ## What More...
 If you haven't already read through the content presented at the //Build/ conference as this new feature was announced...
 
 <iframe src="https://onedrive.live.com/embed?cid=61D0A67D27B527D3&resid=61D0A67D27B527D3%21158402&authkey=AAspZn_gKnlsMnA&em=2" width="100%" height="327" frameborder="0" scrolling="no"></iframe> 
-
-
-<hr />
 
 ## Summary
 At the risk of upsetting those of you who came looking here for a silver bullet to magically detect and destroy Technical Debt, you’re going to be disappointed.
