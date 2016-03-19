@@ -1,5 +1,6 @@
 {% if page.nocomments %}
 {% else %}
+{% if site.production == true %}
 {% if site.disqus_shortname %}
 <div class="post-comments">
   <div id="disqus_thread"></div>
@@ -12,6 +13,7 @@
       })();
   </script>
 </div>
+{% endif %}
 {% endif %}
 {% if site.duoshuo_shortname %}
 <div class="post-comments">

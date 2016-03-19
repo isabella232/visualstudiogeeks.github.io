@@ -1,6 +1,6 @@
 # Site settings
 title: Visual Studio Geeks
-url: "http://www.visualstudiogeeks.com"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+url: "http://127.0.0.1:4000"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
 baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
 #timezone: Asia/Chongqing
 #description: >
@@ -9,9 +9,8 @@ baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just 
 # Your information
 #see _data\authors.yml
 excerpt_separator: <!--more-->
-google_analytics: UA-57919718-1
-production: true
-
+google_analytics: ABCD
+production: false
 # Comment Service (Disqus or 多说)
 #  choose one and un-comment the line to active it
 disqus_shortname: visualstudiogeeks   # get one: https://disqus.com/admin/signup/
