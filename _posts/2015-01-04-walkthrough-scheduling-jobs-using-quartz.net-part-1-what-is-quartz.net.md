@@ -12,7 +12,7 @@ thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /image
 
 [Quartz.NET](http://www.quartz-scheduler.net/) is a full-featured, open source enterprise job scheduling system written in .NET platform that can be used from smallest apps to large scale enterprise systems. I want to schedule the execution of a task but only when something happens. Let’s call that something a trigger, so... if the trigger is met => execute the task. 
 <!--more-->
-
+ 
 ![If Then Else](/images/screenshots/tarun/post06_QuartzPost01IfThenElse.jpg). 
 
 Sounds simple, why not use windows task scheduler for this?

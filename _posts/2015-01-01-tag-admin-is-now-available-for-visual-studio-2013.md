@@ -11,7 +11,7 @@ categories:
 img:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
-
+ 
 Early last week, we [released](http://www.visualstudiogeeks.com/blog/tagadmin/visualstudio-tags-administration-using-extension-tagadmin/) Tag Admin extension for Visual Studio 2015 to [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/057740ff-86be-4a44-b2bb-7e6d68b75455). The extension was well received by the community and we were helped with good number of downloads due to mention by blog posts by many community leaders. I have listed few mentions below.
 <!--more-->
 

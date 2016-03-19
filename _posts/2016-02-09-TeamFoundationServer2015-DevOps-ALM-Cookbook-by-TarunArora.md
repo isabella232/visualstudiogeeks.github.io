@@ -13,7 +13,7 @@ thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /image
 Announcement - Book on implementing ALM and DevOps using Team Foundation Server 2015  
 <!--more-->
 
-> I am delighted to announce that my first book on Team Foundation Server 2015 has now shipped! 
+> I am delighted to announce that my first book on Team Foundation Server 2015 has now shipped!
 
 I have been working with Team Foundation Server for over a decade, helping customers unlock the true potential of the product. I am a Microsoft Most Valuable Professional in Visual Studio and Development Tools for over 5 years now, working closely with Microsoft Product Teams to help shape the product to be most relevant to the users. I have worked with a broad range of customers in financial, trading, telecommunications and social sectors. While customers have varying levels of maturity in software application lifecycle management there is however a broad overlap in the problem areas hindring their ability to achieve continuous delivery of high quality software. 
 

@@ -19,7 +19,7 @@ Take a look at the following screenshot of the tool.
 
 As you can see, the tool visualizes the dependencies in a nice connected graph. On selecting any node (color yellow), it highlights the parent (in light blue) and child (in pink color) dependencies. Also, clicking a node marks the parent links in blue and child links in red.
 
-
+ 
 Please note, the tool is in early beta version and there are few **limitations/known issues**.
 
 - The tool does not resolve properties.

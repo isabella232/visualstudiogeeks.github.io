@@ -13,7 +13,7 @@ thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /ima
 ---
 
 [AngularJS](https://angularjs.org/) is a popular web framework to build interactive web pages. It is compatible with many available modern browsers like Chrome, Firefox and Internet Explorer (IE). However, AngularJS and older version IE (v6 to v9) does not work very well and you need to perform few additional actions for supporting IE. AngularJS already has a separate page and provides guidance to support IE browser [here](https://docs.angularjs.org/guide/ie).
-
+ 
 However, there are other issues as well which are not particulary related to AngularJS and some are related to how IE browser (<= version 9) works. I will try to cover few of such issues in this blog post.
 <!--more-->
 

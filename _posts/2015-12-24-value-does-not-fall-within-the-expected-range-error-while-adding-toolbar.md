@@ -17,7 +17,7 @@ Hello, this is going to be a small post. In one of my Visual Studio extension, I
  ![Alt text](/images/screenshots/utkarsh/value_does_not_fall_error.png)
 
 Obviously, error did not give me much details on what caused the error. *Break on CLR exceptions* setting lead me to this line. 
-
+ 
 ```csharp
 ToolWindowPane window = this.package.FindToolWindow(typeof(MyToolWindow), 0, true);
 ```

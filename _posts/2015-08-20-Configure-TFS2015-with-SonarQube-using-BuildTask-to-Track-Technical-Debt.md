@@ -16,7 +16,7 @@ What the heck is TechnicalDebt...? Why should I track it...? How do I track it i
 The blog post is divided into 2 parts,
 1. Why, How, Does it, Can I?
 2. Integrate SonarQube with TFS 2015...? 
-
+ 
 # PART 1
 
 ## What is Technical Debt?

@@ -16,7 +16,7 @@ thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /ima
 [AppVeyor](http://www.appveyor.com/) is a well known cloud build server, which integrates with many source controls like VSO (Visual Studio Online), GitHub, BitBucket etc. Like many others do, we love Appveyor. However, most of the time we spend our time in Visual Studio and interacting with Appveyor was not possible from within Visual Studio. So we decided to build an extension!
 <!--more-->
 
-
+ 
 > [**Download**](https://visualstudiogallery.msdn.microsoft.com/54fd33fb-cd0e-4b1e-b113-a5ebb17fff20) from VS Gallery
 
 ## So what is in the first version? ##

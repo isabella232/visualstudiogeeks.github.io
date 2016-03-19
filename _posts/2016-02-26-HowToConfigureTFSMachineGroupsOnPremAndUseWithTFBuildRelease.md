@@ -11,7 +11,7 @@ thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /image
 keywords: "TFS2015, Labs, ContinuousDelivery, Testing, MachineGroups, VSTS, TFBuild"
 ---
 Machine Groups is a new concept in TFS2015, you will see the option to add a machine group when configuring a build or release definition... Wondering what it is? In this blogpost, you'll learn what's machine group and how to configure and set up a MachineGroup. This blog post applies to both TFS and VSTS.
-<!--more-->
+<!--more--> 
 
 ## What is a Machine Group?
 

@@ -13,7 +13,7 @@ thumb: BlendDevAndOps.png    #place thumbnail (70x70) with this name in /images/
 DevOps is all about **“building better quality software, faster and more reliably.”** Now, why would only start-ups be good candidates for that? Isn’t that what every CIO wants? Last year’s key finding was... **high-performing organizations are deploying code 30 times more often with 50% fewer failures**. This year’s findings reaffirmed those numbers but also taught us that...
 <!--more-->
 **High IT performance correlates with strong business performance, helping to boost productivity, profitability, and market share**.
-
+ 
 <img src="/images/screenshots/tarun/post08_DevOpsFunnyImage.jpg" alt="DevOps Funny" style="width:100%;"><sub><center><b>Image 1 - DevOps: Dev vs Ops! Are you that developer?</b></center></sub>
 
 ## DevOps - What is it? ##

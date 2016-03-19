@@ -13,7 +13,7 @@ thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /image
 
 I have been re-awarded the Microsoft Most Valuable Professional award in Visual Studio ALM for 4th year in a row. Thank you Microsoft for re-awarding me the MVP award, it’s a great feeling to start the year knowing that my contributions to the Microsoft ecosystem are still relevant!
 <!--more-->
-
+ 
 ![Moment of glory, re-awarded Microsoft Most Valuable Professional for 4th year in a row](/images/screenshots/tarun/post05_TarunMvpAnnouncement.jpg)
 
 <center><small> Moment of glory, re awarded Microsoft Most Valuable Professional for 4th year in a row </small></center>

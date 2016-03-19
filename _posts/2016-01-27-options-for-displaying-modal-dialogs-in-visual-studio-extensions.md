@@ -10,7 +10,7 @@ categories:
 img:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
-In this blog post, we will explore different options for displaying WPF modal dialog in Visual Studio extensions. 
+In this blog post, we will explore different options for displaying WPF modal dialog in Visual Studio extensions.
 <!--more-->
 
 Visual Studio SDK allows making a modal dialog from any XAML window with some small code change as below. The code below gets the handle of the owner window via UI shell service and displays the dialog as a modal window.

@@ -12,7 +12,7 @@ thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /image
 *Announcement* "Team Foundation Server (TFS) 2015 Update 2 RC 1 now available for download..." This blogpost explains where you can download the update from and the list of features installed with the update...  
 <!--more-->
 
-> Team Foundation Server 2015 Update 2 RC 1 is now available!
+> Team Foundation Server 2015 Update 2 RC 1 is now available! 
 
 If you are a Visual Studio Team Services user, you would have seen most of the features for a few weeks at the very least. The big ticket item in this update is the *availability of the new release management solution making its debut to on premise customers.* Other updates are scattered across the product with bulk of investment in enriching the feature set in the Team Web Portal for dashboards hub, code hub and build hub. 
 
