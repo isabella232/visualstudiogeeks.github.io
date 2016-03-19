@@ -9,7 +9,7 @@
             {% if member.linkedin %}
                 <li><a href="https://uk.linkedin.com/in/{{ member.linkedin }}" title="Linkedin" target="_blank"><img src="/images/social/linkedin-20x20.png"></img></a></li>
             {% endif %}
-            <li><a href="http://feeds.feedburner.com/visualstudiogeeks/otas"><img src="/images/social/rss-20x20.png"></img></a></li>
+            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img src="/images/social/rss-20x20.png"></img></a></li>
              {% if member.github %}
                 <li><a href="https://www.github.com/{{ member.github }}" title="GitHub" target="_blank"><img src="/images/social/github-20x20.png"></img></a></li>
             {% endif %}

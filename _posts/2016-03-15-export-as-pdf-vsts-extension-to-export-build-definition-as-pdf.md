@@ -15,7 +15,6 @@ thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /ima
 Ever wanted to see all the details of your build definition including its steps, triggers, history etc in a neat report so that you can print it or share it with a colleague? Well, now you can. Just export the build definition as PDF and get everything printed in a neat report. No need to click individual build steps to see build step arguments, also no need to browse individual tabs to see triggers, history etc.
 <!--more-->
 
-
 ![Report](/images/screenshots/utkarsh/build2pdf.png)
 
 ## Get Started
