@@ -8,7 +8,7 @@ baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just 
 
 # Your information
 #see _data\authors.yml
-
+excerpt_separator: <!--more-->
 google_analytics: UA-57919718-1
 
 # Comment Service (Disqus or 多说)
