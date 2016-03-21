@@ -24,6 +24,7 @@ gems:
  - jekyll-gist
  - jemoji
  - jekyll-redirect-from
+ - jekyll-sitemap #for automatic sitemap.xml generation. See: https://help.github.com/articles/sitemaps-for-github-pages/
 
 # Build settings
 paginate: 5
