@@ -41,20 +41,20 @@ To avoid hours of troubleshooting later, it's best to validate the install & con
 - __SQL Setup__: Validate the SQL install. Open SSMS and connect to the sql server instance - .\MSSQLServer 
 
     - Validate the installed version of SQL Server
-        
-    ```
-        select @@version
-    ```
-     
-    ![SQL Server Version](/images/screenshots/tarun/SonarQube/sqlserverversion.png)
-        
-    - Validate the SQL Instance & Service name 
-      
-    ```
-    select @@servername, @@servicename 
-    ```
     
-    ![SQL Server Instance and Service Name](/images/screenshots/tarun/SonarQube/sqlserverinstanceservice.png)    
+``` sql
+        select @@version
+```
+
+![SQL Server Version](/images/screenshots/tarun/SonarQube/sqlserverversion.png)
+        
+- Validate the SQL Instance & Service name 
+      
+``` sql
+        select @@servername, @@servicename 
+```
+
+![SQL Server Instance and Service Name](/images/screenshots/tarun/SonarQube/sqlserverinstanceservice.png)    
 
 - __Database__: Create a new database 'sonar' (all lowercase) 
 
@@ -64,11 +64,11 @@ To avoid hours of troubleshooting later, it's best to validate the install & con
 
   The collation can be checked by running the following t-sql
   
-  ```
+``` sql
     SELECT CONVERT (varchar, SERVERPROPERTY('collation')); 
-  ``` 
+``` 
   
-  ![SQL Server database collation](/images/screenshots/tarun/SonarQube/sqlserverdatabasecollation.png)
+ ![SQL Server database collation](/images/screenshots/tarun/SonarQube/sqlserverdatabasecollation.png)
   
   
 - __SonarQube Service User__: Create a new windows user 'SonarUser'. Give this user approprite permissions to the machine. Set this user up for access in the newly created database instance. Run the following command to check the permissions this user has in the database instance. Create a login for this user and permission this user with appropriate permission on the newly created sonar database to be able to create the schema.  
@@ -88,7 +88,7 @@ To avoid hours of troubleshooting later, it's best to validate the install & con
 
 - Update the section by adding the connection string of the database 
 
-```
+``` html
 sonar.jdbc.url=jdbc:sqlserver://localhost;databaseName=sonar;integratedSecurity=true
 ```
 
