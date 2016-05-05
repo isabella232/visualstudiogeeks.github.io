@@ -146,7 +146,7 @@ You can log in to the SonarQube website by using the default account admin // ad
 
 ![SonarQube Start Windows Service](/images/screenshots/tarun/SonarQube/SonarQubeAsWindowsServiceCompleted.png)
 
-> If you have run into some issues, I recommend looking at this blog post for common problems and solutions during the SonarQube set up. [http://127.0.0.1:4000/blog/sonarqube/devops/Configure-TFS2015-with-SonarQube-using-BuildTask-to-Track-Technical-Debt](http://127.0.0.1:4000/blog/sonarqube/devops/Configure-TFS2015-with-SonarQube-using-BuildTask-to-Track-Technical-Debt)
+> If you have run into some issues, I recommend looking at this blog post for common problems and solutions during the SonarQube set up. [http://www.visualstudiogeeks.com/blog/sonarqube/devops/Configure-TFS2015-with-SonarQube-using-BuildTask-to-Track-Technical-Debt](http://www.visualstudiogeeks.com/blog/sonarqube/devops/Configure-TFS2015-with-SonarQube-using-BuildTask-to-Track-Technical-Debt)
 
 Leave a comment if you have some feedabck about this post... 
 
