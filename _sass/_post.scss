@@ -13,7 +13,7 @@
         }
         .post-meta {
         	color:#999;
-        	font-size:$small-font-size;
+        	font-size:$base-font-size;
         	margin: 0 -100px;
         }
         @include media-query($on-palm) {
@@ -46,10 +46,16 @@
         }
         a {
             //background: #E8E8FF;
-            text-decoration: underline;
+            text-decoration:none;
             font-weight: bold;
-            color: #036;
+            color: #0070C0;
         }
+		a:hover { 
+			text-decoration:underline;
+			//text-shadow: 0 0 2px #999;
+			//text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+			
+		}
         .middle-image {
             display: block;
             margin-left: auto;
