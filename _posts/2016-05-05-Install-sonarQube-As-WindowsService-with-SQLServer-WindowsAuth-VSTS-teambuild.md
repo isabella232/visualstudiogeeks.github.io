@@ -3,9 +3,11 @@ layout: post
 title: "How to install SonarQube as a windows Service with SQL Server using Windows Authentication for VSTS (Team Build)"
 date: 2016-05-05 11:30:00 
 author: Tarun Arora 
+tags: ["DevOps", "SonarQube"]
 categories:
 - blog                #important: leave this here
 - "DevOps"
+permalink:  /blog/DevOps/Install-SonarQube-As-WindowsService-With-SQLServer-WindowsAuth-VSTS-TeamBuild
 description: "DevOps CodeAnalysis TeamBuild SonarQube SQLServer WindowsAuth VSTS (constantly updated)"
 img:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshots/thumbs/
