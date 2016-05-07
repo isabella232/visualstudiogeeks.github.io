@@ -69,8 +69,6 @@ table {
 	}
 }
 
-table.archivetable { border-collapse:collapse }
-
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal;
 }
@@ -95,3 +93,16 @@ h1,h2,h3,h4,h5,h6{
 	}
     }
 }
+
+.videocontainer iframe {
+	
+    position: absolute;
+    width: 100%;
+	margin: 0 -30px;
+            @include media-query($on-palm) {
+		        margin: 0 -10px;
+            }
+}
+
+
+
