@@ -50,7 +50,6 @@ table {
 	border-spacing: 0;
     margin: 10pt auto;
 	//background: #FFF;
-
 	td, th {
 		border: 1px solid #CCC;
 		padding: 5px 15px;
@@ -62,11 +61,29 @@ table {
 		background: #555;
 		color: #eee;
 		font-weight:normal;
+	}	
+	// tr:hover {
+	// 	background: rgba(255,255,0,0.2);
+	// }
+}
+
+table.noborder-table{
+	border-collapse: collapse;
+	border-spacing: 0;
+    margin: 10pt auto;
+	//background: #FFF;
+	td, th {
+		border: 0px solid #CCC;
+		padding: 5px 15px;
+		margin: 0;
 	}
 	
-	tr:hover {
-		background: rgba(255,255,0,0.2);
-	}
+	th {
+		border-color: #555;
+		background: #555;
+		color: #eee;
+		font-weight:normal;
+	}	
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -105,4 +122,60 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+#mainbox{
+	box-sizing: border-box;
+	justify-content: center;
+	background: none;
+	display: flex;
+	flex-wrap: wrap;
+	table.mtable{
+		background: none;
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	.card{
+		width: 350px;
+		border: 1px solid gray;
+		box-shadow: 1px 1px 3px #888;
+		border-top: 10px solid green;
+		min-height: 100px;
+		padding-: 10px;
+		margin: 10px;
+	}
+	
+	img.tilt{
+		-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+		}
+	
+	img.tilt:hover {
+  -webkit-transform: rotate(-15deg);
+     -moz-transform: rotate(-15deg);
+       -o-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
 
+	img.profile-img{
+		border-radius: 5%;
+		width: 70px;
+		margin: 10px;
+	}
+
+	h1{
+		font-size: 16px;
+		font-weight: bold;
+		margin-left: 90px;
+		margin-top: -70px;
+	}
+
+	p{
+		margin: 35px;
+		font-family: segoe ui;
+		line-height: 1.4em;
+		font-size: 1.2em;
+	}
+}

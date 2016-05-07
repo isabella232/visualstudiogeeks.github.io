@@ -3,13 +3,13 @@
   twitter: onlyutkarsh
   github: onlyutkarsh
   linkedin: onlyutkarsh
-  avatar: "/images/global/utkarsh.png" #135x135
-  profile: "Microsoft MVP | ALM Ranger"
+  avatar: "/images/profile/utkarsh_75x75.png" #135x135
+  mvpid: 5000686
 
 - author: tarun
   name: Tarun Arora
   twitter: arora_tarun
   linkedin: tarunaroraonline
   wordpress: outofofficetraveller
-  avatar: "/images/global/tarun.png" 
-  profile: "Microsoft MVP | ALM Ranger"
+  avatar: "/images/profile/tarun_75x75.png" 
+  mvpid: 4038243

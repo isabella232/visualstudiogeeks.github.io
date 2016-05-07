@@ -124,7 +124,9 @@
     .col-box-title {
     	color: #333;
 	    margin-bottom: 10px;
-	    font-size: $small-font-size * 1.1;
+		font-weight: bold;
+		text-transform: uppercase;
+	    font-size: $base-font-size;
     }
 }
 @media (max-width: 1120px) {
@@ -230,3 +232,4 @@
 		padding: 10px;
 	}
 }
+
