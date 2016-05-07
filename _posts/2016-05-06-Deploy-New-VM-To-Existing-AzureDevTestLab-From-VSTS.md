@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Deploying a new VM in an exisiting AzureDevTestLab from VSTS"
-date: 2016-05-05 14:23:00 
+date: 2016-05-06 12:10:00 
 author: Tarun Arora 
 tags: ["DevOps", "Azure", "AzureDevTestLabs"]
 categories:
