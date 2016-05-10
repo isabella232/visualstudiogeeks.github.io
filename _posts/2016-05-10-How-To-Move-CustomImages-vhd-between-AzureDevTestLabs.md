@@ -15,6 +15,7 @@ thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /image
 Like me if you are using multiple Dev Test Labs in Azure for multiple teams, you would like to share custom images created by one group to the other if it helps them accelerate. After all sharing is caring :) In this blog post we'll learn how to move custom images aka VHD's between Azure Dev Test Labs. It would be great if you could leave a comment if you know a better way of achieving this... I would also be interested to know what other assets are you sharing between Azure Dev Test labs...
 <!--more--> 
 
+_You might find this interesting..._ [Deploying a new VM in an existing Azure DevTest Lab using VSTS](http://www.visualstudiogeeks.com/blog/DevOps/Deploy-New-VM-To-Existing-AzureDevTestLab-From-VSTS)
 
 # Scenario
 The Azure Dev Test Labs reside in a resource group that contains the lab itself, network, optionally a network security group and two storage accounts. 
@@ -61,6 +62,12 @@ The copy operation took 40 minutes for 127 GB worth of data.
 Navigate into the dev test lab 2 and click on add custom images, you'll see the MyCustomImage.vhd show up under the section `add existing images`. Voila!
 
 ![AzureDevTestLab - Add custom image](/images/screenshots/tarun/AzureDTL/AzureDtl_ImportCustomImages.png)
+
+Recommended Reading... 
+
+- [Why care about DevOps?](http://www.visualstudiogeeks.com/blog/devops/marry-cloud-and-devops-enterprise-devops-is-for-real)
+- [What is Technical Debt & why is it a problem?](http://www.visualstudiogeeks.com/blog/sonarqube/devops/Configure-TFS2015-with-SonarQube-using-BuildTask-to-Track-Technical-Debt)
+- [How to install SonarQube as a Windows Service with SQL (Windows Auth) for code analysis with VSTS](http://www.visualstudiogeeks.com/blog/DevOps/Install-SonarQube-As-WindowsService-With-SQLServer-WindowsAuth-VSTS-TeamBuild)
 
 Hope you found this useful...  
 
