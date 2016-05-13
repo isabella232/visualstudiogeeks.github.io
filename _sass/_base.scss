@@ -241,3 +241,22 @@ h1,h2,h3,h4,h5,h6{
 .tag:hover::after {
    border-left-color: #223; 
 }
+
+.scrollToTop{
+	width:50px; 
+	height:50px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	bottom:35px;
+	right:1px;
+	display:none;
+	background: url('/images/others/up-arrow.png') no-repeat 0px 10px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
