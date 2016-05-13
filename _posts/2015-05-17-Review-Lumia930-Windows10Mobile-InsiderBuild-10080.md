@@ -3,6 +3,7 @@ layout: post          #important: don't change this
 title: "Review Lumia 930 on Windows 10 Mobile Insider Build 10080"
 date: 2015-05-17 23:21:00 
 author: Tarun Arora
+tags: ["windows mobile"]
 categories:
 - blog                #important: leave this here
 - "Windows10Mobile"

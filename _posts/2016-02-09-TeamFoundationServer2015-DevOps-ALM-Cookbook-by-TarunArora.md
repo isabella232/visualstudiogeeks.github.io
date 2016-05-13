@@ -3,6 +3,7 @@ layout: post          #important: don't change this
 title: "ALM and DevOps with Team Foundation Server 2015 Cookbook"
 date: 2016-02-09 11:09:00 
 author: Tarun Arora
+tags: [tfs2015, tfs, book]
 categories:
 - blog                #important: leave this here
 - book

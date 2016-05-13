@@ -3,6 +3,7 @@ layout: post          #important: don't change this
 title: "Administer Visual Studio Tags using TagAdmin Visual Studio extension"
 date: 2014-12-22 00:25:00
 author: Tarun Arora
+tags: [visualstudio, extensions, tag, tagadmin]
 categories:
 - blog                #important: leave this here
 - TagAdmin

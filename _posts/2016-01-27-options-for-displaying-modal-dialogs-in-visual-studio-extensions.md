@@ -3,6 +3,7 @@ layout: post          #important: don't change this
 title: "Options for displaying modal dialogs in Visual Studio extensions"
 date: 2016-01-27 23:45:00 
 author: Utkarsh Shigihalli
+tags: [visualstudio, extensions]
 categories:
 - "extensibility"
 - "visual studio"

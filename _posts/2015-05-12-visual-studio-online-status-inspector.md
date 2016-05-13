@@ -3,6 +3,7 @@ layout: post          #important: don't change this
 title: "Visual Studio Online Status Inspector"
 date: 2015-05-12 05:15:00 
 author: Utkarsh Shigihalli
+tags: [visualstudio, extensions]
 categories:
 - blog                #important: leave this here
 - "Visual Studio Extensibility"

@@ -3,6 +3,7 @@ layout: post          #important: don't change this
 title: "'Value does not fall within the expected range' error while adding toolbar to toolwindow"
 date: 2015-12-24 22:16:00 
 author: Utkarsh Shigihalli
+tags: [visualstudio, extensions, exception]
 categories:
 - blog                #important: leave this here
 - "extensibility"

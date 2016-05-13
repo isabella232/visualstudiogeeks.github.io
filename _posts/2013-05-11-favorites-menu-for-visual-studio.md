@@ -3,6 +3,7 @@ layout: post          #important: don't change this
 title: "Favorites Menu for Visual Studio"
 date: 2013-05-11 18:28:59
 author: Utkarsh Shigihalli
+tags: [visualstudio, extensions]
 categories:
 - "VisualStudio"
 - "extensions"

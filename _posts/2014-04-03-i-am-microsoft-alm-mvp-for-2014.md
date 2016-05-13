@@ -3,6 +3,7 @@ layout: post          #important: don't change this
 title: "I am Microsoft ALM MVP for 2014"
 date: 2014-04-03 19:54:00
 author: Utkarsh Shigihalli
+tags: [personal, mvp]
 categories:
 - "MVP"
 - "Personal"
