@@ -3,11 +3,10 @@ layout: post          #important: don't change this
 title: "HOWTO: Monitor solution events in Visual Studio extensions "
 date: 2015-01-10 10:26:00 
 author: Utkarsh Shigihalli
-tags: [visualstudio, extensions]
+tags: [visualstudio, extensions, "how to"]
 categories:
 - blog                #important: leave this here
 - "visual studio extensibility"
-- how to
 img:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---

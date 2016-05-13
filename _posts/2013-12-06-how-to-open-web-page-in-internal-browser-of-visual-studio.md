@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "How to open web page in internal browser of Visual Studio"
 date: 2013-12-06 16:57:34
 author: Utkarsh Shigihalli
-tags: [visualstudio, extensions]
+tags: [visualstudio, extensions, "how to"]
 categories:
 - "extensions"
 - "Shell"
