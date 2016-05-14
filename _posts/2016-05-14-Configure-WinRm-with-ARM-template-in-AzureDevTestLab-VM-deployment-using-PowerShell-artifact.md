@@ -50,8 +50,9 @@ Pre-requisites in Target machine for Deployment Task to succeed,
 # Prepare ARM template for WinRM configuration
 The Azure Quick Start templates repository has a WinRM configuration script, [view script](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-vm-winrm-windows/ConfigureWinRM.ps1)
 
+<br/>
 
-  ![AzureDevTestLab WinRM ConfigurationScript](/images/screenshots/tarun/AzureDTL/AzureDtl_WinRM_ConfigurationScript.png)
+![AzureDevTestLab WinRM ConfigurationScript](/images/screenshots/tarun/AzureDTL/AzureDtl_WinRm_ConfigurationScript.png)
 
 This script has dependencies on two other script, links to all three resources are listed below,
  
