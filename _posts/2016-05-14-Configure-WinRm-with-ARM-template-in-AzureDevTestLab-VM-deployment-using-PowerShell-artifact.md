@@ -48,10 +48,10 @@ Pre-requisites in Target machine for Deployment Task to succeed,
 - If Trusted certificate not in Automation agent then Test Certificate option enabled in Task for deployment.
 
 # Prepare ARM template for WinRM configuration
-The Azure Quick Start templates repository has a WinRM configuration script, 
-[view script](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-vm-winrm-windows/ConfigureWinRM.ps1)
+The Azure Quick Start templates repository has a WinRM configuration script, [view script](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-vm-winrm-windows/ConfigureWinRM.ps1)
 
-![AzureDevTestLab WinRM ConfigurationScript](/images/screenshots/tarun/AzureDTL/AzureDtl_WinRm_ConfigurationScript.png)
+
+  ![AzureDevTestLab WinRM ConfigurationScript](/images/screenshots/tarun/AzureDTL/AzureDtl_WinRM_ConfigurationScript.png)
 
 This script has dependencies on two other script, links to all three resources are listed below,
  
