@@ -52,7 +52,7 @@ The Azure Quick Start templates repository has a WinRM configuration script, [vi
 
 <br/>
 
-![AzureDevTestLab WinRM ConfigurationScript](/images/screenshots/tarun/AzureDTL/AzureDtl_WinRm_ConfigurationScript.png)
+![AzureDevTestLab WinRM ConfigurationScript]({{ site.baseurl }}/images/screenshots/tarun/AzureDTL/AzureDtl_WinRm_ConfigurationScript.png)
 
 This script has dependencies on two other script, links to all three resources are listed below,
  
