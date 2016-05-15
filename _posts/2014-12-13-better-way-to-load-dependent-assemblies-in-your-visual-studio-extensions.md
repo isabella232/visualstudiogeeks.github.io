@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "Better way to load dependent assemblies in your Visual Studio extensions"
 date: 2014-12-13 16:46:56
 author: Utkarsh Shigihalli
-tags: [visualstudio, extensions]
+tags: [Extensions, VisualStudio]
 categories:
 - "VisualStudio"
 - "Extensions"

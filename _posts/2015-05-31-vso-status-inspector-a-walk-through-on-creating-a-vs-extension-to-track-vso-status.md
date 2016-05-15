@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "VSO Status Inspector - A walk through on creating a Visual Studio extension to track VSO Status"
 date: 2015-05-31 10:36:00
 author: Utkarsh Shigihalli
-tags: [visualstudio, extensions]
+tags: ["Extensions", "VisualStudio"]
 categories:
 - blog                #important: leave this here
 - "visual studio extensibility" 

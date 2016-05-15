@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "Always open XAML files in full XAML view"
 date: 2014-04-20 19:23:08
 author: Utkarsh Shigihalli
-tags: [xaml, wpf]
+tags: [VisualStudio, XAML, WPF]
 categories:
 - "XAML"
 - "WPF"

@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "Avanade Extensions - Sprint Burndown Plus Release Notes v1.3.1"
 date: 2013-08-13 16:35:30
 author: Utkarsh Shigihalli
-tags: [visualstudio, extensions, burndown]
+tags: [Extensions, VisualStudio, burndown]
 categories:
 - "Burndown+"
 - "Sprint"

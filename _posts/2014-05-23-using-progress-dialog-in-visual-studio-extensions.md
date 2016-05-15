@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "Using progress dialog in Visual Studio extensions"
 date: 2014-05-23 20:17:31
 author: Utkarsh Shigihalli
-tags: [visualstudio, extensions]
+tags: [Extensions, VisualStudio]
 categories:
 - "extensions"
 - "visualstudio"

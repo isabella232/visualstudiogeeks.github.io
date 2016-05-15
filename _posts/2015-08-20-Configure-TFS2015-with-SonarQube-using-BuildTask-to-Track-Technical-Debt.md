@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "Technical Debt - Why care? How to set up SonarQube to work with TFS using Build Task?"
 date: 2015-08-20 17:16:00
 author: Tarun Arora
-tags: [devops, sonarqube]
+tags: ["DevOps", "SonarQube"]
 categories:
 - blog                #important: leave this here
 - "SonarQube"

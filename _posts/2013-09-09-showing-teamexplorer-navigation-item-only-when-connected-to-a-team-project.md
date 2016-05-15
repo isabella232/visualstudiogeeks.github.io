@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "Showing TeamExplorer Navigation Item only when connected to a Team Project"
 date: 2013-09-09 14:07:45
 author: Utkarsh Shigihalli
-tags: [visualstudio, extensions]
+tags: [Extensions, VisualStudio]
 categories:
 - "VisualStudio"
 - "dotnet"

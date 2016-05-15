@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "Continuous Delivery with Team Foundation Server 2015"
 date: 2016-02-18 22:37:00 
 author: Tarun Arora
-tags: [tfs, tfs2015, "continuous delivery", automate]
+tags: ["DevOps", "Continuous Delivery", "TFS2015"]
 categories:
 - blog                #important: leave this here
 - TeamFoundationServer

@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "Team Foundation Server 2015 Update 2 RC 1 - Now Available"
 date: 2016-02-11 11:36:00 
 author: Tarun Arora
-tags: [tfs2015, tfs]
+tags: ["TFS2015", "DevOps Book"]
 categories:
 - blog                #important: leave this here
 - TeamFoundationServer

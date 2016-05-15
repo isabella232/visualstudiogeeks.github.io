@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "What's new in Team Rooms for Visual Studio 2013"
 date: 2013-10-26 00:16:16
 author: Utkarsh Shigihalli
-tags: [visualstudio, extensions, "team room"]
+tags: [Extensions, VisualStudio]
 categories:
 - "VisualStudio"
 - "dotnet"

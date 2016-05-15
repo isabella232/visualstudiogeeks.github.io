@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "Get Assembly Full Name using context menu"
 date: 2013-07-27 17:51:14
 author: Utkarsh Shigihalli
-tags: [csharp, dotnet, shell, windows]
+tags: [csharp, dotnet, Extensions, shell]
 categories:
 - "csharp"
 - "dotnet"

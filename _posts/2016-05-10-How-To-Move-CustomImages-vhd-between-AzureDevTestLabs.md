@@ -3,7 +3,7 @@ layout: post
 title: "How to move custom images (vhd) between Azure DevTest Labs"
 date: 2016-05-10 07:25:00 
 author: Tarun Arora 
-tags: ["DevOps", "Azure", "AzureDevTestLabs", "how to"]
+tags: ["DevOps", "Azure", "AzureDevTestLabs"]
 categories:
 - blog                #important: leave this here
 - "DevOps"

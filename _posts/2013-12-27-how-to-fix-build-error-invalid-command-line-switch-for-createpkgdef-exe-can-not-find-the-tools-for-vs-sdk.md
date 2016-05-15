@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "How to fix build error Invalid command line switch for CreatePkgDef.exe. Can not find the tools for VS SDK"
 date: 2013-12-27 19:21:45
 author: Utkarsh Shigihalli
-tags: [visualstudio, extensions, error, exception, "how to"]
+tags: [Extensions, VisualStudio]
 categories:
 - "VisualStudio"
 - "extensions"
