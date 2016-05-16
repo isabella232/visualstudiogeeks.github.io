@@ -150,7 +150,7 @@ Login to the newlyt deployed VM, let's validate if WinRM has been configured cor
 
    Launch `PowerShell` in administrator mode... 
    
-```shell
+```console
     winrm e winrm/config/listener 
 ```
 
@@ -188,7 +188,7 @@ failed with the following error message : Access is denied. For more information
  
 You can get around this issue by running the following Powershell script on the target machine... 
 
-```shell
+```console
 Set-PSSessionConfiguration -ShowSecurityDescriptorUI -Name Microsoft.PowerShell
 ```
 
