@@ -20,29 +20,37 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Bitter|Neuton' rel='stylesheet' type='text/css'>
-        <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="{{site.owner.twitter}}">
-
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ author.twitter }}">
+    {% assign user = site.data.authors | where: "author", page.author %} 
+    {% for author in user %}
+    <meta name="twitter:site" content="@{{ author.twitter }}">
+    {% endfor %}
     {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}">
+    <meta name="twitter:title" content="{{ page.title }}">
+    {% else %}
+    <meta name="twitter:title" content="{{ site.title }}">
+    {% endif %}
     {% if page.keywords %}
     <meta name="keywords" content="{{ page.keywords }}" />
     {% else %}
-     <meta name="keywords" content="TFS, ALM, DevOps, VSTS, VisualStudio" />
+        <meta name="keywords" content="TFS, ALM, DevOps, VSTS, VisualStudio" />
+    {% endif %}
+    {% if page.url %}
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
     {% endif %}
     {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-    <meta name="og:description" content="{{ page.description }}">
-    {% else if content %}
-    <meta name="description" content="{{ content | strip_html | truncatewords: 25 }}">
-    <meta name="og:description" content="{{ content | strip_html | truncatewords: 25 }}">
-    {% endif %}
+    <meta name="twitter:description" content="{{ page.description }}">
     {% else %}
-    <meta name="description" content="{{site.description}}">
+    <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
-
-    <meta property="og:url" content="{{site.url}}/{{ page.url | remove_first:'index.html' }}">
-    <meta property="og:site_name" content="{{site.title}}">
+    {% if page.image %}
+    <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
+    {% else %}
+    <meta name="twitter:image:src" content="{{ site.url }}/images/social/logo.png">
+    {% endif %}
+    <meta name="twitter:image:alt" content="Visual Studio Geeks">
+    
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_GB" />
     {% if page.date %}
