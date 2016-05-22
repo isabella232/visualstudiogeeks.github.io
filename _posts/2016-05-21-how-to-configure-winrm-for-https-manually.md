@@ -9,6 +9,7 @@ categories:
 img:        #place image (850x450) with this name in /images/screenshots
 thumb:     #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 keywords: "TFS2015, DevOps, VSTS, WinRM"
+description: "In this post we will see how you can configure WinRM (Windows Remote Management) service to work with HTTPS manually."
 ---
 In this post we will see how you can configure [WinRM (Windows Remote Management)][1] service to work with HTTPS manually.
 
