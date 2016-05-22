@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "HOWTO: Monitor solution events in Visual Studio extensions "
 date: 2015-01-10 10:26:00 
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: [Extensions, "VisualStudio"]
 categories:
 - blog                #important: leave this here

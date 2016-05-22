@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Using Visual Studio status bar in your extensions"
 date: 2013-08-11 11:59:03
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: [Extensions, VisualStudio]
 categories:
 - "VisualStudio"

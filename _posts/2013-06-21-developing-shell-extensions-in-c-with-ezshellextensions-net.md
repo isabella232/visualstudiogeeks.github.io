@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Developing shell extensions in C# with EZShellExtensions.Net"
 date: 2013-06-21 11:25:00
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: [dotnet, csharp, "shell", "Extension"]
 categories:
 - "dotnet"

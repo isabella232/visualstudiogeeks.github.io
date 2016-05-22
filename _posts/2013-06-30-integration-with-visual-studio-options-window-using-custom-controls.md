@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Integration with Visual Studio Options Window using custom controls"
 date: 2013-06-30 14:54:44
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: [Extensions, VisualStudio]
 categories:
 - "VisualStudio"

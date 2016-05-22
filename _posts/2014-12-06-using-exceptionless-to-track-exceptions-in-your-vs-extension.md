@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Using exceptionless to track exceptions in your VS Extension"
 date: 2014-12-06 23:09:52
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: [Extensions, VisualStudio]
 categories:
 - "extensions"

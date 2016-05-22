@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Create and Update bug by email in TFS 2015 using Bug2Mail Service"
 date: 2015-05-29 15:30:00 
-author: Tarun Arora
+author: tarun
 tags: ["TFS2015", "Extensions", "Bug2Mail"]
 categories:
 - blog                #important: leave this here

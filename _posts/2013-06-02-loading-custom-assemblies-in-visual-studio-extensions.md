@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Loading custom assemblies in Visual Studio extensions"
 date: 2013-06-02 10:26:00
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: [Extensions, VisualStudio]
 categories:
 - "VisualStudio"

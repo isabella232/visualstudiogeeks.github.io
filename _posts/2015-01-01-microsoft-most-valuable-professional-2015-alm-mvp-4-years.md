@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Microsoft Most Valuable Professional 2015 for ALM"
 date: 2015-01-01 18:53:00
-author: Tarun Arora
+author: tarun
 tags: ["Personal"]
 categories:
 - blog                #important: leave this here

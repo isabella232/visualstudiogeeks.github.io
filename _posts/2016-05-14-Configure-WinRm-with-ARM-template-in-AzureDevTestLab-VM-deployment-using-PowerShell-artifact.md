@@ -2,7 +2,7 @@
 layout: post
 title: "Configure WinRm with ARM template in AzureDevTestLab VM deployment using PowerShell artifact"
 date: 2016-05-14 11:00:00 
-author: Tarun Arora 
+author: tarun 
 tags: ["DevOps", "Azure", "AzureDevTestLabs", "ARM", "WinRM"]
 categories:
 - blog                #important: leave this here

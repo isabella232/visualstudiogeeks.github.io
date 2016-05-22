@@ -2,7 +2,7 @@
 layout: post
 title: "Join a VM to existing AD Domain using ARM template in Azure Dev Test Lab"
 date: 2016-05-17 12:00:00 
-author: Tarun Arora 
+author: tarun 
 tags: ["DevOps", "Azure", "AzureDevTestLabs", "ARM"]
 categories:
 - blog                #important: leave this here

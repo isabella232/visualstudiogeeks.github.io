@@ -2,7 +2,7 @@
 layout: post
 title: "How to bring DevOps practices to legacy applications (#c9d9 - ContinuousDiscussions)"
 date: 2016-05-14 20:30:00 
-author: Tarun Arora 
+author: tarun 
 tags: ["DevOps", "Agile"]
 categories:
 - blog                #important: leave this here

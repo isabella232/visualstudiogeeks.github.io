@@ -10,12 +10,15 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}
-          <br/>
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
+          {% assign user = site.data.authors | where: "author", post.author %}
+          {% if post.author %} • {% for author in user %} {{ author.name }}{% endfor %}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}
+        </p>
+        <p class="post-meta">
           {% for tag in post.tags %}
       <a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
       {% endfor %}
-        </div>
+        </p>
         <!--<div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>-->
 
         <div class="post-excerpt">

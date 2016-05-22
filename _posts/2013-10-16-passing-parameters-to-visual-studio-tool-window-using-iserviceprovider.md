@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Passing parameters to Visual Studio tool window using IServiceProvider"
 date: 2013-10-16 20:00:20
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: [Extensions, VisualStudio]
 categories:
 - "VisualStudio"

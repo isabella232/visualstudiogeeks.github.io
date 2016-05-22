@@ -1,15 +1,17 @@
 - author: utkarsh
   name: Utkarsh Shigihalli
-  twitter: onlyutkarsh
-  github: onlyutkarsh
-  linkedin: onlyutkarsh
+  twitter: https://www.twitter.com/onlyutkarsh
+  github: https://www.github.com/onlyutkarsh
+  linkedin: https://uk.linkedin.com/in/onlyutkarsh
   avatar: "/images/profile/utkarsh_75x75.png" #135x135
   mvpid: 5000686
+  about: Utkarsh is passionate developer who loves technology and is always keen in learning new things. He has developed many Visual Studio extensions and addins for Visual Studio from edition 2003 to latest 2015. He is currently working as DevOps lead in one of the leading insurance company in United Kingdom
 
 - author: tarun
   name: Tarun Arora
-  twitter: arora_tarun
-  linkedin: tarunaroraonline
-  wordpress: outofofficetraveller
+  twitter: https://www.twitter.com/arora_tarun
+  linkedin: https://uk.linkedin.com/tarunaroraonline
+  github: https://github.com/tarunaroraonline
   avatar: "/images/profile/tarun_75x75.png" 
   mvpid: 4038243
+  about: "Tarun Arora is a passionate technologist with 7 years of industry experience delivering enterprise solutions on the Microsoft Platform. His specialisms are application lifecycle management, onshore/offshore delivery, systems integration and custom application development."

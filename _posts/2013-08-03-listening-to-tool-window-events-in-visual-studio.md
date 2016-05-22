@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Listening to tool window events in Visual Studio"
 date: 2013-08-03 12:58:10
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: [Extensions, VisualStudio]
 categories:
 - "VisualStudio"

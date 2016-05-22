@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Marry Cloud & DevOps - Enterprise DevOps is for real!"
 date: 2015-01-17 19:00:00
-author: Tarun Arora
+author: tarun
 tags: [DevOps]
 categories:
 - blog                #important: leave this here

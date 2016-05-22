@@ -1,0 +1,21 @@
+{% assign user = site.data.authors | where: "author", page.author %} 
+
+{% for author in user %}
+<h3>About {{ author.name }}</h3>
+<div id="author-content">
+    <img itemprop="image" id="image-author" src="{{ author.avatar }}">
+    <div id="about-author"><i>{{ author.about }}</i></div>
+    <div id="social-author">
+        {% if author.twitter %}
+        <a href="{{ author.twitter }}"><img src="/images/social/twitter-20x20.png" class="tilt"></img></a>
+        {% endif %}
+        {% if author.github %}
+        <a href="{{ author.github }}"><img src="/images/social/github-20x20.png" class="tilt"></img></a>
+        {% endif %}
+        {% if author.linkedin %}
+        <a href="{{ author.linkedin }}"><img src="/images/social/linkedin-20x20.png" class="tilt"></img></a>
+        {% endif %}
+    </div>
+</div>
+
+{% endfor %}

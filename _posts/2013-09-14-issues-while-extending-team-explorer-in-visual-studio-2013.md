@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Issues while extending Team Explorer in Visual Studio 2013"
 date: 2013-09-14 18:23:37
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: [Extensions, VisualStudio]
 categories:
 - "Extensions"

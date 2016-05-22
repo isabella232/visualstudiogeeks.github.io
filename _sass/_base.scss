@@ -260,3 +260,24 @@ h1,h2,h3,h4,h5,h6{
 .scrollToTop:hover{
 	text-decoration:none;
 }
+
+div#author-content {
+  padding-bottom: 15px;
+  border: 1px #888;
+}
+div#about-author{
+	padding-right: 5px;
+	text-align: justify;
+}
+img#image-author {
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-right: 15px;
+  float: left;
+  border-radius: 3px;
+}
+
+#social-author {
+	padding-top: 15px;
+  	float: left;
+}

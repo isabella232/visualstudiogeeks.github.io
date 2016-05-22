@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "AppVeyor extension for Visual Studio 2013/2015"
 date: 2015-10-06 21:16:00 
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: ["Extensions", "VisualStudio", "AppVeyor"]
 categories:
 - blog                #important: leave this here

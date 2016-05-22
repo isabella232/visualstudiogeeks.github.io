@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "MSBuild Dependency Visualizer tool"
 date: 2016-01-11 21:16:00 
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: ["VisualStudio", "MsBuild", "Dependency Visualizer"]
 categories:
 - blog                #important: leave this here

@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "How to compile .NET 2015 Preview projects with TFS 2013 Build"
 date: 2014-12-28 23:45:00
-author: Tarun Arora
+author: tarun
 tags: [TFS2015, build]
 categories:
 - blog                #important: leave this here

@@ -11,13 +11,13 @@
                     <tr>
                         <td>
                             {% if member.twitter %}
-                            <a href="https://www.twitter.com/{{ member.twitter }}" title="Twitter" target="_blank"><img src="/images/social/twitter-20x20.png" class="tilt"></img>
+                            <a href="{{ member.twitter }}" title="Twitter" target="_blank"><img src="/images/social/twitter-20x20.png" class="tilt"></img>
                             </a>
                             {% endif %}
                         </td>
                         <td>
                             {% if member.linkedin %}
-                            <a href="https://uk.linkedin.com/in/{{ member.linkedin }}" title="Linkedin" target="_blank"><img src="/images/social/linkedin-20x20.png" class="tilt"></img>
+                            <a href="{{ member.linkedin }}" title="Linkedin" target="_blank"><img src="/images/social/linkedin-20x20.png" class="tilt"></img>
                             </a>
                             {% endif %}
                         </td>
@@ -28,10 +28,10 @@
                         </td>
                         <td>
                             {% if member.github %}
-                            <a href="https://www.github.com/{{ member.github }}" title="GitHub" target="_blank"><img src="/images/social/github-20x20.png" class="tilt"></img>
+                            <a href="{{ member.github }}" title="GitHub" target="_blank"><img src="/images/social/github-20x20.png" class="tilt"></img>
                             </a>
                             {% elsif member.wordpress %}
-                            <a href="https://{{ member.wordpress }}.wordpress.com" title="Wordpress" target="_blank"><img src="/images/social/wordpress-20x20.png" class="tilt"></img>
+                            <a href="{{ member.wordpress }}" title="Wordpress" target="_blank"><img src="/images/social/wordpress-20x20.png" class="tilt"></img>
                             </a>
                             {% endif %}
                         </td>

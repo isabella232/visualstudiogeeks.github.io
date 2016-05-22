@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "TFS 2015 Machine Groups - Walkthrough"
 date: 2016-02-26 19:00:00 
-author: Tarun Arora
+author: tarun
 tags: ["DevOps", "TFS", "Machine Groups"]
 categories:
 - blog                #important: leave this here

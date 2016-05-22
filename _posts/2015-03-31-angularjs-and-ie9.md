@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "AngularJS and Internet Explorer 9"
 date: 2015-03-31 05:15:00 
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: ["angularjs", "mvc", "ie"]
 categories:
 - blog                #important: leave this here

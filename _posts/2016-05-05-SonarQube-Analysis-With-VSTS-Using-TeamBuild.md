@@ -2,7 +2,7 @@
 layout: post
 title: "SonarQube Analysis in Continuous Integration using Team Build in VSTS"
 date: 2016-05-05 13:00:00 
-author: Tarun Arora 
+author: tarun 
 tags: ["DevOps", "SonarQube"]
 categories:
 - blog                #important: leave this here

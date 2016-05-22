@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Subscribe to Windows Explorer close event"
 date: 2013-06-29 16:49:38
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: [windows, csharp, dotnet, shell]
 categories:
 - "Windows"

@@ -1,8 +1,8 @@
 ---
 layout: post          #important: don't change this
 title: "How to configure WinRM for HTTPS manually"
-date: 2016-05-20 
-author: Utkarsh Shigihalli
+date: 2016-05-21 
+author: utkarsh
 tags: ["DevOps", "TFS", "WinRM"]
 categories:
 - Devops

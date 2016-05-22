@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Walkthrough: Scheduling jobs using Quartz.net – Part 1: What is Quartz.Net?"
 date: 2015-01-04 22:12:00
-author: Tarun Arora
+author: tarun
 tags: ["VisualStudio", "quartz.net"]
 categories:
 - blog                #important: leave this here

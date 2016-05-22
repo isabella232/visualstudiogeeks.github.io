@@ -2,7 +2,7 @@
 layout: post          #important: don't change this
 title: "Persisting settings without using Options dialog in Visual Studio"
 date: 2013-11-02 17:14:47
-author: Utkarsh Shigihalli
+author: utkarsh
 tags: [Extensions, VisualStudio]
 categories:
 - "VisualStudio"
