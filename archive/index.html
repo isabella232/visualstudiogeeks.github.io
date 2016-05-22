@@ -22,7 +22,13 @@ nocomments: true
 				<ul class="past">
 			{% endif %}
 		{% endunless %}
-		<li><time>{{ post.date | date:"%d %b" }}</time>&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a> - {{post.author}}</li>
+		{% assign user = site.data.authors | where: "author", post.author %} 
+	
+		<li><time>{{ post.date | date:"%d %b" }}</time>&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a> 
+		{% for author in user %}
+		- {{author.name}}
+		{% endfor %}
+		</li>
   {% endfor %}
   </ul>
 </div>
