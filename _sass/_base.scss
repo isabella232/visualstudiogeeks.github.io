@@ -261,6 +261,7 @@ h1,h2,h3,h4,h5,h6{
 	text-decoration:none;
 }
 
+//Not used begin
 div#author-content {
   padding-bottom: 15px;
   border: 1px #888;
@@ -279,5 +280,29 @@ img#image-author {
 
 #social-author {
 	padding-top: 15px;
-  	float: left;
+}
+//Not used end
+
+#entry-author-info {
+    background: #eee;
+    padding: 18px 20px;
+    margin: 24px 0;
+    overflow: hidden;
+    clear: both;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#entry-author-info #author-avatar {
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    float: left;
+    margin: 0 -104px 0 0;
+    padding: 11px;
+    height: 60px;
+}
+
+#entry-author-info #author-description {
+    float: left;
+    margin: 0 0 0 104px;
 }
