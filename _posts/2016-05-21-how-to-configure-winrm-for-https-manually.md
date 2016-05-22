@@ -6,7 +6,7 @@ author: utkarsh
 tags: ["DevOps", "TFS", "WinRM"]
 categories:
 - Devops
-img:        #place image (850x450) with this name in /images/screenshots
+img: "/images/screenshots/utkarsh/2016-05-21_winrm_client_validation_cmd.png"
 thumb:     #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 keywords: "TFS2015, DevOps, VSTS, WinRM"
 description: "In this post we will see how you can configure WinRM (Windows Remote Management) service to work with HTTPS manually."

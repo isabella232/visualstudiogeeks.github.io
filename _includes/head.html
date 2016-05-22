@@ -44,13 +44,12 @@
     {% else %}
     <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
-    {% if page.image %}
-    <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
+    {% if page.img %}
+    <meta name="twitter:image" content="{{ site.url }}{{ page.img }}">
     {% else %}
-    <meta name="twitter:image:src" content="{{ site.url }}/images/social/logo.png">
+    <meta name="twitter:image" content="{{ site.url }}/images/social/logo.png">
     {% endif %}
     <meta name="twitter:image:alt" content="Visual Studio Geeks">
-    
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_GB" />
     {% if page.date %}
