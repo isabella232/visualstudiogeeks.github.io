@@ -20,7 +20,7 @@ WinRM configuration isn't straightforward, it is tedious to say the least, if yo
 Other WinRM configuration blogposts... 
 
 - _[Instructions on How to configure WinRM for HTTP access on a domain joined environment](http://www.visualstudiogeeks.com/blog/teamfoundationserver/HowToConfigureTFSMachineGroupsOnPremAndUseWithTFBuildRelease)_
-- _[Instructions on How to configure WinRM for HTTPS manually (coming soon)]_
+- _[Instructions on How to configure WinRM for HTTPS manually](http://www.visualstudiogeeks.com/devops/how-to-configure-winrm-for-https-manually)_
  
 
 # Scenario 

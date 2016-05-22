@@ -51,15 +51,13 @@ Before we start doing that, we will first need to create a self-signed certifica
 New-SelfSignedCertificate -DnsName "<YOUR_DNS_NAME>" -CertStoreLocation Cert:\LocalMachine\My
 ```
 
-DNS name is your machine hostname and for Aure portal VM's you can get it from the portal from VM properties.
-
-![WinRM DNS Name](/images/screenshots/utkarsh/2016-05-21_winrm_dns_name.png)
-
-
 This command will create a new self signed certificate and output the  certificate thumbprint.
 
 ![](/images/screenshots/utkarsh/2016-05-21_winrm_self_signed_certificate.png)
- 
+
+DNS name used in the above command is your machine hostname and for Aure portal VM's you can get it from the portal from VM properties.
+
+![WinRM DNS Name](/images/screenshots/utkarsh/2016-05-21_winrm_dns_name.png) 
 
 Copy the thumbprint to clipboard and run the following command. This command will register the HTTPS listener in WinRM
 
