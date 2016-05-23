@@ -26,6 +26,22 @@
     <meta property="og:image" content="{{ site.url }}images/social/logo.png" />
     {% endif %}
     <meta name="twitter:image:alt" content="{{ site.title }}">
+    <meta name="twitter:card" content="summary" />
+    {% assign user = site.data.authors | where: "author", page.author %}
+    {% if user.size == 1 %}
+    {% for author in user %}   
+    <meta name="twitter:creator" content="@{{ author.twitter }}" />
+    <meta name="twitter:site" content="@{{ author.twitter }}" />
+    {% endfor %}
+    {% else %}
+    <meta name="twitter:creator" content="@vsgeeks" />
+    <meta name="twitter:site" content="@vsgeeks" />
+    {% endif %}
+    {% if page.title %}
+    <meta name="twitter:title" content="{{ site.title }} | {{ page.title }}" />
+    {% else %}
+    <meta name="twitter:title" content="{{ site.title }} | {{ site.description }}" />
+    {% endif %}
     {% if page.keywords %} 
     <meta name="keywords" content="{{ page.keywords }}" /> 
     {% else %}
@@ -38,21 +54,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Bitter|Neuton' rel='stylesheet' type='text/css'>
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@vsgeeks" />
-    {% assign user = site.data.authors | where: "author", page.author %} 
-    {% for author in user %}
-    {% if author %}
-    <meta name="twitter:creator" content="@{{ author.twitter }}" />
-    {% else %}
-    <meta name="twitter:creator" content="@vsgeeks" />
-    {% endif %}
-    {% endfor %}
-    {% if page.title %}
-    <meta name="twitter:title" content="{{ site.title }} | {{ page.title }}" />
-    {% else %}
-    <meta name="twitter:title" content="{{ site.title }} | {{ site.description }}" />
-    {% endif %}
     {% if page.keywords %}
     <meta name="keywords" content="{{ page.keywords }}" />
     {% else %}
@@ -66,8 +67,6 @@
     {% else %}
     <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
-   
-
     {% if page.date %}
     <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
     {% endif %}
