@@ -32,7 +32,7 @@ The first version of the extension allows you to,
 
 
 Watch this 2 minute video of what the extension allows you to do today... 
-[![](http://i.imgur.com/yqtKgjk.png)](https://www.youtube.com/watch?v=J4g_VJlVaxY&feature=youtu.be)
+[![Video](http://i.imgur.com/yqtKgjk.png)](https://www.youtube.com/watch?v=J4g_VJlVaxY&feature=youtu.be)
 
 If you like our work, we would love for you to spread the word for us by tweeting via button below... 
 
