@@ -15,10 +15,10 @@ If you are using Azure DevTestLabs you are probably loving and leveraging the Pu
 
 <!--more--> 
 
-![AzureDevTestLabs InfrastructureIsCode](/images/screenshots/tarun/AzureDTL/AzureDtl_ArtifactDeploymentFailedWhy.png)
-
 # Troubleshooting Artifacts in AzureDevTestLabs
 To view the logs related to your custom artifact you have 2 options:
+
+![AzureDevTestLabs InfrastructureIsCode](/images/screenshots/tarun/AzureDTL/AzureDtl_ArtifactDeploymentFailedWhy.png)
 
 - __Azure Portal__: To view the artifact logs from the Azure Portal follow these steps, 
     - In the Azure Portal from under dev test labs, click the virtual machine you want to investigate
