@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to troubleshoot failing Artifacts in AzureDevTestLabs"
-date: 2016-06-12 20:00:00 
+date: 2016-06-12 19:00:00 
 author: tarun 
 tags: ["DevOps", "Azure", "AzureDevTestLabs"]
 categories:
