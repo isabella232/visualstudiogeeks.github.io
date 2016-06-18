@@ -1,7 +1,7 @@
 {% assign user = site.data.authors | where: "author", page.author %} 
 
 {% for author in user %}
-<h3>About {{ author.name }}</h3>
+<h2>About {{ author.name }}</h2>
 <div id="entry-author-info">
     <div id="author-avatar">
         <img alt="" src="{{ author.avatar }}"
