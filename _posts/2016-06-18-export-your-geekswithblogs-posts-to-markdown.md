@@ -7,16 +7,14 @@ tags: ["Tools", "WPF"]
 categories:
 - WPF
 - Tools
-img: "/images/screenshots/utkarsh/gwb2md/mainui.jpg"
-
+img: "/images/screenshots/utkarsh/gwb2md/maniui.jpg"
 description: "Export your GeeksWithBlogs.net blog posts as Markdown files"
 keywords: "Geekswithblogs, Markdown, AzureDevTestLabs"
 ---
 
-Do you host your blog posts in [GeeksWithBlogs.net](http://www.geekswithblogs.net) (GWB)? Well you probably know then that, GWB does not provide any means to download/backup your posts. This is big problem if if you want to move to another hosting provider like GitHub/Wordpress and you cannot download any your existing posts. Fortunately, GWB posts are in MetaWebBlog format and with some simple C# code you can backup your blog posts. 
+Do you host your blog posts in [GeeksWithBlogs.net](http://www.geekswithblogs.net) (GWB)? Well, you probably know then that, GWB does not provide any means to download/backup your posts. This is a big problem if you want to move to another hosting provider like GitHub/Wordpress and you cannot download any your existing posts. Fortunately, GWB posts can be fetched via MetaWebBlog API and with some simple C# code, you can backup your blog posts.
 
 I host my blog here using Jekyll engine and wanted a quick way to convert all my posts in the markdown format. This utility provides a quick way to fetch your posts from GWB and save them as markdown.
-
 <!--more--> 
 
 ## Features ##
@@ -24,10 +22,10 @@ I host my blog here using Jekyll engine and wanted a quick way to convert all my
 - View all your blog posts.
 - Save individual posts or all as markdown files.
 - Ability to add optional frontmatter (necessary if you are hosting in GitHub for example).
-- Dynamically insert GWB author name, post date and categories.
+- Dynamically insert GWB author name, post date, and categories.
 - Download images in the posts
 - GWB returns image name in the posts as `image001.jpg` - this tool automatically renames the images with the post tile slug (ex: postdate_in_yymmdd_post_title.jpg)
-- Optionally overwrite image path in the markdown - might be useful when you host the images in root of your folder in your git repo and want to refer images with the full path.
+- Optionally overwrite image path in the markdown - might be useful when you host the images in the root of your folder in your git repo and want to refer images with the full path.
 
 ## Walkthrough ##
 
@@ -80,4 +78,6 @@ There are only two screens actually in the UI. As you can see it is very basic.
 
 If you just would like to use the tool, download the latest version from [here](https://github.com/onlyutkarsh/GeeksWithBlogsToMarkdown/releases)
 
-The code is also [open source](https://github.com/onlyutkarsh/GeeksWithBlogsToMarkdown) on GitHub and you can contribute/check the code on how it is done. Excuse me for code as it is not in a good state, but this was a quick tool developed for sole purpose of moving my blog posts.
+The code is also [open source](https://github.com/onlyutkarsh/GeeksWithBlogsToMarkdown) and you can contribute/check the code on how it is done. Excuse me for code as it is not in a good state, but this was a quick tool developed for sole purpose of moving my blog posts.
+
+[GitHub Url](https://github.com/onlyutkarsh/GeeksWithBlogsToMarkdown)
