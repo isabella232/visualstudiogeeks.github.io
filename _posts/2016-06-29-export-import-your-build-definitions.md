@@ -11,7 +11,7 @@ categories:
 - "vsts"
 img: "/images/screenshots/utkarsh/export-import-build-definition/small-context-menu.png"
 description: "Export your GeeksWithBlogs.net blog posts as Markdown files"
-keywords: "Geekswithblogs, Markdown, AzureDevTestLabs"
+keywords: "Extensions, VSTS"
 ---
 
 **This VSTS/TFS extension will help you to export your build definition and then import it in same or another team project.**
@@ -44,7 +44,7 @@ Once you install the extension, go to `Builds` hub and right-click on any build 
 
 - Right click on `All build definitions` or any existing build definitions and click on `Import`
 - You will be prompted to upload a build definition file. 
-	![Import Dialog](screenshots/import-dialog.png)
+	![Import Dialog](/images/screenshots/utkarsh/export-import-build-definition/import-dialog.png)
 - You can either drag and drop a file or use the `Browse` button to select the file you want to import.
 - Click `Import`. If import is successful, you will have your build created, with all your steps, variables, schedules and other build definition parameters.
 
