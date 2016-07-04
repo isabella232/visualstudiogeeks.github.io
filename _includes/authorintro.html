@@ -11,15 +11,20 @@
         <i>{{ author.about }}</i> 
         <div id="social-author">
         {% if author.twitter %}
-        <a href="https://www.twitter.com/{{ author.twitter }}"><img src="/images/social/twitter-20x20.png" class="tilt"></img></a>
+        <a href="https://www.twitter.com/{{ author.twitter }}">Twitter</a>
         {% endif %}
         {% if author.github %}
-        <a href="{{ author.github }}"><img src="/images/social/github-20x20.png" class="tilt"></img></a>
+        | <a href="{{ author.github }}">GitHub</a>
         {% endif %}
         {% if author.linkedin %}
-        <a href="{{ author.linkedin }}"><img src="/images/social/linkedin-20x20.png" class="tilt"></img></a>
+        | <a href="{{ author.linkedin }}">LinkedIn</a>
         {% endif %}
-        </div>
+        {% if author.vstsextensions %}
+        | <a href="{{ author.vstsextensions }}">VSTS Extensions</a>
+        {% endif %}
+        {% if author.vsextensions %}
+        | <a href="{{ author.vsextensions }}">VS Extensions</a>
+        {% endif %}
     </div>
     <!-- #author-description	-->
 </div>

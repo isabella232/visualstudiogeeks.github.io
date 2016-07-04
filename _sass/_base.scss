@@ -26,7 +26,7 @@ code {
 	color: #333;
 	background-color: #E8E8FF;
 	padding: 2px 5px;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 pre {
 	overflow-x: auto;
@@ -306,3 +306,12 @@ img#image-author {
     float: left;
     margin: 0 0 0 104px;
 }
+
+.text-success{
+	color: #4CAF50;
+}
+
+.text-darkred{
+	color: #F04848
+}
+

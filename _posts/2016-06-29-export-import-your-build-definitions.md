@@ -20,7 +20,7 @@ Have you created a complex build definition with numerous steps, configured it w
 
 As you probably know there is no built-in way to do that currently and you have to manually create complete build definition again. But with this extension now you can with few simple steps!
 
-<!--more--> 
+<!--more-->
 
 ![Context Menu](/images/screenshots/utkarsh/export-import-build-definition/context-menu.png)
 
@@ -50,7 +50,7 @@ Once you install the extension, go to `Builds` hub and right-click on any build 
 
 ![DefinotionCopy](/images/screenshots/utkarsh/export-import-build-definition/definition.png)
 
-## Limitations/Known issues
+## Limitations/Known issues ##
 
 - Known issues on **On-Prem TFS**
 	- If you are on on-prem TFS, `Export` and `Import` menu items only appear on build definition context menu and do not appear on `All build definitions` context menu.
@@ -59,5 +59,6 @@ Once you install the extension, go to `Builds` hub and right-click on any build 
 > TFS.WebApi.Exception: TF200016: The following project does not exist: `ProjectName`. Verify that the name of the project is correct and that the project exists on the specified Team Foundation Server.
 **PS:** I am investigating correct way to resolve this issue and will fix this in future versions.
 
-## Report Issues
+## Report Issues ##
+
 Found an issue or want to suggest a feature? Add them at [http://bit.ly/exportimportbuildissues](http://bit.ly/exportimportbuildissues)
