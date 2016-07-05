@@ -14,7 +14,7 @@ description: "TF254027 : Cannot create a binding on port 443 because the specifi
 keywords: "TFS2015"
 ---
 
-When doing the upgrade of TFS2015 from previous update version you might get an error as `TF254027 : Cannot create a binding on port 443 because the specified certificate could not be found`. This post will show you how you can solve the error and detailed steps to solve it.
+When doing the upgrade of TFS2015 from previous update version you might get an error as `TF254027 : Cannot create a binding on port 443 because the specified certificate could not be found`. In this post we will see detailed steps to solve it.
 
 <!--more-->
 
