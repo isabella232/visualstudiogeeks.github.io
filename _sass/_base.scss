@@ -33,7 +33,7 @@ pre {
 	padding: 20px 50px;
 }
 pre, pre code {
-	color: #fafafa;
+	color: #f2f2f2;
 	background-color: #223;
 }
 pre code {
@@ -135,9 +135,9 @@ h1,h2,h3,h4,h5,h6{
 	}
 	.card{
 		width: 350px;
-		border: 1px solid gray;
-		box-shadow: 1px 1px 3px #888;
-		border-top: 10px solid green;
+		border: 1px solid #999;
+		box-shadow: 0 1px 4px #999;
+		border-top: 10px solid #4caf50;
 		min-height: 100px;
 		padding-: 10px;
 		margin: 10px;
@@ -209,7 +209,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .tag::before {
-  background: #fafafa;
+  background: #fff;
   border-radius: 10px;
   //box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
   content: '';
@@ -222,7 +222,7 @@ h1,h2,h3,h4,h5,h6{
 
 //tag dot
 .tag::after {
-  background: #fafafa;
+  background: #fff;
   border-bottom: 13px solid transparent;
   border-left: 10px solid #E0E0E3;
   border-top: 13px solid transparent;
@@ -284,7 +284,8 @@ img#image-author {
 //Not used end
 
 #entry-author-info {
-    background: #eee;
+    background: #f2f2f2;
+	box-shadow: 0 1px 1px #999;
     padding: 18px 20px;
     margin: 24px 0;
     overflow: hidden;
