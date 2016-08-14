@@ -124,6 +124,10 @@ If you are Visual Studio user, you can also add this source by going to `Tools |
 
 ![NugetConfig](/images/screenshots/utkarsh/tfs15-package-mgmt/vs-nuget-source.png)
 
+Once you have added the NuGet source, you can see the new NuGet source in the Nuget Package Manager. You can select this source specifically or select All, to find your published NuGet packages.
+
+![NugetConfig](/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-package-manager.png)
+
 ## Summary ##
 
 That's it. You have integrated publishing your NuGet Packages to the local package feed within your TFS 15. So every time you update your package, you are publishing the latest packages to the NuGet feed, thus making sure your team always consumes latest packages.
