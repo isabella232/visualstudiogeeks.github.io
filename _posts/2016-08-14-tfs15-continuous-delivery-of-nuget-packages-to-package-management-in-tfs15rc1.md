@@ -15,9 +15,9 @@ permalink:  /DevOps/continuous-delivery-of-nuget-packages-to-package-management-
 keywords: "TFS15"
 ---
 
-TFS 15 RC1 got [released](https://blogs.msdn.microsoft.com/bharry/2016/08/08/tfs-15-rc1-is-available/) couple of days ago and one of the most awaited feature from on-prem customers was Package Management. 
+TFS 15 RC1 got [released](https://blogs.msdn.microsoft.com/bharry/2016/08/08/tfs-15-rc1-is-available/) a couple of days ago and one of the most awaited features from on-prem customers was Package Management. 
 
-In this post we will see how we can publish our common code as Nuget packages so that it can be shared across the organization. Also, we will see how we can keep these packages up to date by publishing them to our TFS15 package management server as part of our continuous delivery process.
+In this post, we will see how we can publish our common code as NuGet packages so that it can be shared across the organization. Also, we will see how we can keep these packages up to date by publishing them to our TFS15 package management server as part of our continuous delivery process.
 
 <!--more-->
 
@@ -41,7 +41,7 @@ Click on `Package Management` extension and install it on to your desired  TFS c
 
 ## Create a package feed in Package hub ##
 
-> A package feed is a container of your packages. Package clients similar to `Nuget Package Manager` of Visual Studio will be able to subscribe to this feed and receive packages. 
+> A package feed is a container of your packages. Package clients similar to `NuGet Package Manager` of Visual Studio will be able to subscribe to this feed and receive packages. 
 
 Once you install the extension, you should see `Package Feeds` in your navigation bar under `Build/Release` menu. Click `Package Feeds`
 
@@ -55,7 +55,7 @@ Click `New Feed`. This opens a new dialog. Provide the feed details.
 
 ![FeedDetails](/images/screenshots/utkarsh/tfs15-package-mgmt/new-feed.png)
 
-Once you click OK, a new Nuget feed will be created.
+Once you click OK, a new NuGet feed will be created.
 
 ![FeedDetailsCreated](/images/screenshots/utkarsh/tfs15-package-mgmt/new-feed-created.png)
 
@@ -68,9 +68,9 @@ You can right click on the feed, click `Edit` - to manage its security, such as 
 ![FeedPermissions](/images/screenshots/utkarsh/tfs15-package-mgmt/feed-permissions.png)
 
 
-## Build and publish Nuget packages solution ##
+## Build and publish NuGet packages solution ##
 
-Now we are in a position to build our solution and publish the nuget packages. For this post, I have two of my commonly used libraries which I would like to publish as Nuget packages.
+Now we are in a position to build our solution and publish the nuget packages. For this post, I have two of my commonly used libraries which I would like to publish as NuGet packages.
 
 My code structure is as below.
 
@@ -80,25 +80,25 @@ Now to build the solution, I have created a simple build definition with followi
 
 ![BuildSteps](/images/screenshots/utkarsh/tfs15-package-mgmt/build-steps.png)
 
-Most of the steps are self explanatory. However, I would like to briefly describe the following important steps.
+Most of the steps are self-explanatory. However, I would like to briefly describe the following important steps.
 
-1. [Nuget Packager](https://www.visualstudio.com/en-us/docs/build/steps/package/nuget-packager) : I use this task to package my code in to nupkg files. This task scans either csproj/nuspec file and packages in to nupkg file.
+1. [NuGet Packager](https://www.visualstudio.com/en-us/docs/build/steps/package/nuget-packager) : I use this task to package my code in to nupkg files. This task scans either csproj/nuspec file and packages in to nupkg file.
 2. In the next task I publish the generated nupkg file as artifacts of this build. This task also copies packages in to `$(build.artifactstagingdirectory)`
-3. [Nuget Publisher](https://www.visualstudio.com/docs/build/steps/package/nuget-publisher) : Finally, I use this task to find all the packages in the `$(build.artifactstagingdirectory)` and publish this to our feed.
+3. [NuGet Publisher](https://www.visualstudio.com/docs/build/steps/package/nuget-publisher) : Finally, I use this task to find all the packages in the `$(build.artifactstagingdirectory)` and publish this to our feed.
 
 Let's see packaging and publishing task in detail.
 
-### Nuget Packager ###
+### NuGet Packager ###
 As the name indicates, the first task is is used to pack the code as Nuget package. The details of the task configuration is as below.
 
 ![Package](/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-packager.png)
 
-### Nuget Publisher ###
+### NuGet Publisher ###
 As the name indicates, this task is is used to publish the code to our Nuget feed. The details of the task configuration is as below.
 
 ![Publish](/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-publisher.png)
 
-**Notice** that for publishing to local package feed you need to select feed type as `Internal Nuget Feed`.
+**Notice** that for publishing to local package feed you need to select feed type as `Internal NuGet Feed`.
 
 The next parameter is to provide the feed URL generated during the feed creation step above. For me it was as below.
 
@@ -108,24 +108,24 @@ Save the build definition and Queue a new build. If everything is set right, you
 
 ![Feed](/images/screenshots/utkarsh/tfs15-package-mgmt/feed.png)
 
-## Consuming the Nuget feed ##
+## Consuming the NuGet feed ##
 
-You or your team is now ready to consume these Nuget packages. The details page, when you create the feed, already gives instructions on how to add this feed as a source to your package manager client (for example Visual Studio's Nuget Package Manager). The command, to add this feed as a source is
+You or your team is now ready to consume these NuGet packages. The details page, when you create the feed, already gives instructions on how to add this feed as a source to your package manager client (for example Visual Studio's NuGet Package Manager). The command, to add this feed as a source is
 
 ```shell
 nuget.exe sources Add -Name "MyCompanyNuget" -Source http://localhost:8080/tfs/DefaultCollection/_packaging/MyCompanyNuget/nuget/v3/index.json
 ``` 
 
-Execute the above command on the client machine command prompt. This should update the Nuget.config file and you will see a new Nuget source.
+Execute the above command on the client machine command prompt. This should update the Nuget.config file and you will see a new NuGet source.
 
 ![NugetConfig](/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-config.png)
 
-If you are Visual Studio user, you can also add this source by going to `Tools | Options | Nuget Package Manger | Package Sources` and providing feed URL as below.
+If you are Visual Studio user, you can also add this source by going to `Tools | Options | NuGet Package Manger | Package Sources` and providing feed URL as below.
 
 ![NugetConfig](/images/screenshots/utkarsh/tfs15-package-mgmt/vs-nuget-source.png)
 
 ## Summary ##
 
-That's it. You have integrated publishing your Nuget Packages to the local package feed within your TFS 15. So every time you update your package, you are publishing the latest packages to the Nuget feed, thus making sure your team always consumes latest packages.
+That's it. You have integrated publishing your NuGet Packages to the local package feed within your TFS 15. So every time you update your package, you are publishing the latest packages to the NuGet feed, thus making sure your team always consumes latest packages.
 
 Thanks for reading.
