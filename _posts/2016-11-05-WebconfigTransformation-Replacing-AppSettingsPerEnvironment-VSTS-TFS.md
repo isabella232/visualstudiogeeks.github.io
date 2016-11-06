@@ -2,7 +2,7 @@
 layout: post
 title: "Replace appsetting tokens in config files with Build & Release Management in VSTS (TFS)"
 date: 2016-11-05
-author: utkarsh 
+author: tarun 
 tags: ["DevOps", "ReleaseManagement"]
 categories:
 - "DevOps"
