@@ -13,14 +13,16 @@ layout: default
       <br/>
     {% for tag in page.tags %}
       <a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
-      {% endfor %}
+    {% endfor %}
     </p>
   </header>
   
   <article class="post-content">
     {{ content }}
     <a id="author"></a>
+    {% include related.html %}
     {% include authorintro.html %}
   </article>
+  
   {% include comment.html %}
 </div>

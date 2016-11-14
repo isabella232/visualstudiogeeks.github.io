@@ -15,10 +15,10 @@ Whether you are developing for web or windows. Replacing the configuration varia
 
 <!--more--> 
 
-# Pre-Requisites 
+## Pre-Requisites ## 
 This walk through assumes you already have a web based project set up in Team Foundation Server or Visual Studio Team Services. 
 
-# Walkthrough 
+## Walkthrough  ##
 - Open Team Foundation Server and navigate to the marketplace by clicking on the 'shopping bag' icon from the top right corner in the navigation bar.
    
    ![NavigateToMarketplace](/images/screenshots/tarun/ReplaceTokens/Nav2MrktplaceVstsTfs.png)

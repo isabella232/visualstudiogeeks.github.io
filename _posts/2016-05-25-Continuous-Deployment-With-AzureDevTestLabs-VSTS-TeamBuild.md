@@ -18,7 +18,7 @@ Provisioning infrastructure in your release pipeline gurantees a well known depe
 
 ![AzureDevTestLabs InfrastructureIsCode](/images/screenshots/tarun/AzureDTL/AzureDtl_DevOps_InfrastructureIsCode.png)
 
-# Our Release Pipeline
+## Our Release Pipeline ##
 In this scenario we'll look at constructing a release pipeline for a web application by provisioning a DevTestLab virtual machine in Azure using AzureDevTestLabs, we'll then run a DSC script to bring the virtual machine to the desired state of a web server. We'll then deploy the web application on the newly provisioned web server. Then deploy a test agent to run Selenium based functional tests. Once the application has been successfully functionally tested, execute performance tests. At this point, take a snap shot of the virtual machine into a custom image in the AzureDevTestLab and then finally delete the virtual machine. 
 
 ![AzureDevTestLabs ReleasePipeline](/images/screenshots/tarun/AzureDTL/AzureDtl_DevOps_ReleasePipeline.png)
@@ -27,10 +27,10 @@ This will translate into the following release pipeline in Visual Studio Team Se
 
 ![AzureDevTestLabs ReleasePipeline VSTS](/images/screenshots/tarun/AzureDTL/AzureDtl_DevOps_ReleasePipeline_VSTS.png)
 
-# Understanding the Release Processes
+## Understanding the Release Processes ##
 Let's step through and understand the tasks one by one... 
 
-### __Software Artifact__ 
+### __Software Artifact__ ###
 A build definition `Fabrikam.Core.Release` is used to compile code, run unit tests, run sonarQube code analysis and then finally package the web application using Web Deploy. The build uses a custom task to version the binaries to the version of the build definition. The build on successful completion triggers the release definition `Fabrikam.Core.Release`
 
 ![AzureDevTestLabs BuildPipeline TeamBuild VSTS](/images/screenshots/tarun/AzureDTL/AzureDtl_DevOps_BuildPipeline_VSTS.png)
@@ -39,7 +39,7 @@ You can refer to the following two blogposts on SonarQube to learn more about,
 - [How to install SonarQube as a WindowsSevice with SQL Server using Windows Authentication for VSTS](http://www.visualstudiogeeks.com/blog/DevOps/Install-SonarQube-As-WindowsService-With-SQLServer-WindowsAuth-VSTS-TeamBuild)
 - [SonarQube Analysis in Continuous Integration using Team Build in VSTS](http://www.visualstudiogeeks.com/blog/DevOps/SonarQube-Analysis-With-VSTS-Using-TeamBuild) 
 
-### __Release Tasks__
+### __Release Tasks__ ###
 Now that we have an artifact ready to be deployed, let's step through the release process in detail. 
 
 - __Copying files into AzureBlog__: Since virual machines in AzureDevTestLabs share the storage of the lab rather than having a storage device per virtual machine, the `AzureBlob File Copy` task does not allow you to copy files into the virtual machine. In this demo, I am using a basic Windows Server 2012 R2 image from the Azure Gallery, this image is not set up with any exceptions. There is no easy way to copy files into the virtual machine. I am going to open an SMB network share on the virtual machine to simply file copy operation on to this virtual machine. However, instead of pre-configuring the SMB I am going to configure the SMB as part of the build process. I am using the AzureBlob File Copy task to copy a PowerShell script from the source control into a container in the DevTestLab storage that I'll later execute using VSTS to provision a SMB fileshare on the virtual machine. 
@@ -222,7 +222,7 @@ I am using the infrastructure repository as an artifact in addition to the mappi
 
 ![AzureDevTestLabs IIS WebApp Deployment using WinRM](/images/screenshots/tarun/AzureDTL/AzureDtl_DevOps_GitRepoAsArtifactInVSTS.png)
     
-# Testing the Release Pipeline 
+## Testing the Release Pipeline ##
 With the build and release process integrated and the release pipeline successfully configured. Queue a new build to trigger the release process or alternatively queue a release manually to reuse the last successful build to create a release in the staging environment. 
 
 ![AzureDevTestLabs Queue Release in VSTS](/images/screenshots/tarun/AzureDTL/AzureDtl_DevOps_VSTS_QueueBuild.png)
@@ -233,7 +233,7 @@ Navigate to the logs tab to see the progress of the release in a real time...
 
 The release has successfully completed, the infrastructure was provisioned, software was deployed, tests were executed, custom image was taken and the virtual machine was deleted. The custom VM has successfully been created, this can be seen in the custom images blade in the AzureDevTestLabs. You can refer to the blogpost here on [how to migrate custom images between AzureDevTestLabs](http://www.visualstudiogeeks.com/blog/DevOps/How-To-Move-CustomImages-VHD-Between-AzureDevTestLabs)
 
-# Summary
+## Summary ##
 In this blogpost we saw how easy it is to bring environment provisioing into your release pipeline. With the introducing of Azure DevTestLabs and the complimentary VSTS extension it is easy as ever to deploy infrastructure as part of your release pipeline. Hope you found this blogpost useful. 
 
 Leave a comment if you would like me to share the underlying source, build and release definitions used in the blogpost. 
