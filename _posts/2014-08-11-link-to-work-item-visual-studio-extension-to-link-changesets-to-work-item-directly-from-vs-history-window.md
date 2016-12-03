@@ -3,9 +3,9 @@ layout: post          #important: don't change this
 title: "Link To Work Item – Visual Studio extension to link changeset(s) to work item directly from VS history window"
 date: 2014-08-11 01:32:50
 author: utkarsh
-tags: [visualstudio, extensions, workitem]
+tags: [VisualStudio, Extensions, workitem]
 categories:
-- "visualstudio"
+- "VisualStudio"
 - "Extensions"
 
 description: "Link To Work Item – Visual Studio extension to link changeset(s) to work item directly from VS history window"

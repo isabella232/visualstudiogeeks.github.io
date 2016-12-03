@@ -3,7 +3,7 @@ layout: post          #important: don't change this
 title: "Tag Admin extension is now available for Visual Studio 2013"
 date: 2015-01-01 10:26:00 
 author: utkarsh
-tags: ["Extensions", VisualStudio, tagadmin]
+tags: ["Extensions", VisualStudio]
 categories:
 - blog                #important: leave this here
 - "visual studio extensibility"

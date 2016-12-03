@@ -3,10 +3,10 @@ layout: post          #important: don't change this
 title: "Favorites Menu for Visual Studio"
 date: 2013-05-11 18:28:59
 author: utkarsh
-tags: [Extensions, VisualStudio, Favorites]
+tags: [Extensions, VisualStudio]
 categories:
 - "VisualStudio"
-- "extensions"
+- "Extensions"
 description: "Favorites Menu for Visual Studio"
 img:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
