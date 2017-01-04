@@ -12,11 +12,12 @@ permalink:
 keywords: "Extensions"
 ---
 
-## Get Started ##
 
 This dashboard widget allows you to track your extension's downloads, ratings and downloads/day right from the VSTS/TFS dashboard!
 
-**Features**
+<!--more-->
+
+## Features ##
 
 - Track downloads/ratings of any extension - Visual Studio, VSTS/TFS extensions, and also Visual Studio Code extensions.
 - Know how many users downloaded your extension today.
@@ -24,11 +25,11 @@ This dashboard widget allows you to track your extension's downloads, ratings an
 
 ![dashboard](/images/screenshots/utkarsh/extensiondownloadmonitor/widgets.png)
 
-### Add to Dashboard ###
+## Add to Dashboard ##
 
 1. Follow the steps explained [here](https://www.visualstudio.com/en-us/docs/report/dashboards#add-a-widget) and select `Extension Download Monitor` widget.
 
-### Configuration ###
+## Configuration ##
 
 1. Browse to extension page in Visual Studio Marketplace.
 2. Look for `itemName=value` in the url as highlighted in screenshot below.
@@ -38,12 +39,12 @@ This dashboard widget allows you to track your extension's downloads, ratings an
 3. Get the `itemname` for your extension. For example item name is  `onlyutkarsh.ExportImportBuildDefinition` in the above screenshot.
 4. Paste that in the `Item Name` text box in the configuration.
 
-### Other Options ###
+## Other Options ##
 
 1. The extension supports 2 sizes (1x1 and 2x1).
 2. You can also select color for the widget from various available colors.
 
 ![Configuration](/images/screenshots/utkarsh/extensiondownloadmonitor/configuration.png)
 
-### Report Issues ###
+## Report Issues ##
 Found an issue or want to suggest a feature? Add it as issue [here](https://github.com/onlyutkarsh/extensiondownloadmonitorwidget/issues).
