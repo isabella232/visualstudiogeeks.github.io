@@ -18,7 +18,7 @@ In this blog post I'll show you how to manage the desired state configuration of
 # What is Azure Automation?
 Azure automation is a managed Service offered through Azure to script, test and automate application life cycle areas such as environment provisioning and server configuration… Azure automation helps you automate the manual, long-running, error-prone, and frequently repeated tasks that are commonly performed in a cloud and enterprise environment. It saves time and increases the reliability of regular administrative tasks and even schedules them to be automatically performed at regular intervals all from within the very familiar interface of azure portal... 
 
-![WhatIsAzureAutomation](/images/screenshots/tarun/AzureAutomation/WhatIsAzureAutomation.PNG)
+![WhatIsAzureAutomation](/images/screenshots/tarun/AzureAutomation/WhatIsAzureAutomation.png)
 
 # Why Azure Automation
 In the past most of the automation has been focussed on Enterprise data centre, IT Operations and IT Processes… The movement to the cloud is opening up a new suite of scenarios for automation to work against… Such as,
