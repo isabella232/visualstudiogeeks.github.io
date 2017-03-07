@@ -32,7 +32,7 @@ In the past most of the automation has been focussed on Enterprise data centre, 
 # Manage AWS EC2 from Azure Automation
 I've created a free subscription in Amazon AWS and spin up a couple of instances of Windows 2016 basic virtual machine. My goal is to hook these machines with the Azure Automation 
 
-![AzureAutomation-UpdateAzureModules](/images/screenshots/tarun/AzureAutomation/AwsEc2InstancesInAmazonConsole.PNG)
+![AzureAutomation-UpdateAzureModules](/images/screenshots/tarun/AzureAutomation/AwsEc2InstancesInAmazonConsole.PNG) 
 
 Next up login to the instance and ensure that it has Windows Management Framework 5 installed, you can test this by launching PowerShell and executing the following command `$host.version`
 
