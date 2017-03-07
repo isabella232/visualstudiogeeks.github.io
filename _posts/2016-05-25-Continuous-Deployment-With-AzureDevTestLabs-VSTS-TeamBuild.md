@@ -12,6 +12,8 @@ description: "Provision virtual environments in your continuous deployment pipel
 keywords: "DevOps, Azure, AzureDevTestLabs, TeamBuild, Continuos Deployments, Release Management"
 ---
 Provisioning infrastructure in your release pipeline gurantees a well known dependancy state of your software. In an average IT department software is developed by one team, infrastructure is provisioned by the other and software deployments are carried out by another. These silos often make releasing software such a misery. In this blogpost we'll learn how to bring these three distinct activities into one single release pipeline to make releases as smooth as a riding a gravy train. It's so easy, you'd want to do it for every application...    
+This one is for the MEP class here! 
+
 <!--more--> 
 
 > “Programmable Infrastructure” and “Infrastructure as code”... In this blogpost we'll bring this concept to life... 
