@@ -30,7 +30,7 @@ In the past most of the automation has been focussed on Enterprise data centre, 
 > The old ways of management do not necessarily work at scale of cloud… Modern cloud needs modern management… *Azure Automation* is build keeping these complex scenarios in mind...
 
 # Manage AWS EC2 from Azure Automation
-I've created a free subscription in Amazon AWS and spin up a couple of instances of Windows 2016 basic virtual machine. My goal is to hook these machines with the Azure Automation 
+I've created a free subscription in Amazon AWS and spun up a couple of instances of Windows 2016 basic virtual machine. My goal is to hook these machines with the Azure Automation 
 
 ![AzureAutomation-UpdateAzureModules](/images/screenshots/tarun/AzureAutomation/AwsEc2InstancesInAmazonConsole1.PNG) 
 
