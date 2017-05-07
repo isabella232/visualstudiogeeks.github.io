@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Azure Automation - Testing PowerShell Runbooks with Pester using Team Services"
-date: 2017-03-25
+date: 2017-05-07
 author: tarun
 tags: ["DevOps", "AzureAutomation", "VSTS", "Pester"]
 categories:
