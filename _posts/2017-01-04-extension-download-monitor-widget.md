@@ -8,7 +8,7 @@ categories:
 - "Extensions"
 img: "/images/screenshots/utkarsh/extensiondownloadmonitor/widgets.png"
 description: "Extension Download Monitor Widget"
-permalink:
+permalink: extensions/extension-download-monitor-widget
 keywords: "Extensions"
 ---
 
