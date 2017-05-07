@@ -13,7 +13,7 @@ published: true
 keywords: "DevOps, Azure, AzurePortal, AzureAutomation, PowerShell, Runbooks, Pester, Team Services, TFS, VSTS, Infrastructure As Code"
 ---
 Azure Automation is a hosted, managed Service that allows you to automate application life cycle areas such as server provisioning and server configuration management. Chances are that if you are already using Azure Automation, you have runbooks that help automate the routine operational tasks. In this blogpost I'll show you how to leverage the integration between Azure Automation & GitHub to version control your runbooks. In addition to this we'll see how easy it is to create unit tests for your runbooks using Pester and then creating a CI pipeline for your runbooks using Team Services. 
-
+<!--more--> 
 # Introduction 
 Create an Azure Automation account if you don't already have one. In this blog post I am going to use the Azure Automation account `geeks-demo-westeurope-auto`. To set up version control integration for the runbooks created in this automation account, select the `source control` under the section `account settings` on the settings blade. Work through the options to connect your repository by authorizing the account access, selecting the repository, specifying the branch and selecting the folder where the runbooks would be kept. 
 
