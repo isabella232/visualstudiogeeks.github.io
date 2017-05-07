@@ -122,6 +122,6 @@ Now, trigger the build and see Team Services run up test execution for your auto
 
 ![Configure Pester](/images/screenshots/tarun/AzureAutomation/BuildPipelinePesterTestExecutionResults.PNG)
 
-Like what you see? Feel free to share... Give me a shout on twitter [@arora_tarun](twitter.com/arora_tarun) if you run into any issues.... 
+Like what you see? Feel free to share... Give me a shout on twitter [@arora_tarun](https://twitter.com/arora_tarun) if you run into any issues.... 
 
  
