@@ -14,35 +14,7 @@ keywords: "DevOps, Azure, Git, Ci, Cd, Modern Engineering, Team Services, SemVer
 ---
 Delighted to announce that my free training course on DevOps: Continuous Integration to Continuous Deployment with Visual Studio Team Services & Azure has just released on the Microsoft Open edX platform. The training has hours of video content, theory, labs and certification. It is primarily targeted at development teams but is useful for anyone wanting to learn about DevOps and it's application in Modern Engineering environment with VSTS & Azure. The course has been jointly developed by Avanade & Microsoft... You can check out the course here - [DevOpsCiCdCourse](http://bit.ly/DevOpsCiCdInfo)
 <!--more--> 
-
-Here is a two minute primer on what this course on DevOps covers...
-
-{% include youtubeplayer.html id='ODNPADYAQvQ' %}
-
-
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-
+Scroll down for a two minute primer to the course...
 
 Like what you see? <a target="_blank" href="https://ctt.ec/JCU4x">Help us spread the word...</a>
 
@@ -78,6 +50,7 @@ Apart from covering the essential topics such as Why DevOps and What are it's be
 - Application Insights
 - DevSecOps & how to bring security into your automation workflow
 
-Look forward to your feedback...
+### Course Introduction
+Here is a two minute primer on what this course on DevOps covers...
 
-Tarun
+{% include youtubeplayer.html id='ODNPADYAQvQ' %}
