@@ -36,10 +36,6 @@ Here is a two minute primer to the course...
 
 
 
-
-
-
-
 ```
 
 
