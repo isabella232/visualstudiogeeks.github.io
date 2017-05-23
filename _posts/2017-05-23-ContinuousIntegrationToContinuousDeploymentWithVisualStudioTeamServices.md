@@ -20,19 +20,29 @@ Here is a two minute primer on what this course on DevOps covers...
 {% include youtubeplayer.html id='ODNPADYAQvQ' %}
 
 
-`
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
 
-
-
-
-
-
-
-
-
-
-
-`
 
 Like what you see? <a target="_blank" href="https://ctt.ec/JCU4x">Help us spread the word...</a>
 
