@@ -12,8 +12,9 @@ permalink: /DevOps/DevOpsTrainingCiCdWithGitVstsAzure
 published: true
 keywords: "DevOps, Azure, Git, Ci, Cd, Modern Engineering, Team Services, SemVersion, GitFlow, GitVersion, NuGet, Chocolatey, PackageManagement, ARM, ResourceGroup, AzureDevTestLabs, Release Management, Build Automation"
 ---
+Test Test Test
+<!--more--> 
+Test Test Test
 
-Test
-
-{% include youtubePlayer.html id="U8Vmk4Dj7Mc" %}
+{% include youtubeplayer.html id='U8Vmk4Dj7Mc' %}
 
