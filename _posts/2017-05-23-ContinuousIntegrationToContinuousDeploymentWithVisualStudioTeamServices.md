@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "DevOps: CI to CD with VSTS course now live!"
-date: 2017-05-23
+date: 2017-05-22
 author: tarun
 tags: ["DevOps", "Azure", "VSTS", "Training"]
 categories:
