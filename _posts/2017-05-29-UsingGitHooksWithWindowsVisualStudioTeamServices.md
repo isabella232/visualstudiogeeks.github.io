@@ -9,7 +9,7 @@ categories:
 img: "/images/screenshots/tarun/ClientSideGitHooksGitWindowsVSTS.PNG"
 description: "See how you can leverage GitHooks on client side in Windows for a repository backed up VSTS to automate quality inspection in your commits among other use cases you could apply GitHooks to in your DevOps solution... "
 permalink: /DevOps/UsingGitHooksWithVstsGitOnWindows
-published: false
+published: true
 keywords: "DevOps, GitHooks, GitHooks on Windows, GitHooks with VSTS, SourceControl, VersionControl, GitAutomation, GitHooks PowerShell, Git client side Hooks, CD with Git"
 ---
 Ryan Hellyer accidentally leaked his Amazon AWS access keys to GitHub and woke up to a $6,000 bill the next morning. Wouldn't you just expect the source control as clever as git to just stop you from making such a blender?! Well, in case you didn't know you could put Git Hooks to work to address not just this but many similar scenarios...     
