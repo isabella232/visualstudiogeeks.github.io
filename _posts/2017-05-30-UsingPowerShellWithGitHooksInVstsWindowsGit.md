@@ -18,7 +18,7 @@ There are a whole host of things one tends to check before committing code into 
 ### Where are the GitHooks scripts? 
 Git ships with a number of sample hook scripts, in case you didn't realise, these have always been here in your repository. Check out the .git folder in your repository...  `repo\.git\hooks`. These samples are disabled by default. For instance, if you open that folder you’ll find a file called `pre-commit.sample`. To enable it, just rename it to `pre-commit` by removing the `.sample` extension and make the script executable. When you attempt to commit using `git commit`, the script is found and executed. If your pre-commit script exits with a 0 (zero), you commit successfully, otherwise the commit fails. 
 
-> Even this script will fail on Windows as it won't find the correct path to Shell executable. Check out how you can fix this [Using GitHooks Shell scripts with Visual Studio Team Services on Windows]({%/DevOps/UsingGitHooksWithVstsGitOnWindows%})
+> Even this script will fail on Windows as it won't find the correct path to Shell executable. Check out how you can fix this [Using GitHooks Shell scripts with Visual Studio Team Services on Windows]({% UsingGitHooksWithVstsGitOnWindows %})
 
 ``` sh
 #!/bin/sh
