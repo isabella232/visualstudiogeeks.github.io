@@ -37,7 +37,7 @@ Let's start by exploring client side Git Hooks... Navigate to `repo\.git\hooks` 
 ### GitHooks. Oh Windows!
 Now if you are on windows, simply renaming the file won't work. Git will fail to find shell in the designated path as specified in the script. The problem was lurking in the first line of the script, the __shebang__ declaration:
 
-``` shell
+``` sh
 #!/bin/sh
 ```
 
@@ -50,7 +50,7 @@ On Unix-like OS’s, the `#!` tells the program loader that this is a script to 
 ### PreCommit GitHook to scan commit for keywords 
 Let's go back to the example we started with, how could have GitHooks stopped Ryan Hellyer from accidentally leaking his Amazon AWS access keys to GitHub? You can invoke a script at pre-commit using GitHooks to scan the increment of code being committed into your local repository for specific keywords. Replace the code in this pre-commit shell file with the below code... 
 
-``` shell
+``` sh
 #!C:/Program\ Files/Git/usr/bin/sh.exe
 matches=$(git diff-index --patch HEAD | grep '^+' | grep -Pi 'password|keyword2|keyword3')
 if [ ! -z "$matches" ]
