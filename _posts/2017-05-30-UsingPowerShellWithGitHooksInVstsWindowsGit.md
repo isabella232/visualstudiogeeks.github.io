@@ -8,7 +8,7 @@ categories:
 - "DevOps"
 img: "/images/screenshots/tarun/GitHooksWithPowerShellOnWindows.png"
 description: "Heard about GitHooks and now wondering how you can apply PowerShell to it? Look no further this blogpost will show you how to leverage GitHooks on Windows with Visual Studio Team Services using PowerShell in your DevOps solution... "
-permalink: /DevOps/UsingGitHooksWithVstsGitOnWindows
+permalink: /DevOps/UsingPowerShellForGitHooksWithVstsGitOnWindows
 published: true
 keywords: "DevOps, GitHooks, GitHooks on Windows, GitHooks with PowerShell, GitHooks with VSTS, PowerShell, SourceControl, VersionControl, GitAutomation, GitHooks PowerShell, Git client side Hooks, CD with Git"
 ---
