@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GitHooks with PowerShell on Windows to automate source control operations"
-date: 2017-06-02
+date: 2017-06-03
 author: tarun
 tags: ["DevOps", "GitHooks", "PowerShell"]
 categories:
@@ -18,7 +18,7 @@ There are a whole host of things one tends to check before committing code into 
 ### Where are the GitHooks scripts? 
 Git ships with a number of sample hook scripts, in case you didn't realise, these have always been here in your repository. Check out the .git folder in your repository...  `repo\.git\hooks`. These samples are disabled by default. For instance, if you open that folder you’ll find a file called `pre-commit.sample`. To enable it, just rename it to `pre-commit` by removing the `.sample` extension and make the script executable. When you attempt to commit using `git commit`, the script is found and executed. If your pre-commit script exits with a 0 (zero), you commit successfully, otherwise the commit fails. 
 
-> Even this script will fail on Windows as it won't find the correct path to Shell executable. Check out how you can fix this [Using GitHooks Shell scripts with Visual Studio Team Services on Windows]({% /DevOps/UsingGitHooksWithVstsGitOnWindows %})
+> Even this script will fail on Windows as it won't find the correct path to Shell executable. Check out how you can fix this [Using GitHooks Shell scripts with Visual Studio Team Services on Windows]({%/DevOps/UsingGitHooksWithVstsGitOnWindows%})
 
 ``` sh
 #!/bin/sh
@@ -96,7 +96,7 @@ Here is what the script exactly does on each file type,
 - `app.config` & `web.config` files - sorts appSettings elements by key, in alphabetic order, sorts assemblyBinding.dependentAssembly elements alphabetically based on the assemblyIdentity.name attribute
 - `.csproj` files - sorts appSettings elements by key, in alphabetic order, sorts Reference, ProjectReference & Compile elements
 
-Did you know you can now use Pester to test your PowerShell script, see this example here on how to put Pester in action to unit test your PowerShell scripts and visualize the test results [Testing PowerShell with Pester and Visual Studio Team Services]({% /DevOps/TestingAzureAutomationPowerShellRunbooksWithPesterInTeamServices %})
+Did you know you can now use Pester to test your PowerShell script, see this example here on how to put Pester in action to unit test your PowerShell scripts and visualize the test results [Testing PowerShell with Pester and Visual Studio Team Services]({%/DevOps/TestingAzureAutomationPowerShellRunbooksWithPesterInTeamServices%})
 
 ``` powershell
 Function AutoFix-WebConfig([string] $rootDirectory)
@@ -235,7 +235,7 @@ exit $exitcode
 
 Save this script in the folder `.git\hooks\` with the name `AutoFix-VisualStudioFiles.ps1`. 
 
-Did you know... Ryan Hellyer accidentally leaked his Amazon AWS access keys to GitHub and woke up to a $6,000 bill the next morning. Wouldn't you just expect the source control as clever as git to just stop you from making such a blender?! Well, in case you didn't know you could put Git Hooks to work to address not just this but many similar scenarios... [Scan my pre-commits using GitHook to detect any password using a keyword builder]({% /DevOps/UsingGitHooksWithVstsGitOnWindows %})
+Did you know... Ryan Hellyer accidentally leaked his Amazon AWS access keys to GitHub and woke up to a $6,000 bill the next morning. Wouldn't you just expect the source control as clever as git to just stop you from making such a blender?! Well, in case you didn't know you could put Git Hooks to work to address not just this but many similar scenarios... [Scan my pre-commits using GitHook to detect any password using a keyword builder]({%/DevOps/UsingGitHooksWithVstsGitOnWindows%})
 
 In order to put in action, simply make some changes in your repository and commit the code. This will invoke the pre-commit event which will intern invoke this script. The result, your configuration files and csproj files will be organized. Watch the video below on how you can do this working for a Git repository in VSTS on Windows (Start the video at 8:45 to directly jump into this example of doing this with PowerShell)... 
 
