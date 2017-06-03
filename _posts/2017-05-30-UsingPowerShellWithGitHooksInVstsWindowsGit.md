@@ -9,7 +9,7 @@ categories:
 img: "/images/screenshots/tarun/GitHooksWithPowerShellOnWindows.png"
 description: "Heard about GitHooks and now wondering how you can apply PowerShell to it? Look no further this blogpost will show you how to leverage GitHooks on Windows with Visual Studio Team Services using PowerShell in your DevOps solution... "
 permalink: /DevOps/UsingGitHooksWithVstsGitOnWindows
-published: false
+published: true
 keywords: "DevOps, GitHooks, GitHooks on Windows, GitHooks with PowerShell, GitHooks with VSTS, PowerShell, SourceControl, VersionControl, GitAutomation, GitHooks PowerShell, Git client side Hooks, CD with Git"
 ---
 There are a whole host of things one tends to check before committing code into the source control system. It's a proven fact that addressing technical issues in the product are less expensive the earlier they are identified. Git luckily gives you a bunch of events against your local repository that you can leverage to automate the pre commit checks in your codebase. The average windows user may find it difficult to script the actions using shell script. Luckily you can invoke PowerShell scripts on Windows for your GitHooks. In this blogpost we'll cover an end to end example... 
