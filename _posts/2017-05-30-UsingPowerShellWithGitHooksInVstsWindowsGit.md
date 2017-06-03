@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GitHooks with PowerShell on Windows to automate source control operations"
-date: 2017-06-03
+date: 2017-06-02
 author: tarun
 tags: ["DevOps", "GitHooks", "PowerShell"]
 categories:
