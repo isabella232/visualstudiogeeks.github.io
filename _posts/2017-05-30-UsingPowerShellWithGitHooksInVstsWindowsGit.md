@@ -75,7 +75,7 @@ exec git diff-index --check --cached $against --
 This is what the `pre-commit` script looks like, an average windows user may struggle with a shell script, luckily PowerShell scripts can be used as a substitute... 
 
 Interested in learning how you can go from zero to DevOps; Learn real world strategies and application of DevOps. Learn how to use apply modern engineering practices with Azure & VSTS to go from Continuous Integration to Continuous Delivery to Continuous Deployment! 
-[Open & Free course on DevOps - Ci to Cd]({% /DevOps/DevOpsTrainingCiCdWithGitVstsAzure %}) 
+[Open & Free course on DevOps - Ci to Cd]({% post_url DevOpsTrainingCiCdWithGitVstsAzure %}) 
 
 ### Invoke PowerShell script in GitHook
 Let's start off simply by removing everything in the pre-commit GitHook shell script and see how you can invoke a PowerShell script with GitHook in Git on a Windows machine. As you can see in the example below, we are simply just calling a PowerShell script from a shell script through a GitHook script. Ofcourse, you need to give the path to the PowerShell script, it's best to reference this path from the root of the repository. 
@@ -96,7 +96,7 @@ Here is what the script exactly does on each file type,
 - `app.config` & `web.config` files - sorts appSettings elements by key, in alphabetic order, sorts assemblyBinding.dependentAssembly elements alphabetically based on the assemblyIdentity.name attribute
 - `.csproj` files - sorts appSettings elements by key, in alphabetic order, sorts Reference, ProjectReference & Compile elements
 
-Did you know you can now use Pester to test your PowerShell script, see this example here on how to put Pester in action to unit test your PowerShell scripts and visualize the test results [Testing PowerShell with Pester and Visual Studio Team Services]({%/DevOps/TestingAzureAutomationPowerShellRunbooksWithPesterInTeamServices%})
+Did you know you can now use Pester to test your PowerShell script, see this example here on how to put Pester in action to unit test your PowerShell scripts and visualize the test results [Testing PowerShell with Pester and Visual Studio Team Services]({% post_url TestingAzureAutomationPowerShellRunbooksWithPesterInTeamServices%})
 
 ``` powershell
 Function AutoFix-WebConfig([string] $rootDirectory)
@@ -235,7 +235,7 @@ exit $exitcode
 
 Save this script in the folder `.git\hooks\` with the name `AutoFix-VisualStudioFiles.ps1`. 
 
-Did you know... Ryan Hellyer accidentally leaked his Amazon AWS access keys to GitHub and woke up to a $6,000 bill the next morning. Wouldn't you just expect the source control as clever as git to just stop you from making such a blender?! Well, in case you didn't know you could put Git Hooks to work to address not just this but many similar scenarios... [Scan my pre-commits using GitHook to detect any password using a keyword builder]({%/DevOps/UsingGitHooksWithVstsGitOnWindows%})
+Did you know... Ryan Hellyer accidentally leaked his Amazon AWS access keys to GitHub and woke up to a $6,000 bill the next morning. Wouldn't you just expect the source control as clever as git to just stop you from making such a blender?! Well, in case you didn't know you could put Git Hooks to work to address not just this but many similar scenarios... [Scan my pre-commits using GitHook to detect any password using a keyword builder]({% post_url UsingGitHooksWithVstsGitOnWindows%})
 
 In order to put in action, simply make some changes in your repository and commit the code. This will invoke the pre-commit event which will intern invoke this script. The result, your configuration files and csproj files will be organized. Watch the video below on how you can do this working for a Git repository in VSTS on Windows (Start the video at 8:45 to directly jump into this example of doing this with PowerShell)... 
 
