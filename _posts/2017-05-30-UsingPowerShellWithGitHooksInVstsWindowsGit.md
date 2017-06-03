@@ -20,6 +20,7 @@ Git ships with a number of sample hook scripts, in case you didn't realise, thes
 
 > Even this script will fail on Windows as it won't find the correct path to Shell executable. Check out how you can fix this [Using GitHooks Shell scripts with Visual Studio Team Services on Windows](http://www.visualstudiogeeks.com/DevOps/UsingGitHooksWithVstsGitOnWindows#githooks-oh-windows)
 
+.
 ``` sh
 #!/bin/sh
 #
