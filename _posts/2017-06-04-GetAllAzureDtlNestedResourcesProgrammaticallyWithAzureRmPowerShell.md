@@ -68,6 +68,8 @@ Write-Host "**** Found this useful? Let others on Twitter know :> @arora_tarun *
 
 ```
 
+The Output of the above script... 
+
 ![Output of PowerShell script for Get all nested resources within Azure DTL with AzureRm PowerShell](/images/screenshots/tarun/OutputOfAzureDtlGetAllResourcesByPowerShell.png)
 
 ### So what's the secret sauce? 
