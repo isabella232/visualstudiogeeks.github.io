@@ -18,7 +18,7 @@ Since all VMs with in an Azure Dev Test Lab (Azure DTL) are within their own res
 ### Azure DTL resources as seen in Azure Portal
 As you can see in the screen shot below, I have a bunch of resources with in the Azure Dev Test Lab like data disks, key vaults and virtual machines. When you click on one of these virtual machines you'll see that the random resource group name I alluded to earlier, with in this resource group you can see the nested resources.  
 
-![All nested resources within Azure DTL in Azure Portal](/images/screenshots/tarun/AzureDtlResourceGroupInAzurePortal.png)
+![All nested resources within Azure DTL in Azure Portal](/images/screenshots/tarun/AzureDtlResourceGroupInAzurePortal.PNG)
 
 ### Azure DTL resources via AzureRM PowerShell 
 Alright, now that we know what the structure of the Azure DTL nested resources are, let's see how we can retrieve all resources within an Azure DTL resources along with their nested resources through AzureRM PowerShell script... 
