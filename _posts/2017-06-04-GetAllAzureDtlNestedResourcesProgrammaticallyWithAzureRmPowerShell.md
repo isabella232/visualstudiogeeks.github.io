@@ -86,7 +86,7 @@ The key thing that glues the virtual machine resource group in Dev Test Lab to i
 
 The `ComputerId` property is what holds the cryptic resource group name... You need to split this value to retrieve the resource group name `$props.Properties.computeId.Split('/')[4]`, unfortunately there is no other easy way to retrieve this value as it stands today... 
 
-![Get all Azure DTL Virtual Machine Properties Programmatically with AzureRm PowerShell](/images/screenshots/tarun/AzureDtlVmPropertiesPowerShellAzureRm.png)
+![Get all Azure DTL Virtual Machine Properties Programmatically with AzureRm PowerShell](/images/screenshots/tarun/AzureDtlVmPropertiesPowerShellAzureRm.PNG)
 
 That's it folks! Hope you found this useful. Leave a comment if you find a better way of doing this... 
 
