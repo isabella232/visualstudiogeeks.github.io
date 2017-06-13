@@ -7,9 +7,9 @@ tags: ["DevOps", "Git", "GitHooks"]
 categories:
 - "DevOps"
 img: "/images/screenshots/tarun/ClientSideGitHooksGitWindowsVSTS.PNG"
-description: "Use a PreCommit GitHook to validate the email address configured in the configuration to avoid accidentally committing changes in work repository with personal email and visa versa"
+description: "Use a PreCommit GitHook to validate the email address configured in the configuration to avoid accidentally committing changes in work repository with personal email and visa versa..."
 permalink: /DevOps/GitHookToVerifyRepositoryEmailAddressOnWindows
-published: false
+published: true
 keywords: "DevOps, GitHooks, PowerShell,  Git, PreCommit, Repository, GlobalConfiguration, GitHooks Windows, Global GitHooks, Git Conditional Includes, GitHooks Tarun"
 ---
 When you are using Git for work and personal repositories although you can logically separate them in separate folders, you can accidentally commit in your personal repository with your work account and visa versa. It is annoying and in some cases might break employer policies as well. Luckily with GitHooks it's possible to set up a pre-commit hook that allows you to use the correct email address for the correct repository, check the blogpost for how... 
