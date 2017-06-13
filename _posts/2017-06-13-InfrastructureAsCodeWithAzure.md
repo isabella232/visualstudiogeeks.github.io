@@ -18,7 +18,7 @@ Delighted to announce that my free training course on **DevOps: Infrastructure A
 ### Introduction
 Here is a two minute primer to the course...
 
-{% include youtubeplayer.html id='Jbs2xGoksk' %}
+{% include youtubeplayer.html id='-Jbs2xGoksk' %}
 
 ``` PowerShell
 
