@@ -59,7 +59,7 @@ then
   then
     echo "";
   else
-    echo "email not configured to Avanade in Avanade directory";
+    echo "email not configured to Avanade in Work directory";
     echo "run:"
     echo '   git config user.email "tarun_dot_b_dot_arora@avanade.com"'
     echo ''
