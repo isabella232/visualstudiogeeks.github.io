@@ -36,15 +36,15 @@ I've absolutely enjoyed creating these training courses. Having authored a book 
 
 In addition to creating the content for the training, reviewing some of the other content created by Microsoft I was also asked to record the training sessions. I travelled to the Microsoft Lex Studio on the campus in Redmond. I was totally impressed by the Microsoft Studio setup, the channel 9 studio team are also in the same building and record a lot of their content in this studio. 
 
-![Lex Studio Microsoft](/images/screenshots/tarun/DevOps-Tarun-MicrosoftLexStudio.jpg)
+![Lex Studio Microsoft](/images/screenshots/tarun/DevOps-Tarun-MicrosoftLexStudio.JPG)
 
 The studio recording and editing kit and the professional studio staff running the studios is amazing!
  
-![Lex Studio Microsoft](/images/screenshots/tarun/DevOps-Tarun-MicrosoftLexStudio2.jpg)
+![Lex Studio Microsoft](/images/screenshots/tarun/DevOps-Tarun-MicrosoftLexStudio2.JPG)
 
 Of course, me, recording the courses... 
 
-![Lex Studio Microsoft](/images/screenshots/tarun/DevOps-Tarun-MicrosoftLexStudio3.jpg)
+![Lex Studio Microsoft](/images/screenshots/tarun/DevOps-Tarun-MicrosoftLexStudio3.JPG)
 
 # Courses I have in the Edx Library?     
 I would encourage you to check out the library, it's loaded with a lot of courses on DevOps, PowerBi and Azure... So far I have two courses up on the library...
