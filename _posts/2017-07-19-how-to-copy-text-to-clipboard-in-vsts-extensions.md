@@ -9,7 +9,7 @@ categories:
 - "VSTS"
 img: "/images/screenshots/utkarsh/copy-to-clipboard-vsts-extension.png"
 description: "How to copy text to clipboard in VSTS extensions using VSTS Web Extension SDK"
-published: true
+permalink: extensions/how-to-copy-text-to-clipboard-in-vsts-extensions
 keywords: "Extensions, VSTS"
 ---
 
