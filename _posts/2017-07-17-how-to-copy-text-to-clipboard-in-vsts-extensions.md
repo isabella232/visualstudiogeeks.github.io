@@ -5,12 +5,14 @@ date: 2017-07-19
 author: utkarsh
 tags: ["Extensions", "VSTS"]
 categories:
-- "DevOps"
+- "Extensions"
+- "VSTS"
 img: "/images/screenshots/utkarsh/copy-to-clipboard-vsts-extension.png"
 description: "How to copy text to clipboard in VSTS extensions using VSTS Web Extension SDK"
 published: true
 keywords: "Extensions, VSTS"
 ---
+
 If you have used TFS/VSTS, you might have used "Copy to Clipboard" option at least few times - either on the workitem context menu or to copy the repository URL on *Clone Repository* dialog . In this blog post we will see how to implement that functionality and copy text to clipboard from your VSTS/TFS extensions using Microsoft Visual Studio Team Services [Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) and Typescript.
 
 <!--more-->
