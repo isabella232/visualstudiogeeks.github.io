@@ -8,8 +8,8 @@ categories:
 - "Extensions"
 - "VSTS"
 img: "/images/screenshots/utkarsh/Jul17/browser-vsts.png"
-description: "How to copy text to clipboard in VSTS extensions using VSTS Web Extension SDK"
-permalink: extensions/how-to-copy-text-to-clipboard-in-vsts-extensions
+description: "How to Check browser type and its version in your VSTS/TFS extensions"
+permalink: extensions/how-to-check-browser-type-and-its-version-in-vsts-extensions
 keywords: "Extensions, VSTS"
 ---
 
