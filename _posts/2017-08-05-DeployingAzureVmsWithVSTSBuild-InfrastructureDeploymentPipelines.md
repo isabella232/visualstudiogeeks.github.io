@@ -13,7 +13,7 @@ published: true
 keywords: "DevOps, Packer, Infrastructure As Code, Azure, Automated Deployment in Azure, Automate Provisioning in Azure, Infrastructure Deployment pipelines, Team Services, VSTS, Team Build, KeyVault, Azure Key Vault, Azure PowerShell, PowerShell, Email Task in VSTS, Insert into KeyVault from VSTS, Provision VM, Azure Dev Test Labs, IaC, ARM Templates, Complex Password, PowerShell GeneratePassword, Azure Tags, Tag Azure from VSTS Pipeline"
 ---
 Would you consider a 16 character alphanumeric password stored in an excel spreadsheet in a shared location secure? I've had the joy of watching infrastructure engineers provision infrastructure in the cloud like they have done on-premise for years - MANUALLY! The concepts of Infrastructure as Code have been around for a while, so have configuration management tools like Chef and Puppet but, both the cost & complexity scares people from adopting either. VSTS on the other hand has a very low entry barrier in both cost & complexity and integrates the Application Lifecycle Management into DevOps in a way which doubles the value provided by the automation pipelines. In this blogpost I'll take you the full 9 yards with a walk through on how to set up an infrastructure deployment pipeline using VSTS ... 
-<!-- more -->
+<!--more-->
 
 + Machine Name 
 + Generate a strong Password
