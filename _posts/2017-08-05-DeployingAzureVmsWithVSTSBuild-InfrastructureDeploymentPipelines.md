@@ -107,7 +107,7 @@ As you can see in the script above, I am generating a key name for the secret wh
 
 As you can see the value is now reflecting in the Azure Key Vault secrets... 
 
-![Image](/images/screenshots/tarun/InfraPipelines/AzureKeyVaultInsertFromVsts.JPG)
+![Image](/images/screenshots/tarun/InfraPipelines/AzureKeyVaultInsertFromVsts.jpg)
 
 # Read Secrets from Azure Key Vault 
 __Problem:__ If you are building a modern application and are following modern design principles, there is a good chance your infrastructure is composed of a number of layers and services that have their unique set of keys and secret. While it's possible to store these values directly as variables in a build definition, this is hard to scale as you'll need to add these secure variables in every build definition and then managing the lifecycle of the updates values across multiple builds is equally tedious. 
