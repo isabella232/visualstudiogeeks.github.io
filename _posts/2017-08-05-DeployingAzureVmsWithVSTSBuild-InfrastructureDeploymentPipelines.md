@@ -23,6 +23,10 @@ Would you consider a 16 character alphanumeric password stored in an excel sprea
 + Tag Resources in Azure 
 + Send a summary email with login details
 
+The end product would something like this...
+
+![Image](/images/screenshots/tarun/InfraPipelines/InfrastructureProvisioningPipelineForAzureFromVSTSTeamBuild.jpg)
+
 # Pre-requisites 
 + Visual Studio Team Services: If you don't already have Start off by creating a free instance of Visual Studio [Team Services](https://www.visualstudio.com/team-services/)
 + Azure Subscription: If you don't already have an Azure subscription start off my signing up for free [here](https://azure.microsoft.com)
@@ -31,9 +35,7 @@ Would you consider a 16 character alphanumeric password stored in an excel sprea
 Set up Azure as a [service endpoint in VSTS](https://www.visualstudio.com/en-us/docs/build/concepts/library/service-endpoints)
 
 ## Infrastructure Deployment Pipeline 
-Read through the elements of the infrastructure pipeline, feel free to directly jump to the element that's most relevant to you. Also work well together and in isolation. Start off by creating a new Pipeline in Team Services by choosing the Empty Template... The end product would something like this...
-
-![Image](/images/screenshots/tarun/InfraPipelines/InfrastructureProvisioningPipelineForAzureFromVSTSTeamBuild.jpg)
+Read through the elements of the infrastructure pipeline, feel free to directly jump to the element that's most relevant to you. Also work well together and in isolation. Start off by creating a new Pipeline in Team Services by choosing the Empty Template... 
 
 # Machine Name
 __Problem:__ Enterprises have a naming convention for virtual machines. Infrastructure engineers are most comfortable with looking at the latest machine name and then working out the new machine name manually. They will then block that name in a spreadsheet so they don't accidentally give that name out to someone else which may lead to conflict.  
