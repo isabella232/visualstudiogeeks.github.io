@@ -3,7 +3,7 @@ layout: post
 title: "SpecFlow VSTS Build pipeline with SpecRunner For BDD Style Automated Gherkin Functional Tests"
 date: 2017-08-26
 author: tarun
-tags: ["DevOps", "SpecFlow"]
+tags: ["DevOps", "BuildPipeline", "SpecFlow"]
 categories:
 - "DevOps"
 img: "/images/screenshots/tarun/SpecFlowVstsBuildPipelineBlogCover.png"
