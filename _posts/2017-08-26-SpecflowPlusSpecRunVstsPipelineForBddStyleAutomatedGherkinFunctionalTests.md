@@ -6,11 +6,11 @@ author: tarun
 tags: ["DevOps", "SpecFlow"]
 categories:
 - "DevOps"
-img: ""
-description: ""
+img: "/images/screenshots/tarun/SpecFlowVstsBuildPipelineBlogCover.png"
+description: "Walk through to set up an automated build pipeline for SpecFlow in Visual Studio Team Services (VSTS). How to use SpecRunner as the test adapter with Visual Studio Test task and SpecFlow+ to put SpecFlow+Living documentation with in VSTS. We'll also look at putting together a testing dashboard to surface useful application quality metrics on a dashboard."
 permalink: /DevOps/SpecflowPlusSpecRunVstsPipelineForBddStyleAutomatedGherkinFunctionalTests
-published: false
-keywords: ""
+published: true
+keywords: "DevOps, SpecFlow, SpecFlow+, SpecFlowPlus, BDD, Gherkin, SpecFlow+ Living Documentation, Gherkin, Functional Test Pipeline, SpecRunner, VSTS, Automated Build Pipleine for SpecFlow, SpecRunner with Visual Studio Test Task, SpecFlow Analysis Results in VSTS, Email Spec Analysis, Attach SpecFlow Analysis with VSTS Build, Given When Then SpecFlow Gherkin VSTS, Automated Functional Testing Pipeline in VSTS, Azure, SpecFlow Agent Setup, Set up VSTS Agent for SpecFlow, How to setup SpecFlow in VSTS, Example SpecFlow Build Pipeline, SpecRunner SpecFlow setup for VSTS, SpecFlow VSTS NuGet Packages, SpecFlow Cucumber for .NET in VSTS & TFS, SpecFlow Plus TFS, SpecRunner TFS Build Pipeline"
 ---
 In this blogpost I'll show you how to create an automated build pipeline for SpecFlow with VSTS using SpecRunner to execute your automated BDD functional tests written using Gherkin syntax. We won't stop just here, I'll show you how to add the SpecFlow+ extension to create living functional test documentation accessible right from VSTS... We'll end by looking at how to pin some of this on a dashboard in VSTS to surface some key testing metrics for visibility with your development and operation teams... 
 <!--more-->
@@ -18,6 +18,7 @@ In this blogpost I'll show you how to create an automated build pipeline for Spe
 
 # Build Pipeline 
 Simply select one of the existing build template that includes the Visual Studio Build and Test task, but to really put your SpecFlow (plus) tests to best use watch out for the for the following points... 
+
 + __Using SpecFlow+ SpecRunner test adapter__
 SpecFlow tests don't necessarily need the SpecRunner for execution, they can be run using MSTestv2 or any other compatible framework. However, using SpecRunner provides great benefits, for example you can get some very useful analysis out of the tests that wouldn't necessarily be available if you used other test execution frameworks. Luckily using SpecRunner for test execution doesn't require any installation on the agent! 
 
@@ -78,12 +79,15 @@ I love my slack and team rooms, but every once in while you find email still has
 
 ![Image](/images/screenshots/tarun/SpecFlowEmailTask.jpg)
 
-Putting all of these to work, I am able to generate some pretty useful and actionable emails for the devs, testers, ops and stakeholders that care about some of this stuff... As you can see in the screen shot below, there are some useful links to the specflow+ documentation, testing dashboard, code changes that shows a div between the last two versions and details about why and by whom was the build trigger in addition to the agent the tests were executed.  
+Putting all of these to work, I am able to generate some pretty useful and actionable emails for the devs, testers, ops and stakeholders that care about some of this stuff... As you can see in the screen shot below, there are some useful links to the SpecFlow+ documentation, testing dashboard, code changes that shows a div between the last two versions and details about why and by whom was the build trigger in addition to the agent the tests were executed.  
 
-`TODO: Screen shot of the email with imp links`
+![Image](/images/screenshots/tarun/VstsSpecFlowTestResultsEmailSummary.jpg)
 
 + __Testing Dashboard__ 
-Information radiators help bring the visibility of key stats to the people it makes most sense to. Luckily with VSTS, there are a great range of widgets that support pinning live updates onto dashboards. As you can see in the example below, I am tracking a few things... 
+Information radiators help bring the visibility of key stats to the people it makes most sense to. Luckily with VSTS, there are a great range of widgets that support pinning live updates onto dashboards. As you can see in the example below, I am tracking a few things...
+
+![Image](/images/screenshots/tarun/SampleTestingDashboardVsts.jpg)
+
 - Markdown 
 - Last build status on a traffic light signal  
 - Build Status Trend 
@@ -95,9 +99,6 @@ Information radiators help bring the visibility of key stats to the people it ma
 - Quick access to SpecFlow+ Living Documentation
 - Release Definition Status & Trend 
 - Deployment status by branch 
-
-
-`TODO: Add screen shot of the dashboard`
 
 Hope you found this useful... Would love your feedback... Any questions on the specflow build pipeline or specflow plus spec runner, feel free to ask. If there are others things that you track in VSTS for your functional tests or know any other cool extensions to improve the use of SpecFlow within VSTS then feel free to leave a comment... 
 
