@@ -14,6 +14,7 @@ keywords: "DevOps, SpecFlow, SpecFlow+, SpecFlowPlus, BDD, Gherkin, SpecFlow+ Li
 ---
 In this blogpost I'll show you how to create an automated build pipeline for SpecFlow with VSTS using SpecRunner to execute your automated BDD functional tests written using Gherkin syntax. We won't stop just here, I'll show you how to add the SpecFlow+ extension to create living functional test documentation accessible right from VSTS... We'll end by looking at how to pin some of this on a dashboard in VSTS to surface some key testing metrics for visibility with your development and operation teams... 
 <!--more-->
+
 ![Image](/images/screenshots/tarun/SpecFlowTarget.jpg)
 
 # Build Pipeline 
