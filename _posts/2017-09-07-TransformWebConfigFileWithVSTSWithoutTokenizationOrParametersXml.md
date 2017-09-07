@@ -8,7 +8,7 @@ categories:
 - "DevOps"
 img: "https://media.tenor.com/images/e986f3cda38e718a181ce57cfad77fe4/tenor.gif"
 description: "VSTS now natively supports config transformations, if you are still using config per environment or parameters.xml then you are doing it wrong."
-permalink: /DevOps/SpecflowPlusSpecRunVstsPipelineForBddStyleAutomatedGherkinFunctionalTests
+permalink: /DevOps/TransformWebConfigFileWithVSTSWithoutTokenizationOrParametersXml
 published: true
 keywords: "DevOps, VSTS, WebConfigTransform, WebConfigTokenization, ConfigTransform, Config Transform per environment, Config Transform VSTS, Release Pipeline config Transform, Config Transform Web Deploy, Config Transform without tokenizer, Config Tranform dynamically with VSTS, Release Pipeline, Build Pipeline, Azure App Service Config Tranform, Config Transform Continuous Delivery"
 ---
