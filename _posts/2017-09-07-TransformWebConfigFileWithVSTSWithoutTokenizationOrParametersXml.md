@@ -6,7 +6,7 @@ author: tarun
 tags: ["DevOps", "BuildPipeline"]
 categories:
 - "DevOps"
-img: "https://media.tenor.com/images/e986f3cda38e718a181ce57cfad77fe4/tenor.gif"
+img: "/images/screenshots/tarun/Sep17/TransformConfigNativelyInVsts.gif"
 description: "VSTS now natively supports config transformations, if you are still using config per environment or parameters.xml then you are doing it wrong."
 permalink: /DevOps/TransformWebConfigFileWithVSTSWithoutTokenizationOrParametersXml
 published: true
