@@ -18,7 +18,7 @@ disqus_shortname: visualstudiogeeks   # get one: https://disqus.com/admin/signup
 
 permalink: /:categories/:title
 markdown: kramdown
-gems:
+plugins:
  - jekyll-paginate
  - jekyll-gist
  - jekyll-redirect-from
