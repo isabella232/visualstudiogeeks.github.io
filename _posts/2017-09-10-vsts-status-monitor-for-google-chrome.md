@@ -45,7 +45,6 @@ Who do not love notifications? I love them too and this extension supports notif
 
 ![VSTSStatusMonitor-Options](/images/screenshots/utkarsh/Sep17/notification-up.png)
 
-*Oh no, you noticed the time in the taskbar? I had no plans to take the screenshot at that exact moment - just that I am more productive after midnight you see :-)*
 
 ## Options ##
 
