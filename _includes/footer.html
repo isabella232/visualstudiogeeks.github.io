@@ -1,27 +1,57 @@
 <footer class="footer">
-<div class="wrapper">
-&copy; 2016 Utkarsh Shigihalli & Tarun Arora
-</div>
+	<div class="wrapper">
+		&copy; 2016 Utkarsh Shigihalli & Tarun Arora
+	</div>
 </footer>
-
-<script src="{{ "/js/easybook.js" | prepend: site.baseurl }}"></script>
+<div id="fb-root"></div>
+<script src="{{ " /js/easybook.js " | prepend: site.baseurl }}"></script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
-$(document).ready(function(){
-	
-	//Check to see if the window is top if not then display button
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 100) {
-			$('.scrollToTop').fadeIn();
-		} else {
-			$('.scrollToTop').fadeOut();
-		}
+	$(document).ready(function () {
+
+		//Check to see if the window is top if not then display button
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.scrollToTop').fadeIn();
+			} else {
+				$('.scrollToTop').fadeOut();
+			}
+		});
+
+		//Click event to scroll to top
+		$('.scrollToTop').click(function () {
+			$('html, body').animate({ scrollTop: 0 }, 800);
+			return false;
+		});
+
+		window.twttr = (function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0],
+				t = window.twttr || {};
+			if (d.getElementById(id)) return t;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js, fjs);
+
+			t._e = [];
+			t.ready = function (f) {
+				t._e.push(f);
+			};
+
+			return t;
+		}(document, "script", "twitter-wjs"));
+
+		//facebook
+		
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
 	});
-	
-	//Click event to scroll to top
-	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
-	
-});
+
 </script>

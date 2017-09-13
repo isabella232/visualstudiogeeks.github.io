@@ -320,3 +320,21 @@ img#image-author {
 	color: #F04848
 }
 
+.alignleft {
+	float: left;
+	padding-left: 5px;
+  }
+.alignright {
+	float: right;
+	padding-right: 5px;
+  }
+
+  .social-buttons-post{
+	float: left;
+	margin: 0px -100px;
+  }
+
+  .fb_iframe_widget span 
+  {
+	  vertical-align: baseline !important;
+  }
