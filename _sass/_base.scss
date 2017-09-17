@@ -338,3 +338,24 @@ img#image-author {
   {
 	  vertical-align: baseline !important;
   }
+
+  .button-gray {
+	background: #E0E0E3;
+    border-radius: 3px;
+    color: #222;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.button-gray:hover {
+	text-decoration: none;
+	background: #222233;
+	color: #fff;
+}

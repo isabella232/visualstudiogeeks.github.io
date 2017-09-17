@@ -2,7 +2,7 @@
 .page-heading {
 	font-size:40px;
 	font-weight: normal;
-	margin: 20px;
+	// margin: 20px;
     @include media-query($on-palm) {
 		margin: 10px;
 		font-size: 34px;
@@ -23,7 +23,7 @@
 }
 .post-list {
     margin: 0;
-	padding: 20px 40px;
+	padding: 20px;
     list-style: none;
     > li {
         padding-bottom: 30px;
@@ -44,10 +44,11 @@
     .post-meta {
     	font-size: $small-font-size;
     	color: #666;
-        margin: 0 20px;
+        // margin: 0 20px;
         margin-bottom: .5em;
     }
     .post-excerpt {
+        text-align: justify;
         &, * {
             font-size: $base-font-size;
             line-height: 20px;
@@ -76,7 +77,7 @@
                 opacity: 1;
             }
         }
-        margin: 0 20px;
+        // margin: 0 20px;
     }
     @include media-query($on-palm) {
 		padding: 10px;
