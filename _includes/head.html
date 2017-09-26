@@ -79,4 +79,24 @@
         ga('create', '{{ site.google_analytics }}', 'auto');
         ga('send', 'pageview');
     </script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+        palette:{
+            popup: {background: "#fff"},
+            button: {background: "#aa0000"},
+          },
+          revokable:true,
+          onStatusChange: function(status) {
+            console.log(this.hasConsented() ?
+              'enable cookies' : 'disable cookies');
+          },
+          law: {
+            regionalLaw: false,
+          },
+          location: true,
+    })});
+    </script>
 </head>
