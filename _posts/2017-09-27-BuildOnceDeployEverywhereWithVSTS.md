@@ -18,11 +18,7 @@ In this blogpost I'll walk you through a trick to use just one build definition 
 
 > One build to rule them all!  
 
-<p align="center">
-
 ![](/images/screenshots/tarun/Sep17/HappySurprised.gif)
-
-</p>
 
 
 For the purposes of this walkthrough let's assume you have the following branches
