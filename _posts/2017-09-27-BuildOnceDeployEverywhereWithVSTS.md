@@ -19,7 +19,9 @@ In this blogpost I'll walk you through a trick to use just one build definition 
 > One build to rule them all!  
 
 <p align="center">
-<img src="https://media.giphy.com/media/13bctHBZwtt5Kw/giphy.gif" alt="Related image"/>
+
+![](/images/screenshots/tarun/Sep17/HappySurprised.gif)
+
 </p>
 
 
