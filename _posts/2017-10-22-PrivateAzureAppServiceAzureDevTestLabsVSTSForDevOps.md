@@ -6,7 +6,7 @@ author: tarun
 tags: ["DevOps", "Azure", "AzureAppService"]
 categories:
 - "DevOps"
-img: "/images/screenshots/tarun/Sep17/"
+img: "/images/screenshots/tarun/Sep17/AzureAppServiceVstsAzureDtl.png"
 description: "Leverage Azure PaaS based Azure ASEv2 to privately host your web applications in isolation securely. This model of hosting gives you the true advantages of the cloud... In addition to this we saw how easy it is to leverage Azure Dev Test Labs to create a farm of private VSTS agents, this agent grid can be used to do seamless DevOps operations such as Continuous Deployment on your privately hosted Web Applications powered by ASE v2 Azure App Service."
 permalink: /DevOps/PrivateAzureAseV2AppServiceVstsDeploymentUsingAzureDtl
 published: true
@@ -18,9 +18,8 @@ It's encouraging to see that financial & trading organizations are starting to g
 <!--more-->
 
  > # Did you know **Azure App Service "Environment" (ASE)** is a **PaaS** offering that gives you a completely **isolated private** space for **hosting** your apps in **Azure**? **ASE supports** isolated hosting of **Web Apps, Mobile Apps, API Apps and Functions**. Wait for it... Even supports use of **VSTS for DevOps!**  
-<p align="center">
-<img src="https://media.tenor.com/images/e986f3cda38e718a181ce57cfad77fe4/tenor.gif" alt="Related image"/>
-</p>
+
+![Surprise No Clue!](/images/screenshots/tarun/Sep17/WhatSurpriseVstsDevOpsAzurePaaSDtl.gif)
 
 # ASE v2 - App Service Environment 
 In case you were living on another planet and missed the announcement... Azure ASE v2 GA'ed on 27th July 2017, this is an upgrade to the existing ASEv1 that has been an Azure offering for a while now. App Service Environment (ASE) is powerful, it gives *network isolation* and improved scale capabilities. It is essentially a deployment of the Azure App Service into a subnet of a _customer Azure Virtual Network (VNet)_. ASEv2 provides true multi tenancy like you've been used to with PaaS services in Azure. 
