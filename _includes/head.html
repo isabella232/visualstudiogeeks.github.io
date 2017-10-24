@@ -37,15 +37,15 @@
     <meta name="twitter:creator" content="@vsgeeks" />
     <meta name="twitter:site" content="@vsgeeks" />
     {% endif %}
-    {% if page.title %}
-    <meta name="twitter:title" content="{{ site.title }} | {{ page.title }}" />
+    {% if page.title and page.tags %}
+        <meta name="twitter:title" content="{{ page.tags | first }} | {{ page.title }}" />
     {% else %}
-    <meta name="twitter:title" content="{{ site.title }} | {{ site.description }}" />
+        <meta name="twitter:title" content="{{ site.title }} | {{ site.description }}" />
     {% endif %}
     {% if page.keywords %} 
     <meta name="keywords" content="{{ page.keywords }}" /> 
     {% else %}
-    <meta name="keywords" content="ALM, DevOps, Visual Studio, Visual Studio Team Services, VSTS, Application Lifecycle Management, Extensions, Extensibility, Azure"/> 
+    <meta name="keywords" content="DevOps, Visual Studio, Visual Studio Team Services, VSTS, Application Lifecycle Management, ALM, Extensions, Extensibility, Azure"/> 
     {% endif %}
     <link rel="stylesheet" href="{{ "/css/main.css " | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
