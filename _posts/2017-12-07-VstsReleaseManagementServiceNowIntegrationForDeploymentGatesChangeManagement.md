@@ -44,6 +44,8 @@ Last but not the least, now append '&JSON' to the URL to get the response back i
 
 Now that we have this figured out let's see how we can now leverage the deployment gates to query service now to identify whether a change is approved... 
 
+> You may find that more up to date instances of ServiceNow would accept `&JSON2` instead of `&JSON`... More on this available on ServiceNow docs [here](https://docs.servicenow.com/bundle/jakarta-servicenow-platform/page/integrate/inbound-other-web-services/concept/c_JSONv2WebService.html?title=JSONv2_Web_Service)
+
 # Deployment Gates - Azure Function
 At the time of writing the blogpost, VSTS supports the following deployment gates... As you will notice all of them come with great flexibility... 
 + Azure Monitor
