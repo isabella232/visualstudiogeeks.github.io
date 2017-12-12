@@ -38,7 +38,7 @@ Now that we know the name of the table, let's see how easy is to build out a dir
 
 Last but not the least, now append `&JSON` to the URL to get the response back in JSON. You can optionally use `csv` if you want to get the response back in a comma separated format.
 
-> You may find that more up to date instances of ServiceNow would accept `&JSON2` instead of `&JSON`... More on this available on ServiceNow docs [here](https://docs.servicenow.com/bundle/jakarta-servicenow-platform/page/integrate/inbound-other-web-services/concept/c_JSONv2WebService.html?title=JSONv2_Web_Service)
+> You may find that more up to date instances of ServiceNow would accept `&JSONv2` instead of `&JSON`... More on this available on ServiceNow JSONv2 docs [here](https://docs.servicenow.com/bundle/jakarta-servicenow-platform/page/integrate/inbound-other-web-services/concept/c_JSONv2WebService.html?title=JSONv2_Web_Service)
 
 `https://xxx.service-now.com/change_request.do?sysparm_action=getRecords&sysparm_query=number=CHG00557943&displayvalue=true&JSON`
 
