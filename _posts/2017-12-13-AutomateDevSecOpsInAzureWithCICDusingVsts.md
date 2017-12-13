@@ -23,7 +23,7 @@ The DevOps way of working coupled with the use of cloud technologies has practic
 > **DevSecOps** helps bring a fresh perspective by introducing a culture of making __everyone accountable__ for security, using automation to move the process of inspection _left_ and overall looking at security with a 360 lense.
 
 # Size of the problem...
-I have a resource group in Azure dedicated to the application in question, only selective people have access to this resource group. I am using Web App's, Azure Functions, Blob Storage, Redis Cache, App Insights, Service Bus, SQL warehouse among some other Azure resource types. This is just one of the hundreds of resource groups I have in the tens of Azure subscriptions used by this organization. The ratio of security consultants to the number of releases makes it practically impossible for security to inspect the changes to guarantee compliance to best practices. 
+I have a resource group in Azure dedicated to the application in question, only selective people have access to this resource group. I am using Web App's, Azure Functions, Blob Storage, Redis Cache, App Insights, Service Bus, SQL warehouse among some other Azure resource types. *This is just one of the hundreds of resource groups I have in the tens of Azure subscriptions used by this organization. The ratio of security consultants to the number of releases makes it practically impossible for security to inspect the changes to guarantee compliance to best practices.* 
 
 # Azure + VSTS + CICD + AzSDK = DevSecOps 
 Start by installing the AzSDK extension from the [vsts marketplace](https://marketplace.visualstudio.com/items?itemName=azsdktm.AzSDK-task)
