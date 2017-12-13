@@ -15,7 +15,8 @@ keywords: "DevSecOps, SecurityOps, SecurityPipeline, SecurityCompliance, Securit
 ---
 With the adoption of infrastructure as code and development teams taking on more of the `Ops` activities, organizations using Azure for enterprise hosting are practically at risk of breach with every new release they roll out to these environments... In this blogpost I'll walk you through `AzSDK Security Verification Tests` that can be setup in the CICD pipeline using VSTS to automate the inspection of your infrastructure in Azure and block releases that can potentially compromise your infrastructure.      
 <!--more-->
-The DevOps way of working coupled with the use of cloud technologies has practically removed the biggest barriers from the software delivery life-cycle... Development teams don't care about security as much as they should. It's hard to blame the development teams though, the tools used by security are not easy to understand… The reports are long and hard to interpret... The approach of compliance driven security doesn't practically fit into the fast pace of software delivery we are used to today. 
+
+The DevOps way of working coupled with the use of cloud technologies has practically removed the biggest barriers from the software delivery life-cycle... Development teams don't care about security as much as they should. It's hard to blame the development teams though, the tools used by security are not easy to understand… The reports are long and hard to interpret... **The approach of compliance driven security doesn't practically fit into the fast pace of software delivery we are used to today.** 
 
 ![Security is a bottleneck in DevOps](/images/screenshots/tarun/Dec17/SecurityIsABottlneckInDevOps.jpg)
 
