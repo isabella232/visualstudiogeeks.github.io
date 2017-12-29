@@ -1,6 +1,6 @@
 # Site settings
 title: Visual Studio Geeks
-url: "http://www.visualstudiogeeks.com"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+url: "https://www.visualstudiogeeks.com"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
 baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
 timezone: Europe/London
 description: "Geeky ramblings on DevOps, ALM, TFS, VisualStudio, Visual Studio Team Services and Azure"
