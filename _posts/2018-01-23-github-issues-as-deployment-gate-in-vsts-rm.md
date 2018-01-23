@@ -9,6 +9,7 @@ categories:
 description: "Do you want to stop deployment as long as there are outstanding issues in your GitHub repository? In this blog post we will see how we can leverage powerful VSTS deployment gate functionality to validate all the necessary prerequisites for your next big deployment."
 permalink: /DevOps/github-issues-as-deployment-gate-in-vsts-rm
 keywords: "DevOps, VSTS, VSTS Deployment Gate Azure Function, Azure Function, Azure Function, GitHub, GitHub Issues, Deployment Gate, Release Management, Visual Studio"
+img: "/images/screenshots/utkarsh/github-issues-deployment-gate/pre-deployment-azure-function-gate.png"
 published: true
 ---
 
