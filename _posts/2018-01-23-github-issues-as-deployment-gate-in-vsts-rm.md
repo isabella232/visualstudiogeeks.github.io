@@ -3,7 +3,7 @@ layout: post
 title: "GitHub Issues - As a deployment gate in VSTS Release Management"
 date: 2018-01-23
 author: utkarsh
-tags: ["DevOps", "VSTS", "ServiceNow", "ReleaseGates"]
+tags: ["DevOps", "VSTS", "GitHub", "ReleaseGates"]
 categories:
 - "DevOps"
 description: "Do you want to stop deployment as long as there are outstanding issues in your GitHub repository? In this blog post we will see how we can leverage powerful VSTS deployment gate functionality to validate all the necessary prerequisites for your next big deployment."
