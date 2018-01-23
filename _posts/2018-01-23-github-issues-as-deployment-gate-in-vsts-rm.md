@@ -51,7 +51,7 @@ public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLeve
 
     var request = new HttpRequestMessage(HttpMethod.Get, $"https://api.github.com/search/issues{searchQuery}");
     request.Headers.Add("Accept", "application/vnd.github.v3+json");
-    request.Headers.Add("User-Agent", "GitHub Issues Release Gate");
+    request.Headers.Add("User-Agent", "YOUR-APP-NAME");
 
     var response = await _httpClient.SendAsync(request).ConfigureAwait(false);
     string json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
