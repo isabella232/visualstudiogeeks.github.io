@@ -36,12 +36,36 @@ https://api.github.com/search/issues?q=state:open+repo:onlyutkarsh/ExportImportB
 
 As Tarun showed in his previous [blog post](https://www.visualstudiogeeks.com/DevOps/IntegratingServiceNowWithVstsReleaseManagementUsingDeploymentGate), VSTS deployment gate has native support for Azure functions. 
 
-Following on from that, use the following login in your HTTP based Azure function to query GitHub using it's issue API. The function accepts a search query as an input and returns the search result as a JSON.
+Following on from that post, use the following login in your HTTP based Azure function to query GitHub using it's issue API. The function accepts a search query as an input and returns the search result as a JSON.
 
-// TODO: Paste the code from the function here
+```csharp
+[FunctionName("SearchGitHubIssues")]
+public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
+{
+    var query = QueryHelpers.ParseQuery(req.RequestUri.Query);
+    var items = query.SelectMany(x => x.Value, (col, value) => new KeyValuePair<string, string>(col.Key, value)).ToList();
 
-// TODO: Remove this block
-We've created an Azure function which takes a search query as per [GitHub issues API](https://developer.github.com/v3/search/#search-issues) and then returns the results back to JSON. I have already built the Azure function and we can execute the above search query with URL below. 
+    var queryBuilder = new QueryBuilder(items);
+    var searchQuery = queryBuilder.ToQueryString();
+
+    var request = new HttpRequestMessage(HttpMethod.Get, $"https://api.github.com/search/issues{searchQuery}");
+    request.Headers.Add("Accept", "application/vnd.github.v3+json");
+    request.Headers.Add("User-Agent", "GitHub Issues Release Gate");
+
+    var response = await _httpClient.SendAsync(request).ConfigureAwait(false);
+    string json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+    GitHubSearchResult jsonObject = JsonConvert.DeserializeObject<GitHubSearchResult>(json);
+    if (response.StatusCode == HttpStatusCode.OK)
+    {
+        SearchResponse succesResponse = new SearchResponse();
+        succesResponse.SearchTerm = searchQuery.ToString();
+        succesResponse.TotalCount = jsonObject.TotalCount;
+        succesResponse.SearchResult = jsonObject;
+        log.Info("Response returned sucessfully.");
+        return req.CreateResponse(HttpStatusCode.OK, succesResponse);
+    }
+}
+```
 
 We've deployed the Azure function, let's work through an example to see how easy is it to search for specific issues on GitHub. In the query below, we are searching for open issues under the demo repository `demoext`. 
 
@@ -53,13 +77,21 @@ The result of the search query shown above will look like this.
 
 ![Postman](../images/screenshots/utkarsh/github-issues-deployment-gate/postman.png)
 
-What's cool about this approach is that you have full control on the search query, let's get a little adventurous and search for open issues by severity and release on the VSTS Agent GitHub repository...
+What's cool about this approach is that you have full control on the search query, let's get a little adventurous and search for open issues with label "bug" in VSTS Agent GitHub repository.
 
-// TODO: Add a search query for this and a screen shot of results 
+```
+https://vsgeeks-github-depg8-001.azurewebsites.net/api/SearchGitHubIssues?q=state:open+repo:Microsoft/vsts-agent+label:bug&sort=created&order=asc
+```
+
+Notice the search expression - `?q=state:open+repo:Microsoft/vsts-agent+label:bug&sort=created&order=asc`
+
+![Search Issues Vstsagent Repo](../images/screenshots/utkarsh/github-issues-deployment-gate/search-issues-vstsagent-repo.png)
+
+## Monitor your search queries ##
 
 The integration of Azure Function and App Insights let's you track your search queries and how they are performing, see below, app insights records the call's and provides performance feedback and visibility...
 
-// TODO: Add a screen shot of app insights 
+![App Insights](../images/screenshots/utkarsh/github-issues-deployment-gate/app-insights.png)
 
 ## Integrating Azure function into VSTS as a Deployment Gate ##
 
@@ -99,7 +131,7 @@ Notice, `Recent gate sampling` section is showing us that our second sampling ev
 
 ## Use our Azure function to search GitHub repo for free ##
 
-We love Azure functions and VSTS! To help you get started with deployment gates we're hosting the GitHub search Azure function that you can use for free to test this functionality out in your release pipeline. Don't forget to give us a shout out on Twitter if you find this useful (TODO: Add tweek us URL to this blogpost)
+We love Azure functions and VSTS! To help you get started with deployment gates we're hosting the GitHub search Azure function that you can use for free to test this functionality out in your release pipeline. Don't forget to give us a shout out on Twitter if you find this useful.
 
 Function URL: `https://vsgeeks-github-depg8-001.azurewebsites.net/api/SearchGitHubIssues`
 
