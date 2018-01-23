@@ -12,8 +12,13 @@ keywords: "DevOps, VSTS, VSTS Deployment Gate Azure Function, Azure Function, Az
 published: false
 ---
 
-In this blog post, we will see yet another scenario of using powerful VSTS's deployment gates functionality. This time we will see how we can leverage this functionality to check for any issues (based on your search query) in your GitHub repo and wait for deployment if any issues exist.
+Software teams monitor user feedback and issue reports when rolling releases across their infrastructure estate. In our (VisualStudioGeeks - Utkarsh & Tarun's) experience Twitter and GitHub combined are the quickest way to get updates on potential problems in your software. The process of monitoring GitHub issues as a deployment gate is a manual step today, in this blogpost we'll show you how to automate this by leveraging the power of Azure Functions and VSTS. 
 <!--more-->
+
+In this blogpost we'll explore, 
++ GitHub Issues API
++ Creating an Azure Function to inspect GitHub issues
++ Integrating Azure Function Deployment Gate into VSTS
 
 ## GitHub Issues API  ##
 
@@ -21,7 +26,7 @@ GitHub API allows us to search [many things](https://developer.github.com/v3/sea
 
 GitHub also has a very powerful search qualifiers which allow you to fine grain your search and get you the exact results. You can read more about search qualifiers [here](https://help.github.com/articles/searching-issues-and-pull-requests/).
 
-To illustrate, say I would like to search open issues in my [Export/Import Build definition extension repository](https://github.com/onlyutkarsh/ExportImportBuildDefinition). So I can use a search query like below.
+To illustrate, say we would like to search open issues in the [Export/Import Build definition extension repository](https://github.com/onlyutkarsh/ExportImportBuildDefinition). The search query for this would be...
 
 ```
 https://api.github.com/search/issues?q=state:open+repo:onlyutkarsh/ExportImportBuildDefinition&sort=created&order=asc
@@ -31,48 +36,62 @@ https://api.github.com/search/issues?q=state:open+repo:onlyutkarsh/ExportImportB
 
 As Tarun showed in his previous [blog post](https://www.visualstudiogeeks.com/DevOps/IntegratingServiceNowWithVstsReleaseManagementUsingDeploymentGate), VSTS deployment gate has native support for Azure functions. 
 
-I have created an Azure function which takes a search query as per [GitHub issues API](https://developer.github.com/v3/search/#search-issues) and then returns the results back to JSON. I have already built the Azure function and we can execute the above search query with URL below. 
+Following on from that, use the following login in your HTTP based Azure function to query GitHub using it's issue API. The function accepts a search query as an input and returns the search result as a JSON.
 
-Notice, With the query below, I am searching for open issues under my demo repo `demoext`.
+// TODO: Paste the code from the function here
+
+// TODO: Remove this block
+We've created an Azure function which takes a search query as per [GitHub issues API](https://developer.github.com/v3/search/#search-issues) and then returns the results back to JSON. I have already built the Azure function and we can execute the above search query with URL below. 
+
+We've deployed the Azure function, let's work through an example to see how easy is it to search for specific issues on GitHub. In the query below, we are searching for open issues under the demo repository `demoext`. 
 
 ```
 https://vsgeeks-github-depg8-001.azurewebsites.net/api/SearchGitHubIssues?q=state:open+repo:onlyutkarsh/demoext&sort=created&order=asc
 ```
 
-A sample output for our search query shown above will look like this.
+The result of the search query shown above will look like this.
 
 ![Postman](../images/screenshots/utkarsh/github-issues-deployment-gate/postman.png)
 
+What's cool about this approach is that you have full control on the search query, let's get a little adventurous and search for open issues by severity and release on the VSTS Agent GitHub repository...
+
+// TODO: Add a search query for this and a screen shot of results 
+
+The integration of Azure Function and App Insights let's you track your search queries and how they are performing, see below, app insights records the call's and provides performance feedback and visibility...
+
+// TODO: Add a screen shot of app insights 
+
 ## Integrating Azure function into VSTS as a Deployment Gate ##
 
-Now that our Azure function to search GitHub repo for issues is hosted, let's configure pre-deployment gate for our demo release definition. I go to "Gates" section and select "Azure Function" and configure as below.
+Now that we have an Azure function in place to search GitHub, let's see how easy is it to integrate this with VSTS. To configure the Azure Function as a deployment gate in the release definition, in your release definition navigate to the "Gates" section and select "Azure Function" and configure as shown in the screen shot below.
 
 ![Pre Deployment Azure Function Gate](../images/screenshots/utkarsh/github-issues-deployment-gate/pre-deployment-azure-function-gate.png)
 
-Please **note** that I am using completion option as API response and checking if `totalCount` of issues in the returned JSON is equal to zero with the below expression.
+Please **note** that we are basing the evaluation on the `totalCount` of issues in the returned JSON. In this case accessng that the total count of issues is equal to zero with the below expression.
 
 ```
 eq(root['totalCount'], 0)
 ```
 
+In short, when the release is triggered, the GitHub issue search function will be evaluated. The result of the query will be evaluated and if the total count is 0, the gate will be considered passed. However, if the count is greater than 0, the gate will be considered failed. 
 
 ## Evaluating GitHub issues ##
 
-At this moment we have an issue open in my GitHub repo.
+Playing the example forward, let's say we have an open issue in the GitHub repo.
 
 ![Github Open Issue](../images/screenshots/utkarsh/github-issues-deployment-gate/github-open-issue.png)
 
-Once configured your deployment gate correctly, as shown above, VSTS will periodically (as defined in the sampling interval) checks the response from the Azure function against defined expression to see if it evaluates to true. 
+With deployment gate configured, the deployment gate will periodically trigger (as defined in the sampling interval) to check the response from the Azure function against defined GitHub search expression to see if it evaluates to true. 
 
 Sampling result is shown in the 'Recent gate sampling` section as shown below.
 
 ![Recent Sampling Result](../images/screenshots/utkarsh/github-issues-deployment-gate/recent-sampling-result.png)
 
- You can download the logs to see the full results of the deployment gates, including API calls and the results back from the API.
+ VSTS makes it incredibly easy to work with Gates, full set of the logs to see the full results of the deployment gates are available for download. The logs include API calls and the response from the API.
 
 ![Log Result](../images/screenshots/utkarsh/github-issues-deployment-gate/log-result.png)
 
-Finally, once you mark your all issues (based on your search query) as closed, VSTS will proceed with the deployment. And once the release succeeds, you will see the summary like below.
+Playing the exmaple forward, once you close all reported issues (based on your search query) as closed, VSTS will proceed with the deployment. And once the release succeeds, you will see the summary like below.
 
 ![Deployment Gate Success](../images/screenshots/utkarsh/github-issues-deployment-gate/deployment-gate-success.png)
 
@@ -80,7 +99,7 @@ Notice, `Recent gate sampling` section is showing us that our second sampling ev
 
 ## Use our Azure function to search GitHub repo for free ##
 
-Excited and want to use our ready to consume function into your release pipeline? Go ahead and use it.
+We love Azure functions and VSTS! To help you get started with deployment gates we're hosting the GitHub search Azure function that you can use for free to test this functionality out in your release pipeline. Don't forget to give us a shout out on Twitter if you find this useful (TODO: Add tweek us URL to this blogpost)
 
 Function URL: `https://vsgeeks-github-depg8-001.azurewebsites.net/api/SearchGitHubIssues`
 
@@ -89,3 +108,4 @@ Just ensure that your search query is as per [GitHub issues API](https://develop
 ## Summary ##
 
 VSTS Release Management's deployment gate is a powerful feature, which enables you to seamlessly integrate third-party systems with your release pipeline. We have already many examples like pausing your deployment based on twitter sentiment [more here](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/) and Service now integration in your release pipeline in a [post](https://www.visualstudiogeeks.com/DevOps/IntegratingServiceNowWithVstsReleaseManagementUsingDeploymentGate) from Tarun. In this blog post we saw an additional scenario of pausing your deployment while you wait on issues to be closed in your GitHub repo. Let me know your thoughts/suggestions.
+
