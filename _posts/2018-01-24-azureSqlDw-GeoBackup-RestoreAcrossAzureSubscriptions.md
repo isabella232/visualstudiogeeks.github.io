@@ -19,7 +19,8 @@ If you have arrived here, you are likely using Azure SQL DW and wondering how to
 Approach - Geo backups can be restored to a new instance of Azure SQL DW in an existing subscription; there is support to move a SQL instance with all it's databases from one Azure subscription to another... Voila! But if you had to do this manually everyday, it would be error prone and painful! This is where the AzureRM PowerShell comes to rescue... 
 
 
-``` PowerShell 
+``` PowerShell
+
 $restorePtDt = "" # use format yyyymmddHH:mm:ss
 
 $Source_Dw_rg = "azsu-rg-prod-myapp-001"
@@ -102,6 +103,7 @@ if($deleteExisting){
 
 ```
 
-I hope you find this useful! Is this not working for you, reach out to me on (@arora_tarun)[https://twitter.com/arora_tarun]
+
+I hope you find this useful! Is this not working for you, reach out to me on [@arora_tarun](https://twitter.com/arora_tarun)
 
 Tarun 
