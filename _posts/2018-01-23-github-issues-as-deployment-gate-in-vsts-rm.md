@@ -9,7 +9,8 @@ categories:
 description: "Do you want to stop deployment as long as there are outstanding issues in your GitHub repository? In this blog post we will see how we can leverage powerful VSTS deployment gate functionality to validate all the necessary prerequisites for your next big deployment."
 permalink: /DevOps/github-issues-as-deployment-gate-in-vsts-rm
 keywords: "DevOps, VSTS, VSTS Deployment Gate Azure Function, Azure Function, Azure Function, GitHub, GitHub Issues, Deployment Gate, Release Management, Visual Studio"
-published: false
+img: "/images/screenshots/utkarsh/github-issues-deployment-gate/deployment-gate-success.png"
+published: true
 ---
 
 Software teams monitor user feedback and issue reports when rolling releases across their infrastructure estate. In our (VisualStudioGeeks - Utkarsh & Tarun's) experience Twitter and GitHub combined are the quickest way to get updates on potential problems in your software. The process of monitoring GitHub issues as a deployment gate is a manual step today, in this blogpost we'll show you how to automate this by leveraging the power of Azure Functions and VSTS. 
@@ -50,7 +51,7 @@ public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLeve
 
     var request = new HttpRequestMessage(HttpMethod.Get, $"https://api.github.com/search/issues{searchQuery}");
     request.Headers.Add("Accept", "application/vnd.github.v3+json");
-    request.Headers.Add("User-Agent", "GitHub Issues Release Gate");
+    request.Headers.Add("User-Agent", "YOUR-APP-NAME");
 
     var response = await _httpClient.SendAsync(request).ConfigureAwait(false);
     string json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
