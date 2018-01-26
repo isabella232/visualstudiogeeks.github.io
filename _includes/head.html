@@ -1,4 +1,4 @@
-<head>
+﻿<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,8 +22,8 @@
     <meta name="twitter:image" content="{{ site.url }}{{ page.img }}">
     <meta property="og:image" content="{{ site.url }}{{ page.img }}" />
     {% else %}
-    <meta name="twitter:image" content="{{ site.url }}images/social/logo.png">
-    <meta property="og:image" content="{{ site.url }}images/social/logo.png" />
+    <meta name="twitter:image" content="{{ site.url }}/images/social/logo.png">
+    <meta property="og:image" content="{{ site.url }}/images/social/logo.png" />
     {% endif %}
     <meta name="twitter:image:alt" content="{{ site.title }}">
     <meta name="twitter:card" content="summary" />
@@ -51,6 +51,7 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     
+    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans|Kreon|Roboto+Slab|Bitter' rel='stylesheet' type='text/css'>
