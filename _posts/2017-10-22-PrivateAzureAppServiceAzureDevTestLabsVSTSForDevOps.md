@@ -17,7 +17,7 @@ Wondering how you can make the **Azure** App Service private to your network by 
 
 It's encouraging to see that financial & trading organizations are starting to graduate from just talking about cloud to finally moving into the cloud. While CIO's love to brag about their move to the cloud, the more I speak to their teams the more I get the impression that they are limiting their use to just IaaS. Moving from virtual machines on-premise to IaaS in cloud is easier, but it doesn't necessarily give you the value you thought you would get from moving to the cloud. You still need to design the infrastructure, configure the operating system, worry about security patches and worst manage things like high availability and disaster recovery. It bedazzles me when enterprises choose to host their web applications on web servers on IaaS against hosting them on PaaS. More often than not, this is due to the limited knowledge of PaaS and a false perception that IaaS provides more isolation, control & security than PaaS.  
 
- > # Did you know **Azure App Service "Environment" (ASE)** is a **PaaS** offering that gives you a completely **isolated private** space for **hosting** your apps in **Azure**? **ASE supports** isolated hosting of **Web Apps, Mobile Apps, API Apps and Functions**. Wait for it... Even supports use of **VSTS for DevOps!**  
+ > Did you know **Azure App Service "Environment" (ASE)** is a **PaaS** offering that gives you a completely **isolated private** space for **hosting** your apps in **Azure**? **ASE supports** isolated hosting of **Web Apps, Mobile Apps, API Apps and Functions**. Wait for it... Even supports use of **VSTS for DevOps!**  
 
 ![Surprise No Clue!](/images/screenshots/tarun/Sep17/WhatSurpriseVstsDevOpsAzurePaaSDtl.gif)
 
