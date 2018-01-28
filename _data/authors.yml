@@ -6,9 +6,9 @@ utkarsh:
   avatar: "/images/profile/utkarsh_75x75.png"
   avatar16: "/images/profile/utkarsh_16x16.png"
   mvpid: 5000686
-  about: Utkarsh is passionate about software development and has more than 12 years of work experience. He has developed numerous extensions for Visual Studio and Visual Studio Team Services. He is currently working as a Consultant in the United States.
+  about: Utkarsh is passionate about software development and has more than 12 years of work experience in the areas of Azure, VSTS, C# and TypeScript. He has developed numerous extensions for Visual Studio and Visual Studio Team Services. He is currently working as a Consultant in the United States.
   vstsextensions: https://marketplace.visualstudio.com/search?term=publisher%3Autkarsh&target=VSTS&sortBy=Downloads
-  vsextensions: https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=Utkarsh%20Shigihalli%20and%20Tarun%20Arora 
+  vsextensions: https://marketplace.visualstudio.com/search?term=publisher%3A%22Utkarsh%20Shigihalli%20and%20Tarun%20Arora%22&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance 
 
 tarun:
   name: Tarun Arora
@@ -19,4 +19,4 @@ tarun:
   avatar16: "/images/profile/tarun_16x16.png"
   mvpid: 4038243
   about: "Tarun Arora is obsessed with high-quality working software, DevOps, Continuous Delivery and Agile. His core strengths are Azure, VSTS, PowerShell, SQL and WPF. He is a Microsoft MVP in Visual Studio Development Tools and the author of 'DevOps & ALM with TFS 2015'."
-  vsextensions: https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=Utkarsh%20Shigihalli%20and%20Tarun%20Arora
+  vsextensions: https://marketplace.visualstudio.com/search?term=publisher%3A%22Utkarsh%20Shigihalli%20and%20Tarun%20Arora%22&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance
