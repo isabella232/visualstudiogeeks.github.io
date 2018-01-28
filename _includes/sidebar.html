@@ -16,23 +16,23 @@
 <div class="col-box">
 
     <div class="col-box-title">We are</div>
-    {% for member in site.data.authors %}
+    {% for authors in site.data.authors %}
     <div id="mainbox">
         <div class="card">
-            <img class="profile-img" src="{{member.avatar}}" alt="" />
+            <img class="profile-img" src="{{authors[1].avatar}}" alt="" />
 
-            <h1>{{ member.name }}</h1>
+            <h1>{{ authors[1].name }}</h1>
             </br>
             <table class="noborder-table">
                 <tr>
                     <td>
-                        {% if member.twitter %}
-                        <a href="https://www.twitter.com/{{ member.twitter }}" title="Twitter" target="_blank"><img src="/images/social/twitter-20x20.png" alt="twitter" class="tilt"></img>
+                        {% if authors[1].twitter %}
+                        <a href="https://www.twitter.com/{{ authors[1].twitter }}" title="Twitter" target="_blank"><img src="/images/social/twitter-20x20.png" alt="twitter" class="tilt"></img>
                             </a> {% endif %}
                     </td>
                     <td>
-                        {% if member.linkedin %}
-                        <a href="{{ member.linkedin }}" title="Linkedin" target="_blank"><img src="/images/social/linkedin-20x20.png" alt="linkedin" class="tilt"></img>
+                        {% if authors[1].linkedin %}
+                        <a href="{{ authors[1].linkedin }}" title="Linkedin" target="_blank"><img src="/images/social/linkedin-20x20.png" alt="linkedin" class="tilt"></img>
                             </a> {% endif %}
                     </td>
                     <td>
@@ -41,17 +41,17 @@
                             </a>
                     </td>
                     <td>
-                        {% if member.github %}
-                        <a href="{{ member.github }}" title="GitHub" target="_blank"><img src="/images/social/github-20x20.png" alt="github" class="tilt"></img>
-                            </a> {% elsif member.wordpress %}
-                        <a href="{{ member.wordpress }}" title="Wordpress" target="_blank"><img src="/images/social/wordpress-20x20.png" alt="wordpress" class="tilt"></img>
+                        {% if authors[1].github %}
+                        <a href="{{ authors[1].github }}" title="GitHub" target="_blank"><img src="/images/social/github-20x20.png" alt="github" class="tilt"></img>
+                            </a> {% elsif authors[1].wordpress %}
+                        <a href="{{ authors[1].wordpress }}" title="Wordpress" target="_blank"><img src="/images/social/wordpress-20x20.png" alt="wordpress" class="tilt"></img>
                             </a> {% endif %}
                     </td>
                 </tr>
                 <tr>
                     <td colspan="4">
-                        {% if member.mvpid %}
-                        <a href="https://mvp.microsoft.com/en-us/PublicProfile/{{ member.mvpid }}" title="MVP" target="_blank">
+                        {% if authors[1].mvpid %}
+                        <a href="https://mvp.microsoft.com/en-us/PublicProfile/{{ authors[1].mvpid }}" title="MVP" target="_blank">
                                 <img src="/images/social/mvp-181x74.png" alt="mvp"></img>
                             </a
                             {% endif %} 

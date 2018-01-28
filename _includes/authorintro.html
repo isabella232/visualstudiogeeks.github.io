@@ -1,6 +1,6 @@
-{% assign user = site.data.authors | where: "author", page.author %} 
 
-{% for author in user %}
+{% assign author = site.data.authors[page.author] %}
+
 <h2>About {{ author.name }}</h2>
 <div id="entry-author-info">
     <div id="author-avatar">
@@ -28,4 +28,3 @@
     </div>
     <!-- #author-description	-->
 </div>
-{% endfor %}

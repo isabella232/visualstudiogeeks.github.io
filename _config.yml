@@ -22,6 +22,7 @@ plugins:
  - jekyll-paginate
  - jekyll-gist
  - jekyll-redirect-from
+ - jekyll-feed
 
 # Build settings
 paginate: 10
