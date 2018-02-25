@@ -13,7 +13,7 @@ img: "/images/screenshots/utkarsh/github-issues-deployment-gate/deployment-gate-
 published: true
 ---
 
-We saw in my [last blog post](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm) how deployment gates allow you to monitor your GitHub repo for issues in your release pipeline. Microsoft recently made release gate extension point public for all users and we thought it would be good idea to expose integration with GitHub repo (as discussed previously) as an VSTS extension. The advantage is that, you do not have to worry on other infrastructure details such as writing and deploying the Azure function etc. Instead just install our extension from link below, write the search string for finding out issues and you are all set! 
+We saw in my [last blog post](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm) how deployment gates allow you to monitor your GitHub repo for issues in your release pipeline. Microsoft recently made release gate extension point public for all users and we thought it would be a good idea to expose integration with GitHub repo (as discussed previously) as an VSTS extension. The advantage is that you do not have to worry about other infrastructure details such as writing and deploying the Azure function etc. Instead just install our extension from the link below, write the search string for finding out issues and you are all set!
 
 <!--more-->
 
