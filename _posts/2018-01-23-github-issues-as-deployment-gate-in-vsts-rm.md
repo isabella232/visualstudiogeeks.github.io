@@ -86,7 +86,7 @@ https://vsgeeks-github-depg8-001.azurewebsites.net/api/SearchGitHubIssues?q=stat
 
 Notice the search expression - `?q=state:open+repo:Microsoft/vsts-agent+label:bug&sort=created&order=asc`
 
-![Search Issues Vstsagent Repo](../images/screenshots/utkarsh/github-issues-deployment-gate/search-issues-vstsagent-repo.png)
+![Search Issues VSTS Agent Repo](../images/screenshots/utkarsh/github-issues-deployment-gate/search-issues-vstsagent-repo.png)
 
 ## Monitor your search queries ##
 
@@ -100,7 +100,7 @@ Now that we have an Azure function in place to search GitHub, let's see how easy
 
 ![Pre Deployment Azure Function Gate](../images/screenshots/utkarsh/github-issues-deployment-gate/pre-deployment-azure-function-gate.png)
 
-Please **note** that we are basing the evaluation on the `totalCount` of issues in the returned JSON. In this case accessng that the total count of issues is equal to zero with the below expression.
+Please **note** that we are basing the evaluation on the `totalCount` of issues in the returned JSON. In this case accessing that the total count of issues is equal to zero with the below expression.
 
 ```
 eq(root['totalCount'], 0)
@@ -112,7 +112,7 @@ In short, when the release is triggered, the GitHub issue search function will b
 
 Playing the example forward, let's say we have an open issue in the GitHub repo.
 
-![Github Open Issue](../images/screenshots/utkarsh/github-issues-deployment-gate/github-open-issue.png)
+![GitHub Open Issue](../images/screenshots/utkarsh/github-issues-deployment-gate/github-open-issue.png)
 
 With deployment gate configured, the deployment gate will periodically trigger (as defined in the sampling interval) to check the response from the Azure function against defined GitHub search expression to see if it evaluates to true. 
 
@@ -124,7 +124,7 @@ Sampling result is shown in the 'Recent gate sampling` section as shown below.
 
 ![Log Result](../images/screenshots/utkarsh/github-issues-deployment-gate/log-result.png)
 
-Playing the exmaple forward, once you close all reported issues (based on your search query) as closed, VSTS will proceed with the deployment. And once the release succeeds, you will see the summary like below.
+Playing the example forward, once you close all reported issues (based on your search query) as closed, VSTS will proceed with the deployment. And once the release succeeds, you will see the summary like below.
 
 ![Deployment Gate Success](../images/screenshots/utkarsh/github-issues-deployment-gate/deployment-gate-success.png)
 
