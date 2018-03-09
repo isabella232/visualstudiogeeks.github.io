@@ -1,32 +1,21 @@
 <footer class="footer">
 	<div class="wrapper">
-			&copy;
-			<span id="copyright">
-				<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script> Utkarsh Shigihalli &amp; Tarun Arora
-			</span>
+		&copy;
+		<span id="copyright">
+			<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script> Utkarsh Shigihalli &amp; Tarun Arora
+		</span>
 	</div>
 </footer>
 <div id="fb-root"></div>
+<link rel="stylesheet" href="{{ " /css/main.css " | prepend: site.baseurl }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans|Kreon|Roboto+Slab|Bitter' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 <script src="{{ " /js/easybook.js " | prepend: site.baseurl }}"></script>
 <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type="text/javascript">
 	$(document).ready(function () {
-
-		//Check to see if the window is top if not then display button
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
-				$('.scrollToTop').fadeIn();
-			} else {
-				$('.scrollToTop').fadeOut();
-			}
-		});
-
-		//Click event to scroll to top
-		$('.scrollToTop').click(function () {
-			$('html, body').animate({ scrollTop: 0 }, 800);
-			return false;
-		});
 
 		window.twttr = (function (d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0],
@@ -46,13 +35,13 @@
 		}(document, "script", "twitter-wjs"));
 
 		//facebook
-		
-		(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
-		  fjs.parentNode.insertBefore(js, fjs);
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 
 	});

@@ -47,14 +47,9 @@
     {% else %}
     <meta name="keywords" content="DevOps, Visual Studio, Visual Studio Team Services, VSTS, Application Lifecycle Management, ALM, Extensions, Extensibility, Azure"/> 
     {% endif %}
-    <link rel="stylesheet" href="{{ "/css/main.css " | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-    
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Kreon|Roboto+Slab|Bitter' rel='stylesheet' type='text/css'>
     {% if page.keywords %}
     <meta name="keywords" content="{{ page.keywords }}" />
     {% else %}
@@ -80,24 +75,5 @@
         ga('create', '{{ site.google_analytics }}', 'auto');
         ga('send', 'pageview');
     </script>
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-    <script>
-    window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-        palette:{
-            popup: {background: "#fff"},
-            button: {background: "#aa0000"},
-          },
-          revokable:true,
-          onStatusChange: function(status) {
-            console.log(this.hasConsented() ?
-              'enable cookies' : 'disable cookies');
-          },
-          law: {
-            regionalLaw: false,
-          },
-          location: true,
-    })});
-    </script>
+    
 </head>
