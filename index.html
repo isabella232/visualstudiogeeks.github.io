@@ -16,13 +16,6 @@ layout: default
             {% if author %} • <img src="{{ site.url }}{{author.avatar16}}" style="display: inline-block;vertical-align: middle" > {{ author.name }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}
           {% endif %}
         </p>
-        <!-- <p class="post-meta">
-          {% for tag in post.tags %}
-      <a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
-      {% endfor %}
-        </p> -->
-        <!--<div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>-->
-
         <div class="post-excerpt">
           {{ post.excerpt }}
             
