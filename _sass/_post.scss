@@ -1,6 +1,6 @@
 .post {
     .post-header {
-    	margin: 0 100px;
+    	margin: -40px 100px;
     	margin-bottom: 10px;
     	// padding: 20px;
         .post-title {
@@ -8,7 +8,7 @@
         	font-weight: 400;
             font-family: 'Kreon', serif;
             color:#069;
-        	margin: 0 -100px;
+        	margin: 30px -100px 0px -100px;
         	@include media-query($on-palm) {
         		font-size: 34px;
         	}
