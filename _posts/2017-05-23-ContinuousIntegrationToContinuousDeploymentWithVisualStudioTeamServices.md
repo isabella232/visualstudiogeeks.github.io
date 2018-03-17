@@ -12,7 +12,7 @@ permalink: /DevOps/DevOpsTrainingCiCdWithGitVstsAzure
 published: true
 keywords: "DevOps, Azure, Git, Ci, Cd, Modern Engineering, Team Services, SemVersion, GitFlow, GitVersion, NuGet, Chocolatey, PackageManagement, ARM, ResourceGroup, AzureDevTestLabs, Release Management, Build Automation"
 ---
-Delighted to announce that my free training course on DevOps: Continuous Integration to Continuous Deployment with Visual Studio Team Services & Azure has just released on the Microsoft Open edX platform. The training has hours of video content, theory, labs and certification. It is primarily targeted at development teams but is useful for anyone wanting to learn about DevOps and it's application in Modern Engineering environment with VSTS & Azure. The course has been jointly developed by Avanade & Microsoft... You can check out the course here - [DevOpsCiCdCourse](http://bit.ly/DevOpsCiCdInfo)
+Delighted to announce that my free training course on DevOps: Continuous Integration to Continuous Deployment with Visual Studio Team Services & Azure has just released on the Microsoft Open edX platform. The training has hours of video content, theory, labs and certification. It is primarily targeted at development teams but is useful for anyone wanting to learn about DevOps and it's application in Modern Engineering environment with VSTS & Azure. The course has been jointly developed by Avanade & Microsoft... You can check out the course here - [DevOpsCiCdCourse](https://openedx.microsoft.com/courses/course-v1%3AMicrosoft%2BDevOps200.3%2B2017_T2/)
 <!--more--> 
 
 ### Introduction

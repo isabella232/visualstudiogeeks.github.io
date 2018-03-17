@@ -12,7 +12,7 @@ permalink: /DevOps/DevOpsIaCTrainingInfraAsCodeAzure
 published: true
 keywords: "DevOps, Azure, Git, Iac, Modern Engineering, Infrastructure As Code, ARM, ResourceGroup, AzureDevTestLabs, PowerShell, AzureAutomation, DSC, Pull Server in Azure Automation, RunBooks, Pester, Chef"
 ---
-Delighted to announce that my free training course on **DevOps: Infrastructure As Code with Azure** has just released on the Microsoft Open edX platform. The training has hours of video content, theory, labs and certification. It is primarily targeted at operations and development teams but is useful for anyone wanting to learn DevOps and it's application in Modern Engineering environment with VSTS & Azure Automation. The course has been jointly developed by Avanade & Microsoft... You can check out the course here - [DevOpsIacCourse](http://bit.ly/AvaDevOps-IaC)
+Delighted to announce that my free training course on **DevOps: Infrastructure As Code with Azure** has just released on the Microsoft Open edX platform. The training has hours of video content, theory, labs and certification. It is primarily targeted at operations and development teams but is useful for anyone wanting to learn DevOps and it's application in Modern Engineering environment with VSTS & Azure Automation. The course has been jointly developed by Avanade & Microsoft... You can check out the course here - [DevOpsIacCourse](https://openedx.microsoft.com/courses/course-v1:Microsoft+DEVOPS200.2x+2017_T2)
 <!--more-->
 
 ### Introduction
@@ -69,7 +69,7 @@ Apart from covering the essential topics such as Why DevOps and What are it's be
     - Configuration Management 
     - Cost Tracking & Optimization 
 
-If you are looking for more information on how to go from continuous integration to continuous deployment, check out my other course on DevOps that covers exactly that... You can check out the course here - [DevOpsCiCdCourse](http://bit.ly/DevOpsCiCdInfo)
+If you are looking for more information on how to go from continuous integration to continuous deployment, check out my other course on DevOps that covers exactly that... You can check out the course here - [DevOpsCiCdCourse](https://openedx.microsoft.com/courses/course-v1%3AMicrosoft%2BDevOps200.3%2B2017_T2/)
 
 Here is a two minute primer to the course...
 
