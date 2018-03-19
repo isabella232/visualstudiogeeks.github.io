@@ -49,7 +49,7 @@ Of course, me, recording the courses...
 # Courses I have in the Edx Library?     
 I would encourage you to check out the library, it's loaded with a lot of courses on DevOps, PowerBi and Azure... So far I have two courses up on the library...
 
-+ [DevOps: Continuous Integration to Continuous Deployment with Visual Studio Team Services & Azure](http://bit.ly/DevOpsCiCdInfo)
++ [DevOps: Continuous Integration to Continuous Deployment with Visual Studio Team Services & Azure](https://openedx.microsoft.com/courses/course-v1%3AMicrosoft%2BDevOps200.3%2B2017_T2/)
     - If you just want to quickly check whether the training has the key technology or topics you are interested in, you can quickly check the list of key topics [here](http://www.visualstudiogeeks.com/DevOps/DevOpsIaCTrainingInfraAsCodeAzure#key-topics)  
 
 {% include youtubeplayer.html id='ODNPADYAQvQ' %}
@@ -70,7 +70,7 @@ I would encourage you to check out the library, it's loaded with a lot of course
 
 ```
 
-+ [DevOps: Infrastructure As Code with Azure](http://bit.ly/AvaDevOps-IaC)
++ [DevOps: Infrastructure As Code with Azure](https://openedx.microsoft.com/courses/course-v1%3AMicrosoft%2BDEVOPS200.2x%2B2017_T2/)
     - If you just want to quickly check whether the training has the key technology or topics you are interested in, you can quickly check the list of key topics [here](http://www.visualstudiogeeks.com/DevOps/DevOpsTrainingCiCdWithGitVstsAzure)  
 
  {% include youtubeplayer.html id='-Jbs2xGoksk' %}
