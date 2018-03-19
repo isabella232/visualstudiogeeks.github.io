@@ -7,7 +7,7 @@ tags: ["TFS2015", "DevOps Book"]
 categories:
 - blog                #important: leave this here
 - TeamFoundationServer
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
 *Announcement* "Team Foundation Server (TFS) 2015 Update 2 RC 1 now available for download..." This blogpost explains where you can download the update from and the list of features installed with the update...  

@@ -9,7 +9,7 @@ categories:
 description: "Do you want to stop deployment as long as there are outstanding issues in your GitHub repository? In this blog post we will see how we can leverage powerful VSTS deployment gate extension your next big deployment."
 permalink: /DevOps/github-issues-deployment-gate-extension
 keywords: "DevOps, VSTS, VSTS Deployment Gate Azure Function, Azure Function, Azure Function, GitHub, GitHub Issues, Deployment Gate, Release Management, Visual Studio, Extension"
-img: "/images/screenshots/utkarsh/github-issues-deployment-gate/deployment-gate-success.png"
+image: "/images/screenshots/utkarsh/github-issues-deployment-gate/deployment-gate-success.png"
 published: true
 ---
 
@@ -21,17 +21,17 @@ We saw in my [last blog post](https://www.visualstudiogeeks.com/DevOps/github-is
 
 This is super easy, head over to [extension page](https://marketplace.visualstudio.com/items?itemName=UtkarshShigihalliandTarunArora.github-issues-release-gate) in VSTS marketplace and install the extension. You should see our extension under release gates section in VSTS.
 
-![Select Gate](../images/screenshots/utkarsh/github-issues-deployment-gate-extension/gate-select.png)
+![Select Gate]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate-extension/gate-select.png)
 
 ## Using the gate
 
 You can add gates either prior to the deployment or post deployment. Below is UI to select pre-deployment gate.
 
-![Pre-Deployment](../images/screenshots/utkarsh/github-issues-deployment-gate-extension/pre-deployment-step.png)
+![Pre-Deployment]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate-extension/pre-deployment-step.png)
 
 This will display all the gates available and select `Search GitHub issues` gate.
 
-![Gate](../images/screenshots/utkarsh/github-issues-deployment-gate-extension/gate-select-arrow.png)
+![Gate]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate-extension/gate-select-arrow.png)
 
 ## Configure and search for issues
 
@@ -39,7 +39,7 @@ You will see configuration options once you add this gate and it allows you to c
 
 > Please use the GitHub compatible query. You can read more about search query [here](https://help.github.com/articles/searching-issues-and-pull-requests/)
 
-![Configure](../images/screenshots/utkarsh/github-issues-deployment-gate-extension/gate-configure.png)
+![Configure]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate-extension/gate-configure.png)
 
 ## Feedback
 

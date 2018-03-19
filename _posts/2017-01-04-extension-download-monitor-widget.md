@@ -6,7 +6,7 @@ author: utkarsh
 tags: ["Extensions"]
 categories:
 - "Extensions"
-img: "/images/screenshots/utkarsh/extensiondownloadmonitor/widgets.png"
+image: "/images/screenshots/utkarsh/extensiondownloadmonitor/widgets.png"
 description: "Extension Download Monitor Widget"
 permalink: extensions/extension-download-monitor-widget
 keywords: "Extensions"
@@ -23,7 +23,7 @@ This dashboard widget allows you to track your extension's downloads, ratings an
 - Know how many users downloaded your extension today.
 - Track the average rating and along with total number of ratings your extension has received.
 
-![dashboard](/images/screenshots/utkarsh/extensiondownloadmonitor/widgets.png)
+![dashboard]({{site.url}}/images/screenshots/utkarsh/extensiondownloadmonitor/widgets.png)
 
 ## Add to Dashboard ##
 
@@ -34,7 +34,7 @@ This dashboard widget allows you to track your extension's downloads, ratings an
 1. Browse to extension page in Visual Studio Marketplace.
 2. Look for `itemName=value` in the url as highlighted in screenshot below.
 
-    ![itemName](/images/screenshots/utkarsh/extensiondownloadmonitor/itemname.png)
+    ![itemName]({{site.url}}/images/screenshots/utkarsh/extensiondownloadmonitor/itemname.png)
 
 3. Get the `itemname` for your extension. For example item name is  `onlyutkarsh.ExportImportBuildDefinition` in the above screenshot.
 4. Paste that in the `Item Name` text box in the configuration.
@@ -44,7 +44,7 @@ This dashboard widget allows you to track your extension's downloads, ratings an
 1. The extension supports 2 sizes (1x1 and 2x1).
 2. You can also select color for the widget from various available colors.
 
-![Configuration](/images/screenshots/utkarsh/extensiondownloadmonitor/configuration.png)
+![Configuration]({{site.url}}/images/screenshots/utkarsh/extensiondownloadmonitor/configuration.png)
 
 ## Report Issues ##
 Found an issue or want to suggest a feature? Add it as issue [here](https://github.com/onlyutkarsh/extensiondownloadmonitorwidget/issues).

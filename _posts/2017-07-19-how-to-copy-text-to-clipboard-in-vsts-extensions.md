@@ -7,7 +7,7 @@ tags: ["Extensions", "VSTS"]
 categories:
 - "Extensions"
 - "VSTS"
-img: "/images/screenshots/utkarsh/copy-to-clipboard-vsts-extension.png"
+image: "/images/screenshots/utkarsh/copy-to-clipboard-vsts-extension.png"
 description: "How to copy text to clipboard in VSTS extensions using VSTS Web Extension SDK"
 permalink: extensions/how-to-copy-text-to-clipboard-in-vsts-extensions
 keywords: "Extensions, VSTS"
@@ -17,7 +17,7 @@ If you have used TFS/VSTS, you might have used "Copy to Clipboard" option at lea
 
 <!--more-->
 
-![Image](/images/screenshots/utkarsh/copy-to-clipboard-vsts-extension.png)
+![Image]({{site.url}}/images/screenshots/utkarsh/copy-to-clipboard-vsts-extension.png)
 
 
 ## Steps ##

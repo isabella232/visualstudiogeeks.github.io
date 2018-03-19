@@ -9,7 +9,7 @@ categories:
 - "DevOps"
 permalink:  /blog/DevOps/Join-a-VM-to-existing-AD-domain-using-ARM-template-AzureDevTestLabs
 description: "DevOps Azure DevTestLab InfrastructureAsCode VSTS AzureResourceManager InfrastructureAutomation VHD CustomImages DomainJoin ActiveDirectory"
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshots/thumbs/
 ---
 Learn how to domain join your Azure DevTestLab VM to with an Active Directory Domain Controller using a powershell artifact. We'll trigger this process from VSTS. The private artifact repository will also be available & exposed in DevTestLab for virtual machines in the lab.    
@@ -18,7 +18,7 @@ Learn how to domain join your Azure DevTestLab VM to with an Active Directory Do
 # Scenario 
 While provisioning a virtual machine in the AzureDevTest Lab you would like the newly provisioned virtual machine to be joined up to an existing Active Directory Domain Controller. This can be achieved by running a PowerShell script, that is wrapped up as an artifact. This artifact can be exposed in the DevTestLab via a private artifact repository. 
 
-![AzureDevTestLabs Join Domain Scenario](/images/screenshots/tarun/AzureDTL/AzureDtl_JoinDomainTask.png)
+![AzureDevTestLabs Join Domain Scenario]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_JoinDomainTask.png)
 
 In this blogpost I'll show you how you can leverage a private artifact repository which intern uses powershell script to join your newly created Azure virtual machine in Azure DevTest Lab to an existing active directory domain.
 
@@ -32,12 +32,12 @@ Download the artifact and use the [instructions here](https://azure.microsoft.co
 
 Once you have the private artifact repository set up and the Join Domain Artifact added, in the Azure Portal you should see something like this... 
 
-![AzureDevTestLabs Join Domain Scenario](/images/screenshots/tarun/AzureDTL/AzureDtl_AzCopy_CustomArtifactRepoJoinDomainArtifact.png)
+![AzureDevTestLabs Join Domain Scenario]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_AzCopy_CustomArtifactRepoJoinDomainArtifact.png)
 
 # Plug in Domain Join Artifact to your ARM template 
 We'll see how easy it is to add this private artifact script into your Azure DevTestVM ARM template. If you don't already have an ARM template then refer to [my blogpost here](http://www.visualstudiogeeks.com/blog/DevOps/Deploy-New-VM-To-Existing-AzureDevTestLab-From-VSTS) that shows you how to achieve this. 
 
-![AzureDevTestLab ARM Template](/images/screenshots/tarun/AzureDTL/ExportArmTemplateFromDevVmInDevTestLab.png)
+![AzureDevTestLab ARM Template]({{site.url}}/images/screenshots/tarun/AzureDTL/ExportArmTemplateFromDevVmInDevTestLab.png)
 
 In your AzureDevTestLab ARM template add the following three parameters...
 
@@ -91,26 +91,26 @@ Commit the changes to the repository...
 
 Ammend the build definition to include the values for the three variables added to the ARM template. 
 
-![VSTS AzureDevTestLab trigger new VM deloyment](/images/screenshots/tarun/AzureDTL/AzureDtl_JoinDomain_VSTS_Variables.png)
+![VSTS AzureDevTestLab trigger new VM deloyment]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_JoinDomain_VSTS_Variables.png)
 
 Ensure that you add these variables into the template parameters section of the task. 
 
-![VSTS AzureDevTestLab trigger new VM deloyment](/images/screenshots/tarun/AzureDTL/AzureDtl_JoinDomain_Vsts_Task.png)
+![VSTS AzureDevTestLab trigger new VM deloyment]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_JoinDomain_Vsts_Task.png)
  
 Trigger a new build to create a new VM in an Azure DevTestLab to provision a new VM that runs the private artifact to domain join the newly provisioned virtual machine...  
 
 # Validate that the JoinDomain artifact worked successfully
 To validate the execution of the JoinDomain artifact navigate to the resource group of the newly deployed virtual machine. Click on deployments from the settings blade to load the history of all deployments that have taken place against this resource group. 
 
-![VSTS AzureDevTestLab trigger new VM deloyment](/images/screenshots/tarun/AzureDTL/AzureDtl_JoinDomainArtifact_Validate.png)
+![VSTS AzureDevTestLab trigger new VM deloyment]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_JoinDomainArtifact_Validate.png)
  
 The deployments blade will show you the full history of all deployments as well as the details of the artifacts run up against the resource group. You also have the ability to rerun the deployments of the artifacts from here. As you can see in the below screen shot, it is also possible to see the actual parameters passed to the artifact. 
 
-![VSTS AzureDevTestLab trigger new VM deloyment](/images/screenshots/tarun/AzureDTL/AzureDtl_ArtifactDeploymentDetails.png)
+![VSTS AzureDevTestLab trigger new VM deloyment]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_ArtifactDeploymentDetails.png)
 
 __Voila!__ Now that the artifact has successfully been run, you'll see the virtual machine registered in active directory under the computers OU. You will also be able to use domain credentials to log into the virtual machine.
 
-![VSTS AzureDevTestLab trigger new VM deloyment](/images/screenshots/tarun/AzureDTL/AzureDtl_AD_Domain.png) 
+![VSTS AzureDevTestLab trigger new VM deloyment]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_AD_Domain.png) 
 
 Check out other posts on AzureDevTest labs:
 

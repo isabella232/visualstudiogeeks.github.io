@@ -7,7 +7,7 @@ tags: ["Extensions", "VSTS", "Chrome"]
 categories:
 - "Extensions"
 - "VSTS"
-img: "/images/screenshots/utkarsh/Sep17/up-toolbar.png"
+image: "/images/screenshots/utkarsh/Sep17/up-toolbar.png"
 description: "VSTS Status Monitor - A Google Chrome extension to monitor VSTS Status"
 permalink: extensions/vsts-status-monitor-for-google-chrome
 keywords: "Extensions, VSTS, Chrome"
@@ -28,11 +28,11 @@ Still undecided? read on...
 ## Does it add an icon to Chrome toolbar? ##
 
 
-![VSTSStatusMonitor-Up](/images/screenshots/utkarsh/Sep17/up-toolbar.png)
+![VSTSStatusMonitor-Up]({{site.url}}/images/screenshots/utkarsh/Sep17/up-toolbar.png)
 
 Yes, it does..and you can monitor the status straight from the toolbar via the extension icon. The icon has a green dot when VSTS is up and red dot when VSTS is down.
 
-![VSTSStatusMonitor-Up](/images/screenshots/utkarsh/Sep17/down-toolbar.png)
+![VSTSStatusMonitor-Up]({{site.url}}/images/screenshots/utkarsh/Sep17/down-toolbar.png)
 
 Click on the icon, and you will see that the extension pops up a window displaying the current status of the VSTS along with any message which VSTS team has posted about the status. You also see when the next check for VSTS is made. 
 
@@ -43,7 +43,7 @@ Click on the icon, and you will see that the extension pops up a window displayi
 
 Who do not love notifications? I love them too and this extension supports notifications. It shows the notification when anything interesting happens with VSTS. Isn't it cool? :)
 
-![VSTSStatusMonitor-Options](/images/screenshots/utkarsh/Sep17/notification-up.png)
+![VSTSStatusMonitor-Options]({{site.url}}/images/screenshots/utkarsh/Sep17/notification-up.png)
 
 
 ## Options ##
@@ -51,7 +51,7 @@ Who do not love notifications? I love them too and this extension supports notif
 Are notifications not for you? - Ah, I remember  - my wife hates them too! That's why I made notifications optional. Uncheck both the checkboxes in the Options and extension won't bug you again! Happy? 
 
 
-![VSTSStatusMonitor-Options](/images/screenshots/utkarsh/Sep17/options.png)
+![VSTSStatusMonitor-Options]({{site.url}}/images/screenshots/utkarsh/Sep17/options.png)
 
 
 ## How can I install? ##

@@ -8,14 +8,14 @@ categories:
 - blog                #important: leave this here
 - "extensibility"
 - "visual studio"
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
 
 Hello, this is going to be a small post. In one of my Visual Studio extension, I was trying to add a toolbar to the toolwindow. Everything compiled just fine and all seemed perfect. However, as soon as I tried to open the toolwindow (with toolbar) I was getting "*Value does not fall within the expected range*" error.
 <!--more-->
 
- ![Alt text](/images/screenshots/utkarsh/value_does_not_fall_error.png)
+ ![Alt text]({{site.url}}/images/screenshots/utkarsh/value_does_not_fall_error.png)
 
 Obviously, error did not give me much details on what caused the error. *Break on CLR exceptions* setting lead me to this line. 
  

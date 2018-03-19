@@ -6,7 +6,7 @@ author: tarun
 tags: ["DevOps", "Azure", "VSTS", "Training"]
 categories:
 - "DevOps"
-img: "/images/screenshots/tarun/DevOpsAutomation.PNG"
+image: "/images/screenshots/tarun/DevOpsAutomation.PNG"
 description: "Learn real world strategies and application of DevOps. Learn how to use apply modern engineering practices with Azure & VSTS to go from Continuous Integration to Continuous Delivery to Continuous Deployment!"
 permalink: /DevOps/DevOpsTrainingCiCdWithGitVstsAzure
 published: true

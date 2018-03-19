@@ -10,7 +10,7 @@ categories:
 - "csharp"
 - "Extensions"
 description: "Passing parameters to Visual Studio tool window using IServiceProvider"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 ### Assumption
@@ -63,7 +63,7 @@ So lets see with an **example**:
 
 My solution structure is as below
 
-![image](/images/screenshots/utkarsh/2013_10_16_passing_parameters_to_visual_Image1.png)
+![image]({{site.url}}/images/screenshots/utkarsh/2013_10_16_passing_parameters_to_visual_Image1.png)
 
 1.  Visual Studio package project 
 2.  Team Explorer Integration project (not necessary for creating the service) 
@@ -71,13 +71,13 @@ My solution structure is as below
 
 My current UI of the extension is such that I display a list of users in Team Explorer. The list is bound to the listview by a ObservableCollection. 
 
-![image](/images/screenshots/utkarsh//2013_10_16_passing_parameters_to_visual_Image2.png)
+![image]({{site.url}}/images/screenshots/utkarsh//2013_10_16_passing_parameters_to_visual_Image2.png)
 
-I have a requirement that I need to open a toolwindow on click of the user and display the name on a button. I have a command bound to the hyperlink in my ViewModel. As you can see in the above code, either way opening the toolwindow is a COM call and it is not possible to pass the parameter to toolwindow. The main reason is that `FindToolWindow` call is defined in Pacakge and which is not accessible to us outside the pacakge project. For this purpose we will define the new service which will help us to open the toolwindow and pass the string clicked on the team explorer.
+I have a requirement that I need to open a toolwindow on click of the user and display the name on a button. I have a command bound to the hyperlink in my ViewModel. As you can see in the above code, either way opening the toolwindow is a COM call and it is not possible to pass the parameter to toolwindow. The main reason is that `FindToolWindow` call is defined in Package and which is not accessible to us outside the pacakge project. For this purpose we will define the new service which will help us to open the toolwindow and pass the string clicked on the team explorer.
 
 To give you an idea, below is the output which we are targeting.
 
-![ToolBarDemo](/images/screenshots/utkarsh/2013_10_16_passing_parameters_to_visual_Image3.gif)
+![ToolBarDemo]({{site.url}}/images/screenshots/utkarsh/2013_10_16_passing_parameters_to_visual_Image3.gif)
 
 1.  Create the interfaces for our service. We are going to need the 2 interfaces (`IToolWindowManager` and `SToolWindowManager`) to follow the VSSDK pattern of creating service. The latter will just act as a address to the `IToolWindowManager` service. 
 2.  Implement the services in a separate class or the package (for this example I am going to implement in package itself) 

@@ -8,18 +8,18 @@ categories:
 - blog                #important: leave this here
 - "MVPBuzz"
 - "Personal"
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
 
 I have been re-awarded the Microsoft Most Valuable Professional award in Visual Studio ALM for 4th year in a row. Thank you Microsoft for re-awarding me the MVP award, it’s a great feeling to start the year knowing that my contributions to the Microsoft ecosystem are still relevant!
 <!--more-->
  
-![Moment of glory, re-awarded Microsoft Most Valuable Professional for 4th year in a row](/images/screenshots/tarun/post05_TarunMvpAnnouncement.jpg)
+![Moment of glory, re-awarded Microsoft Most Valuable Professional for 4th year in a row]({{site.url}}/images/screenshots/tarun/post05_TarunMvpAnnouncement.jpg)
 
 <center><small> Moment of glory, re awarded Microsoft Most Valuable Professional for 4th year in a row </small></center>
 
-While there are more than 100 million social and technical community members, only a small portion are selected to be recognized as MVPs. Each year, around 4,000 MVPs are honoured. They are nominated by Microsoft, other community individuals, or in some cases themselves. Candidates are rigorously evaluated for their technical expertise, community leadership, and voluntary community contributions for the previous year. They come from more than 90 countries, speak over 40 different languages, and are awarded in more than 90 Microsoft technologies. Together, they answer more than 10 million questions a year! MVPs are recognized each quarter for this annual award, which continues to grow and evolve to reflect the development of Microsoft technologies. Currently there are just 100 ALM MVP’s across the globe, I am delighted to retain my ALM MVP status to continue to be part of this prestigious group.
+While there are more than 100 million social and technical community members, only a small portion are selected to be recognized as MVPs. Each year, around 4,000 MVPs are honored. They are nominated by Microsoft, other community individuals, or in some cases themselves. Candidates are rigorously evaluated for their technical expertise, community leadership, and voluntary community contributions for the previous year. They come from more than 90 countries, speak over 40 different languages, and are awarded in more than 90 Microsoft technologies. Together, they answer more than 10 million questions a year! MVPs are recognized each quarter for this annual award, which continues to grow and evolve to reflect the development of Microsoft technologies. Currently there are just 100 ALM MVP’s across the globe, I am delighted to retain my ALM MVP status to continue to be part of this prestigious group.
 
 ## I had a very busy 2014, below is a short list of few things I worked on... ##
 

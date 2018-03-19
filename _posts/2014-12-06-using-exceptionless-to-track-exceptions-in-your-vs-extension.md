@@ -9,12 +9,12 @@ categories:
 - "Visual Studio"
 - "Tools"
 description: "Using exceptionless to track exceptions in your VS Extension"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 In the current competitive world, everyone knows releasing the product to market is only half the battle. You are expected to continuously monitor application for its usage, memory consumption, errors, to quickly address any issues in your application. Quickly addressing issues your customers facing is essential to keep existing customers with your product. There are already many solutions available in the market, which provide complete application monitoring and analytics for your application. Some popular ones are, [Microsoft Application Insights](http://www.visualstudio.com/en-us/explore/application-insights-vs.aspx) and [Telerik Analytics](http://www.telerik.com/analytics). However, if you are looking for tracking only exceptions in your applications and not interested in other usage trends, so that you quickly track unhandled exceptions, you have a friend in [exceptionless.com](https://exceptionless.com/)
 
-![image](/images/screenshots/utkarsh//2014_12_06_using_exceptionless_to_track_Image1.png "image")
+![image]({{site.url}}/images/screenshots/utkarsh//2014_12_06_using_exceptionless_to_track_Image1.png "image")
 
 **Few of its main features include:**
 
@@ -32,7 +32,7 @@ For this post, I will be integrating with VS Extension which I am working on. I 
 
 3. Based on your application type, install the nuget package.
 
-![image](/images/screenshots/utkarsh//2014_12_06_using_exceptionless_to_track_Image2.png "image")
+![image]({{site.url}}/images/screenshots/utkarsh//2014_12_06_using_exceptionless_to_track_Image2.png "image")
 
 4. Get the app key from exceptionless and usually you need update your appKey in config file for any other type of applications. Because VS extensions emit the assembly and loaded by Visual Studio, you cannot use app.config. Instead you need to add appKey in AssemblyInfo.cs as below.
 
@@ -85,11 +85,11 @@ catch (Exception ex)
 
 That's it! You will receive your exceptions with full stack trace in real time with nice charts as below.
 
-![image](/images/screenshots/utkarsh//2014_12_06_using_exceptionless_to_track_Image3.png "image")
+![image]({{site.url}}/images/screenshots/utkarsh//2014_12_06_using_exceptionless_to_track_Image3.png "image")
 
 You can dig in inside individual exceptions to view full stack trace.
 
-![image](/images/screenshots/utkarsh//2014_12_06_using_exceptionless_to_track_Image4.png "image")
+![image]({{site.url}}/images/screenshots/utkarsh//2014_12_06_using_exceptionless_to_track_Image4.png "image")
 
 ### Exceptionless is open source!
 
@@ -99,4 +99,4 @@ Exceptionless is completely open source and code is actively developed on [Githu
 
 During debugging my VS extension, I kept on getting this error dialog in VS Experimental Instance. I have mailed them about the same, will update this post if I get any answer from them. Please see that this exception dialog was seen only in extensibility project type and rest other projects worked just fine.
 
-![image](/images/screenshots/utkarsh//2014_12_06_using_exceptionless_to_track_Image5.png "image")
+![image]({{site.url}}/images/screenshots/utkarsh//2014_12_06_using_exceptionless_to_track_Image5.png "image")

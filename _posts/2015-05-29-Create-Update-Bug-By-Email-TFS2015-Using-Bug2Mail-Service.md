@@ -7,7 +7,7 @@ tags: ["TFS2015", "Extensions", "Bug2Mail"]
 categories:
 - blog                #important: leave this here
 - "TFS2015"
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: #windows-10-preview-lumia-930.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
  
@@ -17,7 +17,7 @@ While there are lots of collaboration tools out there, email still remains one o
 
 - We'll be adding a new field to the bug type work item in order to enable the bug2mail service to track the work item revisions appended by parsing the content of the emails into the work item. Since the out of box process templates has been locked down for customization in TFS 2015, before we can add the custom field that we need, we'll need to export the out of box template and change the guid in the version tag. From team explorer go into settings view, launch the process template manager and download the default scrum template to a folder location. Open the ProcessTemplate.xml from that folder location and replace the guid in the version tag with a new guid generated from visual studio. Additionally change the name of the process template and up the minor version. Once completed the ProcessTemplate.xml should look like this...  
 
-    ![Alt text](/images/screenshots/tarun/Mail2Bug_ProcessTemplateXmlUpdateGuid.jpg "TFS2015 Update Process Template Guid and Name")
+    ![Alt text]({{site.url}}/images/screenshots/tarun/Mail2Bug_ProcessTemplateXmlUpdateGuid.jpg "TFS2015 Update Process Template Guid and Name")
     
     Next... In the process template folder, navigate to .\WorkItem Tracking\TypeDefinitions and open Bug.xml in notepad. Search for the tag /fields add the below code before the closing tag
  
@@ -194,24 +194,24 @@ Manually trigger the execeution of the service by running the command line using
 
 The service is initalized and the monitoring is kicked off…
 
-![Alt text](/images/screenshots/tarun/Mail2Bug_ManualTriggerForTesting01.png "Main2Bug Console Output when manually triggered")
+![Alt text]({{site.url}}/images/screenshots/tarun/Mail2Bug_ManualTriggerForTesting01.png "Main2Bug Console Output when manually triggered")
 
 The new message in the mailbox is processed and moved to the delete folder…
 
-![Alt text](/images/screenshots/tarun/Mail2Bug_ManualTriggerForTesting02.png "Main2Bug Console Output updated when manually triggered")
+![Alt text]({{site.url}}/images/screenshots/tarun/Mail2Bug_ManualTriggerForTesting02.png "Main2Bug Console Output updated when manually triggered")
 
 The work item is generated in the fabrikam team project, the default values specified in the config file are set and the rest of the values are populated from the email message. The origional email is attached to the work item in the attachment tab. 
-![Alt text](/images/screenshots/tarun/Mail2Bug_GeneratedWorkItem01.png "Mail2Bug Work Item Generated from the test email")
+![Alt text]({{site.url}}/images/screenshots/tarun/Mail2Bug_GeneratedWorkItem01.png "Mail2Bug Work Item Generated from the test email")
 
 The custom filed conId that we added after customizing the process temaplate is also updated. This field should not be modified manually. 
-![Alt text](/images/screenshots/tarun/Mail2Bug_GeneratedWorkItem02.png "Mail2Bug Work Item Generated with more details from the test email")
+![Alt text]({{site.url}}/images/screenshots/tarun/Mail2Bug_GeneratedWorkItem02.png "Mail2Bug Work Item Generated with more details from the test email")
 
 The Mail2Bug service send back an acknowledgement email to confirm that a bug has been created. 
-![Alt text](/images/screenshots/tarun/Mail2Bug_EmailAcknowledgement.jpg "Mail2Bug email Acknowledgement")
+![Alt text]({{site.url}}/images/screenshots/tarun/Mail2Bug_EmailAcknowledgement.jpg "Mail2Bug email Acknowledgement")
 
 Further communication on the email (as long as the mail2bug email address is in the to or cc line) is automatically appended into the work item discussion area.
  
-![Alt text](/images/screenshots/tarun/Mail2Bug_GeneratedWorkItem03.png "Mail2Bug future conversation in the email thread updated in the discussion section in the work item")
+![Alt text]({{site.url}}/images/screenshots/tarun/Mail2Bug_GeneratedWorkItem03.png "Mail2Bug future conversation in the email thread updated in the discussion section in the work item")
 
 Once the service set up has been validated by manually triggering the workflow, the service should be set up to run as a scheduled task on the server.
 

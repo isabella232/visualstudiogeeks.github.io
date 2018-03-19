@@ -9,7 +9,7 @@ categories:
 - "TFS2015"
 - "DevOps"
 - "TeamFoundationServer"
-img: "/images/screenshots/utkarsh/tf254027-cert-not-found/error.jpg"
+image: "/images/screenshots/utkarsh/tf254027-cert-not-found/error.jpg"
 description: "TF254027 : Cannot create a binding on port 443 because the specified certificate could not be found"
 keywords: "TFS2015"
 ---
@@ -18,7 +18,7 @@ When doing the upgrade of TFS2015 from previous update version you might get an 
 
 <!--more-->
 
-![Error](/images/screenshots/utkarsh/tf254027-cert-not-found/error.jpg)
+![Error]({{site.url}}/images/screenshots/utkarsh/tf254027-cert-not-found/error.jpg)
 
 
 ## Cause ##
@@ -29,16 +29,16 @@ The error is caused if the certificate you used to configure HTTPS for TFS 2015 
 
 Click `Previous` button in the wizard till you go to `Application Tier` tab.
 
-![ApplicationTier](/images/screenshots/utkarsh/tf254027-cert-not-found/app-tier-page.jpg)
+![ApplicationTier]({{site.url}}/images/screenshots/utkarsh/tf254027-cert-not-found/app-tier-page.jpg)
 
 
 Click `Edit Site Settings` to open the below dialog
 
-![Edit Site Binding](/images/screenshots/utkarsh/tf254027-cert-not-found/website-settings.jpg)
+![Edit Site Binding]({{site.url}}/images/screenshots/utkarsh/tf254027-cert-not-found/website-settings.jpg)
 
 Select `https` protocol (port 443) and click `Edit`. This will open a dialog below.
 
-![Assign Certificate](/images/screenshots/utkarsh/tf254027-cert-not-found/edit-site-binding.jpg)
+![Assign Certificate]({{site.url}}/images/screenshots/utkarsh/tf254027-cert-not-found/edit-site-binding.jpg)
 
 If you have your organization certificate, you should see it in the `SSL Certificate` dropdown. If you see the correct certificate, select it to use it - and you can skip rest of the blog post :-)
 
@@ -52,11 +52,11 @@ To create self signed certificate you can follow the steps mentioned [here](http
 
 Once you create the self signed certificate, come back to the wizard and you should see the certificate.
 
-![CertificateShown](/images/screenshots/utkarsh/tf254027-cert-not-found/edit-site-binding-cert.jpg)
+![CertificateShown]({{site.url}}/images/screenshots/utkarsh/tf254027-cert-not-found/edit-site-binding-cert.jpg)
 
 Re-run the readiness check and you should see all checks pass.
 
-![ReadinessComplete](/images/screenshots/utkarsh/tf254027-cert-not-found/success.jpg)
+![ReadinessComplete]({{site.url}}/images/screenshots/utkarsh/tf254027-cert-not-found/success.jpg)
 
 
 

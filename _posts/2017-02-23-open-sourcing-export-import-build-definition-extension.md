@@ -6,7 +6,7 @@ author: utkarsh
 tags: ["Extensions"]
 categories:
 - "Extensions"
-img: "/images/screenshots/utkarsh/export-import-build-definition/context-menu-new.png"
+image: "/images/screenshots/utkarsh/export-import-build-definition/context-menu-new.png"
 description: "Open sourcing Export/Import Build Definition extension"
 permalink:
 keywords: "Extensions"
@@ -21,6 +21,6 @@ So I decided to switch to VSCode. Reasons for this switch were many, its free, c
 
 For all this to work, I had to completely rewrite my extension and in that process, refactored lot of code to clean and use the latest features of typescript. More importantly, I also made additional validations during import like, check for service endpoints, custom tasks, refined UI to show validation errors etc.
 
-![Validations](/images/screenshots/utkarsh/export-import-build-definition/Validations.png)
+![Validations]({{site.url}}/images/screenshots/utkarsh/export-import-build-definition/Validations.png)
 
 So I encourage anyone who is interested to bring enhancement to the extension or have ideas for making extension work better to take a look at the code and contribute. For those interested in contributing to this extension I would request to start with the [readme](https://github.com/onlyutkarsh/ExportImportBuildDefinition/blob/master/README.md).

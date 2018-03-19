@@ -7,7 +7,7 @@ tags: ["Extensions", "VisualStudio"]
 categories:
 - blog                #important: leave this here
 - "visual studio extensibility" 
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
  
@@ -24,7 +24,7 @@ VSO Status Inspector extension, polls Visual Studio [Support Overview](https://w
 <b> The extension targets to raise awareness of VSO issues to developers working in the IDE. While what the extension does is trivial, there is a lot happening under the hood to hook into the IDE. In this blog post I endeavour to walk you through the mechanics of developing this extension and integrating it with different parts of Visual Studio like status bar, output window and options window.
 </b>
 
-![Alt text](/images/screenshots/utkarsh/vso_status_inspector.png "VSO status Inspector")
+![Alt text]({{site.url}}/images/screenshots/utkarsh/vso_status_inspector.png "VSO status Inspector")
 
 > I assume that you are already aware of basics of writing Visual Studio extensions and know how to create a Visual Studio Package. If you are new to extending Visual Studio, suggest you to start from this [**page**](https://msdn.microsoft.com/en-us/library/dd885119.aspx) on MSDN.
 
@@ -45,11 +45,11 @@ I will break this blog post in to following sections,
 ## 1. How to integrate with Visual Studio status bar and display a custom icon
 Visual Studio status bar is one of the important components of Visual Studio IDE. It provides subtle but clear visual indications on the current context and state of the Visual Studio IDE. For example, status bar turns orange when you are debugging, turns blue when you are loading a solution and violet color when its idle. 
 
-![Alt text](/images/screenshots/utkarsh/vso_status_inspector_statusbar.png "Statusbar")
+![Alt text]({{site.url}}/images/screenshots/utkarsh/vso_status_inspector_statusbar.png "Statusbar")
 
 
 Internally, Visual Studio status bar is composed of four different regions as in the screen shot below.
-![Alt text](/images/screenshots/utkarsh/vso_status_inspector_statusbar_regions.png "Statusbar regions")
+![Alt text]({{site.url}}/images/screenshots/utkarsh/vso_status_inspector_statusbar_regions.png "Statusbar regions")
 
 `VSO Status Inspector` extension uses Animated icon area as we display an icon based on the VSO status. So let's see how to do that.
 
@@ -117,7 +117,7 @@ public static Bitmap ResizeImage(Bitmap imgToResize, int newHeight)
 
 `VSO Status Inspector` extension also outputs the complete information retrieved from the support overview page to the output window. 
 
-![Alt text](/images/screenshots/utkarsh/vso_status_inspector_output.png "Output window")
+![Alt text]({{site.url}}/images/screenshots/utkarsh/vso_status_inspector_output.png "Output window")
 
 Output window consists of different panes, which can be selected from the drop down. If you notice screen shot above, we have selected custom pane called `VSO Status Inspector`. A custom pane is used to display information only related to this extension.
 
@@ -168,7 +168,7 @@ In the above code we first try to get our custom (VSO Status Inspector) pane def
 ## 3. How to integrate with Options window
 By default, `VSO Status Inspector` polls for status every 60 seconds. However, we allow user to customize this interval in our extension. To do that user goes to `Tools -> Options -> VSO Inspector` and can change the interval.
 
-![Alt text](/images/screenshots/utkarsh/vso_status_inspector_options.png "Options window")
+![Alt text]({{site.url}}/images/screenshots/utkarsh/vso_status_inspector_options.png "Options window")
 
 To achieve this, we need to integrate our extension with Visual Studio options window. To do that, first we need to define a custom class and inherit from [DialogPage](http://msdn.microsoft.com/en-IN/library/microsoft.visualstudio.shell.dialogpage.aspx) class of VS SDK.
 

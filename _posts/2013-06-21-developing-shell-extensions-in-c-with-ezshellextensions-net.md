@@ -9,7 +9,7 @@ categories:
 - "csharp"
 - "Shell"
 description: "Developing shell extensions in C# with EZShellExtensions.Net"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 Ever since I got to know about existence of shell extension programming for Windows I always wanted to write one. The utilities provided by shell extensions is umpteen in Windows. However, being a C# developer has always limited me to get in to shell programming as its majorly based on C/Win32 programming. Moreover till .NET 4.0, writing shell extensions using managed code was not supported officially ([MSDN](http://blogs.msdn.com/b/junfeng/archive/2005/11/18/494572.aspx)).

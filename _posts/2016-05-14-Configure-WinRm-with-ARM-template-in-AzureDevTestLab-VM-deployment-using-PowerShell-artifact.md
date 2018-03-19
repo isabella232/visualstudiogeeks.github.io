@@ -9,7 +9,7 @@ categories:
 - "DevOps"
 permalink:  /blog/DevOps/Configure-winrm-with-ARM-template-in-AzureDevTestLab-VM-deployment-using-PowerShell-artifact
 description: "DevOps Azure DevTestLab InfrastructureAsCode VSTS AzureResourceManager InfrastructureAutomation VHD CustomImages"
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshots/thumbs/
 ---
 WinRM configuration isn't straightforward, it is tedious to say the least, if you get one step in the process wrong, more often than not it comes back to bite you later. In this blogpost I'll show you a really cool way to automate WinRM configuration through Azure Resource Manager (ARM) template. Further in this blog post, I'll show you how to trigger the deployment of this ARM template to create a new VM in AzureDevTestLab using VSTS.    
@@ -31,7 +31,7 @@ The scenario this blogpost targets to address is to automate the following using
 - Using the newly generate certificate to register an Https listner 
 - Firewall configuration to allow traffic on https through port 5986 
   
-![AzureDevTestLab WinRM ARM scenario](/images/screenshots/tarun/AzureDTL/AzureDtl_WinRmArmScenario.png)
+![AzureDevTestLab WinRM ARM scenario]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_WinRmArmScenario.png)
 
 The Visual Studio Team Services (VSTS) Hosted agent can be used to run a build job. If your build pipeline includes a task to run a remote powershell script. The VSTS agent requires that the target machine has WinRM https listner configured. I am assuming that the target machine is a standalone machine, not joined to a domain. The pre-requisites to allow communication between the hosted agent and the target workgroup based Azure virtual machine is as listed on [MSDN](https://msdn.microsoft.com/en-us/Library/vs/alm/Build/steps/deploy/powershell-on-target-machines)... 
 
@@ -52,7 +52,7 @@ The Azure Quick Start templates repository has a WinRM configuration script, [vi
 
 <br/>
 
-![AzureDevTestLab WinRM ConfigurationScript](/images/screenshots/tarun/AzureDTL/AzureDtl_WinRM_ConfigurationScript.png)
+![AzureDevTestLab WinRM ConfigurationScript]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_WinRM_ConfigurationScript.png)
 
 This script has dependencies on two other script, links to all three resources are listed below,
  
@@ -64,7 +64,7 @@ Now that we have the scripts we need to automate the winRm configuration, we'll 
 
 > You need the __Azure DevTestLab ARM template__. If you don't already have the Azure DevTestLab ARM template, then follow the steps in [my previous blogpost](http://www.visualstudiogeeks.com/blog/DevOps/Deploy-New-VM-To-Existing-AzureDevTestLab-From-VSTS) to retrive the DevTestLab ARM template.
 
-![AzureDevTestLab WinRM ConfigurationScript](/images/screenshots/tarun/AzureDTL/ExportArmTemplateFromDevVmInDevTestLab.png)
+![AzureDevTestLab WinRM ConfigurationScript]({{site.url}}/images/screenshots/tarun/AzureDTL/ExportArmTemplateFromDevVmInDevTestLab.png)
 
 In the parameters section of your ARM template include two parameters... 
 
@@ -137,11 +137,11 @@ Save the changes to the template. Your template is now ready to automatically co
 
 Trigger a new build to create a new VM in an Azure DevTestLab to provision a new VM preconfigured with WinRM...
 
-![VSTS AzureDevTestLab trigger new VM deloyment](/images/screenshots/tarun/AzureDTL/AzureDtl_Task_VSTSBuildToCreateNewVM.png)
+![VSTS AzureDevTestLab trigger new VM deloyment]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_Task_VSTSBuildToCreateNewVM.png)
 
 Wait for the build process to complete, once the build succeeds, you can see the Create Azure DevTest Labs VM deployment task has successfully completed. 
 
-![VSTS AzureDevTestLab trigger new VM deloyment](/images/screenshots/tarun/AzureDTL/AzureDtl_Task_VSTSBuildDeploymentCompleted.png)
+![VSTS AzureDevTestLab trigger new VM deloyment]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_Task_VSTSBuildDeploymentCompleted.png)
 
 # Validate WinRM configuration on Azure VM
 Login to the newlyt deployed VM, let's validate if WinRM has been configured correctly... 
@@ -154,30 +154,30 @@ Login to the newlyt deployed VM, let's validate if WinRM has been configured cor
     winrm e winrm/config/listener 
 ```
 
-![VSTS AzureDevTestLab WinRM Https Listner](/images/screenshots/tarun/AzureDTL/AzureDtl_VSTS_WinRM_HttpsListner.png)
+![VSTS AzureDevTestLab WinRM Https Listner]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_VSTS_WinRM_HttpsListner.png)
 
 - __Certificate__:
 
      Open up the local certificate store in the machine and navigate to the  
 
-![VSTS AzureDevTestLab WinRM Self Signed Certificate](/images/screenshots/tarun/AzureDTL/AzureDtl_WinRMCertificateStore.png)
+![VSTS AzureDevTestLab WinRM Self Signed Certificate]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_WinRMCertificateStore.png)
 
 - __Firewall__: 
  
      Open up Advanced firewall settings and look for an inbound firewall exception rule set to allow HTTPS TCP access on port 5986
 
-![VSTS AzureDevTestLab WinRM Self Signed Certificate](/images/screenshots/tarun/AzureDTL/AzureDtl_WinRM_HttpsTcp5986FirewallException.png)
+![VSTS AzureDevTestLab WinRM Self Signed Certificate]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_WinRM_HttpsTcp5986FirewallException.png)
 
 Voila you are all set! 
 
 # Trigger Remote PowerShell script from VSTS 
 Now run a powershell remote script using hosted VSTS agent, make sure you have the `test certificate` check box checked and the user credentials of the local administrator account are specified in `machinename\username` format. 
 
-![VSTS AzureDevTestLab WinRM Self Signed Certificate](/images/screenshots/tarun/AzureDTL/AzureDtl_VSTS_RunPowerShellOnTargetMc_Config.png)
+![VSTS AzureDevTestLab WinRM Self Signed Certificate]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_VSTS_RunPowerShellOnTargetMc_Config.png)
 
 Trigger a build and wait for it to complete successfully... 
 
-![VSTS WinRM Remote PowerShell execution](/images/screenshots/tarun/AzureDTL/AzureDtl_RemotePowerShellExecutionVSTS.png)
+![VSTS WinRM Remote PowerShell execution]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_RemotePowerShellExecutionVSTS.png)
 
 Just in case you hit the following issue... 
 

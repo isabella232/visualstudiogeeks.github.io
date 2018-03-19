@@ -7,14 +7,14 @@ tags: ["VisualStudio", "quartz.net"]
 categories:
 - blog                #important: leave this here
 - "Quartz.Net"
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
 
 [Quartz.NET](http://www.quartz-scheduler.net/) is a full-featured, open source enterprise job scheduling system written in .NET platform that can be used from smallest apps to large scale enterprise systems. I want to schedule the execution of a task but only when something happens. Let’s call that something a trigger, so... if the trigger is met => execute the task. 
 <!--more-->
  
-![If Then Else](/images/screenshots/tarun/post06_QuartzPost01IfThenElse.jpg). 
+![If Then Else]({{site.url}}/images/screenshots/tarun/post06_QuartzPost01IfThenElse.jpg). 
 
 Sounds simple, why not use windows task scheduler for this?
 
@@ -39,7 +39,7 @@ Did 8 – repeat indefinitely just ring a bell? I’ll be covering that in the f
 ## Using Quartz.net as a windows service ##
 You can have Quartz.net run as a standalone instance within its own .NET virtual machine instance via .NET Remoting. Let’s take a look at typical application architecture. In the figure below, I have the application tier set up on Machine 1, database set up on Machine 2 and Quartz.net set up on Machine 3 which is normally the architecture for most (if not all) enterprise applications.
 
-![Figure 1 - Typical Application architecture while using Quartz.net as a windows service](/images/screenshots/tarun/post06_QuartzPost01LogicalArchitecture.jpg)
+![Figure 1 - Typical Application architecture while using Quartz.net as a windows service]({{site.url}}/images/screenshots/tarun/post06_QuartzPost01LogicalArchitecture.jpg)
 
 #### Figure 1 -  Typical Application architecture while using Quartz.net as a windows service ####
 

@@ -8,7 +8,7 @@ categories:
 - "extensibility"
 - "visual studio"
  
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
 In this blog post, we will explore different options for displaying WPF modal dialog in Visual Studio extensions.
@@ -43,7 +43,7 @@ Now, as a dialog window, you may want to hide maximize and minimize buttons for 
 ## Change the window style ##
 This is one of the simplest options and also used in normal WPF programs. In the XAML file, you can set the `WindowStyle` as `ToolWindow` and you will get a dialog (with only close button) as below.
 
-![Alt text](/images/screenshots/utkarsh/xaml_dialog_toolwindow.png)
+![Alt text]({{site.url}}/images/screenshots/utkarsh/xaml_dialog_toolwindow.png)
 
 #### Pros ####
 - Easy and quick
@@ -59,7 +59,7 @@ VS SDK provides a native XAML dialog window. This option ensures the UI and func
 xmlns:platformUi="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
 ```
 -  Modify the markup to change the `Window` to `DialogWindow`
-  ![Alt text](/images/screenshots/utkarsh/xaml_dialog_window_diff.png)
+  ![Alt text]({{site.url}}/images/screenshots/utkarsh/xaml_dialog_window_diff.png)
 - Instead of inheriting code file (*.xaml.cs) from Window class, inherit from `DialogWindow`class of PlatformUI.
 - Finally, in the command from where you want to trigger this dialog, call the dialog as `ShowModal()` method.
 
@@ -77,13 +77,13 @@ xamlDialog.ShowModal();
 ```
 ...and you will see the dialog as below. As you can see you have maximize and close buttons, but minimize is disabled. 
 
-![Alt text](/images/screenshots/utkarsh/xaml_dialog_platformui.png)
+![Alt text]({{site.url}}/images/screenshots/utkarsh/xaml_dialog_platformui.png)
 
 ### Display Help button on the dialog ###
 
 Another **great** feature of this dialog based on SDK is that it provides support for the help button. That means you can create this dialog and also display a help button to show help. Enabling that is easy too.
 
-![Alt text](/images/screenshots/utkarsh/xaml_dialog_platformui_helpbutton.png)
+![Alt text]({{site.url}}/images/screenshots/utkarsh/xaml_dialog_platformui_helpbutton.png)
 
 - The DialogWindow class provides another parameterized constructor as below, add that to your *.xaml.cs file.
  

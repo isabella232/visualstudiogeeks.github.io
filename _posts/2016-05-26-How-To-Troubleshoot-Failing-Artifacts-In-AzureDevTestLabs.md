@@ -6,7 +6,7 @@ author: tarun
 tags: ["DevOps", "Azure", "AzureDevTestLabs"]
 categories:
 - DevOps
-img: "/images/screenshots/tarun/AzureDTL/AzureDtl_DevOps_InfrastructureIsCode.png"
+image: "/images/screenshots/tarun/AzureDTL/AzureDtl_DevOps_InfrastructureIsCode.png"
 permalink:  /blog/DevOps/How-to-troubleshoot-failing-artifacts-in-AzureDevTestLabs
 description: "DevOps AzureDevTestLabs - How to troubleshoot & debug failing artifacts in AzureDevTestLabs"
 keywords: "DevOps, Azure, AzureDevTestLabs"
@@ -18,7 +18,7 @@ If you are using Azure DevTestLabs you are probably loving and leveraging the Pu
 # Troubleshooting Artifacts in AzureDevTestLabs
 To view the logs related to your custom artifact you have 2 options:
 
-![AzureDevTestLabs InfrastructureIsCode](/images/screenshots/tarun/AzureDTL/AzureDtl_ArtifactDeploymentFailedWhy.png)
+![AzureDevTestLabs InfrastructureIsCode]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_ArtifactDeploymentFailedWhy.png)
 
 - __Azure Portal__: To view the artifact logs from the Azure Portal follow these steps, 
     - In the Azure Portal from under dev test labs, click the virtual machine you want to investigate
@@ -28,13 +28,13 @@ To view the logs related to your custom artifact you have 2 options:
     - This will show you the extensions installed or being installed on the VM
     - Click on the failed extension to see the detailed status 
 
-      ![AzureDevTestLabs InfrastructureIsCode](/images/screenshots/tarun/AzureDTL/AzureDtl_Artifact-ExtensionFailureLog.png)
+      ![AzureDevTestLabs InfrastructureIsCode]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl_Artifact-ExtensionFailureLog.png)
 
 - __Logs on the VM__: To view the artifact logs from with in the virtual machine follow these steps, 
     - Log into the Virual Machine
     - Navigate to the folder `C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.8\Status\0.status`
        
-      ![AzureDevTestLabs InfrastructureIsCode](/images/screenshots/tarun/AzureDTL/AzureDtl-StatusFailedArtifactLogFIleS.png)
+      ![AzureDevTestLabs InfrastructureIsCode]({{site.url}}/images/screenshots/tarun/AzureDTL/AzureDtl-StatusFailedArtifactLogFIleS.png)
 
 # Other posts on Azure DevTestLabs
 You might find these other posts on Azure DevTestLabs useful.

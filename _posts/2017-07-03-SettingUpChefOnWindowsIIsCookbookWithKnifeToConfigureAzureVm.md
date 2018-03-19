@@ -6,7 +6,7 @@ author: tarun
 tags: ["DevOps", "Chef"]
 categories:
 - "DevOps"
-img: "/images/screenshots/tarun/chefonwindows_azure.jpg"
+image: "/images/screenshots/tarun/chefonwindows_azure.jpg"
 description: "Zero to Hero with Chef! In this blogpost we'll see how to set up Chef from scratch on Windows. We'll then work our way up to authoring and deploying our first cookbook using Knife to manage the desired state configuration (DSC) of a windows Azure VM. Configuration Managemnt is one of the key pillars of DevOps... In this blogpost we'll see how to get this going with Chef... "
 permalink: /DevOps/SetupChefOnWindowsAuthorDeployCookbookUsingKnifeAzureVm
 published: true
@@ -21,7 +21,7 @@ Let's start off by looking at the conceptual architecture for Chef... Chef has t
 + Administrator Workstation: Set up a development workstation with Chef Tools to author the cookbooks and uploading them on to chef server 
 + Microsoft Azure: Provision a new Azure VM with Chef Agent that integrates with Chef server and registers itself to deploy the cookbook registered under its profile in Chef
 
-![Chef Server Architecture](/images/screenshots/tarun/ChefServerArchitectrueDiagram.png)
+![Chef Server Architecture]({{site.url}}/images/screenshots/tarun/ChefServerArchitectrueDiagram.png)
 
 The Chef Server is the management point and there are two options for the Chef Server: a hosted solution or an on-premises solution. In this case, we'll be using the hosted Chef Server, but you'll still need a Chef Administrator Workstation which in my opinion requires almost the same level of configuration if not more. The Chef Workstation is the admin workstation where we create our policies and execute our management commands. We run the knife command from the Chef Workstation to manage our infrastructure.There is also the concept of “Cookbooks” and “Recipes”. These are effectively the policies we define and apply to our servers.
 

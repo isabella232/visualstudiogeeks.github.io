@@ -10,14 +10,14 @@ categories:
 - "dotnet"
 - "extensions"
 description: "Listening to tool window events in Visual Studio"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 In this blog post we will see how to listen to toolwindow events. I am going to assume that you already know how to create toolwindows.
 
 Tool windows are most common and widely used while you to work inside Visual Studio. If you are wondering what are tool windows inside Visual Studio, think about Solution Explorer, Immediate Window, Output Window and even Property Window. These windows are most flexible allowing you to dock, auto-hide and even support multiple monitors. 
 
-![toolwindow](/images/screenshots/utkarsh//2013_08_03_listening_to_tool_window_Image1.jpg) 
+![toolwindow]({{site.url}}/images/screenshots/utkarsh//2013_08_03_listening_to_tool_window_Image1.jpg) 
 
 If you are Visual Studio extension developer, sooner or later you will be required to create tool windows in your extensions, because they integrate seamlessly inside Visual Studio. 
 

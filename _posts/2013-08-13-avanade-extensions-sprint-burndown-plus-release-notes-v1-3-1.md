@@ -10,7 +10,7 @@ categories:
 - "extensions"
 - "VisualStudio"
 description: "Avanade Extensions - Sprint Burndown Plus Release Notes v1.3.1"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 Download – [Avanade Extensions - Burndown+](http://visualstudiogallery.msdn.microsoft.com/591f2516-9aec-4892-be08-53c1d63bc5a1)
@@ -21,7 +21,7 @@ The Sprint burn down for few users would plot incorrectly. As you can see in the
 
 |Actual|Expected|
 |---|---|
-|![image](/images/screenshots/utkarsh//2013_08_13_avanade_extensions_-_sprint_Image1.png "image")|![image](/images/screenshots/utkarsh//2013_08_13_avanade_extensions_-_sprint_Image2.png "image")|
+|![image]({{site.url}}/images/screenshots/utkarsh//2013_08_13_avanade_extensions_-_sprint_Image1.png "image")|![image]({{site.url}}/images/screenshots/utkarsh//2013_08_13_avanade_extensions_-_sprint_Image2.png "image")|
   
 ### Root cause ###
 

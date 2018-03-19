@@ -6,7 +6,7 @@ author: tarun
 tags: ["DevOps", "Git", "GitHooks"]
 categories:
 - "DevOps"
-img: "/images/screenshots/tarun/ClientSideGitHooksGitWindowsVSTS.PNG"
+image: "/images/screenshots/tarun/ClientSideGitHooksGitWindowsVSTS.PNG"
 description: "Use a PreCommit GitHook to validate the email address configured in the configuration to avoid accidentally committing changes in work repository with personal email and visa versa..."
 permalink: /DevOps/GitHookToVerifyRepositoryEmailAddressOnWindows
 published: true

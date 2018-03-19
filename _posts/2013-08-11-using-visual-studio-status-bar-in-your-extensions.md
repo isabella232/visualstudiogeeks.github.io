@@ -8,12 +8,12 @@ categories:
 - "VisualStudio"
 - "extensions"
 description: "Using Visual Studio status bar in your extensions"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 Visual Studio status bar is one of the most important status reporting indicator for any developer working with Visual Studio. In this blog post we will see how we can make best use of Visual Studio status bar to display a long running task.
 
-![VSStatusBar](/images/screenshots/utkarsh/2013_08_11_using_visual_studio_status_Image1.jpg)
+![VSStatusBar]({{site.url}}/images/screenshots/utkarsh/2013_08_11_using_visual_studio_status_Image1.jpg)
 
 With new Visual Studio 2012 (and 2013), the Visual Studio Microsoft Product Team has enhanced the status bar. Now if you are debugging the status bar turns orange, when solution is loaded it turns blue and when it is idle it will be of violet color, thus making you notice the status of your IDE. However, from beginning Visual Studio status bar has been very powerful in its functionality. It supports static text, progress bar, different colors and even allows you to use default icons like build, find, save etc.
 

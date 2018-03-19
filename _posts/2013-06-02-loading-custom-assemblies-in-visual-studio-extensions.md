@@ -8,7 +8,7 @@ categories:
 - "VisualStudio"
 - "extensions"
 description: "Loading custom assemblies in Visual Studio extensions"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 If you ever tried to use/load third party assemblies inside your Visual Studio add-in or extensions, there is a good chance that you would have ran in to exception. This is because, Visual Studio extensions are hosted by Visual Studio process and they run in Visual Studio’s app domain. Extension on their own do not have their application domains. However, there is a bright side and you can still load the assemblies you want. The trick is that, when Visual Studio tries to load the assemblies it tries to resolve the assemblies which installed extensions are dependent upon. Hence, during this time, the Visual Studio fires [AssemblyResolve](http://msdn.microsoft.com/en-us/library/system.appdomain.assemblyresolve.aspx) event. So below are the steps to dynamically resolve the third-party assembly path and help Visual Studio resolve them.

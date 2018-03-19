@@ -9,7 +9,7 @@ categories:
 - "dotnet"
 - "Extensions"
 description: "What's new in Team Rooms for Visual Studio 2013"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 Download: [http://visualstudiogallery.msdn.microsoft.com/c1bf5e4f-5436-465d-87da-09b2f15ff061](http://visualstudiogallery.msdn.microsoft.com/c1bf5e4f-5436-465d-87da-09b2f15ff061)
@@ -34,10 +34,10 @@ Download: [http://visualstudiogallery.msdn.microsoft.com/c1bf5e4f-5436-465d-87da
 
 - *New Features*
 	- Trends – See what is hot topic in your chat stream, helps you to identify burning issues quickly. You can create new hashtag by prefixing word with '#' character.<br/>
-	![1](/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image1.png)
+	![1]({{site.url}}/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image1.png)
 
 	- Instantly search for users <br/>
-	![image_thumb2](/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image2.png)
+	![image_thumb2]({{site.url}}/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image2.png)
 - *Fixes*
 	- Minor performance improvements
 	- UI enhancements
@@ -46,11 +46,11 @@ Download: [http://visualstudiogallery.msdn.microsoft.com/c1bf5e4f-5436-465d-87da
 
 - *New Features*
 	- New preference to disable system messages.<br/>
-	![HideSystemMessagesNew](/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image3.gif)
+	![HideSystemMessagesNew]({{site.url}}/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image3.gif)
 	- New preference to show tray notification when user in the room mention you. You can *disable* this option in preferences.<br/>           
-	![clip_image002](/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image4.jpg)
+	![clip_image002]({{site.url}}/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image4.jpg)
 	- You can see hidden rooms now by clicking link in the notification.<br/>           
-	![image](/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image5.png "image")
+	![image]({{site.url}}/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image5.png "image")
 - *Fixes*
 	- Long messages are wrapped in the stream. 
 	- Small UI improvements.         
@@ -59,11 +59,11 @@ Download: [http://visualstudiogallery.msdn.microsoft.com/c1bf5e4f-5436-465d-87da
 
 - *New Features:*
 	- Support for all Visual Studio themes <br/>
-	![screenshot-theme](/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image6.png)
+	![screenshot-theme]({{site.url}}/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image6.png)
 	- Support for emoticons
-	![emoticon](/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image7.png)
+	![emoticon]({{site.url}}/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image7.png)
 	- Mention user using @ tag.
-	![image](/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image8.png)
+	![image]({{site.url}}/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image8.png)
 - *Fixes*
 	- Performance improvements 
 	- Many minor defect fixes         
@@ -77,4 +77,4 @@ Download: [http://visualstudiogallery.msdn.microsoft.com/c1bf5e4f-5436-465d-87da
 - *Fixes:*
 	- Moving tabs from one dock location to other location resulted in Visual Studio crash. 
 	- Exceptions are no longer annoying resulting in crash. Watch out for new flash panel.           
-	![image](/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image9.png)
+	![image]({{site.url}}/images/screenshots/utkarsh/2013_10_26_what's_new_in_team_Image9.png)

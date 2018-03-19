@@ -7,7 +7,7 @@ tags: [Extensions, VisualStudio]
 categories:
 - blog                #important: leave this here
 - TagAdmin
-img:   #place image (850x450) with this name in /images/screenshots
+image:   #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
  

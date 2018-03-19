@@ -9,17 +9,17 @@ categories:
 - "DevOps"
 permalink:  /blog/DevOps/How-To-Bring-DevOps-Practices-To-Legacy-Applications-c9d9
 description: "DevOps LegacyApplications ContinuousDiscussions c9d9"
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshots/thumbs/
 ---
 Recently I participated in an online panel to discuss how best to tackle Continuous Delivery for Legacy Applications. This was one in the series of Continuous Discussions (#c9d9). #c9d9 is a series of community panels about _Agile_, _Continuous Delivery_ and _DevOps_. Read on for some of the key points that emerged in this discussion... Feel free to leave a comment if you have any suggestions of your own...     
 <!--more--> 
 
-![c9d9 - Tarun in action - DevOps](/images/screenshots/tarun/c9d9-LegacyDevOps.png)
+![c9d9 - Tarun in action - DevOps]({{site.url}}/images/screenshots/tarun/c9d9-LegacyDevOps.png)
 
 > __Legacy?__ Assuming your business did not start yesterday – you probably have some of those lying around: those applications that might be poorly understood, or poorly tested, that can be cumbersome or brittle, that may be difficult to update — but that somehow – still – just work. This is the legacy code that keeps the lights on, but that you’re afraid to touch…
  
-![What is Legacy - DevOps](/images/screenshots/tarun/c9d9-DevOpsWhatIsLegacy.gif)
+![What is Legacy - DevOps]({{site.url}}/images/screenshots/tarun/c9d9-DevOpsWhatIsLegacy.gif)
 
 # I like it, where can I watch it? 
 Glad you ask, you can watch the full video on youtube...  

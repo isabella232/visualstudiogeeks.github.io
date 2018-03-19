@@ -9,14 +9,14 @@ categories:
 - "Shell"
 - "Extensions"
 description: "Persisting settings without using Options dialog in Visual Studio"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 In one of my previous [blog post](http://geekswithblogs.net/onlyutkarsh/archive/2013/06/30/integration-of-options-window-in-visual-studio-extension-with-custom.aspx) we have seen persisting settings using Visual Studio's options dialog. Visual Studio options has many advantages in automatically persisting user options for you. 
 
 However, during our latest [Team Rooms extension](http://visualstudiogallery.msdn.microsoft.com/c1bf5e4f-5436-465d-87da-09b2f15ff061) development, we decided to provide our users; ability to use our preferences directly from Team Explorer. The main reason was that we had only one simple option for user and we thought it is cumbersome for user to go to Tools –> Options dialog to change this. Another reason was, we wanted to highlight this setting to user as soon as he is using our extension.
 
-![image](/images/screenshots/utkarsh//2013_11_02_persisting_settings_without_using_Image1.png "image")
+![image]({{site.url}}/images/screenshots/utkarsh//2013_11_02_persisting_settings_without_using_Image1.png "image")
 
 So if you are in such a scenario where you do not want to use VS options window, but still would like to persist the settings, this post will guide you through.
 
@@ -152,4 +152,4 @@ public sealed class TeamRooms : Microsoft.VisualStudio.Shell.Package
 
 That's it. If everything is alright, once you run the package you will also see your options appearing in "Import Export settings" window, which allows you to export your options.
 
-![image](/images/screenshots/utkarsh//2013_11_02_persisting_settings_without_using_Image2.png "image")
+![image]({{site.url}}/images/screenshots/utkarsh//2013_11_02_persisting_settings_without_using_Image2.png "image")

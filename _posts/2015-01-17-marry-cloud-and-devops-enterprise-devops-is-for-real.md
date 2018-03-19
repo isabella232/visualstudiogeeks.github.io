@@ -7,7 +7,7 @@ tags: [DevOps]
 categories:
 - blog                #important: leave this here
 - "DevOps"
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: BlendDevAndOps.png    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
 

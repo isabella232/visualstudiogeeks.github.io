@@ -6,7 +6,7 @@ author: utkarsh
 tags: ["DevOps", "TFS", "WinRM"]
 categories:
 - Devops
-img: "/images/screenshots/utkarsh/2016-05-21_winrm_client_validation_cmd.png"
+image: "/images/screenshots/utkarsh/2016-05-21_winrm_client_validation_cmd.png"
 thumb:     #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 keywords: "TFS2015, DevOps, VSTS, WinRM"
 description: "In this post we will see how you can configure WinRM (Windows Remote Management) service to work with HTTPS manually."
@@ -30,7 +30,7 @@ For the demo purposes I have built a new VM using AzureDevTestLab. We will perfo
 ### Check whether WinRM service is running ###
 WinRM is installed by default in all supported Windows machines. Ensure that service is in `running` state in `services`.
 
-![Service Status](/images/screenshots/utkarsh/2016-05-21_winrm_service_status.png)
+![Service Status]({{site.url}}/images/screenshots/utkarsh/2016-05-21_winrm_service_status.png)
 
 ### Create HTTPS listener ###
 
@@ -42,7 +42,7 @@ WinRM e winrm/config/listener
 
 You will see output like below.
 
-![WinRM Listener](/images/screenshots/utkarsh/2016-05-21_winrm_listener.png)
+![WinRM Listener]({{site.url}}/images/screenshots/utkarsh/2016-05-21_winrm_listener.png)
 
 To enable HTTPS for WinRM, you need to open port 5986 and add HTTPS listener in the VM. 
 
@@ -54,11 +54,11 @@ New-SelfSignedCertificate -DnsName "<YOUR_DNS_NAME>" -CertStoreLocation Cert:\Lo
 
 This command will create a new self signed certificate and output the  certificate thumbprint.
 
-![WinRM Self Signed Certificate](/images/screenshots/utkarsh/2016-05-21_winrm_self_signed_certificate.png)
+![WinRM Self Signed Certificate]({{site.url}}/images/screenshots/utkarsh/2016-05-21_winrm_self_signed_certificate.png)
 
 DNS name used in the above command is your machine hostname and for Aure portal VM's you can get it from the portal from VM properties.
 
-![WinRM DNS Name](/images/screenshots/utkarsh/2016-05-21_winrm_dns_name.png) 
+![WinRM DNS Name]({{site.url}}/images/screenshots/utkarsh/2016-05-21_winrm_dns_name.png) 
 
 Copy the thumbprint to clipboard and run the following command. This command will register the HTTPS listener in WinRM
 
@@ -67,7 +67,7 @@ winrm create winrm/config/Listener?Address=*+Transport=HTTPS @{Hostname="<YOUR_D
 ```
 You will see output as below.
 
-![WinRM HTTPS Listener](/images/screenshots/utkarsh/2016-05-21_winrm_create_https_listener.png)
+![WinRM HTTPS Listener]({{site.url}}/images/screenshots/utkarsh/2016-05-21_winrm_create_https_listener.png)
 
 ### Add firewall exception ###
 
@@ -76,12 +76,12 @@ You will see output as below.
 - Go to `Inbound Rules` then click `New Rule`
 - This will open the wizard
 
-![WinRM Firewall Wizard](/images/screenshots/utkarsh/2016-05-21_winrm_firwall_wizard.png)
+![WinRM Firewall Wizard]({{site.url}}/images/screenshots/utkarsh/2016-05-21_winrm_firwall_wizard.png)
 
 - Select Port and then TCP
 - Enter port as `5986`
 
-![WinRM Firewall Port](/images/screenshots/utkarsh/2016-05-21_winrm_firwall_port_add_wiz.png) 
+![WinRM Firewall Port]({{site.url}}/images/screenshots/utkarsh/2016-05-21_winrm_firwall_port_add_wiz.png) 
 
 - In the next screens select `Allow the connection`
 - In the profile page check all the checkboxes.
@@ -96,14 +96,14 @@ You can also do the same operation and add firwall exception for port `5986` by 
 port=5986
 netsh advfirewall firewall add rule name="Windows Remote Management (HTTPS-In)" dir=in action=allow protocol=TCP localport=$port
 ```
-![WinRM Firwall Port Add](/images/screenshots/utkarsh/2016-05-21_winrm_firwall_port_add_cmd.png)
+![WinRM Firwall Port Add]({{site.url}}/images/screenshots/utkarsh/2016-05-21_winrm_firwall_port_add_cmd.png)
 
 ### Validate HTTPS listener ###
 
 You can verify listener you added by running the same command you used above - `WinRM e winrm/config/listener`. This will show the new HTTP listener now along with previous HTTPS listener.
 
 
-![WinRM HTTPS Listener](/images/screenshots/utkarsh/2016-05-21_winrm_https_listener.png)  
+![WinRM HTTPS Listener]({{site.url}}/images/screenshots/utkarsh/2016-05-21_winrm_https_listener.png)  
 
 ### Verify you can connect to the machine via HTTPS ###
 
@@ -124,7 +124,7 @@ Enter-PSSession -ComputerName $hostName -Port $winrmPort -Credential $cred -Sess
 ```
 On entering the last command, you will be logged in to remote machine's powershell session. As you can see in the screenshot below, you are connected and you can get the items from the remote virtual machine.
 
-![WinRM Validate](/images/screenshots/utkarsh/2016-05-21_winrm_client_validation_cmd.png)
+![WinRM Validate]({{site.url}}/images/screenshots/utkarsh/2016-05-21_winrm_client_validation_cmd.png)
 
 That is it then. You can read these other great blog posts on WinRM, AzureDevTestLab and DevOps.
 

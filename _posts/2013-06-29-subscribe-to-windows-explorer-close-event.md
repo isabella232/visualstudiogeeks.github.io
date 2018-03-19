@@ -10,7 +10,7 @@ categories:
 - "dotnet"
 - "Shell"
 description: "Subscribe to Windows Explorer close event"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 Lately I am busy working on developing a small shell extension. There is a functionality in my shell extension, that user opens the .NET windows form by right clicking on a file (context menu). The user then decides to close the parent explorer window (instead of closing the windows form opened). Now, in such a case I would like to close the windows form too. So, to achieve this I had to subscribe to the close event of the windows explorer. The below code shows the how to achieve the same. Although I am monitoring window close (destroy event), this can done for any process in Windows for which you have the handler (For ex: Notepad). Read more at link provided in “References” section.

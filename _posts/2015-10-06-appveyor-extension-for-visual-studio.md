@@ -10,7 +10,7 @@ categories:
 - appveyor
 - "visual studio"
  
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
 
@@ -29,21 +29,21 @@ thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /ima
 ## Show me some screenshots! ##
 Once you install the extension you will see a new menu item "AppVeyor" in Visual Studio's View menu.
 
-![Alt text](/images/screenshots/utkarsh/appveyor_view.jpg)
+![Alt text]({{site.url}}/images/screenshots/utkarsh/appveyor_view.jpg)
 
 Clicking that will open a new "AppVeyor" toolwindow
 
-![Alt text](/images/screenshots/utkarsh/appveyor_toolwindow_empty.jpg)
+![Alt text]({{site.url}}/images/screenshots/utkarsh/appveyor_toolwindow_empty.jpg)
 
 Before you see your configured projects you need to enter your [AppVeyor API token](https://ci.appveyor.com/api-token) in Options. This is required for extension to communicate with your AppVeyor account. We use [bearer token authentication](http://www.appveyor.com/docs/api#authentication) to access AppVeyor API. 
 
 You can do that, by clicking gears icon on the toolbar. Clicking that will open options window.
 
-![Alt text](/images/screenshots/utkarsh/appveyor_options.jpg)
+![Alt text]({{site.url}}/images/screenshots/utkarsh/appveyor_options.jpg)
 
 Once you have entered correct API token for your account, extension will automatically fetch the projects and display it in the tool window. The tool window now will look like below. 
 
-![Alt text](/images/screenshots/utkarsh/appveyor_toolwindow_full_annotate.jpg)
+![Alt text]({{site.url}}/images/screenshots/utkarsh/appveyor_toolwindow_full_annotate.jpg)
 
 As you can see in the screenshot above, the toolwindow looks similar to web interface of AppVeyor.
 

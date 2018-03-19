@@ -10,14 +10,14 @@ categories:
 - "dotnet"
 - "extensions"
 description: "Integration with Visual Studio Options Window using custom controls"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 If you are developing Visual Studio extensions for your users, sooner or later you would have a functionality where you want to let users to configure some values. The best way to provide configurable options to users. So in this blog post I will show you how you can integrate your extension to Options window of Visual Studio.
 
 Check the screenshot below of options window created in [Avanade Extensions for VS2013](http://visualstudiogallery.msdn.microsoft.com/d5a90434-0e7f-4751-910f-b7df1450cf99) – a Visual Studio extension created by Tarun and me.
 
-![image](/images/screenshots/utkarsh/2013_06_30_integration_with_visual_studio_Image1.png) 
+![image]({{site.url}}/images/screenshots/utkarsh/2013_06_30_integration_with_visual_studio_Image1.png) 
 
 As you can see in the above screenshot, we are going to have two categories, General and Software Inventory. For Avanade Extensions we do not have any General options so we are using it as `About` box. On click of the category on the left, the UI is refreshed on the right hand side. The UI to display on the right, is created using classes which inherit DialogPage (`Micorost.VisualStudio.Shell` assembly). The [DialogPage](http://msdn.microsoft.com/en-IN/library/microsoft.visualstudio.shell.dialogpage.aspx) class provides the mechanism to create the custom dialog pages. Since we are going to create a custom UI (instead of default property sheet) as it is the most popular way of creating Options in Visual Studio and also because it gives more freedom to create a UI you want, for example UI with radio buttons or check box etc.
 
@@ -29,11 +29,11 @@ So lets first create two user controls, one to display options page when user cl
 
 So Right click on the project, click Add –> New Item and select User Control (not UserControl (WPF)). You may need to import System.Windows.Forms assembly if not done already. 
 
-![image](/images/screenshots/utkarsh/2013_06_30_integration_with_visual_studio_Image2.png) 
+![image]({{site.url}}/images/screenshots/utkarsh/2013_06_30_integration_with_visual_studio_Image2.png) 
 
 In this control I am allowing user to configure the default folder to export the report to. So we are going to add a label, textbox(to display path) and button to prompt the user to show the folder select dialog.
 
-![image](/images/screenshots/utkarsh/2013_06_30_integration_with_visual_studio_Image3.png) 
+![image]({{site.url}}/images/screenshots/utkarsh/2013_06_30_integration_with_visual_studio_Image3.png) 
 
 I am creating a property `ExportFolder` to allow the to be set from `DialogPage` child class when user clicks OK button on the Visual Studio Options window. Also, this saves the path selected by the user.  
 
@@ -137,7 +137,7 @@ public sealed class AvanadeExtensionsPackage : Package
 ```
 The first two [ProvideOptionPageAttribute](http://msdn.microsoft.com/en-us/library/bb130434.aspx) attributes convey to Visual Studio Shell that we are implementing two Options category. The first parameter tells which type the options window hosts. Next two parameters `AvanadeExtensions` and “General” are canonical names, used during reading of options window. Then next two parameters are localized resource ID’s which are defined in Resource file as below. These strings are used to display in the Options window.
 
-![image](/images/screenshots/utkarsh//2013_06_30_integration_with_visual_studio_Image4.png) 
+![image]({{site.url}}/images/screenshots/utkarsh//2013_06_30_integration_with_visual_studio_Image4.png) 
 
 Final parameter of [ProvideOptionPageAttribute](http://msdn.microsoft.com/en-us/library/bb130434.aspx) is true meaning Visual Studio Options can be accessed using Automation (DTE) object. This allows DTE object 
 

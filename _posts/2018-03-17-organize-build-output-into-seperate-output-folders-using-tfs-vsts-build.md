@@ -7,7 +7,7 @@ tags: ["DevOps", "Build"]
 categories:
 - "DevOps"
 - "Build"
-img: "/images/screenshots/tarun/Mar18/006_organizeBuildOutputIntoFolders.jpg"
+image: "/images/screenshots/tarun/Mar18/006_organizeBuildOutputIntoFolders.jpg"
 description: "Wondering how to organize your VSTS Build Output into individual folders so you can directly consume it in your release pipeline for the purposes of deployment? In this blogpost on DevOps I'll show you how to use the copy task in VSTS Build Pipeline to structure the build artifact such that the output is structured in multiple folders ready to be consumed."
 permalink: /DevOps/HowToOrganizeBuildOutputIntoSeparateFoldersUsingVstsBuild
 published: true

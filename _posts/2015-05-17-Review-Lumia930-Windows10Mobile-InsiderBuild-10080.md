@@ -7,7 +7,7 @@ tags: ["Windows Mobile"]
 categories:
 - blog                #important: leave this here
 - "Windows10Mobile"
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: windows-10-preview-lumia-930.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
  

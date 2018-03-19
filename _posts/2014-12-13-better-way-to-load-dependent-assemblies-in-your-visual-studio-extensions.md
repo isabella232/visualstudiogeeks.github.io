@@ -8,7 +8,7 @@ categories:
 - "VisualStudio"
 - "Extensions"
 description: "Better way to load dependent assemblies in your Visual Studio extensions"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 I had [previously](http://geekswithblogs.net/onlyutkarsh/archive/2013/06/02/loading-custom-assemblies-in-visual-studio-extensions-again.aspx) written on how to load custom assemblies in your extension using `AppDomain.CurrentDomain.AssemblyResolve`. It required few lines of code to be written in your VS package class. Today I am going to show you an easier way of doing the same. 

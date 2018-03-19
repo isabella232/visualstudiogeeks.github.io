@@ -7,7 +7,7 @@ tags: [Extensions, "VisualStudio"]
 categories:
 - blog                #important: leave this here
 - "visual studio extensibility"
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
 
@@ -15,7 +15,7 @@ Have you noticed, In Visual Studio, when we close the solution, all the build/ot
 <!--more-->
 To show what we will achieve at the end of this blog, please look at the demo below.
  
-![Solution Events](/images/screenshots/utkarsh/2014-01-10-solutionevents.gif)
+![Solution Events]({{site.url}}/images/screenshots/utkarsh/2014-01-10-solutionevents.gif)
 
 Intersting right? As you can see, we monitor for the events in the solution and log them in the custom toolwindow (called My Tool Window) in the extension. Lets start coding... 
 

@@ -9,14 +9,14 @@ categories:
 - msbuild
 - "visual studio"
 
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
 My current client is still on TFS 2010 and is getting ready to upgrade to TFS 2015. One of the important task during the upgrade is to analyze your build dependencies. We have a lot of MSBuild (we have .proj extension) files which are triggered via our build definitions which have dependencies on other files. It becomes really hard to debug or understand the dependencies manually. I hence decided to write a small utility to visualize these dependencies.
 <!--more-->
 Take a look at the following screenshot of the tool.
 
-![Alt text](/images/screenshots/utkarsh/msbuild_dependency_visualizer.png)
+![Alt text]({{site.url}}/images/screenshots/utkarsh/msbuild_dependency_visualizer.png)
 
 As you can see, the tool visualizes the dependencies in a nice connected graph. On selecting any node (color yellow), it highlights the parent (in light blue) and child (in pink color) dependencies. Also, clicking a node marks the parent links in blue and child links in red.
 

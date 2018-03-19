@@ -6,7 +6,7 @@ author: tarun
 tags: ["DevOps", "Azure", "IaC"]
 categories:
 - "DevOps"
-img: "/images/screenshots/tarun/InfraPipelines/AutomatedInfraPipelinesAzure2.png"
+image: "/images/screenshots/tarun/InfraPipelines/AutomatedInfraPipelinesAzure2.png"
 description: "Why deploy your infrastructure in Azure manually when you can leverage the awesome integration between VSTS Team Build and Azure to automate the pipeline for provisioning infrastructure in Azure. The entry barrier is low because of the nature of licensing and the integration is next to none which makes it very easy to start. To top that, it integrates with the rest of the ALM & DevOps processes which further helps break the silo between Dev & Ops getting you truly into a DevOps and Agile way of working..."
 permalink: /DevOps/AutomatedInfrastructureDeploymentPipelinesForAzureWithVstsTeamBuild
 published: true
@@ -25,7 +25,7 @@ Would you consider a 16 character alphanumeric password stored in an excel sprea
 
 The end product would something like this...
 
-![Image](/images/screenshots/tarun/InfraPipelines/InfrastructureProvisioningPipelineForAzureFromVSTSTeamBuild.jpg)
+![Image]({{site.url}}/images/screenshots/tarun/InfraPipelines/InfrastructureProvisioningPipelineForAzureFromVSTSTeamBuild.jpg)
 
 # Pre-requisites 
 + Visual Studio Team Services: If you don't already have Start off by creating a free instance of Visual Studio [Team Services](https://www.visualstudio.com/team-services/)
@@ -103,18 +103,18 @@ Set-AzureKeyVaultSecret -VaultName 'Aim-Dtl-KeyVault-01' -Name $key -SecretValue
 
 As you can see in the script above, I am generating a key name for the secret which I am calling as `Name of the machine-Local Machine Administrator`, then simply calling the Set-AzureKeyVaultSecret with the name of the vault, the name for the secret and the encrypted password. KeyVault also allows you to pass other parameters such as ActivationDate and ExpirationDate, these are other options you can put to use to further secure the secrets stored in the KeyVault. 
 
-![Image](/images/screenshots/tarun/InfraPipelines/AzureKeyVaultVstsInsertKey.jpg)
+![Image]({{site.url}}/images/screenshots/tarun/InfraPipelines/AzureKeyVaultVstsInsertKey.jpg)
 
 As you can see the value is now reflecting in the Azure Key Vault secrets... 
 
-![Image](/images/screenshots/tarun/InfraPipelines/AzureKeyVaultInsertFromVsts.jpg)
+![Image]({{site.url}}/images/screenshots/tarun/InfraPipelines/AzureKeyVaultInsertFromVsts.jpg)
 
 # Read Secrets from Azure Key Vault 
 __Problem:__ If you are building a modern application and are following modern design principles, there is a good chance your infrastructure is composed of a number of layers and services that have their unique set of keys and secret. While it's possible to store these values directly as variables in a build definition, this is hard to scale as you'll need to add these secure variables in every build definition and then managing the lifecycle of the updates values across multiple builds is equally tedious. 
 
 In the last step we saw how easy it is to spin up a new Key Vault in Azure and store password in it, you can extend the use of the Key Vault by using other secrets and keys in the store. In this step we'll look at how easy it is to access the keys and secrets in Azure Key Vault directly from the build pipeline in VSTS and consume these values. What's great about this approach now that the Key Vault is the master repository of these secrets and the API's allow it consumption by systems that you authorize the use for... 
 
-![Image](/images/screenshots/tarun/InfraPipelines/AzureKeyVaultReadSecretInBuildPipelineInVSTS.jpg)
+![Image]({{site.url}}/images/screenshots/tarun/InfraPipelines/AzureKeyVaultReadSecretInBuildPipelineInVSTS.jpg)
 
 You have an option for reading all values, or add the exact key name in a comma separated format to only read selected keys. 
 
@@ -123,19 +123,19 @@ Visual Studio Team Services integrates with Azure better than almost any other t
 
 Microsoft runs an open source repository of ARM templates on GitHub by the name of [Azure Quick Start Templates](https://github.com/Azure/azure-quickstart-templates), with over 2500 followers and 3000 forks, this is a very vibrant repository, possibly all you in for converting your infrastructure to code... I'm going to use the [basic ARM template example I've created a walkthrough for in the following blogpost](http://www.visualstudiogeeks.com/blog/DevOps/Deploy-New-VM-To-Existing-AzureDevTestLab-From-VSTS). You are welcome to use this or bring your own... 
 
-![Image](/images/screenshots/tarun/InfraPipelines/ProvisionDevTestLabVmFromVSTSAzureDTLTask.jpg)
+![Image]({{site.url}}/images/screenshots/tarun/InfraPipelines/ProvisionDevTestLabVmFromVSTSAzureDTLTask.jpg)
 
 > You can add some variables to show up at the time of queue, so the user can optionally change their values. Like in this case, the instances of VM's to be deployed are shown up as an input parameter, defaulted to 2 but the user can change this. I've changed this value to 5... 
 
-![Image](/images/screenshots/tarun/InfraPipelines/QueueBuildVariableOverwriteOption.jpg)
+![Image]({{site.url}}/images/screenshots/tarun/InfraPipelines/QueueBuildVariableOverwriteOption.jpg)
 
 When the build is run, the vm's are provisioned in Azure... 
 
-![Image](/images/screenshots/tarun/InfraPipelines/AzureDTLCreateVmsProgrammatically.jpg)
+![Image]({{site.url}}/images/screenshots/tarun/InfraPipelines/AzureDTLCreateVmsProgrammatically.jpg)
  
 Those that fear magic... You can actually track the full deployment and provisioning of these resources in Azure by looking at the deployment right from within the Portal... 
 
-![Image](/images/screenshots/tarun/InfraPipelines/AzureDeploymentDetailsOfDeploymentTriggeredFromVSTS.jpg)
+![Image]({{site.url}}/images/screenshots/tarun/InfraPipelines/AzureDeploymentDetailsOfDeploymentTriggeredFromVSTS.jpg)
 
 # Tag resources in Azure 
 Tagging provides you a way to add key value pairs to any resource in Azure. You could use these key value pairs to search for these resource, pin these resources or track the cost for these resources. The tags show against the resource in the invoice as well, this gives you a nice way to track the spend per resource. I've often seen enterprises use this as a mechanism for tracking who requested the resource, what ITIL system request was it provisioned under and what cost code will the resource spend be charged back to... 
@@ -156,7 +156,7 @@ foreach($i in $items)
 
 ``` 
 
-![Image](/images/screenshots/tarun/InfraPipelines/TagAzureResourcesFromVstsInfraPipelines.jpg)
+![Image]({{site.url}}/images/screenshots/tarun/InfraPipelines/TagAzureResourcesFromVstsInfraPipelines.jpg)
 
 
 # Summary Email 
@@ -175,7 +175,7 @@ $text | Add-Content 'SoftwareSummary.txt'
 This file gets generated in the location `$(Agent.ReleaseDirectory)\SoftwareSummary.txt`. I can use the Send email task now to attach this file directly in the email being send out, see the reference screen shot below... 
 
 
-![Image](/images/screenshots/tarun/InfraPipelines/UseSmtpToSendEmailInVSTSBuildPipeline.jpg)
+![Image]({{site.url}}/images/screenshots/tarun/InfraPipelines/UseSmtpToSendEmailInVSTSBuildPipeline.jpg)
 
 
 What do you think? Useful? Any more ideas on how this could be expanded out further, feel free to leave a comment... 

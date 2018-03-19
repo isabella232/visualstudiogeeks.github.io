@@ -9,7 +9,7 @@ categories:
 - "TFS"
 - "Build"
  
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
  
@@ -21,13 +21,13 @@ If you like this post, don't forget to subscribe to new blog post alerts [http:/
 ### How to customize build template to point to MSBuild 14.0? ###
 
 1. You need to amend the build templates to point to MS Build version 14.0. The easiest way to do this is to create a copy of the build template for backup.  
-![TFS 2013 Build Templates](/images/screenshots/tarun/post03_tfs2013buildtemplates.jpg)
+![TFS 2013 Build Templates]({{site.url}}/images/screenshots/tarun/post03_tfs2013buildtemplates.jpg)
 2. Open the template in Visual Studio and search (Ctrl + F) for "ToolVersion"
 3. Click F4 to load the properties window 
 4. Change the MSBuild version to "14.0"
 5. Search for other occurrences of ToolVersion and override the values for MSBuild only
 
-![Customize TFS 2013 template to work with MSBuild 14.0](/images/screenshots/tarun/post03_tfs2013buildtemplatecustomization.jpg)
+![Customize TFS 2013 template to work with MSBuild 14.0]({{site.url}}/images/screenshots/tarun/post03_tfs2013buildtemplatecustomization.jpg)
 
 	Note: Restart the build service to ensure that the updated version of the build template is picked up by the build agent. 
 

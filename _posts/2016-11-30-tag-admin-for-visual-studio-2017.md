@@ -6,7 +6,7 @@ author: utkarsh
 tags: ["VisualStudio", "Extensions"]
 categories:
 - "Extensions"
-img: "/images/screenshots/utkarsh/tagadmin/main.png"
+image: "/images/screenshots/utkarsh/tagadmin/main.png"
 description: "Tag Admin for Visual Studio 2017"
 permalink:  
 keywords: "Extensions"
@@ -18,7 +18,7 @@ However, now that Visual Studio 2017 [is out](https://www.visualstudio.com/vs/vi
 
 <!--more--> 
 
-![Tag Admin for Visual Studio 2017](/images/screenshots/utkarsh/tagadmin/main.png)
+![Tag Admin for Visual Studio 2017]({{site.url}}/images/screenshots/utkarsh/tagadmin/main.png)
 
 > Download the extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=UtkarshShigihalliandTarunArora.TagAdminforVisualStudio2017). If you are keen to try out 'under development' bits, please download the VSIX directly from [CI build](http://vsixgallery.com/extension/96554fd6-649e-46f9-9162-3291177d9379/)
 

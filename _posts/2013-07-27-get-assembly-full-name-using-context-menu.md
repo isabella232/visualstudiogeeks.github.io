@@ -10,7 +10,7 @@ categories:
 - "Shell"
 - "Windows"
 description: "Get Assembly Full Name using context menu"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 ### Assembly Full Name - What is it? ###

@@ -8,14 +8,14 @@ categories:
 - "MVP"
 - "Personal"
 description: "I am Microsoft ALM MVP for 2014"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 This has been my dream from couple of years now and it happened finally! 
 
 I received a mail 2 days back from Microsoft announcing I have been awarded as [MVP](http://mvp.microsoft.com/en-us/overview.aspx#iwt) for my contributions to ALM. Below is the mail extract I received.
 
-![image](/images/screenshots/utkarsh//2014_04_03_i_am_microsoft_alm_Image1.png)
+![image]({{site.url}}/images/screenshots/utkarsh//2014_04_03_i_am_microsoft_alm_Image1.png)
 
 I feel very happy that Microsoft finally recognized my effort. Needless to say this award has re-energized me and has motivated me immensely to do more. 
 

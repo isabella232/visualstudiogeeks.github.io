@@ -9,7 +9,7 @@ categories:
 - extensibility
 - "visual studio team services"
 - "vsts"
-img: "/images/screenshots/utkarsh/export-import-build-definition/small-context-menu.png"
+image: "/images/screenshots/utkarsh/export-import-build-definition/small-context-menu.png"
 description: "Export your GeeksWithBlogs.net blog posts as Markdown files"
 keywords: "Extensions, VSTS"
 ---
@@ -22,7 +22,7 @@ As you probably know there is no built-in way to do that currently and you have 
 
 <!--more-->
 
-![Context Menu](/images/screenshots/utkarsh/export-import-build-definition/context-menu.png)
+![Context Menu]({{site.url}}/images/screenshots/utkarsh/export-import-build-definition/context-menu.png)
 
 Download from Visual Studio Marketplace: [http://bit.ly/exportimportbuild](http://bit.ly/exportimportbuild)
 
@@ -32,7 +32,7 @@ Download from Visual Studio Marketplace: [http://bit.ly/exportimportbuild](http:
 
 Once you install the extension, go to `Builds` hub and right-click on any build definition. You will see a two new menu items `Export` and `Import`. You can also click on `All build definitions` on VSTS to see these menu items. 
 
-![All Definitions Menu](/images/screenshots/utkarsh/export-import-build-definition/small-context-menu.png)
+![All Definitions Menu]({{site.url}}/images/screenshots/utkarsh/export-import-build-definition/small-context-menu.png)
 
 ### Export build definition ###
 
@@ -44,11 +44,11 @@ Once you install the extension, go to `Builds` hub and right-click on any build 
 
 - Right click on `All build definitions` or any existing build definitions and click on `Import`
 - You will be prompted to upload a build definition file. 
-	![Import Dialog](/images/screenshots/utkarsh/export-import-build-definition/import-dialog.png)
+	![Import Dialog]({{site.url}}/images/screenshots/utkarsh/export-import-build-definition/import-dialog.png)
 - You can either drag and drop a file or use the `Browse` button to select the file you want to import.
 - Click `Import`. If import is successful, you will have your build created, with all your steps, variables, schedules and other build definition parameters.
 
-![DefinotionCopy](/images/screenshots/utkarsh/export-import-build-definition/definition.png)
+![DefinotionCopy]({{site.url}}/images/screenshots/utkarsh/export-import-build-definition/definition.png)
 
 ## Limitations/Known issues ##
 

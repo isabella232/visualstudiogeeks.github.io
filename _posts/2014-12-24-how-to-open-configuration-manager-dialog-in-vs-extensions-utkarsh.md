@@ -8,13 +8,13 @@ categories:
 - blog                #important: leave this here
 - "visual studio extensibility"
  
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 ---
  
 Imagine you are developing a Visual Studio extension which requires you to prompt users to modify their project build configurations. The ideal way to do that is to open default configuration manager window of Visual Studio and let users configure. In this post we will see how to open Configuration Manager window of Visual Studio via Visual Studio SDK. 
 <!--more-->
-![Alt text](/images/screenshots/utkarsh/vs_config_manager.png "Optional title")
+![Alt text]({{site.url}}/images/screenshots/utkarsh/vs_config_manager.png "Optional title")
 
 Visual Studio provides [IVsConfigurationManagerDlg](http://msdn.microsoft.com/en-us/library/vstudio/microsoft.visualstudio.shell.interop.ivsconfigurationmanagerdlg.aspx) interface which has a single method called `ShowConfigurationManagerDlg`. The method has no parameters and it is as easy as calling a `MessageBox.Show()` in windows forms. 
 

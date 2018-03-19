@@ -6,7 +6,7 @@ author: tarun
 tags: ["DevOps", "GitHooks"]
 categories:
 - "DevOps"
-img: "/images/screenshots/tarun/ClientSideGitHooksGitWindowsVSTS.PNG"
+image: "/images/screenshots/tarun/ClientSideGitHooksGitWindowsVSTS.PNG"
 description: "See how you can leverage GitHooks on client side in Windows for a repository backed up VSTS to automate quality inspection in your commits among other use cases you could apply GitHooks to in your DevOps solution... "
 permalink: /DevOps/UsingGitHooksWithVstsGitOnWindows
 published: true
@@ -32,7 +32,7 @@ Since GitHooks simply execute the scripts on the specific event type they are ca
 ### So where do I start?
 Let's start by exploring client side Git Hooks... Navigate to `repo\.git\hooks` directory, you'll find that there a bunch of samples, but they are disabled by default. For instance, if you open that folder you’ll find a file called `pre-commit.sample`. To enable it, just rename it to `pre-commit` by removing the `.sample` extension and make the script executable. When you attempt to commit using `git commit`, the script is found and executed. If your pre-commit script exits with a 0 (zero), you commit successfully, otherwise the commit fails. 
 
-![Client side GitHooks](/images/screenshots/tarun/GitHooksOnWindowsVSTS.PNG)
+![Client side GitHooks]({{site.url}}/images/screenshots/tarun/GitHooksOnWindowsVSTS.PNG)
 
 ### GitHooks. Oh Windows!
 Now if you are on windows, simply renaming the file won't work. Git will fail to find shell in the designated path as specified in the script. The problem was lurking in the first line of the script, the __shebang__ declaration:
@@ -105,7 +105,7 @@ git commit --no-verify
 ### Server side GitHooks with VSTS 
 So far we have looked at the client side GitHooks on Windows, VSTS also exposes server side hooks. VSTS uses the same mechanism itself to create Pull requests... 
 
-![Server side GitHooks in VSTS](/images/screenshots/tarun/GitHooksVSTSServerSide.PNG)
+![Server side GitHooks in VSTS]({{site.url}}/images/screenshots/tarun/GitHooksVSTSServerSide.PNG)
 
 
 I'll show you some cool stuff with side hooks in VSTS in a future post, for now you can read up more about it [here](https://www.visualstudio.com/en-us/docs/integrate/get-started/service-hooks/events#tfvc.checkin)

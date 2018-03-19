@@ -9,12 +9,12 @@ categories:
 - "dotnet"
 - "extensions"
 description: "Showing TeamExplorer Navigation Item only when connected to a Team Project"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 Team Explorer in Visual Studio 2012 displays many context sensitive navigation items and links. If you would like to know what are navigation items and links take a look at the below picture.
 
-![image](/images/screenshots/utkarsh/2013_09_09_showing_teamexplorer_navigation_item_Image1.png)
+![image]({{site.url}}/images/screenshots/utkarsh/2013_09_09_showing_teamexplorer_navigation_item_Image1.png)
 
 The team explorer shows certain navigation items (for example: My Work, Pending Changes etc) only when you are connected to TFS. These items are hidden (for obvious reasons) when you are not connected. 
 

@@ -8,7 +8,7 @@ categories:
 - "VisualStudio"
 - "Extensions"
 description: "Favorites Menu for Visual Studio"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 imgfolder: /images/screenshots/utkarsh
 images:
@@ -27,15 +27,15 @@ This add-in will install a new menu called `Favorites` inside your Visual Studio
 
 ### Screenshots ###
 
-![add_tags](/images/screenshots/utkarsh/2013_05_11_favorites_menu_for_visual_Image1.jpg) 
+![add_tags]({{site.url}}/images/screenshots/utkarsh/2013_05_11_favorites_menu_for_visual_Image1.jpg) 
 
-![main_menu](/images/screenshots/utkarsh/2013_05_11_favorites_menu_for_visual_Image2.jpg) 
+![main_menu]({{site.url}}/images/screenshots/utkarsh/2013_05_11_favorites_menu_for_visual_Image2.jpg) 
 
-![my_fav_window](/images/screenshots/utkarsh/2013_05_11_favorites_menu_for_visual_Image3.jpg) 
+![my_fav_window]({{site.url}}/images/screenshots/utkarsh/2013_05_11_favorites_menu_for_visual_Image3.jpg) 
 
-![rt_click_view](/images/screenshots/utkarsh/2013_05_11_favorites_menu_for_visual_Image4.jpg)
+![rt_click_view]({{site.url}}/images/screenshots/utkarsh/2013_05_11_favorites_menu_for_visual_Image4.jpg)
 
-![srch_result](/images/screenshots/utkarsh/2013_05_11_favorites_menu_for_visual_Image5.jpg) 
+![srch_result]({{site.url}}/images/screenshots/utkarsh/2013_05_11_favorites_menu_for_visual_Image5.jpg) 
 
 ### Release History ###
 

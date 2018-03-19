@@ -9,7 +9,7 @@ categories:
 description: "Do you want to stop deployment as long as there are outstanding issues in your GitHub repository? In this blog post we will see how we can leverage powerful VSTS deployment gate functionality to validate all the necessary prerequisites for your next big deployment."
 permalink: /DevOps/github-issues-as-deployment-gate-in-vsts-rm
 keywords: "DevOps, VSTS, VSTS Deployment Gate Azure Function, Azure Function, Azure Function, GitHub, GitHub Issues, Deployment Gate, Release Management, Visual Studio"
-img: "/images/screenshots/utkarsh/github-issues-deployment-gate/deployment-gate-success.png"
+image: "/images/screenshots/utkarsh/github-issues-deployment-gate/deployment-gate-success.png"
 published: true
 ---
 
@@ -76,7 +76,7 @@ https://vsgeeks-github-depg8-001.azurewebsites.net/api/SearchGitHubIssues?q=stat
 
 The result of the search query shown above will look like this.
 
-![Postman](../images/screenshots/utkarsh/github-issues-deployment-gate/postman.png)
+![Postman]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate/postman.png)
 
 What's cool about this approach is that you have full control on the search query, let's get a little adventurous and search for open issues with label "bug" in VSTS Agent GitHub repository.
 
@@ -86,19 +86,19 @@ https://vsgeeks-github-depg8-001.azurewebsites.net/api/SearchGitHubIssues?q=stat
 
 Notice the search expression - `?q=state:open+repo:Microsoft/vsts-agent+label:bug&sort=created&order=asc`
 
-![Search Issues VSTS Agent Repo](../images/screenshots/utkarsh/github-issues-deployment-gate/search-issues-vstsagent-repo.png)
+![Search Issues VSTS Agent Repo]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate/search-issues-vstsagent-repo.png)
 
 ## Monitor your search queries ##
 
 The integration of Azure Function and App Insights let's you track your search queries and how they are performing, see below, app insights records the call's and provides performance feedback and visibility...
 
-![App Insights](../images/screenshots/utkarsh/github-issues-deployment-gate/app-insights.png)
+![App Insights]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate/app-insights.png)
 
 ## Integrating Azure function into VSTS as a Deployment Gate ##
 
 Now that we have an Azure function in place to search GitHub, let's see how easy is it to integrate this with VSTS. To configure the Azure Function as a deployment gate in the release definition, in your release definition navigate to the "Gates" section and select "Azure Function" and configure as shown in the screen shot below.
 
-![Pre Deployment Azure Function Gate](../images/screenshots/utkarsh/github-issues-deployment-gate/pre-deployment-azure-function-gate.png)
+![Pre Deployment Azure Function Gate]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate/pre-deployment-azure-function-gate.png)
 
 Please **note** that we are basing the evaluation on the `totalCount` of issues in the returned JSON. In this case accessing that the total count of issues is equal to zero with the below expression.
 
@@ -112,21 +112,21 @@ In short, when the release is triggered, the GitHub issue search function will b
 
 Playing the example forward, let's say we have an open issue in the GitHub repo.
 
-![GitHub Open Issue](../images/screenshots/utkarsh/github-issues-deployment-gate/github-open-issue.png)
+![GitHub Open Issue]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate/github-open-issue.png)
 
 With deployment gate configured, the deployment gate will periodically trigger (as defined in the sampling interval) to check the response from the Azure function against defined GitHub search expression to see if it evaluates to true. 
 
 Sampling result is shown in the 'Recent gate sampling` section as shown below.
 
-![Recent Sampling Result](../images/screenshots/utkarsh/github-issues-deployment-gate/recent-sampling-result.png)
+![Recent Sampling Result]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate/recent-sampling-result.png)
 
  VSTS makes it incredibly easy to work with Gates, full set of the logs to see the full results of the deployment gates are available for download. The logs include API calls and the response from the API.
 
-![Log Result](../images/screenshots/utkarsh/github-issues-deployment-gate/log-result.png)
+![Log Result]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate/log-result.png)
 
 Playing the example forward, once you close all reported issues (based on your search query) as closed, VSTS will proceed with the deployment. And once the release succeeds, you will see the summary like below.
 
-![Deployment Gate Success](../images/screenshots/utkarsh/github-issues-deployment-gate/deployment-gate-success.png)
+![Deployment Gate Success]({{site.url}}/images/screenshots/utkarsh/github-issues-deployment-gate/deployment-gate-success.png)
 
 Notice, `Recent gate sampling` section is showing us that our second sampling evaluated the expression to true. Hence the deployment went ahead and successfully deployed our application.
 

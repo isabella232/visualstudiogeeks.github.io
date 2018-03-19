@@ -8,7 +8,7 @@ categories:
 - "extensions"
 - "visualstudio"
 description: "Using progress dialog in Visual Studio extensions"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 As a Visual Studio extension developer you are required to keep the aesthetics of Visual Studio in tact when you integrate your extension with Visual Studio. Your extension looks odd when you try to use windows controls and dialogs in your extensions. Visual Studio SDK exposes many interfaces so that your extension looks as integrated with Visual Studio as possible. 
@@ -17,7 +17,7 @@ When your extension is performing a long running task, you have many options to 
 
 One thing to note is, as the `IVsThreadedWaitDialog2` interface name suggests it is a dialog hence user cannot perform any action when the dialog is being shown. So Visual Studio seems responsive to user, even when a task is being performed. Visual Studio itself makes use of this interface heavily. One example is when you are loading a solution (.sln) with lot of projects Visual Studio displays dialog implemented by this interface (screenshot below).
 
-![vs_progress2](/images/screenshots/utkarsh//2014_05_23_using_progress_dialog_in_Image1.gif)
+![vs_progress2]({{site.url}}/images/screenshots/utkarsh//2014_05_23_using_progress_dialog_in_Image1.gif)
 
 So the first step is to get the instance of `IVsThreadedWaitDialog2` interface using IServiceProvider interface. 
 

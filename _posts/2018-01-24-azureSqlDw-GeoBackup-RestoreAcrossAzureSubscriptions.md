@@ -7,7 +7,7 @@ tags: ["DevOps", "PowerShell", "AzureSQLDW"]
 categories:
 - "DevOps"
 - "Azure"
-img: "/images/screenshots/tarun/azureSqlDwGeoBackupRestore.jpg"
+image: "/images/screenshots/tarun/azureSqlDwGeoBackupRestore.jpg"
 description: "Wondering how to restore an Azure SQL DW geo backup from one Azure subscription to another, look no further, this blog shows you how to leverage Azure PowerShell to automate the restore of the Azure SQL DW from one Azure subscription to another... "
 permalink: /DevOps/RestoringAzureSQlDwGeoBackupBetweenAzureSubscriptions
 published: true
@@ -85,7 +85,7 @@ Move-AzureRmResource -DestinationResourceGroupName $Target_Dw_Rg `
 
 Voila! Run the above script and you'll have a new SQL DW instance created and the last geo backup restored on this instance and this instance migrated from the origin Azure subscription to another Azure subscription. 
 
-Now Azure SQL DW is an expensive service, so you probably don't want to have a lot of these instances running unless you need them. You can optionally use the snippet below to retrive any other SQL DW instances running in the target Azure Subscription and tag them for deletion... 
+Now Azure SQL DW is an expensive service, so you probably don't want to have a lot of these instances running unless you need them. You can optionally use the snippet below to retrieve any other SQL DW instances running in the target Azure Subscription and tag them for deletion... 
 
 
 ``` PowerShell 

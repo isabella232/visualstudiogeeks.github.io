@@ -6,7 +6,7 @@ author: tarun
 tags: ["Azure", "AzureDevTestLabs", "PowerShell"]
 categories:
 - "DevOps"
-img: "/images/screenshots/tarun/PowerShellNinjaAzureRmAzureDtl.jpg"
+image: "/images/screenshots/tarun/PowerShellNinjaAzureRmAzureDtl.jpg"
 description: "The Azure Dev Test Lab virtual machines are encapsulated in their own resource group, wondering how you can retrieve all resources and the contents of their nested resource groups programmatically through AzureRm PowerShell... Check this blogpost for a solution to get all Azure DTL nested resource groups and their contents through AzureRm PowerShell..."
 permalink: /DevOps/GetAllAzureDtlNestedResourcesProgrammaticallyWithAzureRmPowerShell
 published: true
@@ -18,7 +18,7 @@ Since all VMs with in an Azure Dev Test Lab (Azure DTL) are within their own res
 ### Azure DTL resources as seen in Azure Portal
 As you can see in the screen shot below, I have a bunch of resources with in the Azure Dev Test Lab like data disks, key vaults and virtual machines. When you click on one of these virtual machines you'll see that the random resource group name I alluded to earlier, with in this resource group you can see the nested resources.  
 
-![All nested resources within Azure DTL in Azure Portal](/images/screenshots/tarun/AzureDtlResourceGroupInAzurePortal.PNG)
+![All nested resources within Azure DTL in Azure Portal]({{site.url}}/images/screenshots/tarun/AzureDtlResourceGroupInAzurePortal.PNG)
 
 ### Azure DTL resources via AzureRM PowerShell 
 Alright, now that we know what the structure of the Azure DTL nested resources are, let's see how we can retrieve all resources within an Azure DTL resources along with their nested resources through AzureRM PowerShell script... 
@@ -70,7 +70,7 @@ Write-Host "**** Found this useful? Let others on Twitter know :> @arora_tarun *
 
 The Output of the above script... 
 
-![Output of PowerShell script for Get all nested resources within Azure DTL with AzureRm PowerShell](/images/screenshots/tarun/OutputOfAzureDtlGetAllResourcesByPowerShell.png)
+![Output of PowerShell script for Get all nested resources within Azure DTL with AzureRm PowerShell]({{site.url}}/images/screenshots/tarun/OutputOfAzureDtlGetAllResourcesByPowerShell.png)
 
 ### So what's the secret sauce? 
 The key thing that glues the virtual machine resource group in Dev Test Lab to it's cryptic resource group name is a property, see below... You can use the following snippet to get all the properties of the Azure DTL Virtual Machine... You have some interesting details here such as who created the VM, when was it created, whether a library image was used and exactly which one... 
@@ -86,7 +86,7 @@ The key thing that glues the virtual machine resource group in Dev Test Lab to i
 
 The `ComputerId` property is what holds the cryptic resource group name... You need to split this value to retrieve the resource group name `$props.Properties.computeId.Split('/')[4]`, unfortunately there is no other easy way to retrieve this value as it stands today... 
 
-![Get all Azure DTL Virtual Machine Properties Programmatically with AzureRm PowerShell](/images/screenshots/tarun/AzureDtlVmPropertiesPowerShellAzureRm.PNG)
+![Get all Azure DTL Virtual Machine Properties Programmatically with AzureRm PowerShell]({{site.url}}/images/screenshots/tarun/AzureDtlVmPropertiesPowerShellAzureRm.PNG)
 
 That's it folks! Hope you found this useful. Leave a comment if you find a better way of doing this... 
 

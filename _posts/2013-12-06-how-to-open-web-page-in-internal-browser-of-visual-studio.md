@@ -10,7 +10,7 @@ categories:
 - "VisualStudio"
 
 description: "How to open web page in internal browser of Visual Studio"
-img:        #place image (850x450)
+image:        #place image (850x450)
 thumb: thumb-icon-utkarsh.jpg    #place thumbnail (70x70)
 ---
 Tarun and I have started working on new Visual Studio extension, which we plan to release in couple of weeks after Christmas. One of the first thing I do as soon as we start the work on new tool/extension, is to gather all the features we have planned and build as many sample extensions as I can (each extension doing part of the functionality which is demo-able). This helps me to get the sense of complexity and also minimal code needed for a functionality to work. Another benefit is, we get the advantages and limitations of the implementation. This helps us to look for other alternatives if the PoC doesn't fit our need or too complex to build in the given time frame.

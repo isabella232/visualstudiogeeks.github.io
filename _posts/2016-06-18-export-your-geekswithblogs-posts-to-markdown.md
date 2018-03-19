@@ -7,7 +7,7 @@ tags: ["Tools", "WPF"]
 categories:
 - WPF
 - Tools
-img: "/images/screenshots/utkarsh/gwb2md/maniui.jpg"
+image: "/images/screenshots/utkarsh/gwb2md/maniui.jpg"
 description: "Export your GeeksWithBlogs.net blog posts as Markdown files"
 keywords: "Geekswithblogs, Markdown, AzureDevTestLabs"
 ---
@@ -47,7 +47,7 @@ There are only two screens actually in the UI. As you can see it is very basic.
 
 ### Main UI ###
 
-![Main UI](/images/screenshots/utkarsh/gwb2md/mainui.jpg)
+![Main UI]({{site.url}}/images/screenshots/utkarsh/gwb2md/mainui.jpg)
 
 1. Blog post tile and URL from GWB
 2. Main menu options
@@ -61,7 +61,7 @@ There are only two screens actually in the UI. As you can see it is very basic.
 
 ### Settings ###
 
-![Settings screen](/images/screenshots/utkarsh/gwb2md/settings.jpg)
+![Settings screen]({{site.url}}/images/screenshots/utkarsh/gwb2md/settings.jpg)
 
 1. Full URL of your GWB blog post
 2. User name you use to login to admin console

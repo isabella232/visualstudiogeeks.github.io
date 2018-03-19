@@ -7,7 +7,7 @@ tags: ["Extensions", "VSTS"]
 categories:
 - "Extensions"
 - "VSTS"
-img: "/images/screenshots/utkarsh/Jul17/browser-vsts.png"
+image: "/images/screenshots/utkarsh/Jul17/browser-vsts.png"
 description: "How to Check browser type and its version in your VSTS/TFS extensions"
 permalink: extensions/how-to-check-browser-type-and-its-version-in-vsts-extensions
 keywords: "Extensions, VSTS"
@@ -17,7 +17,7 @@ Ever wanted to check which browser (and browser version) your VSTS/TFS extension
 
 <!--more-->
 
-![Image](/images/screenshots/utkarsh/Jul17/browser-vsts.png)
+![Image]({{site.url}}/images/screenshots/utkarsh/Jul17/browser-vsts.png)
 
 
 ## Steps ##

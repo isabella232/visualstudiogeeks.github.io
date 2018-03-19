@@ -7,7 +7,7 @@ tags: ["DevOps", "Continuous Delivery", "TFS2015"]
 categories:
 - blog                #important: leave this here
 - TeamFoundationServer
-img:        #place image (850x450) with this name in /images/screenshots
+image:        #place image (850x450) with this name in /images/screenshots
 thumb: thumb-icon-tarun.jpg    #place thumbnail (70x70) with this name in /images/screenshotsthumbs/
 keywords: "TFS2015, ContinuousDelivery, DevOps, ALM, ReleaseManagement"
 ---

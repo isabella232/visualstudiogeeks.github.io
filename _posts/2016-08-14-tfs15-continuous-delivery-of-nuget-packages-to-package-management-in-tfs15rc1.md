@@ -9,7 +9,7 @@ categories:
 - "TFS15"
 - "DevOps"
 - "TeamFoundationServer"
-img: "/images/screenshots/utkarsh/tfs15-package-mgmt/package-mgmt.png"
+image: "/images/screenshots/utkarsh/tfs15-package-mgmt/package-mgmt.png"
 description: "Continuous delivery of Nuget packages to Package Management in TFS 15 RC1"
 permalink:  /DevOps/continuous-delivery-of-nuget-packages-to-package-management-in-tfs15rc1
 keywords: "TFS15"
@@ -21,7 +21,7 @@ In this post, we will see how we can publish our common code as NuGet packages s
 
 <!--more-->
 
-![Package Management](/images/screenshots/utkarsh/tfs15-package-mgmt/package-mgmt.png)
+![Package Management]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/package-mgmt.png)
 
 ## Install Package Management extension ##
 
@@ -29,15 +29,15 @@ To use the TFS15 Package Management on on-prem, you first need to install the Pa
 
 On your on-prem server home (`http://localhost:8080/tfs` for example) click on marketplace icon and then click `Browse TFS extensions`
 
-![InstallExtension1](/images/screenshots/utkarsh/tfs15-package-mgmt/install-ext-1.png)
+![InstallExtension1]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/install-ext-1.png)
 
 You will be taken to your local extension marketplace.
 
-![InstallExtension2](/images/screenshots/utkarsh/tfs15-package-mgmt/install-ext-2.png)
+![InstallExtension2]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/install-ext-2.png)
 
 Click on `Package Management` extension and install it on to your desired  TFS collection.
 
-![InstallExtension3](/images/screenshots/utkarsh/tfs15-package-mgmt/install-ext-3.png)
+![InstallExtension3]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/install-ext-3.png)
 
 ## Create a package feed in Package hub ##
 
@@ -45,19 +45,19 @@ Click on `Package Management` extension and install it on to your desired  TFS c
 
 Once you install the extension, you should see `Package Feeds` in your navigation bar under `Build/Release` menu. Click `Package Feeds`
 
-![GoToPackageHub](/images/screenshots/utkarsh/tfs15-package-mgmt/goto-package.png)
+![GoToPackageHub]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/goto-package.png)
 
 You will be navigated to `Package Feeds` screen.
 
-![PackageTab](/images/screenshots/utkarsh/tfs15-package-mgmt/package-tab.png)
+![PackageTab]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/package-tab.png)
 
 Click `New Feed`. This opens a new dialog. Provide the feed details.
 
-![FeedDetails](/images/screenshots/utkarsh/tfs15-package-mgmt/new-feed.png)
+![FeedDetails]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/new-feed.png)
 
 Once you click OK, a new NuGet feed will be created.
 
-![FeedDetailsCreated](/images/screenshots/utkarsh/tfs15-package-mgmt/new-feed-created.png)
+![FeedDetailsCreated]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/new-feed-created.png)
 
 Note down the feed URL from the feed details page on the right side. We will use it later in the post to publish our packages to this feed. Also, If you want to use your own instance of `nuget.exe` you can download it from here.
 
@@ -65,7 +65,7 @@ Note down the feed URL from the feed details page on the right side. We will use
 
 You can right click on the feed, click `Edit` - to manage its security, such as who can contribute packages, who can consume the packages etc.
 
-![FeedPermissions](/images/screenshots/utkarsh/tfs15-package-mgmt/feed-permissions.png)
+![FeedPermissions]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/feed-permissions.png)
 
 
 ## Build and publish NuGet packages solution ##
@@ -74,11 +74,11 @@ Now we are in a position to build our solution and publish the nuget packages. F
 
 My code structure is as below.
 
-![CodeCheckin](/images/screenshots/utkarsh/tfs15-package-mgmt/code-checkin.png)
+![CodeCheckin]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/code-checkin.png)
 
 Now to build the solution, I have created a simple build definition with following steps.
 
-![BuildSteps](/images/screenshots/utkarsh/tfs15-package-mgmt/build-steps.png)
+![BuildSteps]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/build-steps.png)
 
 Most of the steps are self-explanatory. However, I would like to briefly describe the following important steps.
 
@@ -91,12 +91,12 @@ Let's see packaging and publishing task in detail.
 ### NuGet Packager ###
 As the name indicates, the first task is is used to pack the code as Nuget package. The details of the task configuration is as below.
 
-![Package](/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-packager.png)
+![Package]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-packager.png)
 
 ### NuGet Publisher ###
 As the name indicates, this task is is used to publish the code to our Nuget feed. The details of the task configuration is as below.
 
-![Publish](/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-publisher.png)
+![Publish]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-publisher.png)
 
 **Notice** that for publishing to local package feed you need to select feed type as `Internal NuGet Feed`.
 
@@ -106,7 +106,7 @@ The next parameter is to provide the feed URL generated during the feed creation
 
 Save the build definition and Queue a new build. If everything is set right, your build should be green and you should see your packages available in the feed.
 
-![Feed](/images/screenshots/utkarsh/tfs15-package-mgmt/feed.png)
+![Feed]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/feed.png)
 
 ## Consuming the NuGet feed ##
 
@@ -118,15 +118,15 @@ nuget.exe sources Add -Name "MyCompanyNuget" -Source http://localhost:8080/tfs/D
 
 Execute the above command on the client machine command prompt. This should update the Nuget.config file and you will see a new NuGet source.
 
-![NugetConfig](/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-config.png)
+![NugetConfig]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-config.png)
 
 If you are Visual Studio user, you can also add this source by going to `Tools | Options | NuGet Package Manger | Package Sources` and providing feed URL as below.
 
-![NugetConfig](/images/screenshots/utkarsh/tfs15-package-mgmt/vs-nuget-source.png)
+![NugetConfig]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/vs-nuget-source.png)
 
 Once you have added the NuGet source, you can see the new NuGet source in the Nuget Package Manager. You can select this source specifically or select All, to find your published NuGet packages.
 
-![NugetConfig](/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-package-manager.png)
+![NugetConfig]({{site.url}}/images/screenshots/utkarsh/tfs15-package-mgmt/nuget-package-manager.png)
 
 ## Summary ##
 

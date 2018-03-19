@@ -6,7 +6,7 @@ author: tarun
 tags: ["DevOps", "IaC", "Azure", "VSTS", "Training"]
 categories:
 - "DevOps"
-img: "/images/screenshots/tarun/post08_DevOpsFunnyImage.jpg"
+image: "/images/screenshots/tarun/post08_DevOpsFunnyImage.jpg"
 description: "Learn real world strategies and application of DevOps. Everything today is code, the advantages of treating your infrastructure as Code are huge! Learn how to use apply modern engineering practices with Azure & VSTS to automate the provisioning of infrastructure in Azure."
 permalink: /DevOps/DevOpsIaCTrainingInfraAsCodeAzure
 published: true
