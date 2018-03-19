@@ -1,5 +1,5 @@
 _site
-.sass-cache
+.sass-cache/
 .c9
 *.DS_Store
 .jekyll-metadata
@@ -7,3 +7,4 @@ _site
 .vs/
 *.bak
 images/screenshots/tarun/.DS_Store
+.tmp/

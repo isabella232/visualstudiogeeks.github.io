@@ -7,7 +7,7 @@ tags: ["DevOps", "Build"]
 categories:
 - "DevOps"
 - "Build"
-img: "/images/screenshots/tarun/mar18/006_organizeBuildOutputIntoFolders.jpg"
+img: "/images/screenshots/tarun/Mar18/006_organizeBuildOutputIntoFolders.jpg"
 description: "Wondering how to organize your VSTS Build Output into individual folders so you can directly consume it in your release pipeline for the purposes of deployment? In this blogpost on DevOps I'll show you how to use the copy task in VSTS Build Pipeline to structure the build artifact such that the output is structured in multiple folders ready to be consumed."
 permalink: /DevOps/HowToOrganizeBuildOutputIntoSeparateFoldersUsingVstsBuild
 published: true
@@ -20,11 +20,11 @@ I have seen teams not care about the structure of the build artifact, instead ad
 I have a solution file which when processed through the build pipeline generates a build output and add's every folder that has any dll's into the build output. Let's double click to see where the real problem is,
 + Folders that I have no interest in have been added as a build artifact
 
-    ![Deafult buildouput add's all folders that produce dll's in bin directory]({{site.url}}/images/screenshots/tarun/mar18/002_defaultoutputhasfoldersthatidontneed.jpg) 
+    ![Deafult buildouput add's all folders that produce dll's in bin directory]({{site.url}}/images/screenshots/tarun/Mar18/002_defaultoutputhasfoldersthatidontneed.jpg) 
 
 + The folders are nested into sub folders, and sub folders and further sub folders for stuff that I am interested in
 
-    ![Default build output nested 3 levels in]({{site.url}}/images/screenshots/tarun/mar18/001_defaultbuildoutput.jpg)
+    ![Default build output nested 3 levels in]({{site.url}}/images/screenshots/tarun/Mar18/001_defaultbuildoutput.jpg)
   
 
 
@@ -32,7 +32,7 @@ I have a solution file which when processed through the build pipeline generates
 
 A vanilla build pipeline add's one `copy` step and one `publish` step in the build pipeline...
 
-![One copy and one publish step in default build pipeline]({{site.url}}/images/screenshots/tarun/mar18/003_defaultpipelineonecopyandonepublishstep.jpg)
+![One copy and one publish step in default build pipeline]({{site.url}}/images/screenshots/tarun/Mar18/003_defaultpipelineonecopyandonepublishstep.jpg)
 
 The build generates the binaries in the `$(build.defaultworkingdirectory)` folder, the copy step simply copies all the binaries from the default working directory `$(build.defaultworkingdirectory)` using the format `**\bin\$(BuildConfiguration)\**` into the artifact staging directory `$(build.artifactstagingdirectory)`... The publish step as you would expect published everything that it finds in the `$(build.artifactstagingdirectory)` 
 
@@ -51,12 +51,12 @@ $(build.artifactstagingdirectory)\ME.Service
 
 ```
 
-![One copy and one publish step in default build pipeline]({{site.url}}/images/screenshots/tarun/mar18/004_multicopystepfullyqualifyandaddsubfolder.jpg)
+![One copy and one publish step in default build pipeline]({{ site.baseurl }}/images/screenshots/tarun/Mar18/004_multicopystepfullyqualifyandaddsubfolder.jpg)
 
 
 With the new copy tasks in, the build output now looks like this...
 
-![One copy and one publish step in default build pipeline]({{site.url}}/images/screenshots/tarun/mar18/005_buildoutputafterproposedmultistepcopy.jpg)
+![One copy and one publish step in default build pipeline]({{site.url}}/images/screenshots/tarun/Mar18/005_buildoutputafterproposedmultistepcopy.jpg)
 
 I hope you find this useful... #DevOpsOn...
 
