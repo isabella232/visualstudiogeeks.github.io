@@ -67,25 +67,29 @@
         a {
             color: $color-link-hover;
         }
-        .excerpt-container {
-            float:left;
-            width:100%;
+        .left {
+            float: left;
+            width: 30%;
         }
-        .excerpt-image {
-            float:left;
-            width:30%;
-            padding: 0px 10px 0px 0px;
-            img{
-                display: block;
-                height: auto; 
-                width: auto; 
-                max-width: 210px; 
-                max-height: 250px;
+        .right {
+            padding-left: 1%;
+            float: right;
+            width: 69%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .group:after {
+            content:"";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width: 480px) {
+            .left, .right {
+                float: none;
+                width: auto;
             }
-        }
-        .excerpt-text {
-            float:left;
-            width:68%;
         }
     }
     @include media-query($on-palm) {

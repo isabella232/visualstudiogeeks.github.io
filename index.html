@@ -18,9 +18,9 @@ layout: default
         </p>
         <div class="post-excerpt">
             {% if post.image %}
-            <div class="excerpt-container">
-                <div class="excerpt-image"><img src="{{site.url}}{{ post.image }}"  alt="postImage"></img></div>
-                <div class="excerpt-text"> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} </div>
+            <div class="group">
+                <div class="left"><img src="{{site.url}}{{ post.image }}"  alt="postImage"></img></div>
+                <div class="right"> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} </div>
             </div>
             {% else %}
               {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
