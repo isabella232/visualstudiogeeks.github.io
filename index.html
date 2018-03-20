@@ -17,8 +17,14 @@ layout: default
           {% endif %}
         </p>
         <div class="post-excerpt">
-          {{ post.excerpt }}
-            
+            {% if post.image %}
+            <div class="excerpt-container">
+                <div class="excerpt-image"><img src="{{site.url}}{{ post.image }}"  alt="postImage"></img></div>
+                <div class="excerpt-text"> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} </div>
+            </div>
+            {% else %}
+              {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+            {% endif %}
         </div>
         <a class="button-gray" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
       </li>

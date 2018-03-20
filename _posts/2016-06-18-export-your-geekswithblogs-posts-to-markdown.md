@@ -7,7 +7,7 @@ tags: ["Tools", "WPF"]
 categories:
 - WPF
 - Tools
-image: "/images/screenshots/utkarsh/gwb2md/maniui.jpg"
+image: "/images/screenshots/utkarsh/gwb2md/mainui.jpg"
 description: "Export your GeeksWithBlogs.net blog posts as Markdown files"
 keywords: "Geekswithblogs, Markdown, AzureDevTestLabs"
 ---

@@ -6,7 +6,7 @@ author: utkarsh
 tags: ["Extensions"]
 categories:
 - "Extensions"
-image: "/images/screenshots/utkarsh/export-import-build-definition/context-menu-new.png"
+image: "/images/screenshots/utkarsh/export-import-build-definition/context-menu-new2.png"
 description: "Open sourcing Export/Import Build Definition extension"
 permalink:
 keywords: "Extensions"

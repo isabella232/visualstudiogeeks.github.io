@@ -53,7 +53,7 @@
             font-size: $base-font-size;
             line-height: 20px;
             padding-top: 0;
-            padding-bottom: 0;
+            padding-bottom: 10px;
 	        color: #000;
         }
         code, pre, pre * {
@@ -67,17 +67,26 @@
         a {
             color: $color-link-hover;
         }
-        img {
-            display: block;
-            margin: 1em auto;
-            max-height: 16em;
-            opacity: .7;
-            transition: opacity .3s;
-            &:hover {
-                opacity: 1;
+        .excerpt-container {
+            float:left;
+            width:100%;
+        }
+        .excerpt-image {
+            float:left;
+            width:30%;
+            padding: 0px 10px 0px 0px;
+            img{
+                display: block;
+                height: auto; 
+                width: auto; 
+                max-width: 210px; 
+                max-height: 250px;
             }
         }
-        // margin: 0 20px;
+        .excerpt-text {
+            float:left;
+            width:68%;
+        }
     }
     @include media-query($on-palm) {
 		padding: 10px;

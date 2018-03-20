@@ -14,9 +14,10 @@ keywords: "ServiceNow, DevOps, VSTS, ServiceNow VSTS Integration, ServiceNow VST
 ---
 Are you using ServiceNow for change management and VSTS for Release Management. Are you wondering **how you could automate the release approval once a change has been approved for implementation in service now...?** Look no further, in this blogpost i'll show you how to leverage the *Deployment Gates* feature in VSTS to integrate with service now and hopefully help you remove a manual step from your release approval workflow...
 
+<!--more-->
+
 ![ServiceNow Integration with VSTS]({{site.url}}/images/screenshots/tarun/Dec17/SurprisedHappyVstsDeploymentSignal.gif)
 
-<!--more-->
 VSTS allows you to create Deployment Gates... Read this official post for a low down on what [Deployment Gates](https://docs.microsoft.com/en-us/vsts/build-release/concepts/definitions/release/approvals/gates) do... To save you the trouble, "Deployment Gates" do exactly what they say...
 
 > *Gate the deployment process*...  
